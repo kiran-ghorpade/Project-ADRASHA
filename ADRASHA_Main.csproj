@@ -62,115 +62,128 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AshaProfile.cs">
+    <Compile Include="Forms\AddNewMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AshaProfile.Designer.cs">
+    <Compile Include="Forms\AddNewMember.Designer.cs">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AshaProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AshaProfile.Designer.cs">
       <DependentUpon>AshaProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="FamilyProfileform.cs">
+    <Compile Include="Forms\FamilyProfileform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FamilyProfileform.Designer.cs">
+    <Compile Include="Forms\FamilyProfileform.Designer.cs">
       <DependentUpon>FamilyProfileform.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDI.cs">
+    <Compile Include="Forms\HealthProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDI.Designer.cs">
+    <Compile Include="Forms\HealthProfile.Designer.cs">
+      <DependentUpon>HealthProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
-    <Compile Include="MemberProfile.cs">
+    <Compile Include="Forms\MemberProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MemberProfile.Designer.cs">
+    <Compile Include="Forms\MemberProfile.Designer.cs">
       <DependentUpon>MemberProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelControl.cs">
+    <Compile Include="Forms\PanelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PanelControl.Designer.cs">
+    <Compile Include="Forms\PanelControl.Designer.cs">
       <DependentUpon>PanelControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AshaRegistration.cs">
+    <Compile Include="Forms\AshaRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AshaRegistration.Designer.cs">
+    <Compile Include="Forms\AshaRegistration.Designer.cs">
       <DependentUpon>AshaRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistryBookForm.cs">
+    <Compile Include="Forms\RegistryBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistryBookForm.Designer.cs">
+    <Compile Include="Forms\RegistryBookForm.Designer.cs">
       <DependentUpon>RegistryBookForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SettingForm.cs">
+    <Compile Include="Forms\SettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingForm.Designer.cs">
+    <Compile Include="Forms\SettingForm.Designer.cs">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.cs">
+    <Compile Include="Forms\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashScreen.Designer.cs">
+    <Compile Include="Forms\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="temp.cs">
+    <Compile Include="Forms\temp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="temp.Designer.cs">
+    <Compile Include="Forms\temp.Designer.cs">
       <DependentUpon>temp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tmperory.cs">
+    <Compile Include="Forms\Tmperory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tmperory.Designer.cs">
+    <Compile Include="Forms\Tmperory.Designer.cs">
       <DependentUpon>Tmperory.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AshaProfile.resx">
+    <EmbeddedResource Include="Forms\AddNewMember.resx">
+      <DependentUpon>AddNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AshaProfile.resx">
       <DependentUpon>AshaProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FamilyProfileform.resx">
+    <EmbeddedResource Include="Forms\FamilyProfileform.resx">
       <DependentUpon>FamilyProfileform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDI.resx">
+    <EmbeddedResource Include="Forms\HealthProfile.resx">
+      <DependentUpon>HealthProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberProfile.resx">
+    <EmbeddedResource Include="Forms\MemberProfile.resx">
       <DependentUpon>MemberProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelControl.resx">
+    <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="AshaRegistration.resx">
+    <EmbeddedResource Include="Forms\AshaRegistration.resx">
       <DependentUpon>AshaRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistryBookForm.resx">
+    <EmbeddedResource Include="Forms\RegistryBookForm.resx">
       <DependentUpon>RegistryBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingForm.resx">
+    <EmbeddedResource Include="Forms\SettingForm.resx">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="temp.resx">
+    <EmbeddedResource Include="Forms\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tmperory.resx">
+    <EmbeddedResource Include="Forms\Tmperory.resx">
       <DependentUpon>Tmperory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
@@ -178,6 +191,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -187,50 +205,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\female asha logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\female avatar 2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\female avatar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male avtar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-circled-user-male-skin-type-7-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minimize-box-blue-256.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\NicePng_close-button-png_521653.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\searchbutton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-settings-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-web-analytics-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-reports-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-database-administrator-96.png" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8-dashboard-layout-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\house-icon-transparent-0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

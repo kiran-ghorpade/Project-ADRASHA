@@ -96,12 +96,23 @@ namespace ADRASHA_Main
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new AshaProfile());
+            LoadChildForm(new AddNewMember());
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
             LoadChildForm(new SettingForm());
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            LoadChildForm(new HealthProfile());
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            
+            LoadChildForm(new FamilyProfileform());
         }
     }
 }

@@ -83,7 +83,7 @@
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton5.TabIndex = 6;
-            this.kryptonButton5.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_settings_96;
+            this.kryptonButton5.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton5.Values.Image")));
             this.kryptonButton5.Values.Text = "";
             this.kryptonButton5.Click += new System.EventHandler(this.kryptonButton5_Click);
             // 
@@ -95,8 +95,9 @@
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton4.TabIndex = 6;
-            this.kryptonButton4.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_web_analytics_96;
+            this.kryptonButton4.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton4.Values.Image")));
             this.kryptonButton4.Values.Text = "";
+            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
             // 
             // kryptonButton3
             // 
@@ -106,7 +107,7 @@
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton3.TabIndex = 6;
-            this.kryptonButton3.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_reports_64;
+            this.kryptonButton3.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton3.Values.Image")));
             this.kryptonButton3.Values.Text = "";
             this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
@@ -118,7 +119,7 @@
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton2.TabIndex = 6;
-            this.kryptonButton2.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_database_administrator_96;
+            this.kryptonButton2.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton2.Values.Image")));
             this.kryptonButton2.Values.Text = "";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
@@ -130,8 +131,9 @@
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton1.TabIndex = 6;
-            this.kryptonButton1.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_dashboard_layout_96;
+            this.kryptonButton1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton1.Values.Image")));
             this.kryptonButton1.Values.Text = "";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // btnProfile
             // 
@@ -141,7 +143,7 @@
             this.btnProfile.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.btnProfile.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.btnProfile.TabIndex = 6;
-            this.btnProfile.Values.Image = global::ADRASHA_Main.Properties.Resources.icons8_circled_user_male_skin_type_7_96;
+            this.btnProfile.Values.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Values.Image")));
             this.btnProfile.Values.Text = "";
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
@@ -209,7 +211,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox1.Image = global::ADRASHA_Main.Properties.Resources.searchbutton;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(868, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 29);

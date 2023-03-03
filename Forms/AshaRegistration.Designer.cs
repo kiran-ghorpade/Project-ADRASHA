@@ -76,9 +76,11 @@
             this.panelControl4 = new ADRASHA_Main.PanelControl();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -95,6 +97,7 @@
             this.panelControl1.Rounding = 0;
             this.panelControl1.Size = new System.Drawing.Size(1818, 947);
             this.panelControl1.TabIndex = 0;
+            this.panelControl1.Load += new System.EventHandler(this.panelControl1_Load);
             // 
             // panelControl2
             // 
@@ -111,7 +114,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::ADRASHA_Main.Properties.Resources.icons8_circled_user_male_skin_type_7_96;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(102, 98);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 122);
@@ -121,12 +124,10 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.panel1);
             this.kryptonPanel1.Controls.Add(this.btnclose);
             this.kryptonPanel1.Controls.Add(this.btnNext);
             this.kryptonPanel1.Controls.Add(this.cmbvillagetype);
-            this.kryptonPanel1.Controls.Add(this.cmbqualification);
-            this.kryptonPanel1.Controls.Add(this.cmbmaritalstatus);
-            this.kryptonPanel1.Controls.Add(this.datedob);
             this.kryptonPanel1.Controls.Add(this.txtpincode);
             this.kryptonPanel1.Controls.Add(this.txttotalpopulation);
             this.kryptonPanel1.Controls.Add(this.txttotalfamily);
@@ -134,31 +135,19 @@
             this.kryptonPanel1.Controls.Add(this.txtdistrict);
             this.kryptonPanel1.Controls.Add(this.txttaluka);
             this.kryptonPanel1.Controls.Add(this.txtadharnumber);
-            this.kryptonPanel1.Controls.Add(this.txtlastname);
-            this.kryptonPanel1.Controls.Add(this.txtmobile);
             this.kryptonPanel1.Controls.Add(this.txtvillage);
-            this.kryptonPanel1.Controls.Add(this.txtmiddlename);
             this.kryptonPanel1.Controls.Add(this.label21);
             this.kryptonPanel1.Controls.Add(this.label17);
             this.kryptonPanel1.Controls.Add(this.label15);
             this.kryptonPanel1.Controls.Add(this.label16);
             this.kryptonPanel1.Controls.Add(this.txtsubcenter);
             this.kryptonPanel1.Controls.Add(this.label14);
-            this.kryptonPanel1.Controls.Add(this.txtfirstname);
             this.kryptonPanel1.Controls.Add(this.label13);
             this.kryptonPanel1.Controls.Add(this.label6);
             this.kryptonPanel1.Controls.Add(this.label20);
-            this.kryptonPanel1.Controls.Add(this.label19);
-            this.kryptonPanel1.Controls.Add(this.label18);
             this.kryptonPanel1.Controls.Add(this.label12);
-            this.kryptonPanel1.Controls.Add(this.label9);
-            this.kryptonPanel1.Controls.Add(this.label5);
             this.kryptonPanel1.Controls.Add(this.label11);
-            this.kryptonPanel1.Controls.Add(this.label8);
-            this.kryptonPanel1.Controls.Add(this.label4);
             this.kryptonPanel1.Controls.Add(this.label10);
-            this.kryptonPanel1.Controls.Add(this.label7);
-            this.kryptonPanel1.Controls.Add(this.label2);
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.panelControl5);
             this.kryptonPanel1.Controls.Add(this.panelControl4);
@@ -257,7 +246,7 @@
             // 
             this.cmbqualification.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbqualification.FormattingEnabled = true;
-            this.cmbqualification.Location = new System.Drawing.Point(316, 763);
+            this.cmbqualification.Location = new System.Drawing.Point(238, 447);
             this.cmbqualification.Name = "cmbqualification";
             this.cmbqualification.Size = new System.Drawing.Size(280, 34);
             this.cmbqualification.TabIndex = 7;
@@ -266,7 +255,7 @@
             // 
             this.cmbmaritalstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbmaritalstatus.FormattingEnabled = true;
-            this.cmbmaritalstatus.Location = new System.Drawing.Point(316, 696);
+            this.cmbmaritalstatus.Location = new System.Drawing.Point(238, 380);
             this.cmbmaritalstatus.Name = "cmbmaritalstatus";
             this.cmbmaritalstatus.Size = new System.Drawing.Size(280, 34);
             this.cmbmaritalstatus.TabIndex = 6;
@@ -274,7 +263,7 @@
             // datedob
             // 
             this.datedob.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datedob.Location = new System.Drawing.Point(317, 561);
+            this.datedob.Location = new System.Drawing.Point(239, 245);
             this.datedob.Name = "datedob";
             this.datedob.Size = new System.Drawing.Size(233, 32);
             this.datedob.TabIndex = 4;
@@ -338,7 +327,7 @@
             // txtlastname
             // 
             this.txtlastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlastname.Location = new System.Drawing.Point(317, 492);
+            this.txtlastname.Location = new System.Drawing.Point(239, 176);
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.Size = new System.Drawing.Size(279, 34);
             this.txtlastname.TabIndex = 3;
@@ -346,7 +335,7 @@
             // txtmobile
             // 
             this.txtmobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmobile.Location = new System.Drawing.Point(317, 625);
+            this.txtmobile.Location = new System.Drawing.Point(239, 309);
             this.txtmobile.Name = "txtmobile";
             this.txtmobile.Size = new System.Drawing.Size(279, 34);
             this.txtmobile.TabIndex = 5;
@@ -362,7 +351,7 @@
             // txtmiddlename
             // 
             this.txtmiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmiddlename.Location = new System.Drawing.Point(317, 434);
+            this.txtmiddlename.Location = new System.Drawing.Point(239, 118);
             this.txtmiddlename.Name = "txtmiddlename";
             this.txtmiddlename.Size = new System.Drawing.Size(279, 34);
             this.txtmiddlename.TabIndex = 2;
@@ -438,7 +427,7 @@
             // txtfirstname
             // 
             this.txtfirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfirstname.Location = new System.Drawing.Point(317, 384);
+            this.txtfirstname.Location = new System.Drawing.Point(239, 68);
             this.txtfirstname.Name = "txtfirstname";
             this.txtfirstname.Size = new System.Drawing.Size(279, 34);
             this.txtfirstname.TabIndex = 1;
@@ -485,7 +474,7 @@
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label19.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label19.Location = new System.Drawing.Point(97, 777);
+            this.label19.Location = new System.Drawing.Point(19, 461);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(160, 31);
             this.label19.TabIndex = 0;
@@ -497,7 +486,7 @@
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label18.Location = new System.Drawing.Point(96, 699);
+            this.label18.Location = new System.Drawing.Point(18, 383);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(156, 31);
             this.label18.TabIndex = 0;
@@ -521,7 +510,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label9.Location = new System.Drawing.Point(98, 495);
+            this.label9.Location = new System.Drawing.Point(20, 179);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(127, 31);
             this.label9.TabIndex = 0;
@@ -533,7 +522,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label5.Location = new System.Drawing.Point(100, 623);
+            this.label5.Location = new System.Drawing.Point(22, 307);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 31);
             this.label5.TabIndex = 0;
@@ -557,7 +546,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label8.Location = new System.Drawing.Point(98, 437);
+            this.label8.Location = new System.Drawing.Point(20, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(157, 31);
             this.label8.TabIndex = 0;
@@ -569,7 +558,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label4.Location = new System.Drawing.Point(100, 558);
+            this.label4.Location = new System.Drawing.Point(22, 242);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 31);
             this.label4.TabIndex = 0;
@@ -593,7 +582,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label7.Location = new System.Drawing.Point(100, 387);
+            this.label7.Location = new System.Drawing.Point(22, 71);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 31);
             this.label7.TabIndex = 0;
@@ -605,7 +594,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label2.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(109, 321);
+            this.label2.Location = new System.Drawing.Point(31, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 42);
             this.label2.TabIndex = 0;
@@ -670,6 +659,30 @@
             this.label1.Size = new System.Drawing.Size(474, 88);
             this.label1.TabIndex = 0;
             this.label1.Text = "Register Yourself";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panel1.Controls.Add(this.cmbqualification);
+            this.panel1.Controls.Add(this.cmbmaritalstatus);
+            this.panel1.Controls.Add(this.datedob);
+            this.panel1.Controls.Add(this.txtlastname);
+            this.panel1.Controls.Add(this.txtmobile);
+            this.panel1.Controls.Add(this.txtmiddlename);
+            this.panel1.Controls.Add(this.txtfirstname);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(78, 316);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(557, 600);
+            this.panel1.TabIndex = 0;
             // 
             // AshaRegistration
             // 
@@ -690,6 +703,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -743,5 +758,6 @@
         private PanelControl panelControl5;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnclose;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnNext;
+        private System.Windows.Forms.Panel panel1;
     }
 }

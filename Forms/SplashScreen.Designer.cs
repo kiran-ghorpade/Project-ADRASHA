@@ -42,7 +42,6 @@
             // logo_picturebox
             // 
             this.logo_picturebox.BackColor = System.Drawing.Color.Transparent;
-            this.logo_picturebox.Image = global::ADRASHA_Main.Properties.Resources.image;
             this.logo_picturebox.Location = new System.Drawing.Point(756, 293);
             this.logo_picturebox.Name = "logo_picturebox";
             this.logo_picturebox.Size = new System.Drawing.Size(502, 358);
