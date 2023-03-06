@@ -12,24 +12,51 @@ namespace ADRASHA_Main
 {
     public partial class AddNewMember : Form
     {
+        MyFunctions myfunctions = new MyFunctions();
+
         public AddNewMember()
         {
             InitializeComponent();
         }
 
-        private void txtlastname_TextChanged(object sender, EventArgs e)
+        private void btnnext_Click(object sender, EventArgs e)
         {
-
+            myfunctions.nextpanel_code(pnlidentity);
         }
 
-        private void BtnClose_Click(object sender, EventArgs e)
+        private void btnclose_Click(object sender, EventArgs e)
         {
-
+            myfunctions.nextpanel_code(pnlcontact);
         }
 
-        private void a_Paint(object sender, PaintEventArgs e)
+        private void btnpersonal_Click(object sender, EventArgs e)
         {
+            myfunctions.nextpanel_code(pnlpersonal);
+        }
 
+        private void btnidentity_Click(object sender, EventArgs e)
+        {
+            myfunctions.nextpanel_code(pnlidentity);
+        }
+
+        private void btncontact_Click(object sender, EventArgs e)
+        {
+            myfunctions.nextpanel_code(pnlcontact);
+        }
+
+        private void btnoccupation_Click(object sender, EventArgs e)
+        {
+            myfunctions.nextpanel_code(pnloccupation);
+        }
+
+        private void btnmarital_Click(object sender, EventArgs e)
+        {
+            myfunctions.nextpanel_code(pnlmaritalinfo);
+        }
+
+        private void btnresident_Click(object sender, EventArgs e)
+        {
+            myfunctions.nextpanel_code(pnlresidential);
         }
     }
 }

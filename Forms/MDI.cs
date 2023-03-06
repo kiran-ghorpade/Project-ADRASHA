@@ -12,7 +12,7 @@ namespace ADRASHA_Main
 {
     public partial class MDI : Form
     {
-        private Form activeform = null;
+        MyFunctions functions = new MyFunctions();
 
         public MDI()
         {
@@ -27,26 +27,10 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             searchboxpanel.Visible = false;
-            LoadChildForm(new FamilyProfileform());
+            functions.LoadChildForm(new FamilyProfileform(),childformpanel);
         }
 
-        private void LoadChildForm(Form childform)
-        {
-            if (activeform != null )
-            {
-                activeform.Close();
-            }
-            activeform = childform;
-            childform.TopLevel = false;
-            childform.FormBorderStyle= FormBorderStyle.None;
-            childform.Dock = DockStyle.Fill;
-            childformpanel.Controls.Clear();
-            childformpanel.Controls.Add(childform);
-            childformpanel.Tag= childform;
-            childform.BringToFront();
-            childform.Show();
 
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -86,33 +70,33 @@ namespace ADRASHA_Main
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new RegistryBookForm());
+            functions.LoadChildForm(new RegistryBookForm(), childformpanel);
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new MemberProfile());
+            functions.LoadChildForm(new MemberProfile(), childformpanel);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new AddNewMember());
+            functions.LoadChildForm(new AddNewMember(), childformpanel);
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new SettingForm());
+            functions.LoadChildForm(new SettingForm(), childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            LoadChildForm(new HealthProfile());
+            functions.LoadChildForm(new MemberHealthProfile(), childformpanel);
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             
-            LoadChildForm(new FamilyProfileform());
+            functions.LoadChildForm(new FamilyProfileform(), childformpanel);
         }
     }
 }

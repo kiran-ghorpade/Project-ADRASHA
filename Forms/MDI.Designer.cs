@@ -38,7 +38,7 @@
             this.btnProfile = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnminimize = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.BtnClose = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.childformpanel = new System.Windows.Forms.Panel();
+            childformpanel = new System.Windows.Forms.Panel();
             this.menubarpanelcontrol = new ADRASHA_Main.PanelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -59,7 +59,7 @@
             this.kryptonPanel1.Controls.Add(this.btnProfile);
             this.kryptonPanel1.Controls.Add(this.btnminimize);
             this.kryptonPanel1.Controls.Add(this.BtnClose);
-            this.kryptonPanel1.Controls.Add(this.childformpanel);
+            this.kryptonPanel1.Controls.Add(childformpanel);
             this.kryptonPanel1.Controls.Add(this.menubarpanelcontrol);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.SearchBox);
@@ -189,10 +189,10 @@
             // 
             // childformpanel
             // 
-            this.childformpanel.Location = new System.Drawing.Point(297, 141);
-            this.childformpanel.Name = "childformpanel";
-            this.childformpanel.Size = new System.Drawing.Size(1580, 843);
-            this.childformpanel.TabIndex = 0;
+            childformpanel.Location = new System.Drawing.Point(297, 141);
+            childformpanel.Name = "childformpanel";
+            childformpanel.Size = new System.Drawing.Size(1580, 843);
+            childformpanel.TabIndex = 0;
             // 
             // menubarpanelcontrol
             // 
@@ -293,7 +293,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl menubarpanelcontrol;
         private PanelControl childformpanelcontrol;
-        private System.Windows.Forms.Panel childformpanel;
         private System.Windows.Forms.Panel searchboxpanel;
         private ComponentFactory.Krypton.Toolkit.KryptonButton BtnClose;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnminimize;
@@ -303,5 +302,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        static public System.Windows.Forms.Panel childformpanel;
     }
 }

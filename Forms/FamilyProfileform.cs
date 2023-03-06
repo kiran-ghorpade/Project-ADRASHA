@@ -17,9 +17,9 @@ namespace ADRASHA_Main
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void btnAddMember_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

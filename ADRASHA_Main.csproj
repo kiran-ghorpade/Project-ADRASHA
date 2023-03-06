@@ -62,6 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddNewFamily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewFamily.Designer.cs">
+      <DependentUpon>AddNewFamily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseClass.cs" />
     <Compile Include="Forms\AddNewMember.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,11 +87,11 @@
     <Compile Include="Forms\FamilyProfileform.Designer.cs">
       <DependentUpon>FamilyProfileform.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HealthProfile.cs">
+    <Compile Include="Forms\MemberHealthProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HealthProfile.Designer.cs">
-      <DependentUpon>HealthProfile.cs</DependentUpon>
+    <Compile Include="Forms\MemberHealthProfile.Designer.cs">
+      <DependentUpon>MemberHealthProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MDI.cs">
       <SubType>Form</SubType>
@@ -104,6 +111,7 @@
     <Compile Include="Forms\PanelControl.Designer.cs">
       <DependentUpon>PanelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyFunctions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\AshaRegistration.cs">
@@ -142,6 +150,10 @@
     <Compile Include="Forms\Tmperory.Designer.cs">
       <DependentUpon>Tmperory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validation.cs" />
+    <EmbeddedResource Include="Forms\AddNewFamily.resx">
+      <DependentUpon>AddNewFamily.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddNewMember.resx">
       <DependentUpon>AddNewMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,8 +163,8 @@
     <EmbeddedResource Include="Forms\FamilyProfileform.resx">
       <DependentUpon>FamilyProfileform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HealthProfile.resx">
-      <DependentUpon>HealthProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MemberHealthProfile.resx">
+      <DependentUpon>MemberHealthProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
@@ -205,9 +217,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-dashboard-layout-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\familyImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

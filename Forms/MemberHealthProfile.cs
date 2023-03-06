@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main
 {
-    public partial class HealthProfile : Form
+    public partial class MemberHealthProfile : Form
     {
-        public HealthProfile()
+        public MemberHealthProfile()
         {
             InitializeComponent();
         }
