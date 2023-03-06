@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADRASHA_Main.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -96,7 +97,7 @@ namespace ADRASHA_Main
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             
-            functions.LoadChildForm(new FamilyProfileform(), childformpanel);
+            functions.LoadChildForm(new MemberProfileModern(), childformpanel);
         }
     }
 }

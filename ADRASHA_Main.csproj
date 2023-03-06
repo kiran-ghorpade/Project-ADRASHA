@@ -105,6 +105,12 @@
     <Compile Include="Forms\MemberProfile.Designer.cs">
       <DependentUpon>MemberProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MemberProfileModern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberProfileModern.Designer.cs">
+      <DependentUpon>MemberProfileModern.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PanelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MemberProfile.resx">
       <DependentUpon>MemberProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberProfileModern.resx">
+      <DependentUpon>MemberProfileModern.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>

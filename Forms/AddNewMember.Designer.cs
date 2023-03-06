@@ -30,15 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewMember));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlcontact = new System.Windows.Forms.Panel();
+            this.kryptonTextBox39 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtmobile = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.pnlresidential = new System.Windows.Forms.Panel();
+            this.kryptonTextBox37 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox36 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox38 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox33 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox35 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox34 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.pnlmaritalinfo = new System.Windows.Forms.Panel();
+            this.kryptonTextBox29 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox32 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox30 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox31 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -46,12 +64,20 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pnloccupation = new System.Windows.Forms.Panel();
+            this.kryptonTextBox26 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox27 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox28 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.pnlidentity = new System.Windows.Forms.Panel();
+            this.kryptonTextBox25 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox21 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox24 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox22 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox23 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnnextidentity = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -77,11 +103,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlcontact = new System.Windows.Forms.Panel();
-            this.txtmobile = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnidentity = new System.Windows.Forms.Button();
             this.btnpersonal = new System.Windows.Forms.Button();
             this.btnresident = new System.Windows.Forms.Button();
@@ -118,45 +139,24 @@
             this.kryptonTextBox18 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox17 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox16 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox21 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox22 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox23 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox24 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox25 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox26 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox27 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox28 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox29 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox31 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox30 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox32 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox33 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox34 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox35 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox36 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.kryptonTextBox37 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox38 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.kryptonTextBox39 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.pnlcontact.SuspendLayout();
             this.pnlresidential.SuspendLayout();
             this.pnlmaritalinfo.SuspendLayout();
             this.pnloccupation.SuspendLayout();
             this.pnlidentity.SuspendLayout();
             this.pnlpersonal.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlcontact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlcontact);
             this.kryptonPanel1.Controls.Add(this.pnlresidential);
             this.kryptonPanel1.Controls.Add(this.pnlmaritalinfo);
             this.kryptonPanel1.Controls.Add(this.pnloccupation);
+            this.kryptonPanel1.Controls.Add(this.pnlcontact);
             this.kryptonPanel1.Controls.Add(this.pnlidentity);
             this.kryptonPanel1.Controls.Add(this.pnlpersonal);
             this.kryptonPanel1.Controls.Add(this.btnidentity);
@@ -185,6 +185,107 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 2;
             // 
+            // pnlcontact
+            // 
+            this.pnlcontact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlcontact.Controls.Add(this.kryptonTextBox39);
+            this.pnlcontact.Controls.Add(this.txtmobile);
+            this.pnlcontact.Controls.Add(this.kryptonButton2);
+            this.pnlcontact.Controls.Add(this.label20);
+            this.pnlcontact.Controls.Add(this.label6);
+            this.pnlcontact.Controls.Add(this.label11);
+            this.pnlcontact.Location = new System.Drawing.Point(79, 329);
+            this.pnlcontact.Name = "pnlcontact";
+            this.pnlcontact.Size = new System.Drawing.Size(1414, 500);
+            this.pnlcontact.TabIndex = 7;
+            // 
+            // kryptonTextBox39
+            // 
+            this.kryptonTextBox39.Location = new System.Drawing.Point(949, 280);
+            this.kryptonTextBox39.Name = "kryptonTextBox39";
+            this.kryptonTextBox39.Size = new System.Drawing.Size(399, 38);
+            this.kryptonTextBox39.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox39.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox39.StateCommon.Border.Width = 1;
+            this.kryptonTextBox39.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox39.TabIndex = 9;
+            this.kryptonTextBox39.TextChanged += new System.EventHandler(this.kryptonTextBox39_TextChanged);
+            // 
+            // txtmobile
+            // 
+            this.txtmobile.Location = new System.Drawing.Point(283, 280);
+            this.txtmobile.Name = "txtmobile";
+            this.txtmobile.Size = new System.Drawing.Size(327, 38);
+            this.txtmobile.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtmobile.StateCommon.Border.Rounding = 5;
+            this.txtmobile.StateCommon.Border.Width = 1;
+            this.txtmobile.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmobile.TabIndex = 9;
+            this.txtmobile.TextChanged += new System.EventHandler(this.txtmobile_TextChanged);
+            // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.StateCommon.Border.Rounding = 20;
+            this.kryptonButton2.StateCommon.Border.Width = 2;
+            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.TabIndex = 8;
+            this.kryptonButton2.Values.Text = "Next";
+            this.kryptonButton2.Click += new System.EventHandler(this.btnnext_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label20.Location = new System.Drawing.Point(768, 286);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 31);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Email ";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label6.Location = new System.Drawing.Point(46, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 42);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Contact Details :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label11.Location = new System.Drawing.Point(64, 286);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(132, 31);
+            this.label11.TabIndex = 0;
+            this.label11.Text = " Mobile No ";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // pnlresidential
             // 
             this.pnlresidential.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -206,6 +307,91 @@
             this.pnlresidential.Name = "pnlresidential";
             this.pnlresidential.Size = new System.Drawing.Size(1414, 500);
             this.pnlresidential.TabIndex = 0;
+            this.pnlresidential.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlresidential_Paint);
+            // 
+            // kryptonTextBox37
+            // 
+            this.kryptonTextBox37.Location = new System.Drawing.Point(921, 390);
+            this.kryptonTextBox37.Name = "kryptonTextBox37";
+            this.kryptonTextBox37.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox37.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox37.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox37.StateCommon.Border.Width = 1;
+            this.kryptonTextBox37.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox37.TabIndex = 16;
+            this.kryptonTextBox37.TextChanged += new System.EventHandler(this.kryptonTextBox37_TextChanged);
+            // 
+            // kryptonTextBox36
+            // 
+            this.kryptonTextBox36.Location = new System.Drawing.Point(921, 275);
+            this.kryptonTextBox36.Name = "kryptonTextBox36";
+            this.kryptonTextBox36.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox36.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox36.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox36.StateCommon.Border.Width = 1;
+            this.kryptonTextBox36.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox36.TabIndex = 16;
+            this.kryptonTextBox36.TextChanged += new System.EventHandler(this.kryptonTextBox36_TextChanged);
+            // 
+            // kryptonTextBox38
+            // 
+            this.kryptonTextBox38.Location = new System.Drawing.Point(260, 390);
+            this.kryptonTextBox38.Name = "kryptonTextBox38";
+            this.kryptonTextBox38.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox38.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox38.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox38.StateCommon.Border.Width = 1;
+            this.kryptonTextBox38.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox38.TabIndex = 16;
+            this.kryptonTextBox38.TextChanged += new System.EventHandler(this.kryptonTextBox38_TextChanged);
+            // 
+            // kryptonTextBox33
+            // 
+            this.kryptonTextBox33.Location = new System.Drawing.Point(260, 272);
+            this.kryptonTextBox33.Name = "kryptonTextBox33";
+            this.kryptonTextBox33.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox33.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox33.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox33.StateCommon.Border.Width = 1;
+            this.kryptonTextBox33.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox33.TabIndex = 16;
+            this.kryptonTextBox33.TextChanged += new System.EventHandler(this.kryptonTextBox33_TextChanged);
+            // 
+            // kryptonTextBox35
+            // 
+            this.kryptonTextBox35.Location = new System.Drawing.Point(921, 155);
+            this.kryptonTextBox35.Name = "kryptonTextBox35";
+            this.kryptonTextBox35.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox35.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox35.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox35.StateCommon.Border.Width = 1;
+            this.kryptonTextBox35.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox35.TabIndex = 17;
+            this.kryptonTextBox35.TextChanged += new System.EventHandler(this.kryptonTextBox35_TextChanged);
+            // 
+            // kryptonTextBox34
+            // 
+            this.kryptonTextBox34.Location = new System.Drawing.Point(260, 155);
+            this.kryptonTextBox34.Name = "kryptonTextBox34";
+            this.kryptonTextBox34.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox34.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox34.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox34.StateCommon.Border.Width = 1;
+            this.kryptonTextBox34.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox34.TabIndex = 17;
+            this.kryptonTextBox34.TextChanged += new System.EventHandler(this.kryptonTextBox34_TextChanged);
             // 
             // btnSave
             // 
@@ -238,6 +424,7 @@
             this.label28.Size = new System.Drawing.Size(241, 42);
             this.label28.TabIndex = 0;
             this.label28.Text = "Residential Details :";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label29
             // 
@@ -250,6 +437,7 @@
             this.label29.Size = new System.Drawing.Size(82, 31);
             this.label29.TabIndex = 0;
             this.label29.Text = "Village";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label30
             // 
@@ -262,6 +450,7 @@
             this.label30.Size = new System.Drawing.Size(97, 31);
             this.label30.TabIndex = 0;
             this.label30.Text = "PinCode";
+            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // label31
             // 
@@ -274,6 +463,20 @@
             this.label31.Size = new System.Drawing.Size(87, 31);
             this.label31.TabIndex = 0;
             this.label31.Text = "District";
+            this.label31.Click += new System.EventHandler(this.label31_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label19.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label19.Location = new System.Drawing.Point(739, 397);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(94, 31);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Country";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label32
             // 
@@ -286,6 +489,7 @@
             this.label32.Size = new System.Drawing.Size(65, 31);
             this.label32.TabIndex = 0;
             this.label32.Text = "State";
+            this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // label33
             // 
@@ -298,6 +502,7 @@
             this.label33.Size = new System.Drawing.Size(196, 31);
             this.label33.TabIndex = 0;
             this.label33.Text = "Taluka/Subdistrict";
+            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // pnlmaritalinfo
             // 
@@ -316,6 +521,63 @@
             this.pnlmaritalinfo.Name = "pnlmaritalinfo";
             this.pnlmaritalinfo.Size = new System.Drawing.Size(1414, 500);
             this.pnlmaritalinfo.TabIndex = 7;
+            this.pnlmaritalinfo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlmaritalinfo_Paint);
+            // 
+            // kryptonTextBox29
+            // 
+            this.kryptonTextBox29.Location = new System.Drawing.Point(905, 320);
+            this.kryptonTextBox29.Name = "kryptonTextBox29";
+            this.kryptonTextBox29.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox29.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox29.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox29.StateCommon.Border.Width = 1;
+            this.kryptonTextBox29.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox29.TabIndex = 13;
+            this.kryptonTextBox29.TextChanged += new System.EventHandler(this.kryptonTextBox29_TextChanged);
+            // 
+            // kryptonTextBox32
+            // 
+            this.kryptonTextBox32.Location = new System.Drawing.Point(905, 171);
+            this.kryptonTextBox32.Name = "kryptonTextBox32";
+            this.kryptonTextBox32.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox32.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox32.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox32.StateCommon.Border.Width = 1;
+            this.kryptonTextBox32.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox32.TabIndex = 15;
+            this.kryptonTextBox32.TextChanged += new System.EventHandler(this.kryptonTextBox32_TextChanged);
+            // 
+            // kryptonTextBox30
+            // 
+            this.kryptonTextBox30.Location = new System.Drawing.Point(312, 322);
+            this.kryptonTextBox30.Name = "kryptonTextBox30";
+            this.kryptonTextBox30.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox30.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox30.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox30.StateCommon.Border.Width = 1;
+            this.kryptonTextBox30.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox30.TabIndex = 14;
+            this.kryptonTextBox30.TextChanged += new System.EventHandler(this.kryptonTextBox30_TextChanged);
+            // 
+            // kryptonTextBox31
+            // 
+            this.kryptonTextBox31.Location = new System.Drawing.Point(312, 170);
+            this.kryptonTextBox31.Name = "kryptonTextBox31";
+            this.kryptonTextBox31.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox31.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox31.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox31.StateCommon.Border.Width = 1;
+            this.kryptonTextBox31.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox31.TabIndex = 15;
+            this.kryptonTextBox31.TextChanged += new System.EventHandler(this.kryptonTextBox31_TextChanged);
             // 
             // kryptonButton3
             // 
@@ -348,6 +610,7 @@
             this.label22.Size = new System.Drawing.Size(277, 42);
             this.label22.TabIndex = 0;
             this.label22.Text = "Marital Status Details :";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -360,6 +623,7 @@
             this.label23.Size = new System.Drawing.Size(156, 31);
             this.label23.TabIndex = 0;
             this.label23.Text = "Marital Status";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label24
             // 
@@ -372,6 +636,7 @@
             this.label24.Size = new System.Drawing.Size(160, 31);
             this.label24.TabIndex = 0;
             this.label24.Text = "Marriage Date";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
@@ -384,6 +649,7 @@
             this.label25.Size = new System.Drawing.Size(155, 31);
             this.label25.TabIndex = 0;
             this.label25.Text = "Select Partner";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label27
             // 
@@ -396,6 +662,7 @@
             this.label27.Size = new System.Drawing.Size(133, 31);
             this.label27.TabIndex = 0;
             this.label27.Text = "No. of Child";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // pnloccupation
             // 
@@ -412,6 +679,49 @@
             this.pnloccupation.Name = "pnloccupation";
             this.pnloccupation.Size = new System.Drawing.Size(1414, 500);
             this.pnloccupation.TabIndex = 7;
+            this.pnloccupation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnloccupation_Paint);
+            // 
+            // kryptonTextBox26
+            // 
+            this.kryptonTextBox26.Location = new System.Drawing.Point(283, 396);
+            this.kryptonTextBox26.Name = "kryptonTextBox26";
+            this.kryptonTextBox26.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox26.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox26.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox26.StateCommon.Border.Width = 1;
+            this.kryptonTextBox26.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox26.TabIndex = 13;
+            this.kryptonTextBox26.TextChanged += new System.EventHandler(this.kryptonTextBox26_TextChanged);
+            // 
+            // kryptonTextBox27
+            // 
+            this.kryptonTextBox27.Location = new System.Drawing.Point(283, 278);
+            this.kryptonTextBox27.Name = "kryptonTextBox27";
+            this.kryptonTextBox27.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox27.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox27.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox27.StateCommon.Border.Width = 1;
+            this.kryptonTextBox27.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox27.TabIndex = 14;
+            this.kryptonTextBox27.TextChanged += new System.EventHandler(this.kryptonTextBox27_TextChanged);
+            // 
+            // kryptonTextBox28
+            // 
+            this.kryptonTextBox28.Location = new System.Drawing.Point(283, 161);
+            this.kryptonTextBox28.Name = "kryptonTextBox28";
+            this.kryptonTextBox28.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox28.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox28.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox28.StateCommon.Border.Width = 1;
+            this.kryptonTextBox28.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox28.TabIndex = 15;
+            this.kryptonTextBox28.TextChanged += new System.EventHandler(this.kryptonTextBox28_TextChanged);
             // 
             // kryptonButton1
             // 
@@ -444,6 +754,7 @@
             this.label16.Size = new System.Drawing.Size(244, 42);
             this.label16.TabIndex = 0;
             this.label16.Text = "Occupation Details :";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label17
             // 
@@ -456,6 +767,7 @@
             this.label17.Size = new System.Drawing.Size(197, 31);
             this.label17.TabIndex = 0;
             this.label17.Text = "Occupation Name";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -468,6 +780,7 @@
             this.label18.Size = new System.Drawing.Size(128, 31);
             this.label18.TabIndex = 0;
             this.label18.Text = "Work Place";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label21
             // 
@@ -480,6 +793,7 @@
             this.label21.Size = new System.Drawing.Size(121, 31);
             this.label21.TabIndex = 0;
             this.label21.Text = "Work Type";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // pnlidentity
             // 
@@ -500,6 +814,77 @@
             this.pnlidentity.Name = "pnlidentity";
             this.pnlidentity.Size = new System.Drawing.Size(1414, 500);
             this.pnlidentity.TabIndex = 7;
+            this.pnlidentity.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlidentity_Paint);
+            // 
+            // kryptonTextBox25
+            // 
+            this.kryptonTextBox25.Location = new System.Drawing.Point(905, 276);
+            this.kryptonTextBox25.Name = "kryptonTextBox25";
+            this.kryptonTextBox25.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox25.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox25.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox25.StateCommon.Border.Width = 1;
+            this.kryptonTextBox25.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox25.TabIndex = 13;
+            this.kryptonTextBox25.TextChanged += new System.EventHandler(this.kryptonTextBox25_TextChanged);
+            // 
+            // kryptonTextBox21
+            // 
+            this.kryptonTextBox21.Location = new System.Drawing.Point(312, 397);
+            this.kryptonTextBox21.Name = "kryptonTextBox21";
+            this.kryptonTextBox21.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox21.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox21.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox21.StateCommon.Border.Width = 1;
+            this.kryptonTextBox21.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox21.TabIndex = 13;
+            this.kryptonTextBox21.TextChanged += new System.EventHandler(this.kryptonTextBox21_TextChanged);
+            // 
+            // kryptonTextBox24
+            // 
+            this.kryptonTextBox24.Location = new System.Drawing.Point(905, 158);
+            this.kryptonTextBox24.Name = "kryptonTextBox24";
+            this.kryptonTextBox24.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox24.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox24.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox24.StateCommon.Border.Width = 1;
+            this.kryptonTextBox24.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox24.TabIndex = 14;
+            this.kryptonTextBox24.TextChanged += new System.EventHandler(this.kryptonTextBox24_TextChanged);
+            // 
+            // kryptonTextBox22
+            // 
+            this.kryptonTextBox22.Location = new System.Drawing.Point(312, 279);
+            this.kryptonTextBox22.Name = "kryptonTextBox22";
+            this.kryptonTextBox22.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox22.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox22.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox22.StateCommon.Border.Width = 1;
+            this.kryptonTextBox22.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox22.TabIndex = 14;
+            this.kryptonTextBox22.TextChanged += new System.EventHandler(this.kryptonTextBox22_TextChanged);
+            // 
+            // kryptonTextBox23
+            // 
+            this.kryptonTextBox23.Location = new System.Drawing.Point(312, 162);
+            this.kryptonTextBox23.Name = "kryptonTextBox23";
+            this.kryptonTextBox23.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox23.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox23.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox23.StateCommon.Border.Width = 1;
+            this.kryptonTextBox23.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox23.TabIndex = 15;
+            this.kryptonTextBox23.TextChanged += new System.EventHandler(this.kryptonTextBox23_TextChanged);
             // 
             // btnnextidentity
             // 
@@ -532,6 +917,7 @@
             this.label1.Size = new System.Drawing.Size(200, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Identity Details :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -544,6 +930,7 @@
             this.label3.Size = new System.Drawing.Size(141, 31);
             this.label3.TabIndex = 0;
             this.label3.Text = "Personal ID :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label10
             // 
@@ -556,6 +943,7 @@
             this.label10.Size = new System.Drawing.Size(119, 31);
             this.label10.TabIndex = 0;
             this.label10.Text = "Family ID :";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label14
             // 
@@ -568,6 +956,7 @@
             this.label14.Size = new System.Drawing.Size(112, 31);
             this.label14.TabIndex = 0;
             this.label14.Text = "ABHA ID :";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label12
             // 
@@ -580,6 +969,7 @@
             this.label12.Size = new System.Drawing.Size(126, 31);
             this.label12.TabIndex = 0;
             this.label12.Text = "Mobile No.";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -592,6 +982,7 @@
             this.label13.Size = new System.Drawing.Size(189, 31);
             this.label13.TabIndex = 0;
             this.label13.Text = "ADHAR Number :";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // pnlpersonal
             // 
@@ -614,6 +1005,7 @@
             this.pnlpersonal.Name = "pnlpersonal";
             this.pnlpersonal.Size = new System.Drawing.Size(1414, 500);
             this.pnlpersonal.TabIndex = 0;
+            this.pnlpersonal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlpersonal_Paint);
             // 
             // panel1
             // 
@@ -624,6 +1016,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 48);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // rdbtnother
             // 
@@ -637,6 +1030,7 @@
             this.rdbtnother.TabStop = true;
             this.rdbtnother.Text = "Other";
             this.rdbtnother.UseVisualStyleBackColor = true;
+            this.rdbtnother.CheckedChanged += new System.EventHandler(this.rdbtnother_CheckedChanged);
             // 
             // rdbtnfemale
             // 
@@ -650,6 +1044,7 @@
             this.rdbtnfemale.TabStop = true;
             this.rdbtnfemale.Text = "Female";
             this.rdbtnfemale.UseVisualStyleBackColor = true;
+            this.rdbtnfemale.CheckedChanged += new System.EventHandler(this.rdbtnfemale_CheckedChanged);
             // 
             // rdbtnmale
             // 
@@ -663,6 +1058,7 @@
             this.rdbtnmale.TabStop = true;
             this.rdbtnmale.Text = "Male";
             this.rdbtnmale.UseVisualStyleBackColor = true;
+            this.rdbtnmale.CheckedChanged += new System.EventHandler(this.rdbtnmale_CheckedChanged);
             // 
             // txtlastname
             // 
@@ -676,6 +1072,7 @@
             this.txtlastname.StateCommon.Border.Width = 1;
             this.txtlastname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlastname.TabIndex = 9;
+            this.txtlastname.TextChanged += new System.EventHandler(this.txtlastname_TextChanged);
             // 
             // txtbirthplace
             // 
@@ -689,6 +1086,7 @@
             this.txtbirthplace.StateCommon.Border.Width = 1;
             this.txtbirthplace.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbirthplace.TabIndex = 9;
+            this.txtbirthplace.TextChanged += new System.EventHandler(this.txtbirthplace_TextChanged);
             // 
             // txtmiddlename
             // 
@@ -702,6 +1100,7 @@
             this.txtmiddlename.StateCommon.Border.Width = 1;
             this.txtmiddlename.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmiddlename.TabIndex = 9;
+            this.txtmiddlename.TextChanged += new System.EventHandler(this.txtmiddlename_TextChanged);
             // 
             // txtfirstname
             // 
@@ -715,6 +1114,7 @@
             this.txtfirstname.StateCommon.Border.Width = 1;
             this.txtfirstname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfirstname.TabIndex = 9;
+            this.txtfirstname.TextChanged += new System.EventHandler(this.txtfirstname_TextChanged);
             // 
             // btnnext
             // 
@@ -747,6 +1147,7 @@
             this.label2.Size = new System.Drawing.Size(215, 42);
             this.label2.TabIndex = 0;
             this.label2.Text = "Personal Details :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // datedob
             // 
@@ -756,6 +1157,7 @@
             this.datedob.Name = "datedob";
             this.datedob.Size = new System.Drawing.Size(233, 32);
             this.datedob.TabIndex = 4;
+            this.datedob.ValueChanged += new System.EventHandler(this.datedob_ValueChanged);
             // 
             // label15
             // 
@@ -768,6 +1170,7 @@
             this.label15.Size = new System.Drawing.Size(89, 31);
             this.label15.TabIndex = 0;
             this.label15.Text = "Gender";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label5
             // 
@@ -780,6 +1183,7 @@
             this.label5.Size = new System.Drawing.Size(130, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Birth Place ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label7
             // 
@@ -792,6 +1196,7 @@
             this.label7.Size = new System.Drawing.Size(136, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "First Name  ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -804,6 +1209,7 @@
             this.label8.Size = new System.Drawing.Size(157, 31);
             this.label8.TabIndex = 0;
             this.label8.Text = "Middle Name ";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -816,6 +1222,7 @@
             this.label9.Size = new System.Drawing.Size(127, 31);
             this.label9.TabIndex = 0;
             this.label9.Text = "Last Name ";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label4
             // 
@@ -828,77 +1235,7 @@
             this.label4.Size = new System.Drawing.Size(117, 31);
             this.label4.TabIndex = 0;
             this.label4.Text = "Birth Date";
-            // 
-            // pnlcontact
-            // 
-            this.pnlcontact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlcontact.Controls.Add(this.kryptonTextBox39);
-            this.pnlcontact.Controls.Add(this.txtmobile);
-            this.pnlcontact.Controls.Add(this.kryptonButton2);
-            this.pnlcontact.Controls.Add(this.label20);
-            this.pnlcontact.Controls.Add(this.label6);
-            this.pnlcontact.Controls.Add(this.label11);
-            this.pnlcontact.Location = new System.Drawing.Point(79, 329);
-            this.pnlcontact.Name = "pnlcontact";
-            this.pnlcontact.Size = new System.Drawing.Size(1414, 500);
-            this.pnlcontact.TabIndex = 7;
-            // 
-            // txtmobile
-            // 
-            this.txtmobile.Location = new System.Drawing.Point(283, 280);
-            this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(327, 38);
-            this.txtmobile.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtmobile.StateCommon.Border.Rounding = 5;
-            this.txtmobile.StateCommon.Border.Width = 1;
-            this.txtmobile.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmobile.TabIndex = 9;
-            // 
-            // kryptonButton2
-            // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Border.Width = 2;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 8;
-            this.kryptonButton2.Values.Text = "Next";
-            this.kryptonButton2.Click += new System.EventHandler(this.btnnext_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label6.Location = new System.Drawing.Point(46, 34);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 42);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Contact Details :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label11.Location = new System.Drawing.Point(64, 286);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 31);
-            this.label11.TabIndex = 0;
-            this.label11.Text = " Mobile No ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnidentity
             // 
@@ -989,6 +1326,7 @@
             this.panelControl5.Rounding = 0;
             this.panelControl5.Size = new System.Drawing.Size(217, 91);
             this.panelControl5.TabIndex = 0;
+            this.panelControl5.Load += new System.EventHandler(this.panelControl5_Load);
             // 
             // panelControl4
             // 
@@ -1001,6 +1339,7 @@
             this.panelControl4.Rounding = 0;
             this.panelControl4.Size = new System.Drawing.Size(217, 91);
             this.panelControl4.TabIndex = 0;
+            this.panelControl4.Load += new System.EventHandler(this.panelControl4_Load);
             // 
             // panelControl7
             // 
@@ -1013,6 +1352,7 @@
             this.panelControl7.Rounding = 0;
             this.panelControl7.Size = new System.Drawing.Size(217, 91);
             this.panelControl7.TabIndex = 0;
+            this.panelControl7.Load += new System.EventHandler(this.panelControl7_Load);
             // 
             // panelControl6
             // 
@@ -1025,6 +1365,7 @@
             this.panelControl6.Rounding = 0;
             this.panelControl6.Size = new System.Drawing.Size(217, 91);
             this.panelControl6.TabIndex = 0;
+            this.panelControl6.Load += new System.EventHandler(this.panelControl6_Load);
             // 
             // panelControl2
             // 
@@ -1037,6 +1378,7 @@
             this.panelControl2.Rounding = 0;
             this.panelControl2.Size = new System.Drawing.Size(217, 91);
             this.panelControl2.TabIndex = 0;
+            this.panelControl2.Load += new System.EventHandler(this.panelControl2_Load);
             // 
             // panelControl1
             // 
@@ -1049,6 +1391,7 @@
             this.panelControl1.Rounding = 0;
             this.panelControl1.Size = new System.Drawing.Size(217, 91);
             this.panelControl1.TabIndex = 0;
+            this.panelControl1.Load += new System.EventHandler(this.panelControl1_Load);
             // 
             // lblashaname
             // 
@@ -1096,6 +1439,7 @@
             this.main_panelcontrol.Rounding = 0;
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 517);
             this.main_panelcontrol.TabIndex = 0;
+            this.main_panelcontrol.Load += new System.EventHandler(this.main_panelcontrol_Load);
             // 
             // kryptonTextBox4
             // 
@@ -1109,6 +1453,7 @@
             this.kryptonTextBox4.StateCommon.Border.Width = 1;
             this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox4.TabIndex = 9;
+            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox4_TextChanged);
             // 
             // kryptonTextBox3
             // 
@@ -1122,6 +1467,7 @@
             this.kryptonTextBox3.StateCommon.Border.Width = 1;
             this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox3.TabIndex = 9;
+            this.kryptonTextBox3.TextChanged += new System.EventHandler(this.kryptonTextBox3_TextChanged);
             // 
             // kryptonTextBox2
             // 
@@ -1135,6 +1481,7 @@
             this.kryptonTextBox2.StateCommon.Border.Width = 1;
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox2.TabIndex = 9;
+            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
             // 
             // kryptonTextBox5
             // 
@@ -1148,6 +1495,7 @@
             this.kryptonTextBox5.StateCommon.Border.Width = 1;
             this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox5.TabIndex = 9;
+            this.kryptonTextBox5.TextChanged += new System.EventHandler(this.kryptonTextBox5_TextChanged);
             // 
             // kryptonTextBox1
             // 
@@ -1161,6 +1509,7 @@
             this.kryptonTextBox1.StateCommon.Border.Width = 1;
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.TabIndex = 9;
+            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             // 
             // kryptonTextBox10
             // 
@@ -1174,6 +1523,7 @@
             this.kryptonTextBox10.StateCommon.Border.Width = 1;
             this.kryptonTextBox10.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox10.TabIndex = 9;
+            this.kryptonTextBox10.TextChanged += new System.EventHandler(this.kryptonTextBox10_TextChanged);
             // 
             // kryptonTextBox9
             // 
@@ -1187,6 +1537,7 @@
             this.kryptonTextBox9.StateCommon.Border.Width = 1;
             this.kryptonTextBox9.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox9.TabIndex = 9;
+            this.kryptonTextBox9.TextChanged += new System.EventHandler(this.kryptonTextBox9_TextChanged);
             // 
             // kryptonTextBox8
             // 
@@ -1200,6 +1551,7 @@
             this.kryptonTextBox8.StateCommon.Border.Width = 1;
             this.kryptonTextBox8.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox8.TabIndex = 9;
+            this.kryptonTextBox8.TextChanged += new System.EventHandler(this.kryptonTextBox8_TextChanged);
             // 
             // kryptonTextBox7
             // 
@@ -1213,6 +1565,7 @@
             this.kryptonTextBox7.StateCommon.Border.Width = 1;
             this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox7.TabIndex = 9;
+            this.kryptonTextBox7.TextChanged += new System.EventHandler(this.kryptonTextBox7_TextChanged);
             // 
             // kryptonTextBox6
             // 
@@ -1226,6 +1579,7 @@
             this.kryptonTextBox6.StateCommon.Border.Width = 1;
             this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox6.TabIndex = 9;
+            this.kryptonTextBox6.TextChanged += new System.EventHandler(this.kryptonTextBox6_TextChanged);
             // 
             // kryptonTextBox15
             // 
@@ -1239,6 +1593,7 @@
             this.kryptonTextBox15.StateCommon.Border.Width = 1;
             this.kryptonTextBox15.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox15.TabIndex = 9;
+            this.kryptonTextBox15.TextChanged += new System.EventHandler(this.kryptonTextBox15_TextChanged);
             // 
             // kryptonTextBox14
             // 
@@ -1252,6 +1607,7 @@
             this.kryptonTextBox14.StateCommon.Border.Width = 1;
             this.kryptonTextBox14.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox14.TabIndex = 9;
+            this.kryptonTextBox14.TextChanged += new System.EventHandler(this.kryptonTextBox14_TextChanged);
             // 
             // kryptonTextBox13
             // 
@@ -1265,6 +1621,7 @@
             this.kryptonTextBox13.StateCommon.Border.Width = 1;
             this.kryptonTextBox13.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox13.TabIndex = 9;
+            this.kryptonTextBox13.TextChanged += new System.EventHandler(this.kryptonTextBox13_TextChanged);
             // 
             // kryptonTextBox12
             // 
@@ -1278,6 +1635,7 @@
             this.kryptonTextBox12.StateCommon.Border.Width = 1;
             this.kryptonTextBox12.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox12.TabIndex = 9;
+            this.kryptonTextBox12.TextChanged += new System.EventHandler(this.kryptonTextBox12_TextChanged);
             // 
             // kryptonTextBox11
             // 
@@ -1291,6 +1649,7 @@
             this.kryptonTextBox11.StateCommon.Border.Width = 1;
             this.kryptonTextBox11.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox11.TabIndex = 9;
+            this.kryptonTextBox11.TextChanged += new System.EventHandler(this.kryptonTextBox11_TextChanged);
             // 
             // kryptonTextBox20
             // 
@@ -1304,6 +1663,7 @@
             this.kryptonTextBox20.StateCommon.Border.Width = 1;
             this.kryptonTextBox20.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox20.TabIndex = 9;
+            this.kryptonTextBox20.TextChanged += new System.EventHandler(this.kryptonTextBox20_TextChanged);
             // 
             // kryptonTextBox19
             // 
@@ -1317,6 +1677,7 @@
             this.kryptonTextBox19.StateCommon.Border.Width = 1;
             this.kryptonTextBox19.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox19.TabIndex = 9;
+            this.kryptonTextBox19.TextChanged += new System.EventHandler(this.kryptonTextBox19_TextChanged);
             // 
             // kryptonTextBox18
             // 
@@ -1330,6 +1691,7 @@
             this.kryptonTextBox18.StateCommon.Border.Width = 1;
             this.kryptonTextBox18.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox18.TabIndex = 9;
+            this.kryptonTextBox18.TextChanged += new System.EventHandler(this.kryptonTextBox18_TextChanged);
             // 
             // kryptonTextBox17
             // 
@@ -1343,6 +1705,7 @@
             this.kryptonTextBox17.StateCommon.Border.Width = 1;
             this.kryptonTextBox17.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox17.TabIndex = 9;
+            this.kryptonTextBox17.TextChanged += new System.EventHandler(this.kryptonTextBox17_TextChanged);
             // 
             // kryptonTextBox16
             // 
@@ -1356,277 +1719,7 @@
             this.kryptonTextBox16.StateCommon.Border.Width = 1;
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.TabIndex = 9;
-            // 
-            // kryptonTextBox21
-            // 
-            this.kryptonTextBox21.Location = new System.Drawing.Point(312, 397);
-            this.kryptonTextBox21.Name = "kryptonTextBox21";
-            this.kryptonTextBox21.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox21.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox21.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox21.StateCommon.Border.Width = 1;
-            this.kryptonTextBox21.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox21.TabIndex = 13;
-            // 
-            // kryptonTextBox22
-            // 
-            this.kryptonTextBox22.Location = new System.Drawing.Point(312, 279);
-            this.kryptonTextBox22.Name = "kryptonTextBox22";
-            this.kryptonTextBox22.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox22.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox22.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox22.StateCommon.Border.Width = 1;
-            this.kryptonTextBox22.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox22.TabIndex = 14;
-            // 
-            // kryptonTextBox23
-            // 
-            this.kryptonTextBox23.Location = new System.Drawing.Point(312, 162);
-            this.kryptonTextBox23.Name = "kryptonTextBox23";
-            this.kryptonTextBox23.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox23.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox23.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox23.StateCommon.Border.Width = 1;
-            this.kryptonTextBox23.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox23.TabIndex = 15;
-            // 
-            // kryptonTextBox24
-            // 
-            this.kryptonTextBox24.Location = new System.Drawing.Point(905, 158);
-            this.kryptonTextBox24.Name = "kryptonTextBox24";
-            this.kryptonTextBox24.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox24.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox24.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox24.StateCommon.Border.Width = 1;
-            this.kryptonTextBox24.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox24.TabIndex = 14;
-            // 
-            // kryptonTextBox25
-            // 
-            this.kryptonTextBox25.Location = new System.Drawing.Point(905, 276);
-            this.kryptonTextBox25.Name = "kryptonTextBox25";
-            this.kryptonTextBox25.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox25.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox25.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox25.StateCommon.Border.Width = 1;
-            this.kryptonTextBox25.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox25.TabIndex = 13;
-            // 
-            // kryptonTextBox26
-            // 
-            this.kryptonTextBox26.Location = new System.Drawing.Point(283, 396);
-            this.kryptonTextBox26.Name = "kryptonTextBox26";
-            this.kryptonTextBox26.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox26.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox26.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox26.StateCommon.Border.Width = 1;
-            this.kryptonTextBox26.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox26.TabIndex = 13;
-            // 
-            // kryptonTextBox27
-            // 
-            this.kryptonTextBox27.Location = new System.Drawing.Point(283, 278);
-            this.kryptonTextBox27.Name = "kryptonTextBox27";
-            this.kryptonTextBox27.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox27.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox27.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox27.StateCommon.Border.Width = 1;
-            this.kryptonTextBox27.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox27.TabIndex = 14;
-            // 
-            // kryptonTextBox28
-            // 
-            this.kryptonTextBox28.Location = new System.Drawing.Point(283, 161);
-            this.kryptonTextBox28.Name = "kryptonTextBox28";
-            this.kryptonTextBox28.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox28.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox28.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox28.StateCommon.Border.Width = 1;
-            this.kryptonTextBox28.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox28.TabIndex = 15;
-            // 
-            // kryptonTextBox29
-            // 
-            this.kryptonTextBox29.Location = new System.Drawing.Point(905, 320);
-            this.kryptonTextBox29.Name = "kryptonTextBox29";
-            this.kryptonTextBox29.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox29.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox29.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox29.StateCommon.Border.Width = 1;
-            this.kryptonTextBox29.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox29.TabIndex = 13;
-            // 
-            // kryptonTextBox31
-            // 
-            this.kryptonTextBox31.Location = new System.Drawing.Point(312, 170);
-            this.kryptonTextBox31.Name = "kryptonTextBox31";
-            this.kryptonTextBox31.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox31.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox31.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox31.StateCommon.Border.Width = 1;
-            this.kryptonTextBox31.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox31.TabIndex = 15;
-            // 
-            // kryptonTextBox30
-            // 
-            this.kryptonTextBox30.Location = new System.Drawing.Point(312, 322);
-            this.kryptonTextBox30.Name = "kryptonTextBox30";
-            this.kryptonTextBox30.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox30.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox30.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox30.StateCommon.Border.Width = 1;
-            this.kryptonTextBox30.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox30.TabIndex = 14;
-            // 
-            // kryptonTextBox32
-            // 
-            this.kryptonTextBox32.Location = new System.Drawing.Point(905, 171);
-            this.kryptonTextBox32.Name = "kryptonTextBox32";
-            this.kryptonTextBox32.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox32.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox32.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox32.StateCommon.Border.Width = 1;
-            this.kryptonTextBox32.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox32.TabIndex = 15;
-            // 
-            // kryptonTextBox33
-            // 
-            this.kryptonTextBox33.Location = new System.Drawing.Point(260, 272);
-            this.kryptonTextBox33.Name = "kryptonTextBox33";
-            this.kryptonTextBox33.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox33.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox33.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox33.StateCommon.Border.Width = 1;
-            this.kryptonTextBox33.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox33.TabIndex = 16;
-            // 
-            // kryptonTextBox34
-            // 
-            this.kryptonTextBox34.Location = new System.Drawing.Point(260, 155);
-            this.kryptonTextBox34.Name = "kryptonTextBox34";
-            this.kryptonTextBox34.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox34.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox34.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox34.StateCommon.Border.Width = 1;
-            this.kryptonTextBox34.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox34.TabIndex = 17;
-            // 
-            // kryptonTextBox35
-            // 
-            this.kryptonTextBox35.Location = new System.Drawing.Point(921, 155);
-            this.kryptonTextBox35.Name = "kryptonTextBox35";
-            this.kryptonTextBox35.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox35.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox35.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox35.StateCommon.Border.Width = 1;
-            this.kryptonTextBox35.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox35.TabIndex = 17;
-            // 
-            // kryptonTextBox36
-            // 
-            this.kryptonTextBox36.Location = new System.Drawing.Point(921, 275);
-            this.kryptonTextBox36.Name = "kryptonTextBox36";
-            this.kryptonTextBox36.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox36.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox36.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox36.StateCommon.Border.Width = 1;
-            this.kryptonTextBox36.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox36.TabIndex = 16;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label19.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label19.Location = new System.Drawing.Point(739, 397);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(94, 31);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Country";
-            // 
-            // kryptonTextBox37
-            // 
-            this.kryptonTextBox37.Location = new System.Drawing.Point(921, 390);
-            this.kryptonTextBox37.Name = "kryptonTextBox37";
-            this.kryptonTextBox37.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox37.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox37.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox37.StateCommon.Border.Width = 1;
-            this.kryptonTextBox37.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox37.TabIndex = 16;
-            // 
-            // kryptonTextBox38
-            // 
-            this.kryptonTextBox38.Location = new System.Drawing.Point(260, 390);
-            this.kryptonTextBox38.Name = "kryptonTextBox38";
-            this.kryptonTextBox38.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox38.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox38.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox38.StateCommon.Border.Width = 1;
-            this.kryptonTextBox38.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox38.TabIndex = 16;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label20.Location = new System.Drawing.Point(768, 286);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 31);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Email ";
-            // 
-            // kryptonTextBox39
-            // 
-            this.kryptonTextBox39.Location = new System.Drawing.Point(949, 280);
-            this.kryptonTextBox39.Name = "kryptonTextBox39";
-            this.kryptonTextBox39.Size = new System.Drawing.Size(399, 38);
-            this.kryptonTextBox39.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox39.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox39.StateCommon.Border.Width = 1;
-            this.kryptonTextBox39.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox39.TabIndex = 9;
+            this.kryptonTextBox16.TextChanged += new System.EventHandler(this.kryptonTextBox16_TextChanged);
             // 
             // AddNewMember
             // 
@@ -1634,11 +1727,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1562, 796);
             this.Controls.Add(this.kryptonPanel1);
+            this.DoubleBuffered = true;
             this.Name = "AddNewMember";
             this.Text = "AddNewFamily";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.pnlcontact.ResumeLayout(false);
+            this.pnlcontact.PerformLayout();
             this.pnlresidential.ResumeLayout(false);
             this.pnlresidential.PerformLayout();
             this.pnlmaritalinfo.ResumeLayout(false);
@@ -1651,8 +1747,6 @@
             this.pnlpersonal.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnlcontact.ResumeLayout(false);
-            this.pnlcontact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

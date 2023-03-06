@@ -35,6 +35,15 @@ namespace ADRASHA_Main
             return next;
         }
 
+        public Panel switch_panel_button(Panel next, PanelControl background, Button button, PanelControl backbutton)
+        {
+            background.BringToFront();
+            backbutton.BringToFront();
+            button.BringToFront();
+            next.BringToFront();
+            return next;
+        }
+
         public void closebtn_code(Form currentForm)
         {
             //close button code
