@@ -97,7 +97,7 @@ namespace ADRASHA_Main
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             
-            functions.LoadChildForm(new MemberProfileModern(), childformpanel);
+            functions.LoadChildForm(new MemberProfile(), childformpanel);
         }
     }
 }
