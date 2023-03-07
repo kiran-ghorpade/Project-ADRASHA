@@ -28,7 +28,7 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             searchboxpanel.Visible = false;
-            functions.LoadChildForm(new FamilyProfileform(),childformpanel);
+            functions.LoadChildForm(new FamilyProfile(),childformpanel);
         }
 
 
@@ -86,7 +86,7 @@ namespace ADRASHA_Main
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new SettingForm(), childformpanel);
+            functions.LoadChildForm(new FamilyProfile(), childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace ADRASHA_Main
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             
-            functions.LoadChildForm(new MemberProfile(), childformpanel);
+            functions.LoadChildForm(new AddNewFamily(), childformpanel);
         }
     }
 }
