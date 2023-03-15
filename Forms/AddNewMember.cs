@@ -1,4 +1,5 @@
 ﻿using ADRASHA_Main.Forms;
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,15 +17,17 @@ namespace ADRASHA_Main
         MyFunctions myfunctions = new MyFunctions();
         int family_id;
         int member_id;
+        string status;
 
         public AddNewMember()
         {
             InitializeComponent();
         }
 
-        public AddNewMember(int family_id)
+        public AddNewMember(int family_id, string status)
         {
             InitializeComponent();
+            this.status = status;
             this.family_id = family_id;
             member_id = DatabaseClass.GetAutoID("select max(member_id) from member_details");
             Family_Id.Text = family_id.ToString();
@@ -90,16 +93,19 @@ namespace ADRASHA_Main
                 MessageBox.Show("Member Registered.");
             }
 
-            Dictionary<string, object> updatedValue = new Dictionary<string, object>
+            if (status == "head")
             {
-                {"family_head", member_id }
-            };
-            DatabaseClass db = new DatabaseClass();
-            db.UpdateRow("family_details","family_id",family_id,updatedValue);
-            this.Dispose();
-            MyFunctions functions = new MyFunctions();
-            functions.LoadChildForm(new FamilyProfile(family_id), MDI.childformpanel);
-          
+                using (SqliteConnection conn = DatabaseClass.GetConnection())
+                {
+                    string sql = "update family_details set family_head=" + member_id + " where family_id=" + family_id;
+                    SqliteCommand sqliteCommand = new SqliteCommand(sql, conn);
+                    sqliteCommand.ExecuteNonQuery();
+                }
+            }
+                this.Dispose();
+                MyFunctions functions = new MyFunctions();
+                functions.LoadChildForm(new FamilyProfile(family_id), MDI.childformpanel);
+            
         }
 
         private void Adhar_Number_TextChanged(object sender, EventArgs e)

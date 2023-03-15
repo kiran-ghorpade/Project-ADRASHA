@@ -127,7 +127,7 @@ namespace ADRASHA_Main.Forms
         private void btnFamilyProfile_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            functions.LoadChildForm(new AddNewMember(family_id), MDI.childformpanel);
+            functions.LoadChildForm(new AddNewMember(family_id, ""), MDI.childformpanel);
         }
 
         private void btnHealthProfile_Click(object sender, EventArgs e)

@@ -103,7 +103,7 @@ namespace ADRASHA_Main.Forms
         private void btnAddMember_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            MyFunctions.LoadChildForm(new AddNewMember(family_id),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new AddNewMember(family_id,""),MDI.childformpanel);
         }
     }
 
