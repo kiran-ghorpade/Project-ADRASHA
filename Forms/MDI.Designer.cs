@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDI));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -43,7 +44,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.childformpanelcontrol = new ADRASHA_Main.PanelControl();
-            this.searchboxpanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,7 +64,7 @@
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.SearchBox);
             this.kryptonPanel1.Controls.Add(this.childformpanelcontrol);
-            this.kryptonPanel1.Controls.Add(this.searchboxpanel);
+            this.kryptonPanel1.Controls.Add(this.SearchBoxPanel);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
@@ -74,6 +74,15 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // SearchBoxPanel
+            // 
+            this.SearchBoxPanel.AutoScroll = true;
+            this.SearchBoxPanel.BackColor = System.Drawing.Color.Transparent;
+            this.SearchBoxPanel.Location = new System.Drawing.Point(386, 94);
+            this.SearchBoxPanel.Name = "SearchBoxPanel";
+            this.SearchBoxPanel.Size = new System.Drawing.Size(513, 534);
+            this.SearchBoxPanel.TabIndex = 0;
             // 
             // kryptonButton5
             // 
@@ -254,16 +263,6 @@
             this.childformpanelcontrol.Size = new System.Drawing.Size(1608, 867);
             this.childformpanelcontrol.TabIndex = 0;
             // 
-            // searchboxpanel
-            // 
-            this.searchboxpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchboxpanel.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.searchboxpanel.Location = new System.Drawing.Point(386, 94);
-            this.searchboxpanel.Name = "searchboxpanel";
-            this.searchboxpanel.Size = new System.Drawing.Size(513, 534);
-            this.searchboxpanel.TabIndex = 5;
-            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,10 +289,10 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox SearchBox;
+        private System.Windows.Forms.FlowLayoutPanel SearchBoxPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl menubarpanelcontrol;
         private PanelControl childformpanelcontrol;
-        private System.Windows.Forms.Panel searchboxpanel;
         private ComponentFactory.Krypton.Toolkit.KryptonButton BtnClose;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnminimize;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnProfile;

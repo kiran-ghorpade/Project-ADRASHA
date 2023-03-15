@@ -19,24 +19,28 @@ namespace ADRASHA_Main
             InitializeComponent();
         }
 
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnpersonal_Click(object sender, EventArgs e)
         {
-            functions.nextpanel_code(pnlpersonal);
+            functions.nextpanel_code(pnlFamilyDetails);
         }
 
-        private void btnheadinfo_Click(object sender, EventArgs e)
+        private void btnresident_Click(object sender, EventArgs e)
         {
-            functions.nextpanel_code(pnlheadinfo);
+            functions.nextpanel_code(pnlresidential);
         }
 
-        private void pnlpersonal_Paint(object sender, PaintEventArgs e)
+        private void btnnext_Click(object sender, EventArgs e)
         {
+            functions.nextpanel_code(pnlresidential);
+        }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            DataManipulation dm = new DataManipulation();
+            if (dm.InsertData("family_details", this))
+            {
+                MessageBox.Show("Data Inserted.");
+            }
         }
     }
 }

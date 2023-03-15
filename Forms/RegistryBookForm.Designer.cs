@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistryBookForm));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.ListViewPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.btnfilter = new System.Windows.Forms.Button();
             this.btnAddFamily = new System.Windows.Forms.Button();
             this.btnsort = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.panel1);
+            this.kryptonPanel1.Controls.Add(this.ListViewPanel);
             this.kryptonPanel1.Controls.Add(this.btnfilter);
             this.kryptonPanel1.Controls.Add(this.btnAddFamily);
             this.kryptonPanel1.Controls.Add(this.btnsort);
@@ -69,12 +69,15 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // panel1
+            // ListViewPanel
             // 
-            this.panel1.Location = new System.Drawing.Point(412, 287);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 509);
-            this.panel1.TabIndex = 0;
+            this.ListViewPanel.AutoScroll = true;
+            this.ListViewPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ListViewPanel.Location = new System.Drawing.Point(412, 287);
+            this.ListViewPanel.Name = "ListViewPanel";
+            this.ListViewPanel.Size = new System.Drawing.Size(1078, 536);
+            this.ListViewPanel.TabIndex = 0;
+            this.ListViewPanel.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ListViewPanel_Scroll);
             // 
             // btnfilter
             // 
@@ -204,6 +207,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "RegistryBookForm";
             this.Text = "RegistryBookForm";
+            this.Load += new System.EventHandler(this.RegistryBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -225,6 +229,6 @@
         private PanelControl panelControl2;
         private PanelControl panelControl4;
         private PanelControl panelControl1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel ListViewPanel;
     }
 }

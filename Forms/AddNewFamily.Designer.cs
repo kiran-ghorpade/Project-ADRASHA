@@ -29,106 +29,76 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewFamily));
-            this.txtlastname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtbirthplace = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtmiddlename = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtfirstname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Total_Members = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnnext = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pnlpersonal = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rdbtnfemale = new System.Windows.Forms.RadioButton();
-            this.rdbtnmale = new System.Windows.Forms.RadioButton();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pnlFamilyDetails = new System.Windows.Forms.Panel();
+            this.Electricity_Type = new System.Windows.Forms.ComboBox();
+            this.Water_Supply = new System.Windows.Forms.ComboBox();
+            this.Fuel_Type = new System.Windows.Forms.ComboBox();
+            this.Toilet_Type = new System.Windows.Forms.ComboBox();
+            this.Residence_Type = new System.Windows.Forms.ComboBox();
+            this.Vehicle = new System.Windows.Forms.ComboBox();
+            this.House_Type = new System.Windows.Forms.ComboBox();
+            this.Poverty_Status = new System.Windows.Forms.Panel();
+            this.rdbtnBPL = new System.Windows.Forms.RadioButton();
+            this.rdbtnAPL = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlheadinfo = new System.Windows.Forms.Panel();
-            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtmobile = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnpersonal = new System.Windows.Forms.Button();
-            this.btnheadinfo = new System.Windows.Forms.Button();
             this.lblashaname = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlresidential = new System.Windows.Forms.Panel();
+            this.Country = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.State = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Taluka = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.PinCode = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.District = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Village = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.btnresident = new System.Windows.Forms.Button();
+            this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.panelControl4 = new ADRASHA_Main.PanelControl();
-            this.panelControl7 = new ADRASHA_Main.PanelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
-            this.pnlpersonal.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.pnlheadinfo.SuspendLayout();
+            this.txtmobile = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pnlFamilyDetails.SuspendLayout();
+            this.Poverty_Status.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.pnlresidential.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtlastname
+            // Total_Members
             // 
-            this.txtlastname.Location = new System.Drawing.Point(260, 323);
-            this.txtlastname.Name = "txtlastname";
-            this.txtlastname.Size = new System.Drawing.Size(327, 38);
-            this.txtlastname.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Total_Members.Location = new System.Drawing.Point(260, 136);
+            this.Total_Members.Name = "Total_Members";
+            this.Total_Members.Size = new System.Drawing.Size(327, 38);
+            this.Total_Members.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtlastname.StateCommon.Border.Rounding = 5;
-            this.txtlastname.StateCommon.Border.Width = 1;
-            this.txtlastname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlastname.TabIndex = 9;
-            // 
-            // txtbirthplace
-            // 
-            this.txtbirthplace.Location = new System.Drawing.Point(925, 210);
-            this.txtbirthplace.Name = "txtbirthplace";
-            this.txtbirthplace.Size = new System.Drawing.Size(327, 38);
-            this.txtbirthplace.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtbirthplace.StateCommon.Border.Rounding = 5;
-            this.txtbirthplace.StateCommon.Border.Width = 1;
-            this.txtbirthplace.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbirthplace.TabIndex = 9;
-            // 
-            // txtmiddlename
-            // 
-            this.txtmiddlename.Location = new System.Drawing.Point(260, 233);
-            this.txtmiddlename.Name = "txtmiddlename";
-            this.txtmiddlename.Size = new System.Drawing.Size(327, 38);
-            this.txtmiddlename.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtmiddlename.StateCommon.Border.Rounding = 5;
-            this.txtmiddlename.StateCommon.Border.Width = 1;
-            this.txtmiddlename.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmiddlename.TabIndex = 9;
-            // 
-            // txtfirstname
-            // 
-            this.txtfirstname.Location = new System.Drawing.Point(260, 136);
-            this.txtfirstname.Name = "txtfirstname";
-            this.txtfirstname.Size = new System.Drawing.Size(327, 38);
-            this.txtfirstname.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtfirstname.StateCommon.Border.Rounding = 5;
-            this.txtfirstname.StateCommon.Border.Width = 1;
-            this.txtfirstname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfirstname.TabIndex = 9;
+            this.Total_Members.StateCommon.Border.Rounding = 5;
+            this.Total_Members.StateCommon.Border.Width = 1;
+            this.Total_Members.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total_Members.TabIndex = 1;
             // 
             // btnnext
             // 
@@ -146,8 +116,9 @@
             this.btnnext.StateCommon.Border.Width = 2;
             this.btnnext.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
             this.btnnext.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnext.TabIndex = 8;
+            this.btnnext.TabIndex = 11;
             this.btnnext.Values.Text = "Next";
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
             // label2
             // 
@@ -209,121 +180,181 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "House Type";
             // 
-            // pnlpersonal
+            // pnlFamilyDetails
             // 
-            this.pnlpersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlpersonal.Controls.Add(this.panel1);
-            this.pnlpersonal.Controls.Add(this.kryptonTextBox1);
-            this.pnlpersonal.Controls.Add(this.txtlastname);
-            this.pnlpersonal.Controls.Add(this.kryptonTextBox4);
-            this.pnlpersonal.Controls.Add(this.kryptonTextBox2);
-            this.pnlpersonal.Controls.Add(this.kryptonTextBox3);
-            this.pnlpersonal.Controls.Add(this.txtbirthplace);
-            this.pnlpersonal.Controls.Add(this.txtmiddlename);
-            this.pnlpersonal.Controls.Add(this.txtfirstname);
-            this.pnlpersonal.Controls.Add(this.btnnext);
-            this.pnlpersonal.Controls.Add(this.label2);
-            this.pnlpersonal.Controls.Add(this.label3);
-            this.pnlpersonal.Controls.Add(this.label10);
-            this.pnlpersonal.Controls.Add(this.label15);
-            this.pnlpersonal.Controls.Add(this.label5);
-            this.pnlpersonal.Controls.Add(this.label7);
-            this.pnlpersonal.Controls.Add(this.label1);
-            this.pnlpersonal.Controls.Add(this.label8);
-            this.pnlpersonal.Controls.Add(this.label9);
-            this.pnlpersonal.Controls.Add(this.label4);
-            this.pnlpersonal.Location = new System.Drawing.Point(79, 329);
-            this.pnlpersonal.Name = "pnlpersonal";
-            this.pnlpersonal.Size = new System.Drawing.Size(1414, 500);
-            this.pnlpersonal.TabIndex = 0;
-            this.pnlpersonal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlpersonal_Paint);
+            this.pnlFamilyDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlFamilyDetails.Controls.Add(this.Electricity_Type);
+            this.pnlFamilyDetails.Controls.Add(this.Water_Supply);
+            this.pnlFamilyDetails.Controls.Add(this.Fuel_Type);
+            this.pnlFamilyDetails.Controls.Add(this.Toilet_Type);
+            this.pnlFamilyDetails.Controls.Add(this.Residence_Type);
+            this.pnlFamilyDetails.Controls.Add(this.Vehicle);
+            this.pnlFamilyDetails.Controls.Add(this.House_Type);
+            this.pnlFamilyDetails.Controls.Add(this.Poverty_Status);
+            this.pnlFamilyDetails.Controls.Add(this.Total_Members);
+            this.pnlFamilyDetails.Controls.Add(this.btnnext);
+            this.pnlFamilyDetails.Controls.Add(this.label2);
+            this.pnlFamilyDetails.Controls.Add(this.label3);
+            this.pnlFamilyDetails.Controls.Add(this.label10);
+            this.pnlFamilyDetails.Controls.Add(this.label15);
+            this.pnlFamilyDetails.Controls.Add(this.label5);
+            this.pnlFamilyDetails.Controls.Add(this.label7);
+            this.pnlFamilyDetails.Controls.Add(this.label1);
+            this.pnlFamilyDetails.Controls.Add(this.label8);
+            this.pnlFamilyDetails.Controls.Add(this.label9);
+            this.pnlFamilyDetails.Controls.Add(this.label4);
+            this.pnlFamilyDetails.Location = new System.Drawing.Point(79, 329);
+            this.pnlFamilyDetails.Name = "pnlFamilyDetails";
+            this.pnlFamilyDetails.Size = new System.Drawing.Size(1414, 500);
+            this.pnlFamilyDetails.TabIndex = 0;
             // 
-            // panel1
+            // Electricity_Type
             // 
-            this.panel1.Controls.Add(this.rdbtnfemale);
-            this.panel1.Controls.Add(this.rdbtnmale);
-            this.panel1.Location = new System.Drawing.Point(934, 433);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 48);
-            this.panel1.TabIndex = 10;
+            this.Electricity_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Electricity_Type.FormattingEnabled = true;
+            this.Electricity_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "Electricity Supply",
+            "Generator",
+            "Solar Power",
+            "Kerosene Lamps",
+            "Other"});
+            this.Electricity_Type.Location = new System.Drawing.Point(925, 371);
+            this.Electricity_Type.Name = "Electricity_Type";
+            this.Electricity_Type.Size = new System.Drawing.Size(327, 37);
+            this.Electricity_Type.TabIndex = 8;
             // 
-            // rdbtnfemale
+            // Water_Supply
             // 
-            this.rdbtnfemale.AutoSize = true;
-            this.rdbtnfemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnfemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.rdbtnfemale.Location = new System.Drawing.Point(123, 8);
-            this.rdbtnfemale.Name = "rdbtnfemale";
-            this.rdbtnfemale.Size = new System.Drawing.Size(82, 33);
-            this.rdbtnfemale.TabIndex = 0;
-            this.rdbtnfemale.TabStop = true;
-            this.rdbtnfemale.Text = "BPL";
-            this.rdbtnfemale.UseVisualStyleBackColor = true;
+            this.Water_Supply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Water_Supply.FormattingEnabled = true;
+            this.Water_Supply.Items.AddRange(new object[] {
+            "--Select--",
+            "Tap Water",
+            "Hand Pump",
+            "Well",
+            "Tank",
+            "River",
+            "Pond",
+            "Other"});
+            this.Water_Supply.Location = new System.Drawing.Point(925, 301);
+            this.Water_Supply.Name = "Water_Supply";
+            this.Water_Supply.Size = new System.Drawing.Size(327, 37);
+            this.Water_Supply.TabIndex = 7;
             // 
-            // rdbtnmale
+            // Fuel_Type
             // 
-            this.rdbtnmale.AutoSize = true;
-            this.rdbtnmale.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnmale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.rdbtnmale.Location = new System.Drawing.Point(11, 8);
-            this.rdbtnmale.Name = "rdbtnmale";
-            this.rdbtnmale.Size = new System.Drawing.Size(82, 33);
-            this.rdbtnmale.TabIndex = 0;
-            this.rdbtnmale.TabStop = true;
-            this.rdbtnmale.Text = "APL";
-            this.rdbtnmale.UseVisualStyleBackColor = true;
+            this.Fuel_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fuel_Type.FormattingEnabled = true;
+            this.Fuel_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "Firewood",
+            "Crop Residue",
+            "Cow Dung Cake",
+            "Coal",
+            "LPG Gas",
+            "Solar Cooker",
+            "Other"});
+            this.Fuel_Type.Location = new System.Drawing.Point(925, 215);
+            this.Fuel_Type.Name = "Fuel_Type";
+            this.Fuel_Type.Size = new System.Drawing.Size(327, 37);
+            this.Fuel_Type.TabIndex = 6;
             // 
-            // kryptonTextBox1
+            // Toilet_Type
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(260, 417);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 9;
+            this.Toilet_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Toilet_Type.FormattingEnabled = true;
+            this.Toilet_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "No Toilet",
+            "Flush Toilet",
+            "Public Toilet",
+            "Other"});
+            this.Toilet_Type.Location = new System.Drawing.Point(925, 128);
+            this.Toilet_Type.Name = "Toilet_Type";
+            this.Toilet_Type.Size = new System.Drawing.Size(327, 37);
+            this.Toilet_Type.TabIndex = 5;
             // 
-            // kryptonTextBox4
+            // Residence_Type
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(925, 370);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox4.StateCommon.Border.Width = 1;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 9;
+            this.Residence_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Residence_Type.FormattingEnabled = true;
+            this.Residence_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "Permanant",
+            "Temporary",
+            "Migrated",
+            "Other"});
+            this.Residence_Type.Location = new System.Drawing.Point(260, 418);
+            this.Residence_Type.Name = "Residence_Type";
+            this.Residence_Type.Size = new System.Drawing.Size(327, 37);
+            this.Residence_Type.TabIndex = 4;
             // 
-            // kryptonTextBox2
+            // Vehicle
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(925, 300);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 9;
+            this.Vehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vehicle.FormattingEnabled = true;
+            this.Vehicle.Items.AddRange(new object[] {
+            "--Select--",
+            "Two Wheeler",
+            "Three Wheeler",
+            "Four  Wheeler",
+            "Tractor",
+            "Truck"});
+            this.Vehicle.Location = new System.Drawing.Point(260, 324);
+            this.Vehicle.Name = "Vehicle";
+            this.Vehicle.Size = new System.Drawing.Size(327, 37);
+            this.Vehicle.TabIndex = 3;
             // 
-            // kryptonTextBox3
+            // House_Type
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(925, 135);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox3.StateCommon.Border.Width = 1;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 9;
+            this.House_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.House_Type.FormattingEnabled = true;
+            this.House_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "No House (Nomadic)",
+            "Soil and Stone",
+            "Cement and Concrete",
+            "Building"});
+            this.House_Type.Location = new System.Drawing.Point(260, 233);
+            this.House_Type.Name = "House_Type";
+            this.House_Type.Size = new System.Drawing.Size(327, 37);
+            this.House_Type.TabIndex = 2;
+            // 
+            // Poverty_Status
+            // 
+            this.Poverty_Status.Controls.Add(this.rdbtnBPL);
+            this.Poverty_Status.Controls.Add(this.rdbtnAPL);
+            this.Poverty_Status.Location = new System.Drawing.Point(934, 433);
+            this.Poverty_Status.Name = "Poverty_Status";
+            this.Poverty_Status.Size = new System.Drawing.Size(209, 48);
+            this.Poverty_Status.TabIndex = 10;
+            // 
+            // rdbtnBPL
+            // 
+            this.rdbtnBPL.AutoSize = true;
+            this.rdbtnBPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnBPL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.rdbtnBPL.Location = new System.Drawing.Point(123, 8);
+            this.rdbtnBPL.Name = "rdbtnBPL";
+            this.rdbtnBPL.Size = new System.Drawing.Size(82, 33);
+            this.rdbtnBPL.TabIndex = 10;
+            this.rdbtnBPL.TabStop = true;
+            this.rdbtnBPL.Text = "BPL";
+            this.rdbtnBPL.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnAPL
+            // 
+            this.rdbtnAPL.AutoSize = true;
+            this.rdbtnAPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnAPL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.rdbtnAPL.Location = new System.Drawing.Point(11, 8);
+            this.rdbtnAPL.Name = "rdbtnAPL";
+            this.rdbtnAPL.Size = new System.Drawing.Size(82, 33);
+            this.rdbtnAPL.TabIndex = 9;
+            this.rdbtnAPL.TabStop = true;
+            this.rdbtnAPL.Text = "APL";
+            this.rdbtnAPL.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -385,128 +416,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Toilet Type";
             // 
-            // pnlheadinfo
-            // 
-            this.pnlheadinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlheadinfo.Controls.Add(this.kryptonTextBox6);
-            this.pnlheadinfo.Controls.Add(this.kryptonTextBox5);
-            this.pnlheadinfo.Controls.Add(this.txtmobile);
-            this.pnlheadinfo.Controls.Add(this.label13);
-            this.pnlheadinfo.Controls.Add(this.kryptonButton2);
-            this.pnlheadinfo.Controls.Add(this.label12);
-            this.pnlheadinfo.Controls.Add(this.label6);
-            this.pnlheadinfo.Controls.Add(this.label11);
-            this.pnlheadinfo.Location = new System.Drawing.Point(79, 329);
-            this.pnlheadinfo.Name = "pnlheadinfo";
-            this.pnlheadinfo.Size = new System.Drawing.Size(1414, 500);
-            this.pnlheadinfo.TabIndex = 0;
-            // 
-            // kryptonTextBox6
-            // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(300, 233);
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox6.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox6.StateCommon.Border.Width = 1;
-            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox6.TabIndex = 9;
-            // 
-            // kryptonTextBox5
-            // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(300, 128);
-            this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox5.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox5.StateCommon.Border.Width = 1;
-            this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox5.TabIndex = 9;
-            // 
-            // txtmobile
-            // 
-            this.txtmobile.Location = new System.Drawing.Point(300, 340);
-            this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(327, 38);
-            this.txtmobile.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtmobile.StateCommon.Border.Rounding = 5;
-            this.txtmobile.StateCommon.Border.Width = 1;
-            this.txtmobile.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmobile.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label13.Location = new System.Drawing.Point(81, 239);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(151, 31);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Middle Name";
-            // 
-            // kryptonButton2
-            // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Border.Width = 2;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 8;
-            this.kryptonButton2.Values.Text = "Next";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label12.Location = new System.Drawing.Point(81, 134);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 31);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "First Name";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label6.Location = new System.Drawing.Point(46, 34);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(254, 42);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Family Head Details :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label11.Location = new System.Drawing.Point(81, 346);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 31);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Last Name";
-            // 
             // btnpersonal
             // 
             this.btnpersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -519,19 +428,6 @@
             this.btnpersonal.Text = "Family Info";
             this.btnpersonal.UseVisualStyleBackColor = false;
             this.btnpersonal.Click += new System.EventHandler(this.btnpersonal_Click);
-            // 
-            // btnheadinfo
-            // 
-            this.btnheadinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.btnheadinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnheadinfo.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnheadinfo.Location = new System.Drawing.Point(898, 223);
-            this.btnheadinfo.Name = "btnheadinfo";
-            this.btnheadinfo.Size = new System.Drawing.Size(209, 61);
-            this.btnheadinfo.TabIndex = 0;
-            this.btnheadinfo.Text = "Family Head Info";
-            this.btnheadinfo.UseVisualStyleBackColor = false;
-            this.btnheadinfo.Click += new System.EventHandler(this.btnheadinfo_Click);
             // 
             // lblashaname
             // 
@@ -547,12 +443,12 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlpersonal);
-            this.kryptonPanel1.Controls.Add(this.pnlheadinfo);
+            this.kryptonPanel1.Controls.Add(this.pnlFamilyDetails);
+            this.kryptonPanel1.Controls.Add(this.pnlresidential);
+            this.kryptonPanel1.Controls.Add(this.btnresident);
+            this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.btnpersonal);
-            this.kryptonPanel1.Controls.Add(this.btnheadinfo);
             this.kryptonPanel1.Controls.Add(this.panelControl4);
-            this.kryptonPanel1.Controls.Add(this.panelControl7);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.panelControl3);
@@ -566,7 +462,235 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
-            this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
+            // 
+            // pnlresidential
+            // 
+            this.pnlresidential.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlresidential.Controls.Add(this.Country);
+            this.pnlresidential.Controls.Add(this.State);
+            this.pnlresidential.Controls.Add(this.Taluka);
+            this.pnlresidential.Controls.Add(this.PinCode);
+            this.pnlresidential.Controls.Add(this.District);
+            this.pnlresidential.Controls.Add(this.Village);
+            this.pnlresidential.Controls.Add(this.btnSave);
+            this.pnlresidential.Controls.Add(this.label28);
+            this.pnlresidential.Controls.Add(this.label29);
+            this.pnlresidential.Controls.Add(this.label30);
+            this.pnlresidential.Controls.Add(this.label31);
+            this.pnlresidential.Controls.Add(this.label19);
+            this.pnlresidential.Controls.Add(this.label32);
+            this.pnlresidential.Controls.Add(this.label33);
+            this.pnlresidential.Location = new System.Drawing.Point(79, 329);
+            this.pnlresidential.Name = "pnlresidential";
+            this.pnlresidential.Size = new System.Drawing.Size(1414, 500);
+            this.pnlresidential.TabIndex = 7;
+            // 
+            // Country
+            // 
+            this.Country.Location = new System.Drawing.Point(921, 390);
+            this.Country.Name = "Country";
+            this.Country.Size = new System.Drawing.Size(327, 38);
+            this.Country.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Country.StateCommon.Border.Rounding = 5;
+            this.Country.StateCommon.Border.Width = 1;
+            this.Country.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Country.TabIndex = 6;
+            // 
+            // State
+            // 
+            this.State.Location = new System.Drawing.Point(921, 275);
+            this.State.Name = "State";
+            this.State.Size = new System.Drawing.Size(327, 38);
+            this.State.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.State.StateCommon.Border.Rounding = 5;
+            this.State.StateCommon.Border.Width = 1;
+            this.State.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.State.TabIndex = 5;
+            // 
+            // Taluka
+            // 
+            this.Taluka.Location = new System.Drawing.Point(260, 390);
+            this.Taluka.Name = "Taluka";
+            this.Taluka.Size = new System.Drawing.Size(327, 38);
+            this.Taluka.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Taluka.StateCommon.Border.Rounding = 5;
+            this.Taluka.StateCommon.Border.Width = 1;
+            this.Taluka.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Taluka.TabIndex = 3;
+            // 
+            // PinCode
+            // 
+            this.PinCode.Location = new System.Drawing.Point(260, 272);
+            this.PinCode.Name = "PinCode";
+            this.PinCode.Size = new System.Drawing.Size(327, 38);
+            this.PinCode.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PinCode.StateCommon.Border.Rounding = 5;
+            this.PinCode.StateCommon.Border.Width = 1;
+            this.PinCode.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PinCode.TabIndex = 2;
+            // 
+            // District
+            // 
+            this.District.Location = new System.Drawing.Point(921, 155);
+            this.District.Name = "District";
+            this.District.Size = new System.Drawing.Size(327, 38);
+            this.District.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.District.StateCommon.Border.Rounding = 5;
+            this.District.StateCommon.Border.Width = 1;
+            this.District.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.District.TabIndex = 4;
+            // 
+            // Village
+            // 
+            this.Village.Location = new System.Drawing.Point(260, 155);
+            this.Village.Name = "Village";
+            this.Village.Size = new System.Drawing.Size(327, 38);
+            this.Village.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Village.StateCommon.Border.Rounding = 5;
+            this.Village.StateCommon.Border.Width = 1;
+            this.Village.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Village.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(1293, 24);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(98, 52);
+            this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateCommon.Border.Rounding = 20;
+            this.btnSave.StateCommon.Border.Width = 2;
+            this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Values.Text = "Next";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label28.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label28.Location = new System.Drawing.Point(46, 34);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(241, 42);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Residential Details :";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label29.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label29.Location = new System.Drawing.Point(41, 161);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(82, 31);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Village";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label30.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label30.Location = new System.Drawing.Point(41, 279);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(97, 31);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "PinCode";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label31.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label31.Location = new System.Drawing.Point(739, 161);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(87, 31);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "District";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label19.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label19.Location = new System.Drawing.Point(739, 397);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(94, 31);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Country";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label32.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label32.Location = new System.Drawing.Point(739, 279);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(65, 31);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "State";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label33.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label33.Location = new System.Drawing.Point(41, 397);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(196, 31);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Taluka/Subdistrict";
+            // 
+            // btnresident
+            // 
+            this.btnresident.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnresident.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresident.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnresident.Location = new System.Drawing.Point(924, 223);
+            this.btnresident.Name = "btnresident";
+            this.btnresident.Size = new System.Drawing.Size(196, 61);
+            this.btnresident.TabIndex = 0;
+            this.btnresident.Text = "Residential Info";
+            this.btnresident.UseVisualStyleBackColor = false;
+            this.btnresident.Click += new System.EventHandler(this.btnresident_Click);
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Angle = 0F;
+            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Location = new System.Drawing.Point(915, 206);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Rounding = 0;
+            this.panelControl1.Size = new System.Drawing.Size(217, 91);
+            this.panelControl1.TabIndex = 9;
             // 
             // panelControl4
             // 
@@ -579,18 +703,6 @@
             this.panelControl4.Rounding = 0;
             this.panelControl4.Size = new System.Drawing.Size(217, 91);
             this.panelControl4.TabIndex = 0;
-            // 
-            // panelControl7
-            // 
-            this.panelControl7.Angle = 0F;
-            this.panelControl7.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl7.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl7.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl7.Location = new System.Drawing.Point(889, 206);
-            this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Rounding = 0;
-            this.panelControl7.Size = new System.Drawing.Size(230, 91);
-            this.panelControl7.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -627,6 +739,45 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 517);
             this.main_panelcontrol.TabIndex = 0;
             // 
+            // txtmobile
+            // 
+            this.txtmobile.Location = new System.Drawing.Point(300, 340);
+            this.txtmobile.Name = "txtmobile";
+            this.txtmobile.Size = new System.Drawing.Size(327, 38);
+            this.txtmobile.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtmobile.StateCommon.Border.Rounding = 5;
+            this.txtmobile.StateCommon.Border.Width = 1;
+            this.txtmobile.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmobile.TabIndex = 9;
+            // 
+            // kryptonTextBox5
+            // 
+            this.kryptonTextBox5.Location = new System.Drawing.Point(300, 128);
+            this.kryptonTextBox5.Name = "kryptonTextBox5";
+            this.kryptonTextBox5.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox5.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox5.StateCommon.Border.Width = 1;
+            this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox5.TabIndex = 9;
+            // 
+            // kryptonTextBox6
+            // 
+            this.kryptonTextBox6.Location = new System.Drawing.Point(300, 233);
+            this.kryptonTextBox6.Name = "kryptonTextBox6";
+            this.kryptonTextBox6.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox6.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox6.StateCommon.Border.Width = 1;
+            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox6.TabIndex = 9;
+            // 
             // AddNewFamily
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -635,61 +786,70 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "AddNewFamily";
             this.Text = "AddNewFamily";
-            this.pnlpersonal.ResumeLayout(false);
-            this.pnlpersonal.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.pnlheadinfo.ResumeLayout(false);
-            this.pnlheadinfo.PerformLayout();
+            this.pnlFamilyDetails.ResumeLayout(false);
+            this.pnlFamilyDetails.PerformLayout();
+            this.Poverty_Status.ResumeLayout(false);
+            this.Poverty_Status.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.pnlresidential.ResumeLayout(false);
+            this.pnlresidential.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtlastname;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtbirthplace;
         private PanelControl panelControl3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtmiddlename;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtfirstname;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Total_Members;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnnext;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel pnlpersonal;
+        private System.Windows.Forms.Panel pnlFamilyDetails;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel pnlheadinfo;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtmobile;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnpersonal;
-        private System.Windows.Forms.Button btnheadinfo;
         private PanelControl panelControl4;
-        private PanelControl panelControl7;
         private System.Windows.Forms.Label lblashaname;
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl main_panelcontrol;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton rdbtnfemale;
-        private System.Windows.Forms.RadioButton rdbtnmale;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private System.Windows.Forms.Panel Poverty_Status;
+        private System.Windows.Forms.RadioButton rdbtnBPL;
+        private System.Windows.Forms.RadioButton rdbtnAPL;
         private System.Windows.Forms.Label label10;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
+        private System.Windows.Forms.ComboBox House_Type;
+        private System.Windows.Forms.ComboBox Residence_Type;
+        private System.Windows.Forms.ComboBox Vehicle;
+        private System.Windows.Forms.ComboBox Electricity_Type;
+        private System.Windows.Forms.ComboBox Water_Supply;
+        private System.Windows.Forms.ComboBox Fuel_Type;
+        private System.Windows.Forms.ComboBox Toilet_Type;
+        private System.Windows.Forms.Panel pnlresidential;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Country;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox State;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Taluka;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox PinCode;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox District;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Village;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Button btnresident;
+        private PanelControl panelControl1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtmobile;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
     }
 }

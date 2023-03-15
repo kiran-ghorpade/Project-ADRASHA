@@ -30,11 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberHealthProfile));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pnlBasicHealth = new System.Windows.Forms.Panel();
+            this.kryptonTextBox26 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox27 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox28 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnPersonalProfile = new System.Windows.Forms.Button();
+            this.btnFamily = new System.Windows.Forms.Button();
+            this.btnBasicHealth = new System.Windows.Forms.Button();
+            this.btnNCD = new System.Windows.Forms.Button();
+            this.btnHBNC = new System.Windows.Forms.Button();
+            this.btnMaternalHealth = new System.Windows.Forms.Button();
+            this.btnVaccination = new System.Windows.Forms.Button();
             this.panelControl4 = new ADRASHA_Main.PanelControl();
             this.panelControl6 = new ADRASHA_Main.PanelControl();
             this.panelControl5 = new ADRASHA_Main.PanelControl();
@@ -45,43 +56,60 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnFamily = new System.Windows.Forms.Button();
-            this.pnlpersonal = new System.Windows.Forms.Panel();
-            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rdbtnother = new System.Windows.Forms.RadioButton();
-            this.rdbtnfemale = new System.Windows.Forms.RadioButton();
-            this.rdbtnmale = new System.Windows.Forms.RadioButton();
-            this.txtlastname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtbirthplace = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtmiddlename = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtfirstname = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pnlVaccination = new System.Windows.Forms.Panel();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlHBNC = new System.Windows.Forms.Panel();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.datedob = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pnlNCD = new System.Windows.Forms.Panel();
+            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pnlMaternal = new System.Windows.Forms.Panel();
+            this.kryptonTextBox7 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox8 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.pnlBasicHealth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlpersonal.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlVaccination.SuspendLayout();
+            this.pnlHBNC.SuspendLayout();
+            this.pnlNCD.SuspendLayout();
+            this.pnlMaternal.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlpersonal);
-            this.kryptonPanel1.Controls.Add(this.button6);
+            this.kryptonPanel1.Controls.Add(this.pnlVaccination);
+            this.kryptonPanel1.Controls.Add(this.pnlBasicHealth);
+            this.kryptonPanel1.Controls.Add(this.pnlNCD);
+            this.kryptonPanel1.Controls.Add(this.pnlMaternal);
+            this.kryptonPanel1.Controls.Add(this.pnlHBNC);
+            this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
             this.kryptonPanel1.Controls.Add(this.btnFamily);
-            this.kryptonPanel1.Controls.Add(this.button3);
-            this.kryptonPanel1.Controls.Add(this.button5);
-            this.kryptonPanel1.Controls.Add(this.button4);
-            this.kryptonPanel1.Controls.Add(this.button1);
-            this.kryptonPanel1.Controls.Add(this.button2);
+            this.kryptonPanel1.Controls.Add(this.btnBasicHealth);
+            this.kryptonPanel1.Controls.Add(this.btnNCD);
+            this.kryptonPanel1.Controls.Add(this.btnHBNC);
+            this.kryptonPanel1.Controls.Add(this.btnMaternalHealth);
+            this.kryptonPanel1.Controls.Add(this.btnVaccination);
             this.kryptonPanel1.Controls.Add(this.panelControl4);
             this.kryptonPanel1.Controls.Add(this.panelControl6);
             this.kryptonPanel1.Controls.Add(this.panelControl5);
@@ -103,65 +131,217 @@
             this.kryptonPanel1.TabIndex = 0;
             this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
             // 
-            // button3
+            // pnlBasicHealth
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(144, 256);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(196, 61);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Vaccination";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pnlBasicHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlBasicHealth.Controls.Add(this.kryptonTextBox26);
+            this.pnlBasicHealth.Controls.Add(this.kryptonTextBox27);
+            this.pnlBasicHealth.Controls.Add(this.kryptonTextBox28);
+            this.pnlBasicHealth.Controls.Add(this.kryptonButton1);
+            this.pnlBasicHealth.Controls.Add(this.label16);
+            this.pnlBasicHealth.Controls.Add(this.label17);
+            this.pnlBasicHealth.Controls.Add(this.label18);
+            this.pnlBasicHealth.Controls.Add(this.label21);
+            this.pnlBasicHealth.Location = new System.Drawing.Point(75, 373);
+            this.pnlBasicHealth.Name = "pnlBasicHealth";
+            this.pnlBasicHealth.Size = new System.Drawing.Size(1414, 460);
+            this.pnlBasicHealth.TabIndex = 0;
             // 
-            // button5
+            // kryptonTextBox26
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1227, 256);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(196, 61);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Other";
-            this.button5.UseVisualStyleBackColor = false;
+            this.kryptonTextBox26.Location = new System.Drawing.Point(972, 154);
+            this.kryptonTextBox26.Name = "kryptonTextBox26";
+            this.kryptonTextBox26.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox26.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox26.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox26.StateCommon.Border.Width = 1;
+            this.kryptonTextBox26.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox26.TabIndex = 13;
             // 
-            // button4
+            // kryptonTextBox27
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(960, 256);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(196, 61);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "HBNC";
-            this.button4.UseVisualStyleBackColor = false;
+            this.kryptonTextBox27.Location = new System.Drawing.Point(283, 278);
+            this.kryptonTextBox27.Name = "kryptonTextBox27";
+            this.kryptonTextBox27.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox27.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox27.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox27.StateCommon.Border.Width = 1;
+            this.kryptonTextBox27.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox27.TabIndex = 14;
             // 
-            // button1
+            // kryptonTextBox28
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(689, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 61);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Maternal Health";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kryptonTextBox28.Location = new System.Drawing.Point(283, 154);
+            this.kryptonTextBox28.Name = "kryptonTextBox28";
+            this.kryptonTextBox28.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox28.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox28.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox28.StateCommon.Border.Width = 1;
+            this.kryptonTextBox28.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox28.TabIndex = 15;
             // 
-            // button2
+            // kryptonButton1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(418, 256);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 61);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "NCD";
-            this.button2.UseVisualStyleBackColor = false;
+            this.kryptonButton1.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 20;
+            this.kryptonButton1.StateCommon.Border.Width = 2;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.TabIndex = 8;
+            this.kryptonButton1.Values.Text = "Next";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label16.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label16.Location = new System.Drawing.Point(46, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(258, 42);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Basic Health Details :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label17.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label17.Location = new System.Drawing.Point(81, 161);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 31);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Height";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label18.Location = new System.Drawing.Point(81, 278);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(83, 31);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "weight";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label21.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label21.Location = new System.Drawing.Point(823, 154);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(55, 31);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "BMI";
+            // 
+            // btnPersonalProfile
+            // 
+            this.btnPersonalProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btnPersonalProfile.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnPersonalProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnPersonalProfile.Location = new System.Drawing.Point(1263, 127);
+            this.btnPersonalProfile.Name = "btnPersonalProfile";
+            this.btnPersonalProfile.Size = new System.Drawing.Size(266, 56);
+            this.btnPersonalProfile.TabIndex = 0;
+            this.btnPersonalProfile.Text = "Health Profile";
+            this.btnPersonalProfile.UseVisualStyleBackColor = false;
+            // 
+            // btnFamily
+            // 
+            this.btnFamily.BackColor = System.Drawing.Color.Transparent;
+            this.btnFamily.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnFamily.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFamily.Location = new System.Drawing.Point(951, 127);
+            this.btnFamily.Name = "btnFamily";
+            this.btnFamily.Size = new System.Drawing.Size(266, 56);
+            this.btnFamily.TabIndex = 0;
+            this.btnFamily.Text = "Family Profile";
+            this.btnFamily.UseVisualStyleBackColor = false;
+            // 
+            // btnBasicHealth
+            // 
+            this.btnBasicHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnBasicHealth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBasicHealth.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBasicHealth.Location = new System.Drawing.Point(144, 256);
+            this.btnBasicHealth.Name = "btnBasicHealth";
+            this.btnBasicHealth.Size = new System.Drawing.Size(196, 61);
+            this.btnBasicHealth.TabIndex = 0;
+            this.btnBasicHealth.Text = "Basic Health ";
+            this.btnBasicHealth.UseVisualStyleBackColor = false;
+            this.btnBasicHealth.Click += new System.EventHandler(this.btnBasicHealth_Click);
+            // 
+            // btnNCD
+            // 
+            this.btnNCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnNCD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNCD.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNCD.Location = new System.Drawing.Point(1227, 256);
+            this.btnNCD.Name = "btnNCD";
+            this.btnNCD.Size = new System.Drawing.Size(196, 61);
+            this.btnNCD.TabIndex = 0;
+            this.btnNCD.Text = "NCD";
+            this.btnNCD.UseVisualStyleBackColor = false;
+            this.btnNCD.Click += new System.EventHandler(this.btnNCD_Click);
+            // 
+            // btnHBNC
+            // 
+            this.btnHBNC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnHBNC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHBNC.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHBNC.Location = new System.Drawing.Point(960, 256);
+            this.btnHBNC.Name = "btnHBNC";
+            this.btnHBNC.Size = new System.Drawing.Size(196, 61);
+            this.btnHBNC.TabIndex = 0;
+            this.btnHBNC.Text = "HBNC";
+            this.btnHBNC.UseVisualStyleBackColor = false;
+            this.btnHBNC.Click += new System.EventHandler(this.btnHBNC_Click);
+            // 
+            // btnMaternalHealth
+            // 
+            this.btnMaternalHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnMaternalHealth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaternalHealth.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaternalHealth.Location = new System.Drawing.Point(689, 256);
+            this.btnMaternalHealth.Name = "btnMaternalHealth";
+            this.btnMaternalHealth.Size = new System.Drawing.Size(196, 61);
+            this.btnMaternalHealth.TabIndex = 0;
+            this.btnMaternalHealth.Text = "Maternal Health";
+            this.btnMaternalHealth.UseVisualStyleBackColor = false;
+            this.btnMaternalHealth.Click += new System.EventHandler(this.btnMaternalHealth_Click);
+            // 
+            // btnVaccination
+            // 
+            this.btnVaccination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.btnVaccination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVaccination.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVaccination.Location = new System.Drawing.Point(418, 256);
+            this.btnVaccination.Name = "btnVaccination";
+            this.btnVaccination.Size = new System.Drawing.Size(196, 61);
+            this.btnVaccination.TabIndex = 0;
+            this.btnVaccination.Text = "Vaccination";
+            this.btnVaccination.UseVisualStyleBackColor = false;
+            this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
             // 
             // panelControl4
             // 
@@ -282,172 +462,120 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 473);
             this.main_panelcontrol.TabIndex = 0;
             // 
-            // button6
+            // pnlVaccination
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.button6.Location = new System.Drawing.Point(1263, 127);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(266, 56);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Health Profile";
-            this.button6.UseVisualStyleBackColor = false;
+            this.pnlVaccination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlVaccination.Controls.Add(this.kryptonButton2);
+            this.pnlVaccination.Controls.Add(this.label1);
+            this.pnlVaccination.Location = new System.Drawing.Point(75, 373);
+            this.pnlVaccination.Name = "pnlVaccination";
+            this.pnlVaccination.Size = new System.Drawing.Size(1414, 460);
+            this.pnlVaccination.TabIndex = 0;
             // 
-            // btnFamily
+            // kryptonButton2
             // 
-            this.btnFamily.BackColor = System.Drawing.Color.Transparent;
-            this.btnFamily.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnFamily.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFamily.Location = new System.Drawing.Point(951, 127);
-            this.btnFamily.Name = "btnFamily";
-            this.btnFamily.Size = new System.Drawing.Size(266, 56);
-            this.btnFamily.TabIndex = 8;
-            this.btnFamily.Text = "Family Profile";
-            this.btnFamily.UseVisualStyleBackColor = false;
-            // 
-            // pnlpersonal
-            // 
-            this.pnlpersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlpersonal.Controls.Add(this.panel1);
-            this.pnlpersonal.Controls.Add(this.txtlastname);
-            this.pnlpersonal.Controls.Add(this.txtbirthplace);
-            this.pnlpersonal.Controls.Add(this.txtmiddlename);
-            this.pnlpersonal.Controls.Add(this.txtfirstname);
-            this.pnlpersonal.Controls.Add(this.label2);
-            this.pnlpersonal.Controls.Add(this.datedob);
-            this.pnlpersonal.Controls.Add(this.label15);
-            this.pnlpersonal.Controls.Add(this.label5);
-            this.pnlpersonal.Controls.Add(this.label7);
-            this.pnlpersonal.Controls.Add(this.label8);
-            this.pnlpersonal.Controls.Add(this.label9);
-            this.pnlpersonal.Controls.Add(this.label4);
-            this.pnlpersonal.Controls.Add(this.btnSave);
-            this.pnlpersonal.Location = new System.Drawing.Point(80, 374);
-            this.pnlpersonal.Name = "pnlpersonal";
-            this.pnlpersonal.Size = new System.Drawing.Size(1414, 500);
-            this.pnlpersonal.TabIndex = 0;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(1293, 24);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(98, 52);
-            this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnSave.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnSave.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButton2.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSave.StateCommon.Border.Rounding = 20;
-            this.btnSave.StateCommon.Border.Width = 2;
-            this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Values.Text = "Save";
+            this.kryptonButton2.StateCommon.Border.Rounding = 20;
+            this.kryptonButton2.StateCommon.Border.Width = 2;
+            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.TabIndex = 8;
+            this.kryptonButton2.Values.Text = "Next";
             // 
-            // panel1
+            // label1
             // 
-            this.panel1.Controls.Add(this.rdbtnother);
-            this.panel1.Controls.Add(this.rdbtnfemale);
-            this.panel1.Controls.Add(this.rdbtnmale);
-            this.panel1.Location = new System.Drawing.Point(982, 399);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(359, 48);
-            this.panel1.TabIndex = 23;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label1.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label1.Location = new System.Drawing.Point(46, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(248, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Vaccination Details :";
             // 
-            // rdbtnother
+            // pnlHBNC
             // 
-            this.rdbtnother.AutoSize = true;
-            this.rdbtnother.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnother.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.rdbtnother.Location = new System.Drawing.Point(248, 8);
-            this.rdbtnother.Name = "rdbtnother";
-            this.rdbtnother.Size = new System.Drawing.Size(96, 33);
-            this.rdbtnother.TabIndex = 0;
-            this.rdbtnother.TabStop = true;
-            this.rdbtnother.Text = "Other";
-            this.rdbtnother.UseVisualStyleBackColor = true;
+            this.pnlHBNC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlHBNC.Controls.Add(this.kryptonTextBox1);
+            this.pnlHBNC.Controls.Add(this.kryptonTextBox2);
+            this.pnlHBNC.Controls.Add(this.kryptonTextBox3);
+            this.pnlHBNC.Controls.Add(this.kryptonButton3);
+            this.pnlHBNC.Controls.Add(this.label2);
+            this.pnlHBNC.Controls.Add(this.label3);
+            this.pnlHBNC.Controls.Add(this.label4);
+            this.pnlHBNC.Controls.Add(this.label5);
+            this.pnlHBNC.Location = new System.Drawing.Point(75, 373);
+            this.pnlHBNC.Name = "pnlHBNC";
+            this.pnlHBNC.Size = new System.Drawing.Size(1414, 460);
+            this.pnlHBNC.TabIndex = 0;
             // 
-            // rdbtnfemale
+            // kryptonTextBox1
             // 
-            this.rdbtnfemale.AutoSize = true;
-            this.rdbtnfemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnfemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.rdbtnfemale.Location = new System.Drawing.Point(123, 8);
-            this.rdbtnfemale.Name = "rdbtnfemale";
-            this.rdbtnfemale.Size = new System.Drawing.Size(119, 33);
-            this.rdbtnfemale.TabIndex = 0;
-            this.rdbtnfemale.TabStop = true;
-            this.rdbtnfemale.Text = "Female";
-            this.rdbtnfemale.UseVisualStyleBackColor = true;
-            // 
-            // rdbtnmale
-            // 
-            this.rdbtnmale.AutoSize = true;
-            this.rdbtnmale.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnmale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.rdbtnmale.Location = new System.Drawing.Point(11, 8);
-            this.rdbtnmale.Name = "rdbtnmale";
-            this.rdbtnmale.Size = new System.Drawing.Size(89, 33);
-            this.rdbtnmale.TabIndex = 0;
-            this.rdbtnmale.TabStop = true;
-            this.rdbtnmale.Text = "Male";
-            this.rdbtnmale.UseVisualStyleBackColor = true;
-            // 
-            // txtlastname
-            // 
-            this.txtlastname.Location = new System.Drawing.Point(293, 409);
-            this.txtlastname.Name = "txtlastname";
-            this.txtlastname.Size = new System.Drawing.Size(327, 38);
-            this.txtlastname.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(972, 154);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtlastname.StateCommon.Border.Rounding = 5;
-            this.txtlastname.StateCommon.Border.Width = 1;
-            this.txtlastname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlastname.TabIndex = 19;
+            this.kryptonTextBox1.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox1.StateCommon.Border.Width = 1;
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.TabIndex = 13;
             // 
-            // txtbirthplace
+            // kryptonTextBox2
             // 
-            this.txtbirthplace.Location = new System.Drawing.Point(982, 291);
-            this.txtbirthplace.Name = "txtbirthplace";
-            this.txtbirthplace.Size = new System.Drawing.Size(327, 38);
-            this.txtbirthplace.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBox2.Location = new System.Drawing.Point(283, 278);
+            this.kryptonTextBox2.Name = "kryptonTextBox2";
+            this.kryptonTextBox2.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtbirthplace.StateCommon.Border.Rounding = 5;
-            this.txtbirthplace.StateCommon.Border.Width = 1;
-            this.txtbirthplace.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbirthplace.TabIndex = 20;
+            this.kryptonTextBox2.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox2.StateCommon.Border.Width = 1;
+            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox2.TabIndex = 14;
             // 
-            // txtmiddlename
+            // kryptonTextBox3
             // 
-            this.txtmiddlename.Location = new System.Drawing.Point(293, 291);
-            this.txtmiddlename.Name = "txtmiddlename";
-            this.txtmiddlename.Size = new System.Drawing.Size(327, 38);
-            this.txtmiddlename.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonTextBox3.Location = new System.Drawing.Point(283, 154);
+            this.kryptonTextBox3.Name = "kryptonTextBox3";
+            this.kryptonTextBox3.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtmiddlename.StateCommon.Border.Rounding = 5;
-            this.txtmiddlename.StateCommon.Border.Width = 1;
-            this.txtmiddlename.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmiddlename.TabIndex = 21;
+            this.kryptonTextBox3.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox3.StateCommon.Border.Width = 1;
+            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox3.TabIndex = 15;
             // 
-            // txtfirstname
+            // kryptonButton3
             // 
-            this.txtfirstname.Location = new System.Drawing.Point(293, 174);
-            this.txtfirstname.Name = "txtfirstname";
-            this.txtfirstname.Size = new System.Drawing.Size(327, 38);
-            this.txtfirstname.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonButton3.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtfirstname.StateCommon.Border.Rounding = 5;
-            this.txtfirstname.StateCommon.Border.Width = 1;
-            this.txtfirstname.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfirstname.TabIndex = 22;
+            this.kryptonButton3.StateCommon.Border.Rounding = 20;
+            this.kryptonButton3.StateCommon.Border.Width = 2;
+            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.TabIndex = 8;
+            this.kryptonButton3.Values.Text = "Next";
             // 
             // label2
             // 
@@ -455,80 +583,23 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label2.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(79, 53);
+            this.label2.Location = new System.Drawing.Point(46, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 42);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Personal Details :";
+            this.label2.Size = new System.Drawing.Size(174, 42);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "HBNC Details";
             // 
-            // datedob
+            // label3
             // 
-            this.datedob.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.datedob.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datedob.Location = new System.Drawing.Point(991, 174);
-            this.datedob.Name = "datedob";
-            this.datedob.Size = new System.Drawing.Size(233, 32);
-            this.datedob.TabIndex = 18;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label15.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label15.Location = new System.Drawing.Point(765, 409);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 31);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Gender";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label5.Location = new System.Drawing.Point(763, 298);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 31);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Birth Place ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label7.Location = new System.Drawing.Point(74, 180);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 31);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "First Name  ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label8.Location = new System.Drawing.Point(74, 298);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 31);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Middle Name ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label9.Location = new System.Drawing.Point(74, 416);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 31);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Last Name ";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label3.Location = new System.Drawing.Point(81, 161);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Height";
             // 
             // label4
             // 
@@ -536,11 +607,267 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label4.Location = new System.Drawing.Point(763, 177);
+            this.label4.Location = new System.Drawing.Point(81, 278);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 31);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Birth Date";
+            this.label4.Size = new System.Drawing.Size(83, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "weight";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label5.Location = new System.Drawing.Point(823, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 31);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "BMI";
+            // 
+            // pnlNCD
+            // 
+            this.pnlNCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlNCD.Controls.Add(this.kryptonTextBox4);
+            this.pnlNCD.Controls.Add(this.kryptonTextBox5);
+            this.pnlNCD.Controls.Add(this.kryptonTextBox6);
+            this.pnlNCD.Controls.Add(this.kryptonButton4);
+            this.pnlNCD.Controls.Add(this.label6);
+            this.pnlNCD.Controls.Add(this.label7);
+            this.pnlNCD.Controls.Add(this.label8);
+            this.pnlNCD.Controls.Add(this.label9);
+            this.pnlNCD.Location = new System.Drawing.Point(75, 373);
+            this.pnlNCD.Name = "pnlNCD";
+            this.pnlNCD.Size = new System.Drawing.Size(1414, 460);
+            this.pnlNCD.TabIndex = 16;
+            // 
+            // kryptonTextBox4
+            // 
+            this.kryptonTextBox4.Location = new System.Drawing.Point(972, 154);
+            this.kryptonTextBox4.Name = "kryptonTextBox4";
+            this.kryptonTextBox4.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox4.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox4.StateCommon.Border.Width = 1;
+            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox4.TabIndex = 13;
+            // 
+            // kryptonTextBox5
+            // 
+            this.kryptonTextBox5.Location = new System.Drawing.Point(283, 278);
+            this.kryptonTextBox5.Name = "kryptonTextBox5";
+            this.kryptonTextBox5.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox5.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox5.StateCommon.Border.Width = 1;
+            this.kryptonTextBox5.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox5.TabIndex = 14;
+            // 
+            // kryptonTextBox6
+            // 
+            this.kryptonTextBox6.Location = new System.Drawing.Point(283, 154);
+            this.kryptonTextBox6.Name = "kryptonTextBox6";
+            this.kryptonTextBox6.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox6.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox6.StateCommon.Border.Width = 1;
+            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox6.TabIndex = 15;
+            // 
+            // kryptonButton4
+            // 
+            this.kryptonButton4.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton4.Name = "kryptonButton4";
+            this.kryptonButton4.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton4.StateCommon.Border.Rounding = 20;
+            this.kryptonButton4.StateCommon.Border.Width = 2;
+            this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.TabIndex = 8;
+            this.kryptonButton4.Values.Text = "Next";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label6.Location = new System.Drawing.Point(46, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(168, 42);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "NCD Details :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label7.Location = new System.Drawing.Point(81, 161);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 31);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Height";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label8.Location = new System.Drawing.Point(81, 278);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 31);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "weight";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label9.Location = new System.Drawing.Point(823, 154);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 31);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "BMI";
+            // 
+            // pnlMaternal
+            // 
+            this.pnlMaternal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlMaternal.Controls.Add(this.kryptonTextBox7);
+            this.pnlMaternal.Controls.Add(this.kryptonTextBox8);
+            this.pnlMaternal.Controls.Add(this.kryptonTextBox9);
+            this.pnlMaternal.Controls.Add(this.kryptonButton5);
+            this.pnlMaternal.Controls.Add(this.label10);
+            this.pnlMaternal.Controls.Add(this.label11);
+            this.pnlMaternal.Controls.Add(this.label12);
+            this.pnlMaternal.Controls.Add(this.label13);
+            this.pnlMaternal.Location = new System.Drawing.Point(75, 373);
+            this.pnlMaternal.Name = "pnlMaternal";
+            this.pnlMaternal.Size = new System.Drawing.Size(1414, 460);
+            this.pnlMaternal.TabIndex = 16;
+            // 
+            // kryptonTextBox7
+            // 
+            this.kryptonTextBox7.Location = new System.Drawing.Point(972, 154);
+            this.kryptonTextBox7.Name = "kryptonTextBox7";
+            this.kryptonTextBox7.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox7.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox7.StateCommon.Border.Width = 1;
+            this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox7.TabIndex = 13;
+            // 
+            // kryptonTextBox8
+            // 
+            this.kryptonTextBox8.Location = new System.Drawing.Point(283, 278);
+            this.kryptonTextBox8.Name = "kryptonTextBox8";
+            this.kryptonTextBox8.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox8.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox8.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox8.StateCommon.Border.Width = 1;
+            this.kryptonTextBox8.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox8.TabIndex = 14;
+            // 
+            // kryptonTextBox9
+            // 
+            this.kryptonTextBox9.Location = new System.Drawing.Point(283, 154);
+            this.kryptonTextBox9.Name = "kryptonTextBox9";
+            this.kryptonTextBox9.Size = new System.Drawing.Size(327, 38);
+            this.kryptonTextBox9.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox9.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox9.StateCommon.Border.Width = 1;
+            this.kryptonTextBox9.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox9.TabIndex = 15;
+            // 
+            // kryptonButton5
+            // 
+            this.kryptonButton5.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton5.Name = "kryptonButton5";
+            this.kryptonButton5.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton5.StateCommon.Border.Rounding = 20;
+            this.kryptonButton5.StateCommon.Border.Width = 2;
+            this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton5.TabIndex = 8;
+            this.kryptonButton5.Values.Text = "Next";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label10.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label10.Location = new System.Drawing.Point(46, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(299, 42);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Maternal Health Details :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label11.Location = new System.Drawing.Point(81, 161);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(81, 31);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Height";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label12.Location = new System.Drawing.Point(81, 278);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(83, 31);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "weight";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label13.Location = new System.Drawing.Point(823, 154);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 31);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "BMI";
             // 
             // MemberHealthProfile
             // 
@@ -553,11 +880,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.pnlBasicHealth.ResumeLayout(false);
+            this.pnlBasicHealth.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlpersonal.ResumeLayout(false);
-            this.pnlpersonal.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlVaccination.ResumeLayout(false);
+            this.pnlVaccination.PerformLayout();
+            this.pnlHBNC.ResumeLayout(false);
+            this.pnlHBNC.PerformLayout();
+            this.pnlNCD.ResumeLayout(false);
+            this.pnlNCD.PerformLayout();
+            this.pnlMaternal.ResumeLayout(false);
+            this.pnlMaternal.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -565,9 +898,9 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBasicHealth;
+        private System.Windows.Forms.Button btnMaternalHealth;
+        private System.Windows.Forms.Button btnVaccination;
         private PanelControl panelControl4;
         private PanelControl panelControl2;
         private PanelControl panelControl1;
@@ -575,30 +908,51 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl panelControl3;
         private PanelControl main_panelcontrol;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnNCD;
+        private System.Windows.Forms.Button btnHBNC;
         private PanelControl panelControl6;
         private PanelControl panelControl5;
         private System.Windows.Forms.Label lblMemberName;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnPersonalProfile;
         private System.Windows.Forms.Button btnFamily;
-        private System.Windows.Forms.Panel pnlpersonal;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton rdbtnother;
-        private System.Windows.Forms.RadioButton rdbtnfemale;
-        private System.Windows.Forms.RadioButton rdbtnmale;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtlastname;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtbirthplace;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtmiddlename;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtfirstname;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker datedob;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel pnlBasicHealth;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox26;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox27;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox28;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel pnlVaccination;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlNCD;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel pnlMaternal;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox8;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel pnlHBNC;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

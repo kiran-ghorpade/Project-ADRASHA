@@ -12,6 +12,7 @@ namespace ADRASHA_Main
 {
     public partial class MemberHealthProfile : Form
     {
+        MyFunctions MyFunctions = new MyFunctions();
         public MemberHealthProfile()
         {
             InitializeComponent();
@@ -20,6 +21,31 @@ namespace ADRASHA_Main
         private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnBasicHealth_Click(object sender, EventArgs e)
+        {
+            MyFunctions.nextpanel_code(pnlBasicHealth);
+        }
+
+        private void btnVaccination_Click(object sender, EventArgs e)
+        {
+            MyFunctions.nextpanel_code(pnlVaccination);
+        }
+
+        private void btnMaternalHealth_Click(object sender, EventArgs e)
+        {
+            MyFunctions.nextpanel_code(pnlMaternal);
+        }
+
+        private void btnHBNC_Click(object sender, EventArgs e)
+        {
+            MyFunctions.nextpanel_code(pnlHBNC);
+        }
+
+        private void btnNCD_Click(object sender, EventArgs e)
+        {
+            MyFunctions.nextpanel_code(pnlNCD);
         }
     }
 }

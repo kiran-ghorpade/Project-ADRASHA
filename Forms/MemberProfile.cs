@@ -47,5 +47,11 @@ namespace ADRASHA_Main.Forms
         {
             functions.nextpanel_code(pnlResidential);
         }
+
+        void Submit()
+        {
+            DataManipulation dm = new DataManipulation();
+            dm.InsertData("member",this);
+        }
     }
 }

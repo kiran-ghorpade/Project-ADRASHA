@@ -27,7 +27,7 @@ namespace ADRASHA_Main
 
         private void MDI_Load(object sender, EventArgs e)
         {
-            searchboxpanel.Visible = false;
+            SearchBoxPanel.Visible = false;
             functions.LoadChildForm(new FamilyProfile(),childformpanel);
         }
 
@@ -40,18 +40,18 @@ namespace ADRASHA_Main
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
-           
+            PopulateItems();  
         }
 
         private void SearchBox_Enter(object sender, EventArgs e)
         {
-            searchboxpanel.BringToFront();
-            searchboxpanel.Visible = true;
+            SearchBoxPanel.BringToFront();
+            SearchBoxPanel.Visible = true;
         }
 
         private void SearchBox_Leave(object sender, EventArgs e)
         {
-            searchboxpanel.Visible=false;
+            SearchBoxPanel.Visible=false;
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
@@ -98,6 +98,28 @@ namespace ADRASHA_Main
         {
             
             functions.LoadChildForm(new AddNewFamily(), childformpanel);
+        }
+
+        private void PopulateItems()
+        {
+            MemberListView[] listView = new MemberListView[10];
+            for (int i = 0; i < listView.Length; i++)
+            {
+                listView[i] = new MemberListView();
+                listView[i].Title = "Madhav Mane";
+                listView[i].FamilyID = "" + i;
+                listView[i].age = "" + (i * 2);
+
+                if (SearchBoxPanel.Controls.Count < 0)
+                {
+                    SearchBoxPanel.Controls.Clear();
+                }
+                else
+                {
+                    listView[i].Width = SearchBoxPanel.Width - 40;
+                    SearchBoxPanel.Controls.Add(listView[i]);
+                }
+            }
         }
     }
 }

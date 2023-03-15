@@ -30,17 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FamilyProfile));
             this.pnlback = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.btnAddMember = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblashaname = new System.Windows.Forms.Label();
-            this.panelControl3 = new ADRASHA_Main.PanelControl();
-            this.main_panelcontrol = new ADRASHA_Main.PanelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,8 +46,19 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.memberpanel = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAddMember = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblashaname = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelControl3 = new ADRASHA_Main.PanelControl();
+            this.panelControl1 = new ADRASHA_Main.PanelControl();
+            this.ListViewPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.main_panelcontrol = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pnlback)).BeginInit();
             this.pnlback.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,7 +66,7 @@
             // 
             // pnlback
             // 
-            this.pnlback.Controls.Add(this.memberpanel);
+            this.pnlback.Controls.Add(this.ListViewPanel);
             this.pnlback.Controls.Add(this.label9);
             this.pnlback.Controls.Add(this.label13);
             this.pnlback.Controls.Add(this.label12);
@@ -104,133 +104,6 @@
             this.pnlback.StateCommon.ColorAngle = 45F;
             this.pnlback.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlback.TabIndex = 1;
-            // 
-            // btnAddMember
-            // 
-            this.btnAddMember.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddMember.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnAddMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnAddMember.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddMember.Location = new System.Drawing.Point(1266, 31);
-            this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(266, 56);
-            this.btnAddMember.TabIndex = 0;
-            this.btnAddMember.Text = "Add New Member";
-            this.btnAddMember.UseVisualStyleBackColor = false;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label26.Location = new System.Drawing.Point(1100, 86);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(73, 29);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "xxxxx";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label34.Location = new System.Drawing.Point(1045, 31);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(73, 29);
-            this.label34.TabIndex = 20;
-            this.label34.Text = "xxxxx";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label35.Location = new System.Drawing.Point(898, 86);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(196, 29);
-            this.label35.TabIndex = 21;
-            this.label35.Text = "Total Members :";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label36.Location = new System.Drawing.Point(898, 31);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(141, 29);
-            this.label36.TabIndex = 22;
-            this.label36.Text = "Family ID : ";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(872, 16);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 120);
-            this.panel2.TabIndex = 23;
-            // 
-            // lblashaname
-            // 
-            this.lblashaname.AutoSize = true;
-            this.lblashaname.BackColor = System.Drawing.Color.Transparent;
-            this.lblashaname.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblashaname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblashaname.Location = new System.Drawing.Point(174, 44);
-            this.lblashaname.Name = "lblashaname";
-            this.lblashaname.Size = new System.Drawing.Size(527, 88);
-            this.lblashaname.TabIndex = 0;
-            this.lblashaname.Text = "Family Head Name";
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Angle = 0F;
-            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Location = new System.Drawing.Point(12, 12);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Rounding = 0;
-            this.panelControl3.Size = new System.Drawing.Size(150, 125);
-            this.panelControl3.TabIndex = 0;
-            // 
-            // main_panelcontrol
-            // 
-            this.main_panelcontrol.Angle = 0F;
-            this.main_panelcontrol.BackColor = System.Drawing.Color.Transparent;
-            this.main_panelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.main_panelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.main_panelcontrol.Location = new System.Drawing.Point(22, 232);
-            this.main_panelcontrol.Name = "main_panelcontrol";
-            this.main_panelcontrol.Rounding = 0;
-            this.main_panelcontrol.Size = new System.Drawing.Size(1004, 599);
-            this.main_panelcontrol.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Angle = 0F;
-            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Location = new System.Drawing.Point(1119, 232);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Rounding = 0;
-            this.panelControl1.Size = new System.Drawing.Size(413, 599);
-            this.panelControl1.TabIndex = 0;
             // 
             // label9
             // 
@@ -424,13 +297,6 @@
             this.label6.TabIndex = 39;
             this.label6.Text = " House Type :";
             // 
-            // memberpanel
-            // 
-            this.memberpanel.Location = new System.Drawing.Point(1141, 252);
-            this.memberpanel.Name = "memberpanel";
-            this.memberpanel.Size = new System.Drawing.Size(369, 558);
-            this.memberpanel.TabIndex = 44;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
@@ -444,6 +310,142 @@
             this.btnUpdate.Text = "Update ";
             this.btnUpdate.UseVisualStyleBackColor = false;
             // 
+            // btnAddMember
+            // 
+            this.btnAddMember.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddMember.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnAddMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnAddMember.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddMember.Location = new System.Drawing.Point(1266, 31);
+            this.btnAddMember.Name = "btnAddMember";
+            this.btnAddMember.Size = new System.Drawing.Size(266, 56);
+            this.btnAddMember.TabIndex = 0;
+            this.btnAddMember.Text = "Add New Member";
+            this.btnAddMember.UseVisualStyleBackColor = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label26.Location = new System.Drawing.Point(1100, 86);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(73, 29);
+            this.label26.TabIndex = 19;
+            this.label26.Text = "xxxxx";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label34.Location = new System.Drawing.Point(1045, 31);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(73, 29);
+            this.label34.TabIndex = 20;
+            this.label34.Text = "xxxxx";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label35.Location = new System.Drawing.Point(898, 86);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(196, 29);
+            this.label35.TabIndex = 21;
+            this.label35.Text = "Total Members :";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label36.Location = new System.Drawing.Point(898, 31);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(141, 29);
+            this.label36.TabIndex = 22;
+            this.label36.Text = "Family ID : ";
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(872, 16);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 120);
+            this.panel2.TabIndex = 23;
+            // 
+            // lblashaname
+            // 
+            this.lblashaname.AutoSize = true;
+            this.lblashaname.BackColor = System.Drawing.Color.Transparent;
+            this.lblashaname.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblashaname.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblashaname.Location = new System.Drawing.Point(174, 44);
+            this.lblashaname.Name = "lblashaname";
+            this.lblashaname.Size = new System.Drawing.Size(527, 88);
+            this.lblashaname.TabIndex = 0;
+            this.lblashaname.Text = "Family Head Name";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Angle = 0F;
+            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Location = new System.Drawing.Point(12, 12);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Rounding = 0;
+            this.panelControl3.Size = new System.Drawing.Size(150, 125);
+            this.panelControl3.TabIndex = 0;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Angle = 0F;
+            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Location = new System.Drawing.Point(1050, 232);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Rounding = 0;
+            this.panelControl1.Size = new System.Drawing.Size(506, 599);
+            this.panelControl1.TabIndex = 0;
+            // 
+            // ListViewPanel
+            // 
+            this.ListViewPanel.AutoScroll = true;
+            this.ListViewPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ListViewPanel.Location = new System.Drawing.Point(1063, 247);
+            this.ListViewPanel.Name = "ListViewPanel";
+            this.ListViewPanel.Size = new System.Drawing.Size(478, 568);
+            this.ListViewPanel.TabIndex = 0;
+            // 
+            // main_panelcontrol
+            // 
+            this.main_panelcontrol.Angle = 0F;
+            this.main_panelcontrol.BackColor = System.Drawing.Color.Transparent;
+            this.main_panelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.main_panelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.main_panelcontrol.Location = new System.Drawing.Point(22, 232);
+            this.main_panelcontrol.Name = "main_panelcontrol";
+            this.main_panelcontrol.Rounding = 0;
+            this.main_panelcontrol.Size = new System.Drawing.Size(1004, 599);
+            this.main_panelcontrol.TabIndex = 0;
+            // 
             // FamilyProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,6 +454,7 @@
             this.Controls.Add(this.pnlback);
             this.Name = "FamilyProfile";
             this.Text = "FamilyProfile";
+            this.Load += new System.EventHandler(this.FamilyProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnlback)).EndInit();
             this.pnlback.ResumeLayout(false);
             this.pnlback.PerformLayout();
@@ -464,15 +467,9 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlback;
         private System.Windows.Forms.Button btnAddMember;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblashaname;
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl panelControl3;
-        private PanelControl main_panelcontrol;
         private PanelControl panelControl1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
@@ -490,7 +487,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel memberpanel;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.FlowLayoutPanel ListViewPanel;
+        private PanelControl main_panelcontrol;
     }
 }

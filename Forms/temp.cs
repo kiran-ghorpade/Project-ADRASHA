@@ -19,22 +19,32 @@ namespace ADRASHA_Main
 
         private void midbuttonchanger(PanelControl pnl)
         {
-            MainPanel.BringToFront();
-            pnl.BringToFront();
+            //MainPanel.BringToFront();
+            //pnl.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainPanel.BringToFront();
-            midbuttonpanel1.BringToFront();
-            button1.BringToFront();
+            //MainPanel.BringToFront();
+            //midbuttonpanel1.BringToFront();
+            //button1.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MainPanel.BringToFront();
-            midbuttonpanel2.BringToFront();
-            button2.BringToFront();
+            //MainPanel.BringToFront();
+            //midbuttonpanel2.BringToFront();
+            //button2.BringToFront();
+        }
+
+        private void temp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

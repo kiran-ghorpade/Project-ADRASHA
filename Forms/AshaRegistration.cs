@@ -43,5 +43,17 @@ namespace ADRASHA_Main
         {
 
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            DataManipulation dm = new DataManipulation();
+
+            if (dm.InsertData("asha_profile", this))
+                MessageBox.Show("Submitted Successfully.", "ADRASHA");
+            else
+            {
+                MessageBox.Show("Fill all fields.", "ADRASHA");
+            }
+        }
     }
 }

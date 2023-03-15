@@ -18,7 +18,7 @@ namespace ADRASHA_Main
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Tmperory());
             //Application.Run(new SplashScreen());
-            //Application.Run(new Registration());
+            //Application.Run(new AshaRegistration());
             Application.Run(new MDI());
         }
     }

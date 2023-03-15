@@ -48,9 +48,34 @@
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Data.Sqlite, Version=7.0.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.Sqlite.Core.7.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.4.1835, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.4\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=2.1.4.1835, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.core.2.1.4\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.1.4.1835, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
+      <HintPath>packages\SQLitePCLRaw.provider.dynamic_cdecl.2.1.4\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataManipulation.cs" />
     <Compile Include="Forms\AddNewFamily.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +113,11 @@
     <Compile Include="Forms\FamilyProfile.Designer.cs">
       <DependentUpon>FamilyProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FamilyProfileform.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Forms\FamilyListView.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\FamilyProfileform.Designer.cs">
-      <DependentUpon>FamilyProfileform.cs</DependentUpon>
+    <Compile Include="Forms\FamilyListView.Designer.cs">
+      <DependentUpon>FamilyListView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MemberHealthProfile.cs">
       <SubType>Form</SubType>
@@ -104,6 +130,12 @@
     </Compile>
     <Compile Include="Forms\MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberListView.Designer.cs">
+      <DependentUpon>MemberListView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MemberProfile.cs">
       <SubType>Form</SubType>
@@ -169,14 +201,17 @@
     <EmbeddedResource Include="Forms\FamilyProfile.resx">
       <DependentUpon>FamilyProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FamilyProfileform.resx">
-      <DependentUpon>FamilyProfileform.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FamilyListView.resx">
+      <DependentUpon>FamilyListView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MemberHealthProfile.resx">
       <DependentUpon>MemberHealthProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberListView.resx">
+      <DependentUpon>MemberListView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MemberProfile.resx">
       <DependentUpon>MemberProfile.cs</DependentUpon>
@@ -208,6 +243,7 @@
       <DependentUpon>Tmperory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -237,6 +273,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\familyImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male avtar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
