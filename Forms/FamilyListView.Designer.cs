@@ -50,6 +50,7 @@
             this.Head_Name.Size = new System.Drawing.Size(527, 74);
             this.Head_Name.TabIndex = 0;
             this.Head_Name.Text = "Family Head Full Name";
+            this.Head_Name.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // Total_Members
             // 
@@ -62,6 +63,7 @@
             this.Total_Members.Size = new System.Drawing.Size(73, 29);
             this.Total_Members.TabIndex = 0;
             this.Total_Members.Text = "xxxxx";
+            this.Total_Members.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // Family_Id
             // 
@@ -74,6 +76,7 @@
             this.Family_Id.Size = new System.Drawing.Size(73, 29);
             this.Family_Id.TabIndex = 0;
             this.Family_Id.Text = "xxxxx";
+            this.Family_Id.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // label35
             // 
@@ -86,6 +89,7 @@
             this.label35.Size = new System.Drawing.Size(196, 29);
             this.label35.TabIndex = 0;
             this.label35.Text = "Total Members :";
+            this.label35.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // label36
             // 
@@ -98,6 +102,7 @@
             this.label36.Size = new System.Drawing.Size(141, 29);
             this.label36.TabIndex = 0;
             this.label36.Text = "Family ID : ";
+            this.label36.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // Profile_Image
             // 
@@ -108,6 +113,7 @@
             this.Profile_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Profile_Image.TabIndex = 0;
             this.Profile_Image.TabStop = false;
+            this.Profile_Image.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // DisplayPanel
             // 
@@ -125,6 +131,7 @@
             this.DisplayPanel.Name = "DisplayPanel";
             this.DisplayPanel.Size = new System.Drawing.Size(875, 130);
             this.DisplayPanel.TabIndex = 0;
+            this.DisplayPanel.Click += new System.EventHandler(this.DisplayPanel_Click);
             // 
             // FamilyListView
             // 

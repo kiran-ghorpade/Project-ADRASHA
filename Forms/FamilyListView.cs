@@ -57,5 +57,13 @@ namespace ADRASHA_Main.Forms
 
 
         #endregion
+
+        private void DisplayPanel_Click(object sender, EventArgs e)
+        {
+            FamilyProfile profile = new FamilyProfile(Convert.ToInt32(FamilyID));
+            MyFunctions function = new MyFunctions();
+            function.LoadChildForm(profile,MDI.childformpanel);
+        }
+
     }
 }

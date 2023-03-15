@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADRASHA_Main.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,22 @@ namespace ADRASHA_Main
     public partial class AddNewMember : Form
     {
         MyFunctions myfunctions = new MyFunctions();
+        int family_id;
+        int member_id;
 
         public AddNewMember()
         {
             InitializeComponent();
+        }
+
+        public AddNewMember(int family_id)
+        {
+            InitializeComponent();
+            this.family_id = family_id;
+            member_id = DatabaseClass.GetAutoID("select max(member_id) from member_details");
+            Family_Id.Text = family_id.ToString();
+            Member_Id.Text = member_id.ToString();
+            Partner_Id.Text= member_id.ToString();
         }
 
         private void btnnext_Click(object sender, EventArgs e)
@@ -73,7 +86,19 @@ namespace ADRASHA_Main
         {
             DataManipulation dm = new DataManipulation();
             if (dm.InsertData("member_details", this))
-                MessageBox.Show("Data Inserted.");
+            {
+                MessageBox.Show("Member Registered.");
+            }
+
+            Dictionary<string, object> updatedValue = new Dictionary<string, object>
+            {
+                {"family_head", member_id }
+            };
+            DatabaseClass db = new DatabaseClass();
+            db.UpdateRow("family_details","family_id",family_id,updatedValue);
+            this.Dispose();
+            MyFunctions functions = new MyFunctions();
+            functions.LoadChildForm(new FamilyProfile(family_id), MDI.childformpanel);
           
         }
 

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDI));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -44,6 +43,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.childformpanelcontrol = new ADRASHA_Main.PanelControl();
+            this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,15 +74,6 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // SearchBoxPanel
-            // 
-            this.SearchBoxPanel.AutoScroll = true;
-            this.SearchBoxPanel.BackColor = System.Drawing.Color.Transparent;
-            this.SearchBoxPanel.Location = new System.Drawing.Point(386, 94);
-            this.SearchBoxPanel.Name = "SearchBoxPanel";
-            this.SearchBoxPanel.Size = new System.Drawing.Size(513, 534);
-            this.SearchBoxPanel.TabIndex = 0;
             // 
             // kryptonButton5
             // 
@@ -262,6 +253,15 @@
             this.childformpanelcontrol.Rounding = 5;
             this.childformpanelcontrol.Size = new System.Drawing.Size(1608, 867);
             this.childformpanelcontrol.TabIndex = 0;
+            // 
+            // SearchBoxPanel
+            // 
+            this.SearchBoxPanel.AutoScroll = true;
+            this.SearchBoxPanel.BackColor = System.Drawing.Color.Transparent;
+            this.SearchBoxPanel.Location = new System.Drawing.Point(386, 94);
+            this.SearchBoxPanel.Name = "SearchBoxPanel";
+            this.SearchBoxPanel.Size = new System.Drawing.Size(513, 534);
+            this.SearchBoxPanel.TabIndex = 0;
             // 
             // MDI
             // 

@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewMember));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnloccupation = new System.Windows.Forms.Panel();
+            this.Work_Type = new System.Windows.Forms.ComboBox();
+            this.Education = new System.Windows.Forms.ComboBox();
+            this.Work_Place = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Occupation_Name = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnnextOccupation = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.pnlidentity = new System.Windows.Forms.Panel();
             this.Adhar_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.ABHA_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -70,14 +81,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.pnloccupation = new System.Windows.Forms.Panel();
-            this.Work_Place = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Occupation_Name = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.btnnextOccupation = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.pnlcontact = new System.Windows.Forms.Panel();
             this.Email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Mobile_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -119,26 +122,23 @@
             this.kryptonTextBox18 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox17 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox16 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Education = new System.Windows.Forms.ComboBox();
-            this.Work_Type = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.pnloccupation.SuspendLayout();
             this.pnlidentity.SuspendLayout();
             this.pnlpersonal.SuspendLayout();
             this.Gender.SuspendLayout();
             this.pnlmaritalinfo.SuspendLayout();
-            this.pnloccupation.SuspendLayout();
             this.pnlcontact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.pnlmaritalinfo);
             this.kryptonPanel1.Controls.Add(this.pnloccupation);
             this.kryptonPanel1.Controls.Add(this.pnlidentity);
             this.kryptonPanel1.Controls.Add(this.pnlpersonal);
-            this.kryptonPanel1.Controls.Add(this.pnlmaritalinfo);
             this.kryptonPanel1.Controls.Add(this.pnlcontact);
             this.kryptonPanel1.Controls.Add(this.btnidentity);
             this.kryptonPanel1.Controls.Add(this.btnpersonal);
@@ -163,6 +163,167 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 2;
+            // 
+            // pnloccupation
+            // 
+            this.pnloccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnloccupation.Controls.Add(this.Work_Type);
+            this.pnloccupation.Controls.Add(this.Education);
+            this.pnloccupation.Controls.Add(this.Work_Place);
+            this.pnloccupation.Controls.Add(this.Occupation_Name);
+            this.pnloccupation.Controls.Add(this.btnnextOccupation);
+            this.pnloccupation.Controls.Add(this.label12);
+            this.pnloccupation.Controls.Add(this.label16);
+            this.pnloccupation.Controls.Add(this.label17);
+            this.pnloccupation.Controls.Add(this.label18);
+            this.pnloccupation.Controls.Add(this.label21);
+            this.pnloccupation.Location = new System.Drawing.Point(79, 329);
+            this.pnloccupation.Name = "pnloccupation";
+            this.pnloccupation.Size = new System.Drawing.Size(1414, 500);
+            this.pnloccupation.TabIndex = 7;
+            // 
+            // Work_Type
+            // 
+            this.Work_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Work_Type.FormattingEnabled = true;
+            this.Work_Type.Items.AddRange(new object[] {
+            "--Select--",
+            "physical work",
+            "Learning/Studying",
+            "Skilled Employee",
+            "UnSkilled Employee",
+            "Other"});
+            this.Work_Type.Location = new System.Drawing.Point(893, 270);
+            this.Work_Type.Name = "Work_Type";
+            this.Work_Type.Size = new System.Drawing.Size(327, 37);
+            this.Work_Type.TabIndex = 4;
+            // 
+            // Education
+            // 
+            this.Education.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Education.FormattingEnabled = true;
+            this.Education.Items.AddRange(new object[] {
+            "--Select--",
+            "No Specific Educational Qualification",
+            "Primary (upto 8th)",
+            "Lower Secondary (upto 10th)",
+            "Higher Secondary (upto 12th)",
+            "Vocational",
+            "Diploma",
+            "Bachelors Degree",
+            "Master Degree",
+            "Other"});
+            this.Education.Location = new System.Drawing.Point(893, 163);
+            this.Education.Name = "Education";
+            this.Education.Size = new System.Drawing.Size(327, 37);
+            this.Education.TabIndex = 3;
+            // 
+            // Work_Place
+            // 
+            this.Work_Place.Location = new System.Drawing.Point(283, 278);
+            this.Work_Place.Name = "Work_Place";
+            this.Work_Place.Size = new System.Drawing.Size(327, 38);
+            this.Work_Place.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Work_Place.StateCommon.Border.Rounding = 5;
+            this.Work_Place.StateCommon.Border.Width = 1;
+            this.Work_Place.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Work_Place.TabIndex = 2;
+            // 
+            // Occupation_Name
+            // 
+            this.Occupation_Name.Location = new System.Drawing.Point(283, 161);
+            this.Occupation_Name.Name = "Occupation_Name";
+            this.Occupation_Name.Size = new System.Drawing.Size(327, 38);
+            this.Occupation_Name.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Occupation_Name.StateCommon.Border.Rounding = 5;
+            this.Occupation_Name.StateCommon.Border.Width = 1;
+            this.Occupation_Name.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Occupation_Name.TabIndex = 1;
+            // 
+            // btnnextOccupation
+            // 
+            this.btnnextOccupation.Location = new System.Drawing.Point(1293, 24);
+            this.btnnextOccupation.Name = "btnnextOccupation";
+            this.btnnextOccupation.Size = new System.Drawing.Size(98, 52);
+            this.btnnextOccupation.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnnextOccupation.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnnextOccupation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextOccupation.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextOccupation.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnnextOccupation.StateCommon.Border.Rounding = 20;
+            this.btnnextOccupation.StateCommon.Border.Width = 2;
+            this.btnnextOccupation.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextOccupation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnextOccupation.TabIndex = 8;
+            this.btnnextOccupation.Values.Text = "Next";
+            this.btnnextOccupation.Click += new System.EventHandler(this.btnnextOccupation_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label12.Location = new System.Drawing.Point(745, 168);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 31);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Education";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label16.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label16.Location = new System.Drawing.Point(46, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(244, 42);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Occupation Details :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label17.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label17.Location = new System.Drawing.Point(41, 161);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(197, 31);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Occupation Name";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label18.Location = new System.Drawing.Point(41, 279);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(128, 31);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Work Place";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label21.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label21.Location = new System.Drawing.Point(739, 277);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(121, 31);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Work Type";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // pnlidentity
             // 
@@ -699,119 +860,6 @@
             this.label27.TabIndex = 0;
             this.label27.Text = "No. of Child";
             // 
-            // pnloccupation
-            // 
-            this.pnloccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnloccupation.Controls.Add(this.Work_Type);
-            this.pnloccupation.Controls.Add(this.Education);
-            this.pnloccupation.Controls.Add(this.Work_Place);
-            this.pnloccupation.Controls.Add(this.Occupation_Name);
-            this.pnloccupation.Controls.Add(this.btnnextOccupation);
-            this.pnloccupation.Controls.Add(this.label12);
-            this.pnloccupation.Controls.Add(this.label16);
-            this.pnloccupation.Controls.Add(this.label17);
-            this.pnloccupation.Controls.Add(this.label18);
-            this.pnloccupation.Controls.Add(this.label21);
-            this.pnloccupation.Location = new System.Drawing.Point(79, 329);
-            this.pnloccupation.Name = "pnloccupation";
-            this.pnloccupation.Size = new System.Drawing.Size(1414, 500);
-            this.pnloccupation.TabIndex = 7;
-            // 
-            // Work_Place
-            // 
-            this.Work_Place.Location = new System.Drawing.Point(283, 278);
-            this.Work_Place.Name = "Work_Place";
-            this.Work_Place.Size = new System.Drawing.Size(327, 38);
-            this.Work_Place.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Work_Place.StateCommon.Border.Rounding = 5;
-            this.Work_Place.StateCommon.Border.Width = 1;
-            this.Work_Place.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Work_Place.TabIndex = 2;
-            // 
-            // Occupation_Name
-            // 
-            this.Occupation_Name.Location = new System.Drawing.Point(283, 161);
-            this.Occupation_Name.Name = "Occupation_Name";
-            this.Occupation_Name.Size = new System.Drawing.Size(327, 38);
-            this.Occupation_Name.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Occupation_Name.StateCommon.Border.Rounding = 5;
-            this.Occupation_Name.StateCommon.Border.Width = 1;
-            this.Occupation_Name.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Occupation_Name.TabIndex = 1;
-            // 
-            // btnnextOccupation
-            // 
-            this.btnnextOccupation.Location = new System.Drawing.Point(1293, 24);
-            this.btnnextOccupation.Name = "btnnextOccupation";
-            this.btnnextOccupation.Size = new System.Drawing.Size(98, 52);
-            this.btnnextOccupation.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnnextOccupation.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnnextOccupation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextOccupation.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextOccupation.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnnextOccupation.StateCommon.Border.Rounding = 20;
-            this.btnnextOccupation.StateCommon.Border.Width = 2;
-            this.btnnextOccupation.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextOccupation.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnextOccupation.TabIndex = 8;
-            this.btnnextOccupation.Values.Text = "Next";
-            this.btnnextOccupation.Click += new System.EventHandler(this.btnnextOccupation_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label16.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label16.Location = new System.Drawing.Point(46, 34);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(244, 42);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Occupation Details :";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label17.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label17.Location = new System.Drawing.Point(41, 161);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(197, 31);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Occupation Name";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label18.Location = new System.Drawing.Point(41, 279);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 31);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Work Place";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label21.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label21.Location = new System.Drawing.Point(739, 277);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 31);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Work Type";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
             // pnlcontact
             // 
             this.pnlcontact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -1340,54 +1388,6 @@
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.TabIndex = 9;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label12.Location = new System.Drawing.Point(745, 168);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 31);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Education";
-            // 
-            // Education
-            // 
-            this.Education.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Education.FormattingEnabled = true;
-            this.Education.Items.AddRange(new object[] {
-            "--Select--",
-            "No Specific Educational Qualification",
-            "Primary (upto 8th)",
-            "Lower Secondary (upto 10th)",
-            "Higher Secondary (upto 12th)",
-            "Vocational",
-            "Diploma",
-            "Bachelors Degree",
-            "Master Degree",
-            "Other"});
-            this.Education.Location = new System.Drawing.Point(893, 163);
-            this.Education.Name = "Education";
-            this.Education.Size = new System.Drawing.Size(327, 37);
-            this.Education.TabIndex = 3;
-            // 
-            // Work_Type
-            // 
-            this.Work_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Work_Type.FormattingEnabled = true;
-            this.Work_Type.Items.AddRange(new object[] {
-            "--Select--",
-            "physical work",
-            "Learning/Studying",
-            "Skilled Employee",
-            "UnSkilled Employee",
-            "Other"});
-            this.Work_Type.Location = new System.Drawing.Point(893, 270);
-            this.Work_Type.Name = "Work_Type";
-            this.Work_Type.Size = new System.Drawing.Size(327, 37);
-            this.Work_Type.TabIndex = 4;
-            // 
             // AddNewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1400,6 +1400,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.pnloccupation.ResumeLayout(false);
+            this.pnloccupation.PerformLayout();
             this.pnlidentity.ResumeLayout(false);
             this.pnlidentity.PerformLayout();
             this.pnlpersonal.ResumeLayout(false);
@@ -1408,8 +1410,6 @@
             this.Gender.PerformLayout();
             this.pnlmaritalinfo.ResumeLayout(false);
             this.pnlmaritalinfo.PerformLayout();
-            this.pnloccupation.ResumeLayout(false);
-            this.pnloccupation.PerformLayout();
             this.pnlcontact.ResumeLayout(false);
             this.pnlcontact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

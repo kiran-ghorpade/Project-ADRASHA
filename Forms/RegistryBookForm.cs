@@ -42,6 +42,7 @@ namespace ADRASHA_Main
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             functions.LoadChildForm(new AddNewFamily(), MDI.childformpanel);
         }
 
@@ -60,7 +61,8 @@ namespace ADRASHA_Main
                 FamilyListView listView;
                 while (reader.Read())
                 {
-                    head = int.Parse(reader["family_head"].ToString());
+                    //head = int.Parse((reader["family_head"].ToString()));
+                    head = Convert.ToInt32(reader["family_Head"]);
 
                     SqliteCommand cmd1 = new SqliteCommand("select first_name,middle_name, last_name from member_details where member_id=" + head, conn);
                     SqliteDataReader reader1 = cmd1.ExecuteReader();
@@ -68,7 +70,8 @@ namespace ADRASHA_Main
                     listView = new FamilyListView();
                     while (reader1.Read())
                     {
-                        listView.Title = reader1["first_name"].ToString() + " " + reader1["middle_name"].ToString() + " " + reader1["last_name"].ToString();
+                        string name = reader1["first_name"].ToString() + " " + reader1["middle_name"].ToString() + " " + reader1["last_name"].ToString();
+                        listView.Title = name;
                     }
                     listView.FamilyID = reader["family_id"].ToString();
                     listView.TotalMemebers = reader["total_members"].ToString();

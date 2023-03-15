@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,6 @@ namespace ADRASHA_Main
             parentPanel.Tag = childform;
             childform.BringToFront();
             childform.Show();
-
         }
 
         public Panel nextpanel_code(Panel next)
@@ -37,6 +37,7 @@ namespace ADRASHA_Main
 
         public Panel switch_panel_button(Panel next, PanelControl background, Button button, PanelControl backbutton)
         {
+            //switch panel
             background.BringToFront();
             backbutton.BringToFront();
             button.BringToFront();
@@ -49,36 +50,30 @@ namespace ADRASHA_Main
             //close button code
             currentForm.Close();
         }
-
-        private void SetProperty(Control ctr)
+       
+        public int CalculateAge(string birth_date)
         {
-            //to set same property for all type of controls
-            foreach (Control control in ctr.Controls)
+            int age = 0;
+ 
+            //check if value of birthdate is null or not
+            if (birth_date == "")
             {
-                if (control is TextBox)
-                {
-                    control.ContextMenu = new ContextMenu();
-                }
-                else
-                {
-                    if (control.HasChildren)
-                    {
-                        SetProperty(control);
-                    }
-                }
+                age = 0;
             }
-        }
-
-        void SetControl(ContextMenu menu, Control control)
-        {
-            //to set same action or properties on all types of control
-            if (control is TextBox)
-                control.ContextMenu = menu;
             else
             {
-                foreach (Control c in control.Controls)
-                    SetControl(menu, c);
+                DateTimeConverter timeConverter = new DateTimeConverter();
+                DateTime birthdate = (DateTime)timeConverter.ConvertFromString(birth_date);
+                // Save today's date.
+                var today = DateTime.Today;
+
+                // Calculate the age.
+                age = today.Year - birthdate.Year;
+
+                // Go back to the year in which the person was born in case of a leap year
+                if (birthdate.Date > today.AddYears(-age)) age--;
             }
+            return age;
         }
     }
 }

@@ -59,7 +59,7 @@ namespace ADRASHA_Main
             return dataTable;
         }
 
-        public int GetAutoID(string sql)
+        public static int GetAutoID(string sql)
         {
             //method to get next id from table
             int i = 1;
@@ -89,7 +89,7 @@ namespace ADRASHA_Main
             }
         }
 
-        public DataRow GetRowById(string tableName, int id)
+        public static DataRow GetRowById(string tableName, int id)
         {
             string query = $"SELECT * FROM {tableName} WHERE Id = @id";
             using (SqliteConnection conn = GetConnection())
@@ -135,23 +135,24 @@ namespace ADRASHA_Main
             comboBox.ValueMember = valueMember;
         }
 
-        public bool UpdateRow(string tableName, int id, Dictionary<string, object> data)
+        public bool UpdateRow(string tableName,string column, int id, Dictionary<string, object> data)
         {
             string query = $"UPDATE {tableName} SET ";
             foreach (KeyValuePair<string, object> item in data)
             {
-                query += $"{item.Key} = @'{item.Key}',";
+                query += $"{item.Key} = '{item.Value}',";
             }
-            query = query.TrimEnd(',') + $" WHERE Id = @id";
+            query = query.TrimEnd(',') + $" WHERE @Id = @id";
 
             using (SqliteConnection conn = GetConnection())
             {
                 SqliteCommand cmd = new SqliteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", id);
-                foreach (KeyValuePair<string, object> item in data)
-                {
-                    cmd.Parameters.AddWithValue($"@{item.Key}", item.Value);
-                }
+                cmd.Parameters.AddWithValue("@Id", column);
+                //foreach (KeyValuePair<string, object> item in data)
+                //{
+                //    cmd.Parameters.AddWithValue($"@{item.Key}", item.Value);
+                //}
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 

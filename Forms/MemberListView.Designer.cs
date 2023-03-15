@@ -50,6 +50,7 @@
             this.Age.Size = new System.Drawing.Size(49, 20);
             this.Age.TabIndex = 0;
             this.Age.Text = "xxxxx";
+            this.Age.Click += new System.EventHandler(this.panel1_Click);
             // 
             // Member_Id
             // 
@@ -62,6 +63,7 @@
             this.Member_Id.Size = new System.Drawing.Size(49, 20);
             this.Member_Id.TabIndex = 0;
             this.Member_Id.Text = "xxxxx";
+            this.Member_Id.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label35
             // 
@@ -74,6 +76,7 @@
             this.label35.Size = new System.Drawing.Size(48, 20);
             this.label35.TabIndex = 0;
             this.label35.Text = "Age :";
+            this.label35.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label36
             // 
@@ -86,6 +89,7 @@
             this.label36.Size = new System.Drawing.Size(107, 20);
             this.label36.TabIndex = 0;
             this.label36.Text = "Member ID : ";
+            this.label36.Click += new System.EventHandler(this.panel1_Click);
             // 
             // Member_Name
             // 
@@ -98,6 +102,7 @@
             this.Member_Name.Size = new System.Drawing.Size(258, 44);
             this.Member_Name.TabIndex = 0;
             this.Member_Name.Text = "Member Full Name";
+            this.Member_Name.Click += new System.EventHandler(this.panel1_Click);
             // 
             // Profile_Image
             // 
@@ -108,6 +113,7 @@
             this.Profile_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Profile_Image.TabIndex = 28;
             this.Profile_Image.TabStop = false;
+            this.Profile_Image.Click += new System.EventHandler(this.panel1_Click);
             // 
             // panel1
             // 
@@ -122,6 +128,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(523, 99);
             this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // MemberListView
             // 

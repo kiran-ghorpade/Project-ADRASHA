@@ -40,6 +40,10 @@ namespace ADRASHA_Main
             if (dm.InsertData("family_details", this))
             {
                 MessageBox.Show("Data Inserted.");
+                this.Dispose();
+                int family_id = DatabaseClass.GetAutoID("select max(family_id) from family_details")-1;
+                functions.LoadChildForm(new AddNewMember(family_id),MDI.childformpanel);
+
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using ADRASHA_Main.Forms;
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace ADRASHA_Main
     public partial class MDI : Form
     {
         MyFunctions functions = new MyFunctions();
+        bool isdigit = true;
 
         public MDI()
         {
@@ -28,7 +30,7 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             SearchBoxPanel.Visible = false;
-            functions.LoadChildForm(new FamilyProfile(),childformpanel);
+            functions.LoadChildForm(new RegistryBookForm(),childformpanel);
         }
 
 
@@ -40,17 +42,37 @@ namespace ADRASHA_Main
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
-            PopulateItems();  
+
+            if (SearchBox.Text == "")
+            {
+                SearchBoxPanel.Controls.Clear();
+                SearchBoxPanel.Visible = false;
+                return;
+            }
+            else
+            {
+                foreach(char c in SearchBox.Text)
+                {
+                    if (!Char.IsDigit(c))
+                        isdigit = false;
+                }
+            }
+            
+            SearchBoxPanel.Controls.Clear();
+            PopulateItems();
+
         }
+
+
 
         private void SearchBox_Enter(object sender, EventArgs e)
         {
-            SearchBoxPanel.BringToFront();
-            SearchBoxPanel.Visible = true;
+
         }
 
         private void SearchBox_Leave(object sender, EventArgs e)
         {
+            SearchBox.Clear();
             SearchBoxPanel.Visible=false;
         }
 
@@ -76,50 +98,115 @@ namespace ADRASHA_Main
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new MemberProfile(), childformpanel);
+            MessageBox.Show("Coming Soon");
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new AddNewMember(), childformpanel);
+            MessageBox.Show("Coming Soon");
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new FamilyProfile(), childformpanel);
+            MessageBox.Show("Coming Soon");
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new MemberHealthProfile(), childformpanel);
+            MessageBox.Show("Coming Soon");
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-            
-            functions.LoadChildForm(new AddNewFamily(), childformpanel);
+
+            MessageBox.Show("Coming Soon");
         }
+
+        //private void PopulateItems()
+        //{
+        //    MemberListView[] listView = new MemberListView[10];
+        //    for (int i = 0; i < listView.Length; i++)
+        //    {
+        //        listView[i] = new MemberListView();
+        //        listView[i].Title = "Madhav Mane";
+        //        listView[i].FamilyID = "" + i;
+        //        listView[i].age = "" + (i * 2);
+
+        //        if (SearchBoxPanel.Controls.Count < 0)
+        //        {
+        //            SearchBoxPanel.Controls.Clear();
+        //        }
+        //        else
+        //        {
+        //            listView[i].Width = SearchBoxPanel.Width - 40;
+        //            SearchBoxPanel.Controls.Add(listView[i]);
+        //        }
+        // }
 
         private void PopulateItems()
         {
-            MemberListView[] listView = new MemberListView[10];
-            for (int i = 0; i < listView.Length; i++)
+            SearchBoxPanel.Visible = false;
+            int age; //string name="";
+            SqliteCommand cmd = null ;
+            MyFunctions functions = new MyFunctions();
+            using (SqliteConnection conn = DatabaseClass.GetConnection())
             {
-                listView[i] = new MemberListView();
-                listView[i].Title = "Madhav Mane";
-                listView[i].FamilyID = "" + i;
-                listView[i].age = "" + (i * 2);
-
-                if (SearchBoxPanel.Controls.Count < 0)
+                //SqliteCommand cmd1 = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details ", conn);
+                //SqliteDataReader read = cmd1.ExecuteReader();
+                //getting values;
+                if (isdigit == true)
                 {
-                    SearchBoxPanel.Controls.Clear();
+                    //values for id
+                    cmd = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details where member_id like '%"+SearchBox.Text+"%' limit 10", conn);
                 }
                 else
                 {
-                    listView[i].Width = SearchBoxPanel.Width - 40;
-                    SearchBoxPanel.Controls.Add(listView[i]);
+                    //values for name
+                    //while (read.Read())
+                    //{
+                    //    name = read["first_name"].ToString() + " " + read["middle_name"].ToString() + " " + read["last_name"].ToString();
+                    string s = SearchBox.Text;
+                    //    //if (name.Contains(s))
+                    //    //{
+
+                    //    //    string id = read["member_id"].ToString();
+                    //    //    cmd = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details where member_id like '%" + SearchBox.Text + "%' limit 10", conn);
+                    //    //}
+                    //}
+                    cmd = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details where first_name like '%" + s + "%' or middle_name like '%" + s + "%' or last_name Like '%" + s + "%' limit 10", conn);
+                }
+                SqliteDataReader reader = cmd.ExecuteReader();
+                MemberListView listView;
+
+                while (reader.Read())
+                {
+                    listView = new MemberListView();
+
+                    //to set values to the form 
+                    listView.Title = reader["first_name"].ToString() + " " + reader["middle_name"].ToString() + " " + reader["last_name"].ToString();
+                    listView.MemberID = reader["member_id"].ToString();
+
+
+                    //calculating age and set it to the form
+
+                    age = functions.CalculateAge(reader["birth_date"].ToString());
+                    listView.age = age.ToString();
+
+                    if (SearchBoxPanel.Controls.Count < 0)
+                    {
+                        SearchBoxPanel.Controls.Clear();
+                    }
+                    else
+                    {
+                        listView.Width = SearchBoxPanel.Width - 40;
+                        SearchBoxPanel.Controls.Add(listView);
+                    }
                 }
             }
+
+            SearchBoxPanel.BringToFront();
+            SearchBoxPanel.Visible = true;
         }
+
     }
 }

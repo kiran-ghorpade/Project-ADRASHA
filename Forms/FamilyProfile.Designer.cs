@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FamilyProfile));
             this.pnlback = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.ListViewPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -48,16 +49,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAddMember = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lblTotalMembers = new System.Windows.Forms.Label();
+            this.lblFamilyID = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblashaname = new System.Windows.Forms.Label();
+            this.lblHeadName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.panelControl1 = new ADRASHA_Main.PanelControl();
-            this.ListViewPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pnlback)).BeginInit();
             this.pnlback.SuspendLayout();
@@ -85,12 +85,12 @@
             this.pnlback.Controls.Add(this.label6);
             this.pnlback.Controls.Add(this.btnUpdate);
             this.pnlback.Controls.Add(this.btnAddMember);
-            this.pnlback.Controls.Add(this.label26);
-            this.pnlback.Controls.Add(this.label34);
+            this.pnlback.Controls.Add(this.lblTotalMembers);
+            this.pnlback.Controls.Add(this.lblFamilyID);
             this.pnlback.Controls.Add(this.label35);
             this.pnlback.Controls.Add(this.label36);
             this.pnlback.Controls.Add(this.panel2);
-            this.pnlback.Controls.Add(this.lblashaname);
+            this.pnlback.Controls.Add(this.lblHeadName);
             this.pnlback.Controls.Add(this.pictureBox1);
             this.pnlback.Controls.Add(this.panelControl3);
             this.pnlback.Controls.Add(this.panelControl1);
@@ -105,6 +105,15 @@
             this.pnlback.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlback.TabIndex = 1;
             // 
+            // ListViewPanel
+            // 
+            this.ListViewPanel.AutoScroll = true;
+            this.ListViewPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ListViewPanel.Location = new System.Drawing.Point(1063, 247);
+            this.ListViewPanel.Name = "ListViewPanel";
+            this.ListViewPanel.Size = new System.Drawing.Size(478, 568);
+            this.ListViewPanel.TabIndex = 0;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -114,7 +123,7 @@
             this.label9.Location = new System.Drawing.Point(62, 657);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(161, 58);
-            this.label9.TabIndex = 24;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Fuel Type for\r\n cooking";
             // 
             // label13
@@ -126,7 +135,7 @@
             this.label13.Location = new System.Drawing.Point(589, 664);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(202, 29);
-            this.label13.TabIndex = 25;
+            this.label13.TabIndex = 0;
             this.label13.Text = "Eletricity Supply:";
             // 
             // label12
@@ -138,7 +147,7 @@
             this.label12.Location = new System.Drawing.Point(584, 547);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(182, 29);
-            this.label12.TabIndex = 26;
+            this.label12.TabIndex = 0;
             this.label12.Text = " Water supply :";
             // 
             // label11
@@ -150,7 +159,7 @@
             this.label11.Location = new System.Drawing.Point(589, 432);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 29);
-            this.label11.TabIndex = 27;
+            this.label11.TabIndex = 0;
             this.label11.Text = "Residence :";
             // 
             // lblaplbpl
@@ -162,7 +171,7 @@
             this.lblaplbpl.Location = new System.Drawing.Point(812, 317);
             this.lblaplbpl.Name = "lblaplbpl";
             this.lblaplbpl.Size = new System.Drawing.Size(151, 29);
-            this.lblaplbpl.TabIndex = 28;
+            this.lblaplbpl.TabIndex = 0;
             this.lblaplbpl.Text = " output label";
             // 
             // lblresidence
@@ -174,7 +183,7 @@
             this.lblresidence.Location = new System.Drawing.Point(812, 432);
             this.lblresidence.Name = "lblresidence";
             this.lblresidence.Size = new System.Drawing.Size(151, 29);
-            this.lblresidence.TabIndex = 29;
+            this.lblresidence.TabIndex = 0;
             this.lblresidence.Text = " output label";
             // 
             // lblwatersupply
@@ -186,7 +195,7 @@
             this.lblwatersupply.Location = new System.Drawing.Point(812, 547);
             this.lblwatersupply.Name = "lblwatersupply";
             this.lblwatersupply.Size = new System.Drawing.Size(151, 29);
-            this.lblwatersupply.TabIndex = 30;
+            this.lblwatersupply.TabIndex = 0;
             this.lblwatersupply.Text = " output label";
             // 
             // lbleletricity
@@ -198,7 +207,7 @@
             this.lbleletricity.Location = new System.Drawing.Point(822, 664);
             this.lbleletricity.Name = "lbleletricity";
             this.lbleletricity.Size = new System.Drawing.Size(144, 29);
-            this.lbleletricity.TabIndex = 31;
+            this.lbleletricity.TabIndex = 0;
             this.lbleletricity.Text = "output label";
             // 
             // lbllpg
@@ -210,7 +219,7 @@
             this.lbllpg.Location = new System.Drawing.Point(310, 664);
             this.lbllpg.Name = "lbllpg";
             this.lbllpg.Size = new System.Drawing.Size(144, 29);
-            this.lbllpg.TabIndex = 32;
+            this.lbllpg.TabIndex = 0;
             this.lbllpg.Text = "output label";
             // 
             // lbltoilet
@@ -222,7 +231,7 @@
             this.lbltoilet.Location = new System.Drawing.Point(310, 547);
             this.lbltoilet.Name = "lbltoilet";
             this.lbltoilet.Size = new System.Drawing.Size(158, 29);
-            this.lbltoilet.TabIndex = 33;
+            this.lbltoilet.TabIndex = 0;
             this.lbltoilet.Text = " output label ";
             // 
             // lblvehicles
@@ -234,7 +243,7 @@
             this.lblvehicles.Location = new System.Drawing.Point(303, 432);
             this.lblvehicles.Name = "lblvehicles";
             this.lblvehicles.Size = new System.Drawing.Size(151, 29);
-            this.lblvehicles.TabIndex = 34;
+            this.lblvehicles.TabIndex = 0;
             this.lblvehicles.Text = " output label";
             // 
             // lblhousetype
@@ -246,7 +255,7 @@
             this.lblhousetype.Location = new System.Drawing.Point(310, 317);
             this.lblhousetype.Name = "lblhousetype";
             this.lblhousetype.Size = new System.Drawing.Size(144, 29);
-            this.lblhousetype.TabIndex = 35;
+            this.lblhousetype.TabIndex = 0;
             this.lblhousetype.Text = "output label";
             // 
             // label10
@@ -258,7 +267,7 @@
             this.label10.Location = new System.Drawing.Point(589, 317);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 29);
-            this.label10.TabIndex = 36;
+            this.label10.TabIndex = 0;
             this.label10.Text = "APL/BPL :";
             // 
             // label8
@@ -270,7 +279,7 @@
             this.label8.Location = new System.Drawing.Point(57, 547);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 29);
-            this.label8.TabIndex = 37;
+            this.label8.TabIndex = 0;
             this.label8.Text = " Toilet :";
             // 
             // label7
@@ -282,7 +291,7 @@
             this.label7.Location = new System.Drawing.Point(66, 432);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 29);
-            this.label7.TabIndex = 38;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Vehicles :";
             // 
             // label6
@@ -294,7 +303,7 @@
             this.label6.Location = new System.Drawing.Point(57, 317);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 29);
-            this.label6.TabIndex = 39;
+            this.label6.TabIndex = 0;
             this.label6.Text = " House Type :";
             // 
             // btnUpdate
@@ -322,30 +331,31 @@
             this.btnAddMember.TabIndex = 0;
             this.btnAddMember.Text = "Add New Member";
             this.btnAddMember.UseVisualStyleBackColor = false;
+            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
-            // label26
+            // lblTotalMembers
             // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label26.Location = new System.Drawing.Point(1100, 86);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(73, 29);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "xxxxx";
+            this.lblTotalMembers.AutoSize = true;
+            this.lblTotalMembers.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMembers.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalMembers.Location = new System.Drawing.Point(1100, 86);
+            this.lblTotalMembers.Name = "lblTotalMembers";
+            this.lblTotalMembers.Size = new System.Drawing.Size(73, 29);
+            this.lblTotalMembers.TabIndex = 0;
+            this.lblTotalMembers.Text = "xxxxx";
             // 
-            // label34
+            // lblFamilyID
             // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label34.Location = new System.Drawing.Point(1045, 31);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(73, 29);
-            this.label34.TabIndex = 20;
-            this.label34.Text = "xxxxx";
+            this.lblFamilyID.AutoSize = true;
+            this.lblFamilyID.BackColor = System.Drawing.Color.Transparent;
+            this.lblFamilyID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFamilyID.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFamilyID.Location = new System.Drawing.Point(1045, 31);
+            this.lblFamilyID.Name = "lblFamilyID";
+            this.lblFamilyID.Size = new System.Drawing.Size(73, 29);
+            this.lblFamilyID.TabIndex = 0;
+            this.lblFamilyID.Text = "xxxxx";
             // 
             // label35
             // 
@@ -356,7 +366,7 @@
             this.label35.Location = new System.Drawing.Point(898, 86);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(196, 29);
-            this.label35.TabIndex = 21;
+            this.label35.TabIndex = 0;
             this.label35.Text = "Total Members :";
             // 
             // label36
@@ -368,7 +378,7 @@
             this.label36.Location = new System.Drawing.Point(898, 31);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(141, 29);
-            this.label36.TabIndex = 22;
+            this.label36.TabIndex = 0;
             this.label36.Text = "Family ID : ";
             // 
             // panel2
@@ -376,19 +386,19 @@
             this.panel2.Location = new System.Drawing.Point(872, 16);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 120);
-            this.panel2.TabIndex = 23;
+            this.panel2.TabIndex = 0;
             // 
-            // lblashaname
+            // lblHeadName
             // 
-            this.lblashaname.AutoSize = true;
-            this.lblashaname.BackColor = System.Drawing.Color.Transparent;
-            this.lblashaname.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblashaname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblashaname.Location = new System.Drawing.Point(174, 44);
-            this.lblashaname.Name = "lblashaname";
-            this.lblashaname.Size = new System.Drawing.Size(527, 88);
-            this.lblashaname.TabIndex = 0;
-            this.lblashaname.Text = "Family Head Name";
+            this.lblHeadName.AutoSize = true;
+            this.lblHeadName.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeadName.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeadName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblHeadName.Location = new System.Drawing.Point(174, 44);
+            this.lblHeadName.Name = "lblHeadName";
+            this.lblHeadName.Size = new System.Drawing.Size(527, 88);
+            this.lblHeadName.TabIndex = 0;
+            this.lblHeadName.Text = "Family Head Name";
             // 
             // pictureBox1
             // 
@@ -425,15 +435,6 @@
             this.panelControl1.Size = new System.Drawing.Size(506, 599);
             this.panelControl1.TabIndex = 0;
             // 
-            // ListViewPanel
-            // 
-            this.ListViewPanel.AutoScroll = true;
-            this.ListViewPanel.BackColor = System.Drawing.Color.Transparent;
-            this.ListViewPanel.Location = new System.Drawing.Point(1063, 247);
-            this.ListViewPanel.Name = "ListViewPanel";
-            this.ListViewPanel.Size = new System.Drawing.Size(478, 568);
-            this.ListViewPanel.TabIndex = 0;
-            // 
             // main_panelcontrol
             // 
             this.main_panelcontrol.Angle = 0F;
@@ -467,7 +468,7 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlback;
         private System.Windows.Forms.Button btnAddMember;
-        private System.Windows.Forms.Label lblashaname;
+        private System.Windows.Forms.Label lblHeadName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl panelControl3;
         private PanelControl panelControl1;
@@ -488,8 +489,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lblTotalMembers;
+        private System.Windows.Forms.Label lblFamilyID;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel2;

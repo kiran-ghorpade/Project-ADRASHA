@@ -33,7 +33,7 @@ namespace ADRASHA_Main.Forms
         }
 
         [Category("Custom Props")]
-        public string FamilyID
+        public string MemberID
         {
             get { return _memberid; }
             set { _memberid = value; Member_Id.Text = value; }
@@ -56,5 +56,13 @@ namespace ADRASHA_Main.Forms
 
 
         #endregion
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            MemberHealthProfile profile = new MemberHealthProfile(Convert.ToInt32(MemberID));
+            MyFunctions functions = new MyFunctions();
+            functions.LoadChildForm(profile,MDI.childformpanel);
+        }
+
     }
 }
