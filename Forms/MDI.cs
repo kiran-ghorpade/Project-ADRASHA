@@ -30,7 +30,7 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             SearchBoxPanel.Visible = false;
-            functions.LoadChildForm(new RegistryBookForm(),childformpanel);
+            functions.LoadChildForm(new RegistryBook_Form(),childformpanel);
         }
 
 
@@ -93,7 +93,7 @@ namespace ADRASHA_Main
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            functions.LoadChildForm(new RegistryBookForm(), childformpanel);
+            functions.LoadChildForm(new RegistryBook_Form(), childformpanel);
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)

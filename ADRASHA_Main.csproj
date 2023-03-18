@@ -88,30 +88,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManipulation.cs" />
-    <Compile Include="Forms\AddNewFamily.cs">
+    <Compile Include="Forms\Add_New_Family.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddNewFamily.Designer.cs">
-      <DependentUpon>AddNewFamily.cs</DependentUpon>
+    <Compile Include="Forms\Add_New_Family.Designer.cs">
+      <DependentUpon>Add_New_Family.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseClass.cs" />
-    <Compile Include="Forms\AddNewMember.cs">
+    <Compile Include="Forms\Add_New_Member.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddNewMember.Designer.cs">
-      <DependentUpon>AddNewMember.cs</DependentUpon>
+    <Compile Include="Forms\Add_New_Member.Designer.cs">
+      <DependentUpon>Add_New_Member.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AshaProfile.cs">
+    <Compile Include="Forms\Analytics_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AshaProfile.Designer.cs">
-      <DependentUpon>AshaProfile.cs</DependentUpon>
+    <Compile Include="Forms\Analytics_Form.Designer.cs">
+      <DependentUpon>Analytics_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FamilyProfile.cs">
+    <Compile Include="Forms\Asha_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FamilyProfile.Designer.cs">
-      <DependentUpon>FamilyProfile.cs</DependentUpon>
+    <Compile Include="Forms\Asha_Profile.Designer.cs">
+      <DependentUpon>Asha_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Demographic_Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Demographic_Analytics.Designer.cs">
+      <DependentUpon>Demographic_Analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Family_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Family_Profile.Designer.cs">
+      <DependentUpon>Family_Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FamilyListView.cs">
       <SubType>UserControl</SubType>
@@ -119,11 +131,11 @@
     <Compile Include="Forms\FamilyListView.Designer.cs">
       <DependentUpon>FamilyListView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MemberHealthProfile.cs">
+    <Compile Include="Forms\Member_Health_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MemberHealthProfile.Designer.cs">
-      <DependentUpon>MemberHealthProfile.cs</DependentUpon>
+    <Compile Include="Forms\Member_Health_Profile.Designer.cs">
+      <DependentUpon>Member_Health_Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MDI.cs">
       <SubType>Form</SubType>
@@ -137,11 +149,23 @@
     <Compile Include="Forms\MemberListView.Designer.cs">
       <DependentUpon>MemberListView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MemberProfile.cs">
+    <Compile Include="Forms\Member_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MemberProfile.Designer.cs">
-      <DependentUpon>MemberProfile.cs</DependentUpon>
+    <Compile Include="Forms\Member_Profile.Designer.cs">
+      <DependentUpon>Member_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NCD_Anlaytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NCD_Anlaytics.Designer.cs">
+      <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NCD_Profile_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NCD_Profile_Form.Designer.cs">
+      <DependentUpon>NCD_Profile_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PanelControl.cs">
       <SubType>UserControl</SubType>
@@ -149,63 +173,69 @@
     <Compile Include="Forms\PanelControl.Designer.cs">
       <DependentUpon>PanelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Reports_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports_Form.Designer.cs">
+      <DependentUpon>Reports_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vaccination_Anlaytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vaccination_Anlaytics.Designer.cs">
+      <DependentUpon>Vaccination_Anlaytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Vaccination_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vaccination_Form.Designer.cs">
+      <DependentUpon>Vaccination_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyFunctions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\AshaRegistration.cs">
+    <Compile Include="Forms\Asha_Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AshaRegistration.Designer.cs">
-      <DependentUpon>AshaRegistration.cs</DependentUpon>
+    <Compile Include="Forms\Asha_Registration.Designer.cs">
+      <DependentUpon>Asha_Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegistryBookForm.cs">
+    <Compile Include="Forms\RegistryBook_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RegistryBookForm.Designer.cs">
-      <DependentUpon>RegistryBookForm.cs</DependentUpon>
+    <Compile Include="Forms\RegistryBook_Form.Designer.cs">
+      <DependentUpon>RegistryBook_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SettingForm.cs">
+    <Compile Include="Forms\Setting_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SettingForm.Designer.cs">
-      <DependentUpon>SettingForm.cs</DependentUpon>
+    <Compile Include="Forms\Setting_Form.Designer.cs">
+      <DependentUpon>Setting_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SplashScreen.cs">
+    <Compile Include="Forms\Splash_Screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SplashScreen.Designer.cs">
-      <DependentUpon>SplashScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\temp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\temp.Designer.cs">
-      <DependentUpon>temp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Tmperory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Tmperory.Designer.cs">
-      <DependentUpon>Tmperory.cs</DependentUpon>
+    <Compile Include="Forms\Splash_Screen.Designer.cs">
+      <DependentUpon>Splash_Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Validation.cs" />
-    <EmbeddedResource Include="Forms\AddNewFamily.resx">
-      <DependentUpon>AddNewFamily.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Add_New_Family.resx">
+      <DependentUpon>Add_New_Family.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddNewMember.resx">
-      <DependentUpon>AddNewMember.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Add_New_Member.resx">
+      <DependentUpon>Add_New_Member.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AshaProfile.resx">
-      <DependentUpon>AshaProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Asha_Profile.resx">
+      <DependentUpon>Asha_Profile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FamilyProfile.resx">
-      <DependentUpon>FamilyProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Family_Profile.resx">
+      <DependentUpon>Family_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FamilyListView.resx">
       <DependentUpon>FamilyListView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MemberHealthProfile.resx">
-      <DependentUpon>MemberHealthProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Member_Health_Profile.resx">
+      <DependentUpon>Member_Health_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
@@ -213,34 +243,34 @@
     <EmbeddedResource Include="Forms\MemberListView.resx">
       <DependentUpon>MemberListView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MemberProfile.resx">
-      <DependentUpon>MemberProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Member_Profile.resx">
+      <DependentUpon>Member_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NCD_Profile_Form.resx">
+      <DependentUpon>NCD_Profile_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vaccination_Form.resx">
+      <DependentUpon>Vaccination_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AshaRegistration.resx">
-      <DependentUpon>AshaRegistration.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Asha_Registration.resx">
+      <DependentUpon>Asha_Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegistryBookForm.resx">
-      <DependentUpon>RegistryBookForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RegistryBook_Form.resx">
+      <DependentUpon>RegistryBook_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SettingForm.resx">
-      <DependentUpon>SettingForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Setting_Form.resx">
+      <DependentUpon>Setting_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SplashScreen.resx">
-      <DependentUpon>SplashScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\temp.resx">
-      <DependentUpon>temp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Tmperory.resx">
-      <DependentUpon>Tmperory.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Splash_Screen.resx">
+      <DependentUpon>Splash_Screen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
