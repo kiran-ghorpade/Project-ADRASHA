@@ -17,14 +17,5 @@ namespace ADRASHA_Main
             InitializeComponent();
         }
 
-        private void AshaProfile_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

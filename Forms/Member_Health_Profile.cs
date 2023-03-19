@@ -81,13 +81,21 @@ namespace ADRASHA_Main
         private void btnPersonalProfile_Click(object sender, EventArgs e)
         {
             Member_Profile profile = new Member_Profile(member_id);
+            this.Dispose();
             MyFunctions.LoadChildForm(profile,MDI.childformpanel);
         }
 
         private void btnFamily_Click(object sender, EventArgs e)
         {
             Family_Profile familyProfile = new Family_Profile(family_id);
+            this.Dispose();
             MyFunctions.LoadChildForm(familyProfile,MDI.childformpanel);
+        }
+
+        private void btnUpdateVaccination_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            MyFunctions.LoadChildForm(new Vaccination_Form(member_id),MDI.childformpanel);
         }
     }
 }

@@ -76,6 +76,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -113,6 +114,12 @@
     <Compile Include="Forms\Asha_Profile.Designer.cs">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Demographic_Analytics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +137,12 @@
     </Compile>
     <Compile Include="Forms\FamilyListView.Designer.cs">
       <DependentUpon>FamilyListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maternal_Health_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maternal_Health_Form.Designer.cs">
+      <DependentUpon>Maternal_Health_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Member_Health_Profile.cs">
       <SubType>Form</SubType>
@@ -225,14 +238,26 @@
     <EmbeddedResource Include="Forms\Add_New_Member.resx">
       <DependentUpon>Add_New_Member.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analytics_Form.resx">
+      <DependentUpon>Analytics_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Asha_Profile.resx">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Demographic_Analytics.resx">
+      <DependentUpon>Demographic_Analytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Family_Profile.resx">
       <DependentUpon>Family_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FamilyListView.resx">
       <DependentUpon>FamilyListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maternal_Health_Form.resx">
+      <DependentUpon>Maternal_Health_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member_Health_Profile.resx">
       <DependentUpon>Member_Health_Profile.cs</DependentUpon>
@@ -246,11 +271,20 @@
     <EmbeddedResource Include="Forms\Member_Profile.resx">
       <DependentUpon>Member_Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NCD_Anlaytics.resx">
+      <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\NCD_Profile_Form.resx">
       <DependentUpon>NCD_Profile_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports_Form.resx">
+      <DependentUpon>Reports_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vaccination_Anlaytics.resx">
+      <DependentUpon>Vaccination_Anlaytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Vaccination_Form.resx">
       <DependentUpon>Vaccination_Form.cs</DependentUpon>

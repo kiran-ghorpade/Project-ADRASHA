@@ -17,24 +17,5 @@ namespace ADRASHA_Main
             InitializeComponent();
         }
 
-        private void form_head_panelcontrol_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPersonalize_Click(object sender, EventArgs e)
-        {
-            pnlPersonalize.BringToFront();
-        }
-
-        private void btnSecurity_Click(object sender, EventArgs e)
-        {
-            pnlSecurity.BringToFront();
-        }
-
-        private void btnOther_Click(object sender, EventArgs e)
-        {
-            pnlOther.BringToFront();
-        }
     }
 }

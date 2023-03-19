@@ -41,39 +41,33 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.lblVillageType = new System.Windows.Forms.Label();
+            this.lblTotalPopulation = new System.Windows.Forms.Label();
+            this.lblTotalFamilies = new System.Windows.Forms.Label();
+            this.lblState = new System.Windows.Forms.Label();
+            this.lblDistrict = new System.Windows.Forms.Label();
+            this.lblTaluka = new System.Windows.Forms.Label();
+            this.lblPincode = new System.Windows.Forms.Label();
+            this.lblVillage = new System.Windows.Forms.Label();
+            this.lblSubCenter = new System.Windows.Forms.Label();
+            this.lblAdharNo = new System.Windows.Forms.Label();
+            this.lblQualification = new System.Windows.Forms.Label();
+            this.lblMaritalStatus = new System.Windows.Forms.Label();
+            this.lblMobileNo = new System.Windows.Forms.Label();
+            this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblashaname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl2 = new ADRASHA_Main.PanelControl();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.panelControl4 = new ADRASHA_Main.PanelControl();
             this.panelControl1 = new ADRASHA_Main.PanelControl();
-            this.lblfirstname = new System.Windows.Forms.Label();
-            this.lblMiddleName = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblBirthDate = new System.Windows.Forms.Label();
-            this.lblMobileNo = new System.Windows.Forms.Label();
-            this.lblMaritalStatus = new System.Windows.Forms.Label();
-            this.lblQualification = new System.Windows.Forms.Label();
-            this.lblAdharNo = new System.Windows.Forms.Label();
-            this.lblSubCenter = new System.Windows.Forms.Label();
-            this.lblVillage = new System.Windows.Forms.Label();
-            this.lblPincode = new System.Windows.Forms.Label();
-            this.lblTaluka = new System.Windows.Forms.Label();
-            this.lblDistrict = new System.Windows.Forms.Label();
-            this.lblState = new System.Windows.Forms.Label();
-            this.lblTotalFamilies = new System.Windows.Forms.Label();
-            this.lblTotalPopulation = new System.Windows.Forms.Label();
-            this.lblVillageType = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,7 +110,7 @@
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label21.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label21.Location = new System.Drawing.Point(1101, 516);
+            this.label21.Location = new System.Drawing.Point(1101, 558);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(135, 31);
             this.label21.TabIndex = 0;
@@ -128,7 +122,7 @@
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label17.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label17.Location = new System.Drawing.Point(1095, 370);
+            this.label17.Location = new System.Drawing.Point(1095, 412);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(203, 62);
             this.label17.TabIndex = 0;
@@ -140,7 +134,7 @@
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label15.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label15.Location = new System.Drawing.Point(579, 409);
+            this.label15.Location = new System.Drawing.Point(579, 451);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(95, 31);
             this.label15.TabIndex = 0;
@@ -152,7 +146,7 @@
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label16.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label16.Location = new System.Drawing.Point(1095, 255);
+            this.label16.Location = new System.Drawing.Point(1095, 297);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(151, 62);
             this.label16.TabIndex = 0;
@@ -164,7 +158,7 @@
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label14.Location = new System.Drawing.Point(579, 657);
+            this.label14.Location = new System.Drawing.Point(579, 699);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 31);
             this.label14.TabIndex = 0;
@@ -176,7 +170,7 @@
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label13.Location = new System.Drawing.Point(579, 570);
+            this.label13.Location = new System.Drawing.Point(579, 612);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 31);
             this.label13.TabIndex = 0;
@@ -188,7 +182,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label6.Location = new System.Drawing.Point(1100, 164);
+            this.label6.Location = new System.Drawing.Point(1100, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(347, 42);
             this.label6.TabIndex = 0;
@@ -200,7 +194,7 @@
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label20.Location = new System.Drawing.Point(50, 679);
+            this.label20.Location = new System.Drawing.Point(51, 614);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(116, 31);
             this.label20.TabIndex = 0;
@@ -212,7 +206,7 @@
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label19.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label19.Location = new System.Drawing.Point(50, 610);
+            this.label19.Location = new System.Drawing.Point(51, 528);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(160, 31);
             this.label19.TabIndex = 0;
@@ -224,7 +218,7 @@
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label18.Location = new System.Drawing.Point(48, 544);
+            this.label18.Location = new System.Drawing.Point(49, 451);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(156, 31);
             this.label18.TabIndex = 0;
@@ -236,23 +230,11 @@
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label12.Location = new System.Drawing.Point(579, 486);
+            this.label12.Location = new System.Drawing.Point(579, 528);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(78, 31);
             this.label12.TabIndex = 0;
             this.label12.Text = "Taluka";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label9.Location = new System.Drawing.Point(48, 346);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 31);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Last Name ";
             // 
             // label5
             // 
@@ -260,7 +242,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label5.Location = new System.Drawing.Point(50, 472);
+            this.label5.Location = new System.Drawing.Point(51, 374);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 31);
             this.label5.TabIndex = 0;
@@ -272,23 +254,11 @@
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label11.Location = new System.Drawing.Point(579, 334);
+            this.label11.Location = new System.Drawing.Point(579, 376);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 31);
             this.label11.TabIndex = 0;
             this.label11.Text = "Village";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label8.Location = new System.Drawing.Point(48, 286);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 31);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Middle Name ";
             // 
             // label4
             // 
@@ -296,7 +266,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label4.Location = new System.Drawing.Point(50, 409);
+            this.label4.Location = new System.Drawing.Point(51, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 31);
             this.label4.TabIndex = 0;
@@ -308,23 +278,11 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label10.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label10.Location = new System.Drawing.Point(579, 255);
+            this.label10.Location = new System.Drawing.Point(579, 297);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(132, 31);
             this.label10.TabIndex = 0;
             this.label10.Text = "Sub-Center ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label7.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label7.Location = new System.Drawing.Point(50, 230);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 31);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "First Name ";
             // 
             // label2
             // 
@@ -332,7 +290,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label2.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(59, 164);
+            this.label2.Location = new System.Drawing.Point(59, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 42);
             this.label2.TabIndex = 0;
@@ -344,7 +302,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label3.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(564, 164);
+            this.label3.Location = new System.Drawing.Point(564, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(194, 42);
             this.label3.TabIndex = 0;
@@ -366,9 +324,6 @@
             this.kryptonPanel1.Controls.Add(this.lblMaritalStatus);
             this.kryptonPanel1.Controls.Add(this.lblMobileNo);
             this.kryptonPanel1.Controls.Add(this.lblBirthDate);
-            this.kryptonPanel1.Controls.Add(this.lblLastName);
-            this.kryptonPanel1.Controls.Add(this.lblMiddleName);
-            this.kryptonPanel1.Controls.Add(this.lblfirstname);
             this.kryptonPanel1.Controls.Add(this.btnNext);
             this.kryptonPanel1.Controls.Add(this.label21);
             this.kryptonPanel1.Controls.Add(this.label17);
@@ -381,13 +336,10 @@
             this.kryptonPanel1.Controls.Add(this.label19);
             this.kryptonPanel1.Controls.Add(this.label18);
             this.kryptonPanel1.Controls.Add(this.label12);
-            this.kryptonPanel1.Controls.Add(this.label9);
             this.kryptonPanel1.Controls.Add(this.label5);
             this.kryptonPanel1.Controls.Add(this.label11);
-            this.kryptonPanel1.Controls.Add(this.label8);
             this.kryptonPanel1.Controls.Add(this.label4);
             this.kryptonPanel1.Controls.Add(this.label10);
-            this.kryptonPanel1.Controls.Add(this.label7);
             this.kryptonPanel1.Controls.Add(this.label2);
             this.kryptonPanel1.Controls.Add(this.label3);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -408,7 +360,174 @@
             this.kryptonPanel1.StateNormal.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonPanel1.StateNormal.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
             this.kryptonPanel1.TabIndex = 0;
-            this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
+            // 
+            // lblVillageType
+            // 
+            this.lblVillageType.AutoSize = true;
+            this.lblVillageType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblVillageType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVillageType.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblVillageType.Location = new System.Drawing.Point(1348, 560);
+            this.lblVillageType.Name = "lblVillageType";
+            this.lblVillageType.Size = new System.Drawing.Size(157, 29);
+            this.lblVillageType.TabIndex = 0;
+            this.lblVillageType.Text = "Output Lable";
+            // 
+            // lblTotalPopulation
+            // 
+            this.lblTotalPopulation.AutoSize = true;
+            this.lblTotalPopulation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblTotalPopulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPopulation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalPopulation.Location = new System.Drawing.Point(1348, 429);
+            this.lblTotalPopulation.Name = "lblTotalPopulation";
+            this.lblTotalPopulation.Size = new System.Drawing.Size(157, 29);
+            this.lblTotalPopulation.TabIndex = 0;
+            this.lblTotalPopulation.Text = "Output Lable";
+            // 
+            // lblTotalFamilies
+            // 
+            this.lblTotalFamilies.AutoSize = true;
+            this.lblTotalFamilies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblTotalFamilies.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalFamilies.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalFamilies.Location = new System.Drawing.Point(1348, 309);
+            this.lblTotalFamilies.Name = "lblTotalFamilies";
+            this.lblTotalFamilies.Size = new System.Drawing.Size(157, 29);
+            this.lblTotalFamilies.TabIndex = 0;
+            this.lblTotalFamilies.Text = "Output Lable";
+            // 
+            // lblState
+            // 
+            this.lblState.AutoSize = true;
+            this.lblState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblState.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblState.Location = new System.Drawing.Point(742, 701);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(157, 29);
+            this.lblState.TabIndex = 0;
+            this.lblState.Text = "Output Lable";
+            // 
+            // lblDistrict
+            // 
+            this.lblDistrict.AutoSize = true;
+            this.lblDistrict.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDistrict.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblDistrict.Location = new System.Drawing.Point(742, 612);
+            this.lblDistrict.Name = "lblDistrict";
+            this.lblDistrict.Size = new System.Drawing.Size(157, 29);
+            this.lblDistrict.TabIndex = 0;
+            this.lblDistrict.Text = "Output Lable";
+            // 
+            // lblTaluka
+            // 
+            this.lblTaluka.AutoSize = true;
+            this.lblTaluka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblTaluka.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaluka.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTaluka.Location = new System.Drawing.Point(742, 528);
+            this.lblTaluka.Name = "lblTaluka";
+            this.lblTaluka.Size = new System.Drawing.Size(157, 29);
+            this.lblTaluka.TabIndex = 0;
+            this.lblTaluka.Text = "Output Lable";
+            // 
+            // lblPincode
+            // 
+            this.lblPincode.AutoSize = true;
+            this.lblPincode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblPincode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPincode.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPincode.Location = new System.Drawing.Point(742, 451);
+            this.lblPincode.Name = "lblPincode";
+            this.lblPincode.Size = new System.Drawing.Size(157, 29);
+            this.lblPincode.TabIndex = 0;
+            this.lblPincode.Text = "Output Lable";
+            // 
+            // lblVillage
+            // 
+            this.lblVillage.AutoSize = true;
+            this.lblVillage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblVillage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVillage.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblVillage.Location = new System.Drawing.Point(742, 376);
+            this.lblVillage.Name = "lblVillage";
+            this.lblVillage.Size = new System.Drawing.Size(157, 29);
+            this.lblVillage.TabIndex = 0;
+            this.lblVillage.Text = "Output Lable";
+            // 
+            // lblSubCenter
+            // 
+            this.lblSubCenter.AutoSize = true;
+            this.lblSubCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblSubCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubCenter.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSubCenter.Location = new System.Drawing.Point(742, 299);
+            this.lblSubCenter.Name = "lblSubCenter";
+            this.lblSubCenter.Size = new System.Drawing.Size(157, 29);
+            this.lblSubCenter.TabIndex = 0;
+            this.lblSubCenter.Text = "Output Lable";
+            // 
+            // lblAdharNo
+            // 
+            this.lblAdharNo.AutoSize = true;
+            this.lblAdharNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblAdharNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdharNo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblAdharNo.Location = new System.Drawing.Point(255, 614);
+            this.lblAdharNo.Name = "lblAdharNo";
+            this.lblAdharNo.Size = new System.Drawing.Size(157, 29);
+            this.lblAdharNo.TabIndex = 0;
+            this.lblAdharNo.Text = "Output Lable";
+            // 
+            // lblQualification
+            // 
+            this.lblQualification.AutoSize = true;
+            this.lblQualification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblQualification.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQualification.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblQualification.Location = new System.Drawing.Point(255, 530);
+            this.lblQualification.Name = "lblQualification";
+            this.lblQualification.Size = new System.Drawing.Size(157, 29);
+            this.lblQualification.TabIndex = 0;
+            this.lblQualification.Text = "Output Lable";
+            // 
+            // lblMaritalStatus
+            // 
+            this.lblMaritalStatus.AutoSize = true;
+            this.lblMaritalStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaritalStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblMaritalStatus.Location = new System.Drawing.Point(255, 453);
+            this.lblMaritalStatus.Name = "lblMaritalStatus";
+            this.lblMaritalStatus.Size = new System.Drawing.Size(157, 29);
+            this.lblMaritalStatus.TabIndex = 0;
+            this.lblMaritalStatus.Text = "Output Lable";
+            // 
+            // lblMobileNo
+            // 
+            this.lblMobileNo.AutoSize = true;
+            this.lblMobileNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblMobileNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobileNo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblMobileNo.Location = new System.Drawing.Point(255, 376);
+            this.lblMobileNo.Name = "lblMobileNo";
+            this.lblMobileNo.Size = new System.Drawing.Size(157, 29);
+            this.lblMobileNo.TabIndex = 0;
+            this.lblMobileNo.Text = "Output Lable";
+            // 
+            // lblBirthDate
+            // 
+            this.lblBirthDate.AutoSize = true;
+            this.lblBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblBirthDate.Location = new System.Drawing.Point(255, 302);
+            this.lblBirthDate.Name = "lblBirthDate";
+            this.lblBirthDate.Size = new System.Drawing.Size(157, 29);
+            this.lblBirthDate.TabIndex = 0;
+            this.lblBirthDate.Text = "Output Lable";
             // 
             // lblashaname
             // 
@@ -451,7 +570,7 @@
             this.panelControl3.BackColor = System.Drawing.Color.Transparent;
             this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Location = new System.Drawing.Point(12, 143);
+            this.panelControl3.Location = new System.Drawing.Point(12, 185);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Rounding = 0;
             this.panelControl3.Size = new System.Drawing.Size(526, 625);
@@ -463,7 +582,7 @@
             this.panelControl4.BackColor = System.Drawing.Color.Transparent;
             this.panelControl4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.panelControl4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl4.Location = new System.Drawing.Point(1063, 143);
+            this.panelControl4.Location = new System.Drawing.Point(1063, 185);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Rounding = 0;
             this.panelControl4.Size = new System.Drawing.Size(490, 625);
@@ -475,217 +594,13 @@
             this.panelControl1.BackColor = System.Drawing.Color.Transparent;
             this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Location = new System.Drawing.Point(544, 143);
+            this.panelControl1.Location = new System.Drawing.Point(544, 185);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Rounding = 0;
             this.panelControl1.Size = new System.Drawing.Size(513, 625);
             this.panelControl1.TabIndex = 0;
             // 
-            // lblfirstname
-            // 
-            this.lblfirstname.AutoSize = true;
-            this.lblfirstname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblfirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfirstname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblfirstname.Location = new System.Drawing.Point(254, 230);
-            this.lblfirstname.Name = "lblfirstname";
-            this.lblfirstname.Size = new System.Drawing.Size(157, 29);
-            this.lblfirstname.TabIndex = 0;
-            this.lblfirstname.Text = "Output Lable";
-            // 
-            // lblMiddleName
-            // 
-            this.lblMiddleName.AutoSize = true;
-            this.lblMiddleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMiddleName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMiddleName.Location = new System.Drawing.Point(254, 288);
-            this.lblMiddleName.Name = "lblMiddleName";
-            this.lblMiddleName.Size = new System.Drawing.Size(157, 29);
-            this.lblMiddleName.TabIndex = 0;
-            this.lblMiddleName.Text = "Output Lable";
-            // 
-            // lblLastName
-            // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblLastName.Location = new System.Drawing.Point(254, 346);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(157, 29);
-            this.lblLastName.TabIndex = 0;
-            this.lblLastName.Text = "Output Lable";
-            // 
-            // lblBirthDate
-            // 
-            this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblBirthDate.Location = new System.Drawing.Point(254, 411);
-            this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(157, 29);
-            this.lblBirthDate.TabIndex = 0;
-            this.lblBirthDate.Text = "Output Lable";
-            // 
-            // lblMobileNo
-            // 
-            this.lblMobileNo.AutoSize = true;
-            this.lblMobileNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblMobileNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobileNo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMobileNo.Location = new System.Drawing.Point(254, 474);
-            this.lblMobileNo.Name = "lblMobileNo";
-            this.lblMobileNo.Size = new System.Drawing.Size(157, 29);
-            this.lblMobileNo.TabIndex = 0;
-            this.lblMobileNo.Text = "Output Lable";
-            // 
-            // lblMaritalStatus
-            // 
-            this.lblMaritalStatus.AutoSize = true;
-            this.lblMaritalStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaritalStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMaritalStatus.Location = new System.Drawing.Point(254, 546);
-            this.lblMaritalStatus.Name = "lblMaritalStatus";
-            this.lblMaritalStatus.Size = new System.Drawing.Size(157, 29);
-            this.lblMaritalStatus.TabIndex = 0;
-            this.lblMaritalStatus.Text = "Output Lable";
-            // 
-            // lblQualification
-            // 
-            this.lblQualification.AutoSize = true;
-            this.lblQualification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblQualification.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQualification.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblQualification.Location = new System.Drawing.Point(254, 612);
-            this.lblQualification.Name = "lblQualification";
-            this.lblQualification.Size = new System.Drawing.Size(157, 29);
-            this.lblQualification.TabIndex = 0;
-            this.lblQualification.Text = "Output Lable";
-            // 
-            // lblAdharNo
-            // 
-            this.lblAdharNo.AutoSize = true;
-            this.lblAdharNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblAdharNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdharNo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblAdharNo.Location = new System.Drawing.Point(254, 679);
-            this.lblAdharNo.Name = "lblAdharNo";
-            this.lblAdharNo.Size = new System.Drawing.Size(157, 29);
-            this.lblAdharNo.TabIndex = 0;
-            this.lblAdharNo.Text = "Output Lable";
-            // 
-            // lblSubCenter
-            // 
-            this.lblSubCenter.AutoSize = true;
-            this.lblSubCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblSubCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubCenter.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSubCenter.Location = new System.Drawing.Point(742, 257);
-            this.lblSubCenter.Name = "lblSubCenter";
-            this.lblSubCenter.Size = new System.Drawing.Size(157, 29);
-            this.lblSubCenter.TabIndex = 0;
-            this.lblSubCenter.Text = "Output Lable";
-            // 
-            // lblVillage
-            // 
-            this.lblVillage.AutoSize = true;
-            this.lblVillage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblVillage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVillage.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblVillage.Location = new System.Drawing.Point(742, 334);
-            this.lblVillage.Name = "lblVillage";
-            this.lblVillage.Size = new System.Drawing.Size(157, 29);
-            this.lblVillage.TabIndex = 0;
-            this.lblVillage.Text = "Output Lable";
-            // 
-            // lblPincode
-            // 
-            this.lblPincode.AutoSize = true;
-            this.lblPincode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblPincode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPincode.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPincode.Location = new System.Drawing.Point(742, 409);
-            this.lblPincode.Name = "lblPincode";
-            this.lblPincode.Size = new System.Drawing.Size(157, 29);
-            this.lblPincode.TabIndex = 0;
-            this.lblPincode.Text = "Output Lable";
-            // 
-            // lblTaluka
-            // 
-            this.lblTaluka.AutoSize = true;
-            this.lblTaluka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblTaluka.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaluka.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTaluka.Location = new System.Drawing.Point(742, 486);
-            this.lblTaluka.Name = "lblTaluka";
-            this.lblTaluka.Size = new System.Drawing.Size(157, 29);
-            this.lblTaluka.TabIndex = 0;
-            this.lblTaluka.Text = "Output Lable";
-            // 
-            // lblDistrict
-            // 
-            this.lblDistrict.AutoSize = true;
-            this.lblDistrict.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistrict.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblDistrict.Location = new System.Drawing.Point(742, 570);
-            this.lblDistrict.Name = "lblDistrict";
-            this.lblDistrict.Size = new System.Drawing.Size(157, 29);
-            this.lblDistrict.TabIndex = 0;
-            this.lblDistrict.Text = "Output Lable";
-            // 
-            // lblState
-            // 
-            this.lblState.AutoSize = true;
-            this.lblState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblState.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblState.Location = new System.Drawing.Point(742, 659);
-            this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(157, 29);
-            this.lblState.TabIndex = 0;
-            this.lblState.Text = "Output Lable";
-            // 
-            // lblTotalFamilies
-            // 
-            this.lblTotalFamilies.AutoSize = true;
-            this.lblTotalFamilies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblTotalFamilies.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalFamilies.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTotalFamilies.Location = new System.Drawing.Point(1348, 271);
-            this.lblTotalFamilies.Name = "lblTotalFamilies";
-            this.lblTotalFamilies.Size = new System.Drawing.Size(157, 29);
-            this.lblTotalFamilies.TabIndex = 0;
-            this.lblTotalFamilies.Text = "Output Lable";
-            // 
-            // lblTotalPopulation
-            // 
-            this.lblTotalPopulation.AutoSize = true;
-            this.lblTotalPopulation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblTotalPopulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPopulation.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTotalPopulation.Location = new System.Drawing.Point(1348, 392);
-            this.lblTotalPopulation.Name = "lblTotalPopulation";
-            this.lblTotalPopulation.Size = new System.Drawing.Size(157, 29);
-            this.lblTotalPopulation.TabIndex = 0;
-            this.lblTotalPopulation.Text = "Output Lable";
-            // 
-            // lblVillageType
-            // 
-            this.lblVillageType.AutoSize = true;
-            this.lblVillageType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblVillageType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVillageType.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblVillageType.Location = new System.Drawing.Point(1348, 516);
-            this.lblVillageType.Name = "lblVillageType";
-            this.lblVillageType.Size = new System.Drawing.Size(157, 29);
-            this.lblVillageType.TabIndex = 0;
-            this.lblVillageType.Text = "Output Lable";
-            // 
-            // AshaProfile
+            // Asha_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -693,9 +608,8 @@
             this.ClientSize = new System.Drawing.Size(1565, 796);
             this.Controls.Add(this.kryptonPanel1);
             this.ForeColor = System.Drawing.Color.MintCream;
-            this.Name = "AshaProfile";
+            this.Name = "Asha_Profile";
             this.Text = "AshaProfile";
-            this.Load += new System.EventHandler(this.AshaProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -717,13 +631,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
@@ -733,7 +644,6 @@
         private PanelControl panelControl4;
         private PanelControl panelControl1;
         private PanelControl panelControl3;
-        private System.Windows.Forms.Label lblfirstname;
         private System.Windows.Forms.Label lblVillageType;
         private System.Windows.Forms.Label lblTotalPopulation;
         private System.Windows.Forms.Label lblTotalFamilies;
@@ -748,7 +658,5 @@
         private System.Windows.Forms.Label lblMaritalStatus;
         private System.Windows.Forms.Label lblMobileNo;
         private System.Windows.Forms.Label lblBirthDate;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblMiddleName;
     }
 }

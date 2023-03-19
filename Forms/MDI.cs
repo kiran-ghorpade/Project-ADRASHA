@@ -30,7 +30,7 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             SearchBoxPanel.Visible = false;
-            functions.LoadChildForm(new RegistryBook_Form(),childformpanel);
+            functions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
 
@@ -98,27 +98,30 @@ namespace ADRASHA_Main
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming Soon");
+            //MessageBox.Show("Coming Soon");
+            functions.LoadChildForm(new Reports_Form(), childformpanel);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming Soon");
+            //MessageBox.Show("Coming Soon");
+            functions.LoadChildForm(new Asha_Profile(), childformpanel);
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming Soon");
+            //MessageBox.Show("Coming Soon");
+            functions.LoadChildForm(new Setting_Form(),childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming Soon");
+            //MessageBox.Show("Coming Soon");
+            functions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-
             MessageBox.Show("Coming Soon");
         }
 

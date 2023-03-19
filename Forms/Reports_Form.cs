@@ -12,9 +12,20 @@ namespace ADRASHA_Main.Forms
 {
     public partial class Reports_Form : Form
     {
+        MyFunctions functions = new MyFunctions();
         public Reports_Form()
         {
             InitializeComponent();
+        }
+
+        private void btnTemplates_Click(object sender, EventArgs e)
+        {
+            functions.nextpanel_code(pnlReportTemplates);
+        }
+
+        private void btnSavedReports_Click(object sender, EventArgs e)
+        {
+            functions.nextpanel_code(pnlSavedReports);
         }
     }
 }

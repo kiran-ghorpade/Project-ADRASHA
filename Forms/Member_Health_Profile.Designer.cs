@@ -34,14 +34,14 @@
             this.kryptonTextBox26 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox27 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox28 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnUpdateBasic = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlVaccination = new System.Windows.Forms.Panel();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnUpdateVaccination = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlNCD = new System.Windows.Forms.Panel();
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -77,17 +77,18 @@
             this.btnHBNC = new System.Windows.Forms.Button();
             this.btnMaternalHealth = new System.Windows.Forms.Button();
             this.btnVaccination = new System.Windows.Forms.Button();
-            this.lblMemberName = new System.Windows.Forms.Label();
-            this.lblashaname = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl4 = new ADRASHA_Main.PanelControl();
             this.panelControl6 = new ADRASHA_Main.PanelControl();
             this.panelControl5 = new ADRASHA_Main.PanelControl();
             this.panelControl2 = new ADRASHA_Main.PanelControl();
             this.panelControl1 = new ADRASHA_Main.PanelControl();
+            this.lblMemberName = new System.Windows.Forms.Label();
+            this.lblashaname = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.pnlBasicHealth.SuspendLayout();
@@ -97,13 +98,14 @@
             this.pnlHBNC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.pnlVaccination);
             this.kryptonPanel1.Controls.Add(this.pnlBasicHealth);
             this.kryptonPanel1.Controls.Add(this.panel2);
-            this.kryptonPanel1.Controls.Add(this.pnlVaccination);
             this.kryptonPanel1.Controls.Add(this.pnlNCD);
             this.kryptonPanel1.Controls.Add(this.pnlMaternal);
             this.kryptonPanel1.Controls.Add(this.pnlHBNC);
@@ -128,7 +130,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1562, 796);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1562, 874);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
@@ -142,7 +144,7 @@
             this.pnlBasicHealth.Controls.Add(this.kryptonTextBox26);
             this.pnlBasicHealth.Controls.Add(this.kryptonTextBox27);
             this.pnlBasicHealth.Controls.Add(this.kryptonTextBox28);
-            this.pnlBasicHealth.Controls.Add(this.kryptonButton1);
+            this.pnlBasicHealth.Controls.Add(this.btnUpdateBasic);
             this.pnlBasicHealth.Controls.Add(this.label16);
             this.pnlBasicHealth.Controls.Add(this.label17);
             this.pnlBasicHealth.Controls.Add(this.label18);
@@ -191,24 +193,24 @@
             this.kryptonTextBox28.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox28.TabIndex = 15;
             // 
-            // kryptonButton1
+            // btnUpdateBasic
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnUpdateBasic.Location = new System.Drawing.Point(1250, 368);
+            this.btnUpdateBasic.Name = "btnUpdateBasic";
+            this.btnUpdateBasic.Size = new System.Drawing.Size(141, 52);
+            this.btnUpdateBasic.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnUpdateBasic.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnUpdateBasic.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateBasic.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateBasic.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 20;
-            this.kryptonButton1.StateCommon.Border.Width = 2;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.TabIndex = 8;
-            this.kryptonButton1.Values.Text = "Next";
+            this.btnUpdateBasic.StateCommon.Border.Rounding = 20;
+            this.btnUpdateBasic.StateCommon.Border.Width = 2;
+            this.btnUpdateBasic.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateBasic.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateBasic.TabIndex = 0;
+            this.btnUpdateBasic.Values.Text = "Update";
             // 
             // label16
             // 
@@ -268,31 +270,33 @@
             // pnlVaccination
             // 
             this.pnlVaccination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlVaccination.Controls.Add(this.kryptonButton2);
+            this.pnlVaccination.Controls.Add(this.pictureBox3);
+            this.pnlVaccination.Controls.Add(this.btnUpdateVaccination);
             this.pnlVaccination.Controls.Add(this.label1);
             this.pnlVaccination.Location = new System.Drawing.Point(75, 373);
             this.pnlVaccination.Name = "pnlVaccination";
-            this.pnlVaccination.Size = new System.Drawing.Size(1414, 460);
+            this.pnlVaccination.Size = new System.Drawing.Size(1414, 457);
             this.pnlVaccination.TabIndex = 0;
             // 
-            // kryptonButton2
+            // btnUpdateVaccination
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnUpdateVaccination.Location = new System.Drawing.Point(53, 195);
+            this.btnUpdateVaccination.Name = "btnUpdateVaccination";
+            this.btnUpdateVaccination.Size = new System.Drawing.Size(133, 52);
+            this.btnUpdateVaccination.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnUpdateVaccination.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnUpdateVaccination.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateVaccination.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateVaccination.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Border.Width = 2;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 8;
-            this.kryptonButton2.Values.Text = "Next";
+            this.btnUpdateVaccination.StateCommon.Border.Rounding = 20;
+            this.btnUpdateVaccination.StateCommon.Border.Width = 2;
+            this.btnUpdateVaccination.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateVaccination.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateVaccination.TabIndex = 0;
+            this.btnUpdateVaccination.Values.Text = "Update";
+            this.btnUpdateVaccination.Click += new System.EventHandler(this.btnUpdateVaccination_Click);
             // 
             // label1
             // 
@@ -300,7 +304,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.label1.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(46, 34);
+            this.label1.Location = new System.Drawing.Point(17, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(248, 42);
             this.label1.TabIndex = 0;
@@ -764,52 +768,6 @@
             this.btnVaccination.UseVisualStyleBackColor = false;
             this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
             // 
-            // lblMemberName
-            // 
-            this.lblMemberName.AutoSize = true;
-            this.lblMemberName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMemberName.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMemberName.Location = new System.Drawing.Point(959, 17);
-            this.lblMemberName.Name = "lblMemberName";
-            this.lblMemberName.Size = new System.Drawing.Size(522, 88);
-            this.lblMemberName.TabIndex = 0;
-            this.lblMemberName.Text = "Member Full Name";
-            // 
-            // lblashaname
-            // 
-            this.lblashaname.AutoSize = true;
-            this.lblashaname.BackColor = System.Drawing.Color.Transparent;
-            this.lblashaname.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblashaname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblashaname.Location = new System.Drawing.Point(174, 44);
-            this.lblashaname.Name = "lblashaname";
-            this.lblashaname.Size = new System.Drawing.Size(382, 88);
-            this.lblashaname.TabIndex = 0;
-            this.lblashaname.Text = "Health Profile";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::ADRASHA_Main.Properties.Resources.male_avtar;
-            this.pictureBox2.Location = new System.Drawing.Point(839, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelControl4
             // 
             this.panelControl4.Angle = 0F;
@@ -870,6 +828,52 @@
             this.panelControl1.Size = new System.Drawing.Size(217, 91);
             this.panelControl1.TabIndex = 0;
             // 
+            // lblMemberName
+            // 
+            this.lblMemberName.AutoSize = true;
+            this.lblMemberName.BackColor = System.Drawing.Color.Transparent;
+            this.lblMemberName.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblMemberName.Location = new System.Drawing.Point(959, 17);
+            this.lblMemberName.Name = "lblMemberName";
+            this.lblMemberName.Size = new System.Drawing.Size(522, 88);
+            this.lblMemberName.TabIndex = 0;
+            this.lblMemberName.Text = "Member Full Name";
+            // 
+            // lblashaname
+            // 
+            this.lblashaname.AutoSize = true;
+            this.lblashaname.BackColor = System.Drawing.Color.Transparent;
+            this.lblashaname.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblashaname.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblashaname.Location = new System.Drawing.Point(174, 44);
+            this.lblashaname.Name = "lblashaname";
+            this.lblashaname.Size = new System.Drawing.Size(382, 88);
+            this.lblashaname.TabIndex = 0;
+            this.lblashaname.Text = "Health Profile";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::ADRASHA_Main.Properties.Resources.male_avtar;
+            this.pictureBox2.Location = new System.Drawing.Point(839, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelControl3
             // 
             this.panelControl3.Angle = 0F;
@@ -894,13 +898,24 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 473);
             this.main_panelcontrol.TabIndex = 0;
             // 
-            // MemberHealthProfile
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(283, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1123, 451);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Member_Health_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1562, 796);
+            this.ClientSize = new System.Drawing.Size(1562, 874);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "MemberHealthProfile";
+            this.Name = "Member_Health_Profile";
             this.Text = "HealthProfile";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
@@ -917,6 +932,7 @@
             this.pnlHBNC.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -945,13 +961,13 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox26;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox27;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox28;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnUpdateBasic;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel pnlVaccination;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnUpdateVaccination;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlNCD;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
@@ -982,5 +998,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
