@@ -170,21 +170,23 @@ namespace ADRASHA_Main
             foreach (KeyValuePair<string, object> item in data)
             {
                 if (item.Value.GetType() == typeof(int))
-                    query += $"@{item.Key},";
+                    query += $"{item.Value},";
                 else
-                    query += $"'@{item.Key}',";
-            }
+                    query += $"'{item.Value}',";
+            } 
             query = query.TrimEnd(',') + $")";
                 using (SqliteConnection conn = GetConnection())
                 {
                     SqliteCommand cmd = new SqliteCommand(query, conn);
-                foreach (KeyValuePair<string, object> item in data)
-                {
-                    cmd.Parameters.AddWithValue($"@{item.Key}", item.Value);
-                }
+                //foreach (KeyValuePair<string, object> item in data)
+                //{
+                //    cmd.Parameters.AddWithValue($"@{item.Key}",item.Value);
+                //}
 
                 int rowsAffected = cmd.ExecuteNonQuery();
                     return rowsAffected > 0;
+
+
                 }
         }
 

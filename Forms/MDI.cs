@@ -93,36 +93,43 @@ namespace ADRASHA_Main
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
+            //Registry Btn
             functions.LoadChildForm(new RegistryBook_Form(), childformpanel);
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
+            //Report Btn
             //MessageBox.Show("Coming Soon");
             functions.LoadChildForm(new Reports_Form(), childformpanel);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
+            //Profile Btn
             //MessageBox.Show("Coming Soon");
             functions.LoadChildForm(new Asha_Profile(), childformpanel);
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
+            //Setting Btn
             //MessageBox.Show("Coming Soon");
             functions.LoadChildForm(new Setting_Form(),childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            //Dashboard Btn
             //MessageBox.Show("Coming Soon");
             functions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming Soon");
+            //Analytics Btn
+            // MessageBox.Show("Coming Soon");
+            functions.LoadChildForm(new  Analytics_Form(),childformpanel);
         }
 
         //private void PopulateItems()

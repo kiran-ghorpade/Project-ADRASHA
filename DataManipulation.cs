@@ -81,6 +81,12 @@ namespace ADRASHA_Main
                 {"Country", "@Country"},
                 {"PinCode", "@ZipCode"}
             };
+
+
+        Dictionary<string, object> Vaccination_Data = new Dictionary<string, object>
+        {
+
+        };
                 Dictionary<string, object> temp_tbMap = new Dictionary<string, object>
             {
                 //values for table familyinfo
@@ -201,6 +207,10 @@ namespace ADRASHA_Main
                     }
                     else if (control is ComboBox)
                     {
+                        if (((ComboBox)control).SelectedIndex == 0)
+                        {
+                            selectedDictionary[control.Name] = "None";
+                        }
                         selectedDictionary[control.Name] = ((ComboBox)control).SelectedItem;
                     }
                     else if (control is RadioButton)

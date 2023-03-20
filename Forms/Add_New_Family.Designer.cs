@@ -90,6 +90,7 @@
             // Total_Members
             // 
             this.Total_Members.Location = new System.Drawing.Point(260, 136);
+            this.Total_Members.MaxLength = 3;
             this.Total_Members.Name = "Total_Members";
             this.Total_Members.Size = new System.Drawing.Size(327, 38);
             this.Total_Members.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -99,6 +100,7 @@
             this.Total_Members.StateCommon.Border.Width = 1;
             this.Total_Members.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Total_Members.TabIndex = 1;
+            this.Total_Members.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Total_Members_KeyPress);
             // 
             // btnnext
             // 
@@ -497,6 +499,7 @@
             this.Country.StateCommon.Border.Width = 1;
             this.Country.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Country.TabIndex = 6;
+            this.Country.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // State
             // 
@@ -510,6 +513,7 @@
             this.State.StateCommon.Border.Width = 1;
             this.State.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.State.TabIndex = 5;
+            this.State.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // Taluka
             // 
@@ -523,6 +527,7 @@
             this.Taluka.StateCommon.Border.Width = 1;
             this.Taluka.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Taluka.TabIndex = 3;
+            this.Taluka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // PinCode
             // 
@@ -536,6 +541,7 @@
             this.PinCode.StateCommon.Border.Width = 1;
             this.PinCode.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PinCode.TabIndex = 2;
+            this.PinCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // District
             // 
@@ -549,6 +555,7 @@
             this.District.StateCommon.Border.Width = 1;
             this.District.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.District.TabIndex = 4;
+            this.District.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // Village
             // 
@@ -562,6 +569,7 @@
             this.Village.StateCommon.Border.Width = 1;
             this.Village.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Village.TabIndex = 1;
+            this.Village.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
             // 
             // btnSave
             // 
@@ -778,14 +786,15 @@
             this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox6.TabIndex = 9;
             // 
-            // AddNewFamily
+            // Add_New_Family
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1562, 796);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "AddNewFamily";
+            this.Name = "Add_New_Family";
             this.Text = "AddNewFamily";
+            this.Load += new System.EventHandler(this.Add_New_Family_Load);
             this.pnlFamilyDetails.ResumeLayout(false);
             this.pnlFamilyDetails.PerformLayout();
             this.Poverty_Status.ResumeLayout(false);

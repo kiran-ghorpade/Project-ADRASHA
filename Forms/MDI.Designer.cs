@@ -32,18 +32,18 @@
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnProfile = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnminimize = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.BtnClose = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             childformpanel = new System.Windows.Forms.Panel();
+            this.menubarpanelcontrol = new ADRASHA_Main.PanelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.menubarpanelcontrol = new ADRASHA_Main.PanelControl();
             this.childformpanelcontrol = new ADRASHA_Main.PanelControl();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,9 +77,11 @@
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(39, 823);
+            this.kryptonButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.kryptonButton5.Location = new System.Drawing.Point(39, 787);
             this.kryptonButton5.Name = "kryptonButton5";
-            this.kryptonButton5.Size = new System.Drawing.Size(224, 140);
+            this.kryptonButton5.Size = new System.Drawing.Size(224, 159);
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.kryptonButton5.TabIndex = 6;
@@ -98,6 +100,18 @@
             this.kryptonButton4.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton4.Values.Image")));
             this.kryptonButton4.Values.Text = "";
             this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
+            // 
+            // kryptonButton3
+            // 
+            this.kryptonButton3.Location = new System.Drawing.Point(39, 478);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.Size = new System.Drawing.Size(224, 140);
+            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.kryptonButton3.TabIndex = 6;
+            this.kryptonButton3.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton3.Values.Image")));
+            this.kryptonButton3.Values.Text = "";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // kryptonButton2
             // 
@@ -137,6 +151,7 @@
             // 
             // btnminimize
             // 
+            this.btnminimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnminimize.Location = new System.Drawing.Point(1702, 36);
             this.btnminimize.Name = "btnminimize";
             this.btnminimize.Size = new System.Drawing.Size(75, 52);
@@ -157,6 +172,7 @@
             // 
             // BtnClose
             // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClose.Location = new System.Drawing.Point(1783, 36);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(75, 52);
@@ -177,15 +193,30 @@
             // 
             // childformpanel
             // 
+            childformpanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             childformpanel.Location = new System.Drawing.Point(297, 141);
             childformpanel.Name = "childformpanel";
-            childformpanel.Size = new System.Drawing.Size(1580, 843);
+            childformpanel.Size = new System.Drawing.Size(1580, 805);
             childformpanel.TabIndex = 0;
+            // 
+            // menubarpanelcontrol
+            // 
+            this.menubarpanelcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.menubarpanelcontrol.Angle = 0F;
+            this.menubarpanelcontrol.BackColor = System.Drawing.Color.Transparent;
+            this.menubarpanelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.menubarpanelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.menubarpanelcontrol.Location = new System.Drawing.Point(28, 12);
+            this.menubarpanelcontrol.Name = "menubarpanelcontrol";
+            this.menubarpanelcontrol.Rounding = 0;
+            this.menubarpanelcontrol.Size = new System.Drawing.Size(248, 950);
+            this.menubarpanelcontrol.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(868, 46);
@@ -197,8 +228,6 @@
             // 
             // SearchBox
             // 
-            this.SearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchBox.Location = new System.Drawing.Point(372, 36);
             this.SearchBox.Name = "SearchBox";
@@ -218,6 +247,21 @@
             this.SearchBox.Enter += new System.EventHandler(this.SearchBox_Enter);
             this.SearchBox.Leave += new System.EventHandler(this.SearchBox_Leave);
             // 
+            // childformpanelcontrol
+            // 
+            this.childformpanelcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.childformpanelcontrol.Angle = 0F;
+            this.childformpanelcontrol.BackColor = System.Drawing.Color.Transparent;
+            this.childformpanelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.childformpanelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.childformpanelcontrol.Location = new System.Drawing.Point(282, 128);
+            this.childformpanelcontrol.Name = "childformpanelcontrol";
+            this.childformpanelcontrol.Rounding = 5;
+            this.childformpanelcontrol.Size = new System.Drawing.Size(1608, 831);
+            this.childformpanelcontrol.TabIndex = 0;
+            // 
             // SearchBoxPanel
             // 
             this.SearchBoxPanel.AutoScroll = true;
@@ -226,42 +270,6 @@
             this.SearchBoxPanel.Name = "SearchBoxPanel";
             this.SearchBoxPanel.Size = new System.Drawing.Size(513, 534);
             this.SearchBoxPanel.TabIndex = 0;
-            // 
-            // menubarpanelcontrol
-            // 
-            this.menubarpanelcontrol.Angle = 0F;
-            this.menubarpanelcontrol.BackColor = System.Drawing.Color.Transparent;
-            this.menubarpanelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.menubarpanelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.menubarpanelcontrol.Location = new System.Drawing.Point(28, 12);
-            this.menubarpanelcontrol.Name = "menubarpanelcontrol";
-            this.menubarpanelcontrol.Rounding = 0;
-            this.menubarpanelcontrol.Size = new System.Drawing.Size(248, 983);
-            this.menubarpanelcontrol.TabIndex = 3;
-            // 
-            // childformpanelcontrol
-            // 
-            this.childformpanelcontrol.Angle = 0F;
-            this.childformpanelcontrol.BackColor = System.Drawing.Color.Transparent;
-            this.childformpanelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.childformpanelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.childformpanelcontrol.Location = new System.Drawing.Point(282, 128);
-            this.childformpanelcontrol.Name = "childformpanelcontrol";
-            this.childformpanelcontrol.Rounding = 5;
-            this.childformpanelcontrol.Size = new System.Drawing.Size(1608, 867);
-            this.childformpanelcontrol.TabIndex = 0;
-            // 
-            // kryptonButton3
-            // 
-            this.kryptonButton3.Location = new System.Drawing.Point(39, 478);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(224, 140);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.kryptonButton3.TabIndex = 6;
-            this.kryptonButton3.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton3.Values.Image")));
-            this.kryptonButton3.Values.Text = "";
-            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // MDI
             // 
@@ -301,6 +309,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
-        static public System.Windows.Forms.Panel childformpanel;
+        public static System.Windows.Forms.Panel childformpanel;
     }
 }

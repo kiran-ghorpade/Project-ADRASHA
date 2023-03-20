@@ -18,6 +18,7 @@ namespace ADRASHA_Main
         int family_id;
         int member_id;
         string status;
+        bool valid = true;
 
         public Add_New_Member()
         {
@@ -37,7 +38,19 @@ namespace ADRASHA_Main
 
         private void btnnext_Click(object sender, EventArgs e)
         {
-            myfunctions.nextpanel_code(pnlidentity);
+            if(string.IsNullOrEmpty(First_Name.Text) ||
+               string.IsNullOrEmpty(Middle_Name.Text) ||
+               string.IsNullOrEmpty(Last_Name.Text) ||
+               !(rdbtnfemale.Checked || rdbtnmale.Checked)
+               )
+            {
+                valid = false;
+            }
+
+            if (valid)
+            {
+                myfunctions.nextpanel_code(pnlidentity);
+            }
         }
 
         private void btnclose_Click(object sender, EventArgs e)
@@ -117,6 +130,21 @@ namespace ADRASHA_Main
         private void label21_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Add_New_Member_Load(object sender, EventArgs e)
+        {
+            Validation.SetComboBox(this);
+        }
+
+        private void Child_Number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation.Only_Numeric(sender,e);
+        }
+
+        private void First_Name_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation.Only_Text(sender,e);
         }
     }
 }

@@ -15,7 +15,8 @@ namespace ADRASHA_Main
         {
             if (activeform != null)
             {
-                activeform.Close();
+                activeform.Dispose();
+                //activeform.Close();
             }
             activeform = childform;
             childform.TopLevel = false;

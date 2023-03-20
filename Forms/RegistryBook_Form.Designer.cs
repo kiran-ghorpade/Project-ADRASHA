@@ -199,13 +199,13 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1105, 563);
             this.main_panelcontrol.TabIndex = 0;
             // 
-            // RegistryBookForm
+            // RegistryBook_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1562, 796);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "RegistryBookForm";
+            this.Name = "RegistryBook_Form";
             this.Text = "RegistryBookForm";
             this.Load += new System.EventHandler(this.RegistryBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
