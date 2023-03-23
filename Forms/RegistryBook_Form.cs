@@ -43,7 +43,7 @@ namespace ADRASHA_Main
         private void button3_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            functions.LoadChildForm(new Add_New_Family(), MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Add_New_Family(), MDI.childformpanel);
         }
 
         private void RegistryBookForm_Load(object sender, EventArgs e)

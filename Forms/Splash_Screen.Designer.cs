@@ -41,9 +41,12 @@
             // 
             // logo_picturebox
             // 
+            this.logo_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.logo_picturebox.BackColor = System.Drawing.Color.Transparent;
             this.logo_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("logo_picturebox.Image")));
-            this.logo_picturebox.Location = new System.Drawing.Point(756, 293);
+            this.logo_picturebox.Location = new System.Drawing.Point(709, 332);
             this.logo_picturebox.Name = "logo_picturebox";
             this.logo_picturebox.Size = new System.Drawing.Size(502, 358);
             this.logo_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -52,11 +55,14 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Akronim", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(852, 581);
+            this.label1.Location = new System.Drawing.Point(812, 620);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 83);
             this.label1.TabIndex = 1;
@@ -91,7 +97,7 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 2;
             // 
-            // SplashScreen
+            // Splash_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,7 +107,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SplashScreen";
+            this.Name = "Splash_Screen";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

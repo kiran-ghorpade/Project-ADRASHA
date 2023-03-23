@@ -30,7 +30,7 @@ namespace ADRASHA_Main
         private void MDI_Load(object sender, EventArgs e)
         {
             SearchBoxPanel.Visible = false;
-            functions.LoadChildForm(new Dashboard(),childformpanel);
+            MyFunctions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
 
@@ -94,42 +94,42 @@ namespace ADRASHA_Main
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             //Registry Btn
-            functions.LoadChildForm(new RegistryBook_Form(), childformpanel);
+            MyFunctions.LoadChildForm(new RegistryBook_Form(), childformpanel);
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             //Report Btn
             //MessageBox.Show("Coming Soon");
-            functions.LoadChildForm(new Reports_Form(), childformpanel);
+            MyFunctions.LoadChildForm(new Reports_Form(), childformpanel);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
             //Profile Btn
             //MessageBox.Show("Coming Soon");
-            functions.LoadChildForm(new Asha_Profile(), childformpanel);
+            MyFunctions.LoadChildForm(new Asha_Profile(), childformpanel);
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
             //Setting Btn
             //MessageBox.Show("Coming Soon");
-            functions.LoadChildForm(new Setting_Form(),childformpanel);
+            MyFunctions.LoadChildForm(new Setting_Form(),childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             //Dashboard Btn
             //MessageBox.Show("Coming Soon");
-            functions.LoadChildForm(new Dashboard(),childformpanel);
+            MyFunctions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             //Analytics Btn
             // MessageBox.Show("Coming Soon");
-            functions.LoadChildForm(new  Analytics_Form(),childformpanel);
+            MyFunctions.LoadChildForm(new  Analytics_Form(),childformpanel);
         }
 
         //private void PopulateItems()
@@ -161,9 +161,6 @@ namespace ADRASHA_Main
             MyFunctions functions = new MyFunctions();
             using (SqliteConnection conn = DatabaseClass.GetConnection())
             {
-                //SqliteCommand cmd1 = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details ", conn);
-                //SqliteDataReader read = cmd1.ExecuteReader();
-                //getting values;
                 if (isdigit == true)
                 {
                     //values for id
@@ -171,18 +168,8 @@ namespace ADRASHA_Main
                 }
                 else
                 {
-                    //values for name
-                    //while (read.Read())
-                    //{
-                    //    name = read["first_name"].ToString() + " " + read["middle_name"].ToString() + " " + read["last_name"].ToString();
                     string s = SearchBox.Text;
-                    //    //if (name.Contains(s))
-                    //    //{
-
-                    //    //    string id = read["member_id"].ToString();
-                    //    //    cmd = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details where member_id like '%" + SearchBox.Text + "%' limit 10", conn);
-                    //    //}
-                    //}
+  
                     cmd = new SqliteCommand("select member_id,first_name,middle_name,last_name,birth_date from member_details where first_name like '%" + s + "%' or middle_name like '%" + s + "%' or last_name Like '%" + s + "%' limit 10", conn);
                 }
                 SqliteDataReader reader = cmd.ExecuteReader();

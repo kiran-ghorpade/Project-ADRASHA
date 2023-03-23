@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADRASHA_Main.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,7 +20,9 @@ namespace ADRASHA_Main
 
             //Application.Run(new Splash_Screen());
             //Application.Run(new Asha_Registration());
-            Application.Run(new MDI());
+            //Application.Run(new MDI());
+            Application.Run(new NCD_form(10,"kiran ghorpade"));
+            
         }
     }
 }

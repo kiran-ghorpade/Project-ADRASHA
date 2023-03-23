@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main.Forms
 {
-    public partial class NCD_Profile_Form : Form
+    public partial class HBNC : Form
     {
-        public NCD_Profile_Form()
+        public HBNC()
         {
             InitializeComponent();
         }

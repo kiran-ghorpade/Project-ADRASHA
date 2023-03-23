@@ -532,6 +532,7 @@
             // PinCode
             // 
             this.PinCode.Location = new System.Drawing.Point(260, 272);
+            this.PinCode.MaxLength = 6;
             this.PinCode.Name = "PinCode";
             this.PinCode.Size = new System.Drawing.Size(327, 38);
             this.PinCode.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -541,7 +542,7 @@
             this.PinCode.StateCommon.Border.Width = 1;
             this.PinCode.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PinCode.TabIndex = 2;
-            this.PinCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PinCode_KeyPress);
+            this.PinCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Total_Members_KeyPress);
             // 
             // District
             // 

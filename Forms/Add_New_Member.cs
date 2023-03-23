@@ -33,7 +33,7 @@ namespace ADRASHA_Main
             member_id = DatabaseClass.GetAutoID("select max(member_id) from member_details");
             Family_Id.Text = family_id.ToString();
             Member_Id.Text = member_id.ToString();
-            Partner_Id.Text= member_id.ToString();
+            //Partner_Id.Text= member_id.ToString();
         }
 
         private void btnnext_Click(object sender, EventArgs e)
@@ -117,8 +117,7 @@ namespace ADRASHA_Main
 
             }
                 this.Dispose();
-                MyFunctions functions = new MyFunctions();
-                functions.LoadChildForm(new Family_Profile(family_id), MDI.childformpanel);
+                MyFunctions.LoadChildForm(new Family_Profile(family_id), MDI.childformpanel);
             
         }
 

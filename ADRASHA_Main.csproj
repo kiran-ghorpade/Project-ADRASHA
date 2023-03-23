@@ -138,6 +138,12 @@
     <Compile Include="Forms\FamilyListView.Designer.cs">
       <DependentUpon>FamilyListView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HBNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HBNC.Designer.cs">
+      <DependentUpon>HBNC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Maternal_Health_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,11 +180,23 @@
     <Compile Include="Forms\NCD_Anlaytics.Designer.cs">
       <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NCD_Profile_Form.cs">
+    <Compile Include="Forms\Basic_Health.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\NCD_Profile_Form.Designer.cs">
-      <DependentUpon>NCD_Profile_Form.cs</DependentUpon>
+    <Compile Include="Forms\Basic_Health.Designer.cs">
+      <DependentUpon>Basic_Health.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBAC_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBAC_FORM.Designer.cs">
+      <DependentUpon>CBAC_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NCD_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NCD_form.Designer.cs">
+      <DependentUpon>NCD_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PanelControl.cs">
       <SubType>UserControl</SubType>
@@ -256,6 +274,9 @@
     <EmbeddedResource Include="Forms\FamilyListView.resx">
       <DependentUpon>FamilyListView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HBNC.resx">
+      <DependentUpon>HBNC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Maternal_Health_Form.resx">
       <DependentUpon>Maternal_Health_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,8 +295,14 @@
     <EmbeddedResource Include="Forms\NCD_Anlaytics.resx">
       <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NCD_Profile_Form.resx">
-      <DependentUpon>NCD_Profile_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Basic_Health.resx">
+      <DependentUpon>Basic_Health.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBAC_FORM.resx">
+      <DependentUpon>CBAC_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NCD_form.resx">
+      <DependentUpon>NCD_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>

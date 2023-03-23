@@ -127,13 +127,13 @@ namespace ADRASHA_Main.Forms
         private void btnFamilyProfile_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            functions.LoadChildForm(new Family_Profile(family_id), MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Family_Profile(family_id), MDI.childformpanel);
         }
 
         private void btnHealthProfile_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            functions.LoadChildForm(new Member_Health_Profile(member_id),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Member_Health_Profile(member_id),MDI.childformpanel);
         }
 
         private void btnOccupationInfo_Click(object sender, EventArgs e)

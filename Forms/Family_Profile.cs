@@ -1,14 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADRASHA_Main.Forms
 {
@@ -43,7 +35,7 @@ namespace ADRASHA_Main.Forms
                 while (reader.Read())
                 {
                     string head= reader["family_head"].ToString();
-                    SqliteCommand cmd1 = new SqliteCommand("select first_name,middle_name,last_name from member_details where member_id=" + head, conn);
+                    SqliteCommand cmd1 = new SqliteCommand("select first_name,middle_name,last_name from member_details where member_id="+head, conn);
                     SqliteDataReader reader1 = cmd1.ExecuteReader();
                     while (reader1.Read()) 
                     lblHeadName.Text = reader1["first_name"].ToString() + " " + reader1["middle_name"].ToString() + " " + reader1["last_name"].ToString();

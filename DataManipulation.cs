@@ -82,7 +82,30 @@ namespace ADRASHA_Main
                 {"PinCode", "@ZipCode"}
             };
 
-
+            Dictionary<string, object> CBAC_detailsMap = new Dictionary<string, object>
+            {
+                  {"Visit_Date","@"},
+                  {"Age","@"},
+                  {"Gutka","@"},
+                  {"History","@"},
+                  {"Exercise","@"},
+                  {"Waist","@"},
+                  {"Alcohol","@"},
+                  {"Total_Score","@"},
+                  {"Veginal_foul_smelling","@"},
+                  {"Intercourse_Bleeding","@"},
+                  {"Periods_bleeding","@"},
+                  {"Nipple_Blood","@"},
+                  {"Voice_Changed","@"},
+                  {"Ulcer","@"},
+                  {"Menopause_bleeding","@"},
+                  {"Breast_Size_Changed","@"},
+                  {"Mouth_Opening","@"},
+                  {"Fits","@"},
+                  {"Coughing_2weeks","@"},
+                  {"Blood_In_Sputum","@"},
+                  {"Breath_shortness","@"}
+            };
         Dictionary<string, object> Vaccination_Data = new Dictionary<string, object>
         {
 
@@ -112,6 +135,8 @@ namespace ADRASHA_Main
                 selectedDictionary = MemberInfoMap;
             if (table == "family_details")
                 selectedDictionary = FamilyInfoMap;
+            if(table == "CBAC_details")
+                selectedDictionary = CBAC_detailsMap; 
 
         }
 
@@ -182,7 +207,7 @@ namespace ADRASHA_Main
                 }
                  
                 // Check if the control is a TextBox, DateTimePicker or ComboBox
-                if (control is TextBox || control is KryptonTextBox|| control is DateTimePicker || control is ComboBox || control is RadioButton || control is CheckBox)
+                if (control is TextBox || control is KryptonTextBox|| control is DateTimePicker || control is ComboBox || control is RadioButton || control is CheckBox || control is Label)
                 {
                     // Get the parameter name from the dictionary
                     object parameterName;
@@ -193,12 +218,17 @@ namespace ADRASHA_Main
                     }
 
                     // Add the parameter to the command
+                    
                     if (control is TextBox || control is KryptonTextBox)
                     {
                         if(control.Name.Contains("Id"))
                             selectedDictionary[control.Name] = Convert.ToInt32(control.Text);
                         else
                         selectedDictionary[control.Name] = control.Text;
+                    }
+                    else if(control is Label)
+                    {
+                        selectedDictionary[control.Name]= control.Text;
                     }
                     else if (control is DateTimePicker)
                     {

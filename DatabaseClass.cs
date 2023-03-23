@@ -88,9 +88,9 @@ namespace ADRASHA_Main
             }
         }
 
-        public static DataRow GetRowById(string tableName, int id)
+        public static DataRow GetRowById(string tableName,string id_column, int id)
         {
-            string query = $"SELECT * FROM {tableName} WHERE Id = @id";
+            string query = $"SELECT * FROM {tableName} WHERE {id_column} = @id";
             using (SqliteConnection conn = GetConnection())
             {
                 SqliteCommand cmd = new SqliteCommand(query, conn);
@@ -102,9 +102,9 @@ namespace ADRASHA_Main
             }
         }
         
-        public bool RowExists(string tableName, int id)
+        public bool RowExists(string tableName,string id_column, int id)
         {
-            DataTable dt = GetRowById(tableName, id).Table;
+            DataTable dt = GetRowById(tableName,id_column, id).Table;
             if (dt.Rows.Count >= 1) { return true; }
             else { return false; }
         }
@@ -134,13 +134,12 @@ namespace ADRASHA_Main
             comboBox.ValueMember = valueMember;
         }
 
-        public bool UpdateRow(string tableName,string column, int id, Dictionary<string, object> data)
+        public bool UpdateRow(string tableName,string column, int id, object value)
         {
             string query = $"UPDATE {tableName} SET ";
-            foreach (KeyValuePair<string, object> item in data)
-            {
-                query += $"{item.Key} = '{item.Value}',";
-            }
+
+                query += $"{column} = '@value',";
+            
             query = query.TrimEnd(',') + $" WHERE @Id = @id";
 
             using (SqliteConnection conn = GetConnection())
@@ -148,6 +147,7 @@ namespace ADRASHA_Main
                 SqliteCommand cmd = new SqliteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@Id", column);
+                cmd.Parameters.AddWithValue("@value",value);
                 //foreach (KeyValuePair<string, object> item in data)
                 //{
                 //    cmd.Parameters.AddWithValue($"@{item.Key}", item.Value);
@@ -194,172 +194,168 @@ namespace ADRASHA_Main
         {
             // Put your database creation script here
             string createTableQuery = @"
-                           --
-            -- File generated with SQLiteStudio v3.4.3 on Thu Mar 16 08:43:51 2023
-            --
-            -- Text encoding used: System
-            --
-            PRAGMA foreign_keys = off;
-            BEGIN TRANSACTION;
+                             --
+                -- File generated with SQLiteStudio v3.4.3 on Tue Mar 21 10:57:01 2023
+                --
+                -- Text encoding used: System
+                --
+                PRAGMA foreign_keys = off;
+                BEGIN TRANSACTION;
 
-            -- Table: asha_profile
-            CREATE TABLE IF NOT EXISTS asha_profile (
-                Aasha_Id         INTEGER   PRIMARY KEY,
-                First_Name       TEXT      NOT NULL,
-                Middle_Name      TEXT      NOT NULL,
-                Last_Name        TEXT      NOT NULL,
-                Birth_Date       DATE,
-                Mobile_NO        TEXT,
-                Marital_Status   TEXT,
-                Qualifications   TEXT,
-                Center           TEXT      NOT NULL,
-                Sub_Center       TEXT      NOT NULL,
-                Village          TEXT      NOT NULL,
-                PinCode          TEXT      NOT NULL,
-                Taluka           TEXT      NOT NULL,
-                District         TEXT      NOT NULL,
-                State            TEXT      NOT NULL,
-                Total_Families   INTEGER   NOT NULL,
-                Total_Population INTEGER   NOT NULL,
-                Village_Type     TEXT,
-                created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            );
-
-            -- Table: family_details
-            CREATE TABLE IF NOT EXISTS family_details (
-                Family_Id        INTEGER   PRIMARY KEY,
-                Family_Head      INTEGER   REFERENCES member_details (Member_Id),
-                Total_Members    INTEGER,
-                House_Type       TEXT,
-                Vehicle          TEXT,
-                Toilet_Type      TEXT,
-                Fuel_Type        TEXT,
-                Poverty_Status   TEXT,
-                Residence_Type   TEXT,
-                Water_Supply     TEXT,
-                Electricity_Type TEXT,
-                created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                Village          TEXT,
-                PinCode          TEXT,
-                Taluka           TEXT,
-                District         TEXT,
-                State            TEXT,
-                Country          TEXT
-            );
-
-            -- Table: health_profile
-            CREATE TABLE IF NOT EXISTS health_profile (
-                health_profile_id  INTEGER   PRIMARY KEY,
-                member_id          INTEGER   NOT NULL,
-                height             REAL,
-                weight             REAL,
-                blood_group        TEXT,
-                medical_conditions TEXT,
-                created_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (
-                    member_id
-                )
-                REFERENCES member (member_id) 
-            );
+                -- Table: asha_profile
+                CREATE TABLE IF NOT EXISTS asha_profile (
+                    Aasha_Id         INTEGER   PRIMARY KEY,
+                    First_Name       TEXT      NOT NULL,
+                    Middle_Name      TEXT      NOT NULL,
+                    Last_Name        TEXT      NOT NULL,
+                    Birth_Date       DATE,
+                    Mobile_NO        TEXT,
+                    Marital_Status   TEXT,
+                    Qualifications   TEXT,
+                    Center           TEXT      NOT NULL,
+                    Sub_Center       TEXT      NOT NULL,
+                    Village          TEXT      NOT NULL,
+                    PinCode          TEXT      NOT NULL,
+                    Taluka           TEXT      NOT NULL,
+                    District         TEXT      NOT NULL,
+                    State            TEXT      NOT NULL,
+                    Total_Families   INTEGER   NOT NULL,
+                    Total_Population INTEGER   NOT NULL,
+                    Village_Type     TEXT,
+                    created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                );
 
 
-            -- Table: member_details
-            CREATE TABLE IF NOT EXISTS member_details (
-                Member_Id       INTEGER PRIMARY KEY AUTOINCREMENT,
-                Family_Id       INTEGER REFERENCES family_details (Family_Id),
-                First_Name      TEXT    NOT NULL,
-                Middle_Name     TEXT    NOT NULL,
-                Last_Name       TEXT    NOT NULL,
-                Birth_Date      DATE,
-                Birth_Place     TEXT,
-                Gender          TEXT,
-                Adhar_Number    TEXT    UNIQUE,
-                ABHA_Number     TEXT    UNIQUE,
-                Mobile_Number   TEXT,
-                Email           TEXT,
-                Occupation_Name TEXT,
-                Work_Place      TEXT,
-                Work_Type       TEXT,
-                Education       TEXT,
-                Marital_Status  TEXT,
-                Marriage_Date   DATE,
-                Partner_Id      INTEGER REFERENCES member_details (Member_Id),
-                Child_Number    INTEGER
-            );
-
-            -- Table: ncd_details
-            CREATE TABLE IF NOT EXISTS ncd_details (
-                NCD_Id       INTEGER   PRIMARY KEY,
-                Member_Id    INTEGER   NOT NULL,
-                NCD_Type     TEXT      NOT NULL
-                                       REFERENCES ncd_types (NCD_Type_Id),
-                Diagnosed_On DATE,
-                Medication   TEXT,
-                created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (
-                    Member_Id
-                )
-                REFERENCES member (member_id) 
-            );
+                -- Table: family_details
+                CREATE TABLE IF NOT EXISTS family_details (
+                    Family_Id        INTEGER   PRIMARY KEY,
+                    Family_Head      INTEGER   REFERENCES member_details (
+),
+                    Total_Members    INTEGER,
+                    House_Type       TEXT,
+                    Vehicle          TEXT,
+                    Toilet_Type      TEXT,
+                    Fuel_Type        TEXT,
+                    Poverty_Status   TEXT,
+                    Residence_Type   TEXT,
+                    Water_Supply     TEXT,
+                    Electricity_Type TEXT,
+                    created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    Village          TEXT,
+                    PinCode          TEXT,
+                    Taluka           TEXT,
+                    District         TEXT,
+                    State            TEXT,
+                    Country          TEXT
+                );
 
 
-            -- Table: ncd_types
-            CREATE TABLE IF NOT EXISTS ncd_types (
-                NCD_Type_Id   INTEGER PRIMARY KEY,
-                Disease_Name  TEXT,
-                NCD_Type_Name TEXT
-            );
+                -- Table: health_profile
+                CREATE TABLE IF NOT EXISTS health_profile (
+                    health_profile_id  INTEGER   PRIMARY KEY,
+                    member_id          INTEGER   NOT NULL,
+                    height             REAL,
+                    weight             REAL,
+                    blood_group        TEXT,
+                    medical_conditions TEXT,
+                    created_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (
+                        member_id
+                    )
+                    REFERENCES member (member_id) 
+                );
 
 
-            -- Table: pregnancy
-            CREATE TABLE IF NOT EXISTS pregnancy (
-                Pregnancy_Id           INTEGER   PRIMARY KEY,
-                Member_Id              INTEGER   NOT NULL,
-                Expected_Delivery_Date DATE,
-                created_at             TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at             TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (
-                    Member_Id
-                )
-                REFERENCES member (member_id) 
-            );
+                -- Table: member_details
+                CREATE TABLE IF NOT EXISTS member_details (
+                    Member_Id       INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Family_Id       INTEGER REFERENCES family_details (Family_Id),
+                    First_Name      TEXT    NOT NULL,
+                    Middle_Name     TEXT    NOT NULL,
+                    Last_Name       TEXT    NOT NULL,
+                    Birth_Date      DATE,
+                    Birth_Place     TEXT,
+                    Gender          TEXT,
+                    Adhar_Number    TEXT    UNIQUE,
+                    ABHA_Number     TEXT    UNIQUE,
+                    Mobile_Number   TEXT,
+                    Email           TEXT,
+                    Occupation_Name TEXT,
+                    Work_Place      TEXT,
+                    Work_Type       TEXT,
+                    Education       TEXT,
+                    Marital_Status  TEXT,
+                    Marriage_Date   DATE,
+                    Partner_Id      INTEGER REFERENCES member_details (Member_Id),
+                    Child_Number    INTEGER
+                );
 
 
-            -- Table: vaccination
-            CREATE TABLE IF NOT EXISTS vaccination (
-                Vaccination_Id INTEGER   PRIMARY KEY,
-                Member_Id      INTEGER   NOT NULL,
-                Vaccine_Id     TEXT      NOT NULL
-                                         REFERENCES Vaccines (Vaccine_Id),
-                Given_On       DATE,
-                Next_Due_Date  DATE,
-                Given_By       TEXT,
-                Given_At       TEXT,
-                created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                updated_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (
-                    Member_Id
-                )
-                REFERENCES member (member_id) 
-            );
+                -- Table: ncd_details
+                CREATE TABLE IF NOT EXISTS ncd_details (
+                    NCD_Id       INTEGER   PRIMARY KEY,
+                    Member_Id    INTEGER   NOT NULL,
+                    NCD_Type     TEXT      NOT NULL
+                                           REFERENCES ncd_types (NCD_Type_Id),
+                    Diagnosed_On DATE,
+                    Medication   TEXT,
+                    created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (
+                        Member_Id
+                    )
+                    REFERENCES member (member_id) 
+                );
 
 
-            -- Table: Vaccines
-            CREATE TABLE IF NOT EXISTS Vaccines (
-                Vaccine_Id   INTEGER PRIMARY KEY AUTOINCREMENT,
-                Vaccine_Name TEXT,
-                Description  TEXT
-            );
+                -- Table: ncd_types
+                CREATE TABLE IF NOT EXISTS ncd_types (
+                    NCD_Type_Id   INTEGER PRIMARY KEY,
+                    Disease_Name  TEXT,
+                    NCD_Type_Name TEXT
+                );
 
 
-            COMMIT TRANSACTION;
-            PRAGMA foreign_keys = on;
+                -- Table: pregnancy
+                CREATE TABLE IF NOT EXISTS pregnancy (
+                    Pregnancy_Id           INTEGER   PRIMARY KEY,
+                    Member_Id              INTEGER   NOT NULL,
+                    Expected_Delivery_Date DATE,
+                    created_at             TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at             TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (
+                        Member_Id
+                    )
+                    REFERENCES member (member_id) 
+                );
 
 
+                -- Table: vaccination
+                CREATE TABLE IF NOT EXISTS vaccination (
+                    Vaccination_Id INTEGER   PRIMARY KEY AUTOINCREMENT,
+                    Member_Id      INTEGER   NOT NULL
+                                             REFERENCES member_details (Member_Id),
+                    Vaccine_Name   TEXT      NOT NULL,
+                    Given_On       DATE,
+                    Given_At       TEXT,
+                    created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                );
+
+
+                -- Table: Vaccines
+                CREATE TABLE IF NOT EXISTS Vaccines (
+                    Vaccine_Id   INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Vaccine_Name TEXT,
+                    Description  TEXT
+                );
+
+
+                COMMIT TRANSACTION;
+                PRAGMA foreign_keys = on;
 
             ";
 

@@ -61,8 +61,7 @@ namespace ADRASHA_Main.Forms
         private void DisplayPanel_Click(object sender, EventArgs e)
         {
             Family_Profile profile = new Family_Profile(Convert.ToInt32(FamilyID));
-            MyFunctions function = new MyFunctions();
-            function.LoadChildForm(profile,MDI.childformpanel);
+            MyFunctions.LoadChildForm(profile,MDI.childformpanel);
         }
 
     }

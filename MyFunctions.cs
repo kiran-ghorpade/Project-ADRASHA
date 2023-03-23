@@ -10,8 +10,8 @@ namespace ADRASHA_Main
 {
     internal class MyFunctions
     {
-        private Form activeform = null;
-        public void LoadChildForm(Form childform, Panel parentPanel)
+        private static Form activeform = null;
+        public static void LoadChildForm(Form childform, Panel parentPanel)
         {
             if (activeform != null)
             {

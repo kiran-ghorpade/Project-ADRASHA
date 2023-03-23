@@ -101,7 +101,6 @@ namespace ADRASHA_Main
                 }
 
                 // Check if the control is a TextBox, DateTimePicker or ComboBox
-
                      if (control is ComboBox cmb)
                     {
                             if (cmb.SelectedIndex == -1)
@@ -110,7 +109,6 @@ namespace ADRASHA_Main
                             }
                      }
                 
-
                 // Recursively iterate over child controls
                 if (control.HasChildren)
                 {
