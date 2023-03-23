@@ -33,8 +33,6 @@ namespace ADRASHA_Main
             MyFunctions.LoadChildForm(new Dashboard(),childformpanel);
         }
 
-
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 

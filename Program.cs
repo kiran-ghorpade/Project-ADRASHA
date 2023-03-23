@@ -20,9 +20,8 @@ namespace ADRASHA_Main
 
             //Application.Run(new Splash_Screen());
             //Application.Run(new Asha_Registration());
-            //Application.Run(new MDI());
-            Application.Run(new NCD_form(10,"kiran ghorpade"));
-            
+            Application.Run(new MDI());
+            //Application.Run(new NCD(10,"kiran ghorpade"));
         }
     }
 }

@@ -31,12 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistryBook_Form));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.ListViewPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnfilter = new System.Windows.Forms.Button();
             this.btnAddFamily = new System.Windows.Forms.Button();
-            this.btnsort = new System.Windows.Forms.Button();
-            this.panelControl2 = new ADRASHA_Main.PanelControl();
             this.panelControl4 = new ADRASHA_Main.PanelControl();
-            this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.lblashaname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
@@ -49,12 +45,8 @@
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.ListViewPanel);
-            this.kryptonPanel1.Controls.Add(this.btnfilter);
             this.kryptonPanel1.Controls.Add(this.btnAddFamily);
-            this.kryptonPanel1.Controls.Add(this.btnsort);
-            this.kryptonPanel1.Controls.Add(this.panelControl2);
             this.kryptonPanel1.Controls.Add(this.panelControl4);
-            this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.panelControl3);
@@ -79,24 +71,12 @@
             this.ListViewPanel.TabIndex = 0;
             this.ListViewPanel.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ListViewPanel_Scroll);
             // 
-            // btnfilter
-            // 
-            this.btnfilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.btnfilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfilter.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfilter.Location = new System.Drawing.Point(1314, 173);
-            this.btnfilter.Name = "btnfilter";
-            this.btnfilter.Size = new System.Drawing.Size(145, 44);
-            this.btnfilter.TabIndex = 2;
-            this.btnfilter.Text = "Filter";
-            this.btnfilter.UseVisualStyleBackColor = false;
-            // 
             // btnAddFamily
             // 
             this.btnAddFamily.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.btnAddFamily.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddFamily.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFamily.Location = new System.Drawing.Point(437, 173);
+            this.btnAddFamily.Location = new System.Drawing.Point(783, 180);
             this.btnAddFamily.Name = "btnAddFamily";
             this.btnAddFamily.Size = new System.Drawing.Size(313, 44);
             this.btnAddFamily.TabIndex = 2;
@@ -104,53 +84,17 @@
             this.btnAddFamily.UseVisualStyleBackColor = false;
             this.btnAddFamily.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnsort
-            // 
-            this.btnsort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.btnsort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsort.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsort.Location = new System.Drawing.Point(1062, 173);
-            this.btnsort.Name = "btnsort";
-            this.btnsort.Size = new System.Drawing.Size(145, 44);
-            this.btnsort.TabIndex = 2;
-            this.btnsort.Text = "Sort";
-            this.btnsort.UseVisualStyleBackColor = false;
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Angle = 0F;
-            this.panelControl2.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl2.Location = new System.Drawing.Point(1305, 156);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Rounding = 0;
-            this.panelControl2.Size = new System.Drawing.Size(166, 74);
-            this.panelControl2.TabIndex = 7;
-            // 
             // panelControl4
             // 
             this.panelControl4.Angle = 0F;
             this.panelControl4.BackColor = System.Drawing.Color.Transparent;
             this.panelControl4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.panelControl4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl4.Location = new System.Drawing.Point(428, 156);
+            this.panelControl4.Location = new System.Drawing.Point(774, 163);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Rounding = 0;
             this.panelControl4.Size = new System.Drawing.Size(334, 74);
             this.panelControl4.TabIndex = 7;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Angle = 0F;
-            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Location = new System.Drawing.Point(1053, 156);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Rounding = 0;
-            this.panelControl1.Size = new System.Drawing.Size(166, 74);
-            this.panelControl1.TabIndex = 7;
             // 
             // lblashaname
             // 
@@ -223,12 +167,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl panelControl3;
         private PanelControl main_panelcontrol;
-        private System.Windows.Forms.Button btnfilter;
         private System.Windows.Forms.Button btnAddFamily;
-        private System.Windows.Forms.Button btnsort;
-        private PanelControl panelControl2;
         private PanelControl panelControl4;
-        private PanelControl panelControl1;
         private System.Windows.Forms.FlowLayoutPanel ListViewPanel;
     }
 }

@@ -153,7 +153,7 @@ namespace ADRASHA_Main.Forms
 
         private void btnFamily_Click(object sender, EventArgs e)
         {
-            MyFunctions.LoadChildForm(new Member_Health_Profile(member_id),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Health_Profile(member_id),MDI.childformpanel);
         }
 
         private void btnPersonalProfile_Click(object sender, EventArgs e)

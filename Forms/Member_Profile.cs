@@ -133,7 +133,7 @@ namespace ADRASHA_Main.Forms
         private void btnHealthProfile_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            MyFunctions.LoadChildForm(new Member_Health_Profile(member_id),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Health_Profile(member_id),MDI.childformpanel);
         }
 
         private void btnOccupationInfo_Click(object sender, EventArgs e)

@@ -13,20 +13,20 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main
 {
-    public partial class Member_Health_Profile : Form
+    public partial class Health_Profile : Form
     {
         MyFunctions MyFunctions = new MyFunctions();
         int member_id = 5;
         int family_id = 0;
         string name;
 
-        public Member_Health_Profile()
+        public Health_Profile()
         {
             InitializeComponent();
             SetOutputData();
         }
 
-        public Member_Health_Profile(int member_id)
+        public Health_Profile(int member_id)
         {
             InitializeComponent();
             this.member_id = member_id;
@@ -173,6 +173,11 @@ namespace ADRASHA_Main
         private void btnUpdateHBNC_Click(object sender, EventArgs e)
         {
             MyFunctions.LoadChildForm(new HBNC(),MDI.childformpanel);
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            MyFunctions.LoadChildForm(new NCD(member_id,name),MDI.childformpanel);
         }
     }
 }

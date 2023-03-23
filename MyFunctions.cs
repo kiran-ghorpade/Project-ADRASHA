@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADRASHA_Main.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,16 +9,25 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main
 {
-    internal class MyFunctions
+    internal class MyFunctions : Form
     {
         private static Form activeform = null;
+
+
         public static void LoadChildForm(Form childform, Panel parentPanel)
         {
-            if (activeform != null)
+
+               if (activeform != null)
             {
+                if (activeform.GetType() == childform.GetType())
+                {
+                    return;
+                }
+                else
                 activeform.Dispose();
                 //activeform.Close();
             }
+
             activeform = childform;
             childform.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;

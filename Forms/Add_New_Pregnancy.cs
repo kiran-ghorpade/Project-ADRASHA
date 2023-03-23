@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main.Forms
 {
-    public partial class HBNC : Form
+    public partial class Add_New_Pregnancy : Form
     {
-        public HBNC()
+        public Add_New_Pregnancy()
         {
             InitializeComponent();
         }
 
-        private void pnlScreening_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAddCBAC_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

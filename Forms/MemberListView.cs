@@ -59,7 +59,7 @@ namespace ADRASHA_Main.Forms
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            Member_Health_Profile profile = new Member_Health_Profile(Convert.ToInt32(MemberID));
+            Health_Profile profile = new Health_Profile(Convert.ToInt32(MemberID));
             MyFunctions.LoadChildForm(profile,MDI.childformpanel);
         }
 

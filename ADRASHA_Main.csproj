@@ -192,12 +192,6 @@
     <Compile Include="Forms\CBAC_FORM.Designer.cs">
       <DependentUpon>CBAC_FORM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NCD_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NCD_form.Designer.cs">
-      <DependentUpon>NCD_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\PanelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,7 +216,15 @@
     <Compile Include="Forms\Vaccination_Form.Designer.cs">
       <DependentUpon>Vaccination_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyFunctions.cs" />
+    <Compile Include="MyFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NCD.Designer.cs">
+      <DependentUpon>NCD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\Asha_Registration.cs">
@@ -292,6 +294,9 @@
     <EmbeddedResource Include="Forms\Member_Profile.resx">
       <DependentUpon>Member_Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NCD.resx">
+      <DependentUpon>NCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\NCD_Anlaytics.resx">
       <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,9 +305,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CBAC_FORM.resx">
       <DependentUpon>CBAC_FORM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NCD_form.resx">
-      <DependentUpon>NCD_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelControl.resx">
       <DependentUpon>PanelControl.cs</DependentUpon>

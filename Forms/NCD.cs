@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADRASHA_Main.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,18 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ADRASHA_Main.Forms
+namespace ADRASHA_Main
 {
-    public partial class NCD_form : Form
+    public partial class NCD : Form
     {
         int member_id;
         string name;
 
-        public NCD_form(int member_Id,string name)
+        public NCD(int member_Id, string name)
         {
             InitializeComponent();
             this.member_id = member_Id;
-            this.name = name;   
+            this.name = name;
             lblMemberName.Text = name;
         }
 
@@ -56,20 +57,27 @@ namespace ADRASHA_Main.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            clear();
-            disable();
 
-            Dictionary<string, object> data = new Dictionary<string, object>() 
+            Dictionary<string, object> data = new Dictionary<string, object>()
             {
                 {"memberId",member_id },
-                {"NCD_Name",NCD_Name.Text},
+                {"NCD_Name",NCD_Name.SelectedItem},
                 {"Diagnosis_Date",Diagnosis_Date.Value.Date },
                 {"Screening_Date",Screening_Date.Value.Date },
-                {"Treatement_Status",Treatement_Status.SelectedValue},
+                {"Treatement_Status",Treatement_Status.SelectedItem},
             };
 
             DatabaseClass db = new DatabaseClass();
-            db.InsertRow("NCD_details",data);
+            db.InsertRow("NCD_details", data);
+
+            clear();
+            disable();
+
+        }
+
+        private void btnAddCBAC_Click(object sender, EventArgs e)
+        {
+            MyFunctions.LoadChildForm(new CBAC_FORM(member_id,name),MDI.childformpanel);
         }
     }
 }

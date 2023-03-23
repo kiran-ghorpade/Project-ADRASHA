@@ -36,7 +36,7 @@ namespace ADRASHA_Main.Forms
         private void btnPersonalProfile_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            MyFunctions.LoadChildForm(new Member_Health_Profile(memberId), MDI.childformpanel);
+            MyFunctions.LoadChildForm(new Health_Profile(memberId), MDI.childformpanel);
         }
 
         private void Vaccination_Form_Load(object sender, EventArgs e)

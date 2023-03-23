@@ -1,6 +1,8 @@
-﻿namespace ADRASHA_Main.Forms
+﻿using ADRASHA_Main.Forms;
+
+namespace ADRASHA_Main
 {
-    partial class NCD_form
+    partial class NCD
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NCD_form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NCD));
             this.btnFamily = new System.Windows.Forms.Button();
             this.lblMemberName = new System.Windows.Forms.Label();
             this.lblashaname = new System.Windows.Forms.Label();
@@ -36,31 +38,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.sss = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnlScreening = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.Diagnosis_Date = new System.Windows.Forms.DateTimePicker();
+            this.Screening_Date = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Treatement_Status = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.NCD_Name = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPersonalProfile = new System.Windows.Forms.Button();
             this.btnAddCBAC = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.NCD_Name = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Screening_Date = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Diagnosis_Date = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Treatement_Status = new System.Windows.Forms.ComboBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sss)).BeginInit();
             this.sss.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).BeginInit();
-            this.pnlScreening.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).BeginInit();
+            this.pnlScreening.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnFamily
@@ -157,6 +159,30 @@
             this.sss.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.sss.TabIndex = 0;
             // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.label6);
+            this.kryptonPanel1.Location = new System.Drawing.Point(968, 302);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(564, 530);
+            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.kryptonPanel1.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonPanel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(3, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(373, 60);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "SCREENING HISTORY";
+            // 
             // pnlScreening
             // 
             this.pnlScreening.Controls.Add(this.Diagnosis_Date);
@@ -178,6 +204,142 @@
             this.pnlScreening.StateCommon.ColorAngle = 45F;
             this.pnlScreening.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlScreening.TabIndex = 0;
+            // 
+            // Diagnosis_Date
+            // 
+            this.Diagnosis_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Diagnosis_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Diagnosis_Date.Location = new System.Drawing.Point(284, 279);
+            this.Diagnosis_Date.Name = "Diagnosis_Date";
+            this.Diagnosis_Date.Size = new System.Drawing.Size(233, 32);
+            this.Diagnosis_Date.TabIndex = 3;
+            // 
+            // Screening_Date
+            // 
+            this.Screening_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Screening_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening_Date.Location = new System.Drawing.Point(284, 114);
+            this.Screening_Date.Name = "Screening_Date";
+            this.Screening_Date.Size = new System.Drawing.Size(233, 32);
+            this.Screening_Date.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(58, 279);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Date of Diagnosis -";
+            // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.Color.Transparent;
+            this.btnNew.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(152, 447);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(145, 56);
+            this.btnNew.TabIndex = 0;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(447, 447);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(145, 56);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(58, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(207, 31);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Date of Screening -";
+            // 
+            // Treatement_Status
+            // 
+            this.Treatement_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treatement_Status.FormattingEnabled = true;
+            this.Treatement_Status.Items.AddRange(new object[] {
+            "--Select--",
+            "Initiated ",
+            "DisContinued"});
+            this.Treatement_Status.Location = new System.Drawing.Point(284, 365);
+            this.Treatement_Status.Name = "Treatement_Status";
+            this.Treatement_Status.Size = new System.Drawing.Size(327, 37);
+            this.Treatement_Status.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(58, 371);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(212, 31);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Treatement Status -";
+            // 
+            // NCD_Name
+            // 
+            this.NCD_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NCD_Name.FormattingEnabled = true;
+            this.NCD_Name.Items.AddRange(new object[] {
+            "--Select--",
+            "Hypertension",
+            "Diabetes",
+            "Oral Cancer",
+            "Breast Cancer",
+            "COPD (Respiratory Disorder)",
+            "Other"});
+            this.NCD_Name.Location = new System.Drawing.Point(284, 189);
+            this.NCD_Name.Name = "NCD_Name";
+            this.NCD_Name.Size = new System.Drawing.Size(327, 37);
+            this.NCD_Name.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(58, 195);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "NCD -";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(41, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 60);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SCREENING";
             // 
             // panel2
             // 
@@ -210,174 +372,15 @@
             this.btnAddCBAC.TabIndex = 0;
             this.btnAddCBAC.Text = "Add CBAC";
             this.btnAddCBAC.UseVisualStyleBackColor = false;
+            this.btnAddCBAC.Click += new System.EventHandler(this.btnAddCBAC_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(41, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 60);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SCREENING";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(58, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "NCD -";
-            // 
-            // NCD_Name
-            // 
-            this.NCD_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NCD_Name.FormattingEnabled = true;
-            this.NCD_Name.Items.AddRange(new object[] {
-            "--Select--",
-            "Hypertension",
-            "Diabetes",
-            "Oral Cancer",
-            "Breast Cancer",
-            "COPD (Respiratory Disorder)",
-            "Other"});
-            this.NCD_Name.Location = new System.Drawing.Point(284, 189);
-            this.NCD_Name.Name = "NCD_Name";
-            this.NCD_Name.Size = new System.Drawing.Size(327, 37);
-            this.NCD_Name.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(58, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Date of Screening -";
-            // 
-            // Screening_Date
-            // 
-            this.Screening_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.Screening_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Screening_Date.Location = new System.Drawing.Point(284, 114);
-            this.Screening_Date.Name = "Screening_Date";
-            this.Screening_Date.Size = new System.Drawing.Size(233, 32);
-            this.Screening_Date.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(58, 279);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(205, 31);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Date of Diagnosis -";
-            // 
-            // Diagnosis_Date
-            // 
-            this.Diagnosis_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.Diagnosis_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Diagnosis_Date.Location = new System.Drawing.Point(284, 279);
-            this.Diagnosis_Date.Name = "Diagnosis_Date";
-            this.Diagnosis_Date.Size = new System.Drawing.Size(233, 32);
-            this.Diagnosis_Date.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(58, 371);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 31);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Treatement Status -";
-            // 
-            // Treatement_Status
-            // 
-            this.Treatement_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Treatement_Status.FormattingEnabled = true;
-            this.Treatement_Status.Items.AddRange(new object[] {
-            "--Select--",
-            "Initiated ",
-            "DisContinued"});
-            this.Treatement_Status.Location = new System.Drawing.Point(284, 365);
-            this.Treatement_Status.Name = "Treatement_Status";
-            this.Treatement_Status.Size = new System.Drawing.Size(327, 37);
-            this.Treatement_Status.TabIndex = 4;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(447, 447);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(145, 56);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // kryptonPanel1
-            // 
-            this.kryptonPanel1.Controls.Add(this.label6);
-            this.kryptonPanel1.Location = new System.Drawing.Point(968, 302);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(564, 530);
-            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel1.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel1.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(3, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(373, 60);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "SCREENING HISTORY";
-            // 
-            // btnNew
-            // 
-            this.btnNew.BackColor = System.Drawing.Color.Transparent;
-            this.btnNew.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(152, 447);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(145, 56);
-            this.btnNew.TabIndex = 0;
-            this.btnNew.Text = "New";
-            this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // NCD_FORM
+            // NCD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1544, 844);
             this.Controls.Add(this.sss);
-            this.Name = "NCD_FORM";
+            this.Name = "NCD";
             this.Text = "NCD_FORM";
             this.Load += new System.EventHandler(this.NCD_FORM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -385,12 +388,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.sss)).EndInit();
             this.sss.ResumeLayout(false);
             this.sss.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).EndInit();
-            this.pnlScreening.ResumeLayout(false);
-            this.pnlScreening.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).EndInit();
+            this.pnlScreening.ResumeLayout(false);
+            this.pnlScreening.PerformLayout();
             this.ResumeLayout(false);
 
         }
