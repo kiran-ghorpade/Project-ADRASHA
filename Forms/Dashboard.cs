@@ -19,6 +19,7 @@ namespace ADRASHA_Main.Forms
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            setupDashboard();
 
             //demography pie chart
             Demography_Chart.Series["Demography"].Points.AddXY("Children",20);
@@ -34,6 +35,25 @@ namespace ADRASHA_Main.Forms
             NCD_Chart.Series["NCD"].Points.AddXY("Cancer",5);
             NCD_Chart.Series["NCD"].Points.AddXY("arthritis", 40);
             NCD_Chart.Series["NCD"].Points.AddXY("Healty", 80);
+        }
+
+        void setupDashboard()
+        {
+            int total_families= DatabaseClass.GetAutoID("select Total_Families from asha_details where asha_id=1")-1;
+            int total_population = DatabaseClass.GetAutoID("select Total_Population from asha_details where asha_id=1")-1;
+            int totalRegisteredPopulation=DatabaseClass.GetAutoID("select count(member_id) from member_details")-1;
+            int total_registered_families = DatabaseClass.GetAutoID("select count(family_id) from family_details ")-1;
+            int total_pregnancy = DatabaseClass.GetAutoID("select count(Pregnancy_Id) from pregnancy")-1;
+            // int total_children=DatabaseClass.GetAutoID("select max(member_id) from member_details where ");
+
+
+            lblTotalFamilies.Text= total_families.ToString();
+            lblTotalPopulation.Text= total_population.ToString();
+            lblTotal_Registered_Families.Text= total_registered_families.ToString();
+            lblRegisteredPopulation.Text= totalRegisteredPopulation.ToString();
+            lblTotalPregnancy.Text= total_pregnancy.ToString();
+            //lblRegisteredPopulation.Text= total_registered_families.ToString();
+           
         }
     }
 }

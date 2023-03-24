@@ -102,6 +102,12 @@
     <Compile Include="Forms\Add_New_Member.Designer.cs">
       <DependentUpon>Add_New_Member.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Add_New_Pregnancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_New_Pregnancy.Designer.cs">
+      <DependentUpon>Add_New_Pregnancy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Analytics_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,17 +150,29 @@
     <Compile Include="Forms\HBNC.Designer.cs">
       <DependentUpon>HBNC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HBNC_First_Examination_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HBNC_First_Examination_Form.Designer.cs">
+      <DependentUpon>HBNC_First_Examination_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HBNC_VISIT_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HBNC_VISIT_FORM.Designer.cs">
+      <DependentUpon>HBNC_VISIT_FORM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Maternal_Health_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Maternal_Health_Form.Designer.cs">
       <DependentUpon>Maternal_Health_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Member_Health_Profile.cs">
+    <Compile Include="Forms\Health_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Member_Health_Profile.Designer.cs">
-      <DependentUpon>Member_Health_Profile.cs</DependentUpon>
+    <Compile Include="Forms\Health_Profile.Designer.cs">
+      <DependentUpon>Health_Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MDI.cs">
       <SubType>Form</SubType>
@@ -216,9 +234,7 @@
     <Compile Include="Forms\Vaccination_Form.Designer.cs">
       <DependentUpon>Vaccination_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyFunctions.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MyFunctions.cs" />
     <Compile Include="Forms\NCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +274,9 @@
     <EmbeddedResource Include="Forms\Add_New_Member.resx">
       <DependentUpon>Add_New_Member.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_New_Pregnancy.resx">
+      <DependentUpon>Add_New_Pregnancy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Analytics_Form.resx">
       <DependentUpon>Analytics_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,11 +298,17 @@
     <EmbeddedResource Include="Forms\HBNC.resx">
       <DependentUpon>HBNC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HBNC_First_Examination_Form.resx">
+      <DependentUpon>HBNC_First_Examination_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HBNC_VISIT_FORM.resx">
+      <DependentUpon>HBNC_VISIT_FORM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Maternal_Health_Form.resx">
       <DependentUpon>Maternal_Health_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Member_Health_Profile.resx">
-      <DependentUpon>Member_Health_Profile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Health_Profile.resx">
+      <DependentUpon>Health_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>

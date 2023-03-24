@@ -184,7 +184,7 @@ namespace ADRASHA_Main
 
                     //calculating age and set it to the form
 
-                    age = functions.CalculateAge(reader["birth_date"].ToString());
+                    age = MyFunctions.CalculateAge(reader["birth_date"].ToString());
                     listView.age = age.ToString();
 
                     if (SearchBoxPanel.Controls.Count < 0)

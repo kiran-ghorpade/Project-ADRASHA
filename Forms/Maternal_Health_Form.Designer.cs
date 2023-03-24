@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Previous_Pregnancies = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Expected_Date = new System.Windows.Forms.DateTimePicker();
-            this.Last_Period = new System.Windows.Forms.DateTimePicker();
+            this.Iron_Tablet_Given_Date = new System.Windows.Forms.DateTimePicker();
+            this.Visit_date = new System.Windows.Forms.DateTimePicker();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TT_injection_status = new System.Windows.Forms.ComboBox();
+            this.Iron_tablets_Status = new System.Windows.Forms.ComboBox();
+            this.Weight = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Blood_pressure = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnPersonalProfile = new System.Windows.Forms.Button();
@@ -42,54 +49,30 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.House_Type = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Month_Of_Pregnancy = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Previous_Pregnancies
+            // Iron_Tablet_Given_Date
             // 
-            this.Previous_Pregnancies.Location = new System.Drawing.Point(316, 160);
-            this.Previous_Pregnancies.Name = "Previous_Pregnancies";
-            this.Previous_Pregnancies.Size = new System.Drawing.Size(233, 38);
-            this.Previous_Pregnancies.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Previous_Pregnancies.StateCommon.Border.Rounding = 5;
-            this.Previous_Pregnancies.StateCommon.Border.Width = 1;
-            this.Previous_Pregnancies.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Previous_Pregnancies.TabIndex = 4;
+            this.Iron_Tablet_Given_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Iron_Tablet_Given_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Iron_Tablet_Given_Date.Location = new System.Drawing.Point(316, 535);
+            this.Iron_Tablet_Given_Date.Name = "Iron_Tablet_Given_Date";
+            this.Iron_Tablet_Given_Date.Size = new System.Drawing.Size(233, 32);
+            this.Iron_Tablet_Given_Date.TabIndex = 7;
             // 
-            // Expected_Date
+            // Visit_date
             // 
-            this.Expected_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.Expected_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Expected_Date.Location = new System.Drawing.Point(316, 535);
-            this.Expected_Date.Name = "Expected_Date";
-            this.Expected_Date.Size = new System.Drawing.Size(233, 32);
-            this.Expected_Date.TabIndex = 3;
-            // 
-            // Last_Period
-            // 
-            this.Last_Period.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.Last_Period.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Last_Period.Location = new System.Drawing.Point(313, 77);
-            this.Last_Period.Name = "Last_Period";
-            this.Last_Period.Size = new System.Drawing.Size(233, 32);
-            this.Last_Period.TabIndex = 2;
+            this.Visit_date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Visit_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Visit_date.Location = new System.Drawing.Point(313, 77);
+            this.Visit_date.Name = "Visit_date";
+            this.Visit_date.Size = new System.Drawing.Size(233, 32);
+            this.Visit_date.TabIndex = 1;
             // 
             // btnSubmit
             // 
@@ -99,9 +82,10 @@
             this.btnSubmit.Location = new System.Drawing.Point(236, 635);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(180, 46);
-            this.btnSubmit.TabIndex = 1;
+            this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label3
             // 
@@ -130,20 +114,16 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.House_Type);
-            this.panel1.Controls.Add(this.kryptonTextBox3);
-            this.panel1.Controls.Add(this.kryptonTextBox4);
-            this.panel1.Controls.Add(this.kryptonTextBox2);
-            this.panel1.Controls.Add(this.kryptonTextBox1);
-            this.panel1.Controls.Add(this.Previous_Pregnancies);
-            this.panel1.Controls.Add(this.Expected_Date);
-            this.panel1.Controls.Add(this.Last_Period);
+            this.panel1.Controls.Add(this.Month_Of_Pregnancy);
+            this.panel1.Controls.Add(this.TT_injection_status);
+            this.panel1.Controls.Add(this.Iron_tablets_Status);
+            this.panel1.Controls.Add(this.Weight);
+            this.panel1.Controls.Add(this.Blood_pressure);
+            this.panel1.Controls.Add(this.Iron_Tablet_Given_Date);
+            this.panel1.Controls.Add(this.Visit_date);
             this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label10);
@@ -154,6 +134,105 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(662, 720);
             this.panel1.TabIndex = 0;
+            // 
+            // TT_injection_status
+            // 
+            this.TT_injection_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TT_injection_status.FormattingEnabled = true;
+            this.TT_injection_status.Items.AddRange(new object[] {
+            "Yes",
+            "No",
+            "\t\t\t"});
+            this.TT_injection_status.Location = new System.Drawing.Point(313, 390);
+            this.TT_injection_status.Name = "TT_injection_status";
+            this.TT_injection_status.Size = new System.Drawing.Size(231, 37);
+            this.TT_injection_status.TabIndex = 5;
+            // 
+            // Iron_tablets_Status
+            // 
+            this.Iron_tablets_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Iron_tablets_Status.FormattingEnabled = true;
+            this.Iron_tablets_Status.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.Iron_tablets_Status.Location = new System.Drawing.Point(316, 466);
+            this.Iron_tablets_Status.Name = "Iron_tablets_Status";
+            this.Iron_tablets_Status.Size = new System.Drawing.Size(231, 37);
+            this.Iron_tablets_Status.TabIndex = 6;
+            // 
+            // Weight
+            // 
+            this.Weight.Location = new System.Drawing.Point(313, 314);
+            this.Weight.Name = "Weight";
+            this.Weight.Size = new System.Drawing.Size(228, 38);
+            this.Weight.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Weight.StateCommon.Border.Rounding = 5;
+            this.Weight.StateCommon.Border.Width = 1;
+            this.Weight.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Weight.TabIndex = 4;
+            // 
+            // Blood_pressure
+            // 
+            this.Blood_pressure.Location = new System.Drawing.Point(316, 234);
+            this.Blood_pressure.Name = "Blood_pressure";
+            this.Blood_pressure.Size = new System.Drawing.Size(233, 38);
+            this.Blood_pressure.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Blood_pressure.StateCommon.Border.Rounding = 5;
+            this.Blood_pressure.StateCommon.Border.Width = 1;
+            this.Blood_pressure.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Blood_pressure.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(540, 316);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 36);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Kg";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(19, 234);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 44);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Blood Pressure";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label10.Location = new System.Drawing.Point(3, 535);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(193, 44);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Date of Given ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label9.Location = new System.Drawing.Point(6, 466);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(170, 44);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Iron Tablets";
             // 
             // label6
             // 
@@ -187,9 +266,10 @@
             this.btnPersonalProfile.Location = new System.Drawing.Point(493, 8);
             this.btnPersonalProfile.Name = "btnPersonalProfile";
             this.btnPersonalProfile.Size = new System.Drawing.Size(180, 46);
-            this.btnPersonalProfile.TabIndex = 0;
+            this.btnPersonalProfile.TabIndex = 9;
             this.btnPersonalProfile.Text = "Cancel";
             this.btnPersonalProfile.UseVisualStyleBackColor = false;
+            this.btnPersonalProfile.Click += new System.EventHandler(this.btnPersonalProfile_Click);
             // 
             // lblMemberName
             // 
@@ -236,161 +316,27 @@
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel1.TabIndex = 1;
+            this.kryptonPanel1.TabIndex = 0;
             // 
-            // label1
+            // Month_Of_Pregnancy
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(19, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BP";
-            // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(97, 234);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(80, 38);
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(200, 234);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 44);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Blood";
-            // 
-            // kryptonTextBox2
-            // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(314, 234);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(80, 38);
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(433, 234);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 44);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Urine";
-            // 
-            // kryptonTextBox3
-            // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(546, 234);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(80, 38);
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox3.StateCommon.Border.Width = 1;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 4;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label9.Location = new System.Drawing.Point(6, 466);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(170, 44);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Iron Tablets";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label10.Location = new System.Drawing.Point(3, 535);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 44);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Date of Given ";
-            // 
-            // House_Type
-            // 
-            this.House_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.House_Type.FormattingEnabled = true;
-            this.House_Type.Items.AddRange(new object[] {
+            this.Month_Of_Pregnancy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Month_Of_Pregnancy.FormattingEnabled = true;
+            this.Month_Of_Pregnancy.Items.AddRange(new object[] {
             "--Select--",
-            "No House (Nomadic)",
-            "Soil and Stone",
-            "Cement and Concrete",
-            "Building"});
-            this.House_Type.Location = new System.Drawing.Point(316, 466);
-            this.House_Type.Name = "House_Type";
-            this.House_Type.Size = new System.Drawing.Size(231, 37);
-            this.House_Type.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "--Select--",
-            "No House (Nomadic)",
-            "Soil and Stone",
-            "Cement and Concrete",
-            "Building"});
-            this.comboBox1.Location = new System.Drawing.Point(313, 390);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(231, 37);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // kryptonTextBox4
-            // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(313, 314);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(228, 38);
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox4.StateCommon.Border.Width = 1;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(540, 316);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 36);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Kg";
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.Month_Of_Pregnancy.Location = new System.Drawing.Point(315, 160);
+            this.Month_Of_Pregnancy.Name = "Month_Of_Pregnancy";
+            this.Month_Of_Pregnancy.Size = new System.Drawing.Size(231, 37);
+            this.Month_Of_Pregnancy.TabIndex = 5;
             // 
             // Maternal_Health_Form
             // 
@@ -398,7 +344,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 844);
             this.Controls.Add(this.kryptonPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Maternal_Health_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maternal_Health_Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -411,10 +359,8 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Previous_Pregnancies;
-        private System.Windows.Forms.DateTimePicker Expected_Date;
-        private System.Windows.Forms.DateTimePicker Last_Period;
+        private System.Windows.Forms.DateTimePicker Iron_Tablet_Given_Date;
+        private System.Windows.Forms.DateTimePicker Visit_date;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -426,17 +372,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Blood_pressure;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox House_Type;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private System.Windows.Forms.ComboBox TT_injection_status;
+        private System.Windows.Forms.ComboBox Iron_tablets_Status;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox Weight;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox Month_Of_Pregnancy;
     }
 }

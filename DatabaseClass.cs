@@ -90,11 +90,11 @@ namespace ADRASHA_Main
 
         public static DataRow GetRowById(string tableName,string id_column, int id)
         {
-            string query = $"SELECT * FROM {tableName} WHERE {id_column} = @id";
+            string query = $"SELECT * FROM {tableName} WHERE {id_column} = {id}";
             using (SqliteConnection conn = GetConnection())
             {
                 SqliteCommand cmd = new SqliteCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", id);
+               // cmd.Parameters.AddWithValue("@id", id);
                 DataTable dt = new DataTable();
                 SqliteDataReader dr = cmd.ExecuteReader();
                 dt.Load(dr);
@@ -134,20 +134,19 @@ namespace ADRASHA_Main
             comboBox.ValueMember = valueMember;
         }
 
-        public bool UpdateRow(string tableName,string column, int id, object value)
+        public static bool UpdateRow(string tableName,string column, int id, string updatecolumn, object value)
         {
             string query = $"UPDATE {tableName} SET ";
 
-                query += $"{column} = '@value',";
+            query += $"{updatecolumn} = '{value}',";
             
-            query = query.TrimEnd(',') + $" WHERE @Id = @id";
+            query = query.TrimEnd(',') + $" WHERE {column} = {id}";
 
             using (SqliteConnection conn = GetConnection())
             {
                 SqliteCommand cmd = new SqliteCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@Id", column);
-                cmd.Parameters.AddWithValue("@value",value);
+                //cmd.Parameters.AddWithValue("@id", id);
+                //cmd.Parameters.AddWithValue("@value",value);
                 //foreach (KeyValuePair<string, object> item in data)
                 //{
                 //    cmd.Parameters.AddWithValue($"@{item.Key}", item.Value);

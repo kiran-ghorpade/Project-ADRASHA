@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ComponentFactory.Krypton.Toolkit;
 
 
@@ -19,17 +21,48 @@ namespace ADRASHA_Main
         private void SplashScreen_Load(object sender, EventArgs e)
         {
             //MDI mdiform = new MDI();
-            WaitSomeTime(3);
+            Status.Text = "0 %";
+            WaitSomeTime(1000);
+            UpdateAge();
+            WaitSomeTime(30000);
             this.Close();
             //mdiform.Show();          
         }
 
         public void WaitSomeTime(int time)
         {
-            var t = Task.Delay(time*1000);
+            var t = Task.Delay(time/10);
             t.Wait();
             this.Enabled = true;
             this.Cursor = Cursors.Default;
+        }
+
+        private void UpdateAge()
+        {
+            int total_members = DatabaseClass.GetAutoID("select max(member_id) from member_details");
+            int age = 0;
+            string date="";
+
+            for(int i  = 1; i < total_members; i++)
+            {
+                DataTable dt = DatabaseClass.GetDataTable("select birth_date from member_details where member_id="+i);
+                
+                if(dt.Rows.Count > 0)
+                {
+                    date = dt.Rows[0]["birth_date"].ToString();
+                }
+                age = MyFunctions.CalculateAge(date);
+                DatabaseClass.UpdateRow("member_details","member_id",i,"age",age);
+
+                Status.Text = (i*100)/ total_members + " %";
+                Status.Refresh();
+                WaitSomeTime(5);
+            }
+            Status.Text ="100 % .";
+            label3.Text = " Completed";
+            Status.Refresh();
+            label3.Refresh();
+
         }
 
         private void SplashScreen_Resize(object sender, EventArgs e)

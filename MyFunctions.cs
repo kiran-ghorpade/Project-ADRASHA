@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main
 {
-    internal class MyFunctions : Form
+    internal class MyFunctions 
     {
         private static Form activeform = null;
 
@@ -62,7 +62,7 @@ namespace ADRASHA_Main
             currentForm.Close();
         }
        
-        public int CalculateAge(string birth_date)
+        public static int CalculateAge(string birth_date)
         {
             int age = 0;
  
