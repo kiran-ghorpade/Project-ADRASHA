@@ -61,6 +61,8 @@ namespace ADRASHA_Main.Forms
         {
             Health_Profile profile = new Health_Profile(Convert.ToInt32(MemberID));
             MyFunctions.LoadChildForm(profile,MDI.childformpanel);
+            
+            MDI.SearchBox.Clear();
         }
 
     }

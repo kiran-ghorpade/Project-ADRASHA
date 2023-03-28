@@ -3,6 +3,7 @@ using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using ADRASHA_Main.Forms;
 using ComponentFactory.Krypton.Toolkit;
 
 
@@ -25,6 +26,8 @@ namespace ADRASHA_Main
             WaitSomeTime(1000);
             UpdateAge();
             WaitSomeTime(30000);
+            ASHA_Login loginform = new ASHA_Login(this);
+            loginform.ShowDialog();
             this.Close();
             //mdiform.Show();          
         }

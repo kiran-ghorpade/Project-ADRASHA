@@ -15,9 +15,11 @@ namespace ADRASHA_Main.Forms
     public partial class Maternal_Health_Form : Form
     {
         int member_id = 10;
-        public Maternal_Health_Form()
+        public Maternal_Health_Form(int member_id , string name)
         {
             InitializeComponent();
+            this.member_id = member_id;
+            lblMemberName.Text = name;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -36,6 +38,8 @@ namespace ADRASHA_Main.Forms
 
             DatabaseClass db = new DatabaseClass();
             db.InsertRow("Pregnancy_VIsits",data);
+
+            this.Dispose();
         }
 
         private void btnPersonalProfile_Click(object sender, EventArgs e)

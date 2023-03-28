@@ -22,9 +22,6 @@ namespace ADRASHA_Main.Forms
             this.Dispose();
         }
 
-        private void HBNC_VISIT_FORM_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

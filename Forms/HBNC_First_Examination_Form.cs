@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace ADRASHA_Main.Forms
 {
     public partial class HBNC_First_Examination_Form : Form
     {
-        public HBNC_First_Examination_Form()
+        int member_id;
+
+        public HBNC_First_Examination_Form(int member_id, string name)
         {
             InitializeComponent();
+            this.member_id = member_id;
+            lblMemberName.Text = name;
         }
 
         private void btnPersonalProfile_Click(object sender, EventArgs e)
@@ -22,9 +28,28 @@ namespace ADRASHA_Main.Forms
             this.Dispose();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                    {"VISIT_DATE",Visit_date.Value.Date},
+                    {"MEMBER_ID",member_id},
+                    {"BIRTH_DATE",Birth_date.Value.Date},
+                    {"PRETERM_status",Pre_term_status.SelectedItem},
+                    {"BIRTH_TIME",Birth_Time.Value},
+                    {"PROBLEM",Mother_problem.SelectedItem},
+                    {"HOW_FEED",baby_feed.SelectedItem},
+                    {"BABY_WEIGHT",Weight.Text}
+            };
 
+            DatabaseClass db = new DatabaseClass();
+
+            if (db.InsertRow("homedelivery_visit", data))
+            {
+                MessageBox.Show("Data Inserted.");
+            }
+            else
+                MessageBox.Show("Error");
         }
     }
 }

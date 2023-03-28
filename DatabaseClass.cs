@@ -29,7 +29,11 @@ namespace ADRASHA_Main
             using (SqliteConnection connection = GetConnection())
             {
                 if (!File.Exists(dbFilePath))
+                {
                     CreateDatabaseSchema();
+                    Asha_Registration asha_Registration = new Asha_Registration();
+                    asha_Registration.Show();
+                }
             }
         }
 

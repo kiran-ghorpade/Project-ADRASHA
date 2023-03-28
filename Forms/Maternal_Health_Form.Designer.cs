@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maternal_Health_Form));
             this.Iron_Tablet_Given_Date = new System.Windows.Forms.DateTimePicker();
             this.Visit_date = new System.Windows.Forms.DateTimePicker();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Month_Of_Pregnancy = new System.Windows.Forms.ComboBox();
             this.TT_injection_status = new System.Windows.Forms.ComboBox();
             this.Iron_tablets_Status = new System.Windows.Forms.ComboBox();
             this.Weight = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -49,7 +51,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.Month_Of_Pregnancy = new System.Windows.Forms.ComboBox();
+            this.kryptonBorderEdge1 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -134,6 +137,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(662, 720);
             this.panel1.TabIndex = 0;
+            // 
+            // Month_Of_Pregnancy
+            // 
+            this.Month_Of_Pregnancy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Month_Of_Pregnancy.FormattingEnabled = true;
+            this.Month_Of_Pregnancy.Items.AddRange(new object[] {
+            "--Select--",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.Month_Of_Pregnancy.Location = new System.Drawing.Point(315, 160);
+            this.Month_Of_Pregnancy.Name = "Month_Of_Pregnancy";
+            this.Month_Of_Pregnancy.Size = new System.Drawing.Size(231, 37);
+            this.Month_Of_Pregnancy.TabIndex = 2;
             // 
             // TT_injection_status
             // 
@@ -263,7 +286,7 @@
             this.btnPersonalProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnPersonalProfile.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
             this.btnPersonalProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnPersonalProfile.Location = new System.Drawing.Point(493, 8);
+            this.btnPersonalProfile.Location = new System.Drawing.Point(509, 26);
             this.btnPersonalProfile.Name = "btnPersonalProfile";
             this.btnPersonalProfile.Size = new System.Drawing.Size(180, 46);
             this.btnPersonalProfile.TabIndex = 9;
@@ -277,7 +300,7 @@
             this.lblMemberName.BackColor = System.Drawing.Color.Transparent;
             this.lblMemberName.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMemberName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMemberName.Location = new System.Drawing.Point(114, 3);
+            this.lblMemberName.Location = new System.Drawing.Point(130, 21);
             this.lblMemberName.Name = "lblMemberName";
             this.lblMemberName.Size = new System.Drawing.Size(354, 60);
             this.lblMemberName.TabIndex = 0;
@@ -287,7 +310,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::ADRASHA_Main.Properties.Resources.male_avtar;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(93, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -296,13 +319,15 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(111, 57);
+            this.panel2.Location = new System.Drawing.Point(127, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 1);
             this.panel2.TabIndex = 0;
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.panel3);
+            this.kryptonPanel1.Controls.Add(this.kryptonBorderEdge1);
             this.kryptonPanel1.Controls.Add(this.panel1);
             this.kryptonPanel1.Controls.Add(this.panel2);
             this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
@@ -318,25 +343,19 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // Month_Of_Pregnancy
+            // kryptonBorderEdge1
             // 
-            this.Month_Of_Pregnancy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Month_Of_Pregnancy.FormattingEnabled = true;
-            this.Month_Of_Pregnancy.Items.AddRange(new object[] {
-            "--Select--",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"});
-            this.Month_Of_Pregnancy.Location = new System.Drawing.Point(315, 160);
-            this.Month_Of_Pregnancy.Name = "Month_Of_Pregnancy";
-            this.Month_Of_Pregnancy.Size = new System.Drawing.Size(231, 37);
-            this.Month_Of_Pregnancy.TabIndex = 5;
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(720, 1);
+            this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(720, 5);
+            this.panel3.TabIndex = 0;
             // 
             // Maternal_Health_Form
             // 
@@ -345,6 +364,7 @@
             this.ClientSize = new System.Drawing.Size(720, 844);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Maternal_Health_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maternal_Health_Form";
@@ -381,5 +401,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Weight;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox Month_Of_Pregnancy;
+        private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

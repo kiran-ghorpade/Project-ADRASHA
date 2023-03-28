@@ -41,7 +41,7 @@
             childformpanel = new System.Windows.Forms.Panel();
             this.menubarpanelcontrol = new ADRASHA_Main.PanelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            SearchBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.childformpanelcontrol = new ADRASHA_Main.PanelControl();
             this.SearchBoxPanel = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -62,7 +62,7 @@
             this.kryptonPanel1.Controls.Add(childformpanel);
             this.kryptonPanel1.Controls.Add(this.menubarpanelcontrol);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
-            this.kryptonPanel1.Controls.Add(this.SearchBox);
+            this.kryptonPanel1.Controls.Add(SearchBox);
             this.kryptonPanel1.Controls.Add(this.childformpanelcontrol);
             this.kryptonPanel1.Controls.Add(this.SearchBoxPanel);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -228,24 +228,24 @@
             // 
             // SearchBox
             // 
-            this.SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SearchBox.Location = new System.Drawing.Point(372, 36);
-            this.SearchBox.Name = "SearchBox";
-            this.SearchBox.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.SearchBox.Size = new System.Drawing.Size(547, 52);
-            this.SearchBox.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.SearchBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            SearchBox.Location = new System.Drawing.Point(372, 36);
+            SearchBox.Name = "SearchBox";
+            SearchBox.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            SearchBox.Size = new System.Drawing.Size(547, 52);
+            SearchBox.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke;
+            SearchBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SearchBox.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.SearchBox.StateCommon.Border.Rounding = 20;
-            this.SearchBox.StateCommon.Border.Width = 2;
-            this.SearchBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.SearchBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchBox.TabIndex = 0;
-            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
-            this.SearchBox.Enter += new System.EventHandler(this.SearchBox_Enter);
-            this.SearchBox.Leave += new System.EventHandler(this.SearchBox_Leave);
+            SearchBox.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            SearchBox.StateCommon.Border.Rounding = 20;
+            SearchBox.StateCommon.Border.Width = 2;
+            SearchBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            SearchBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SearchBox.TabIndex = 0;
+            SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            SearchBox.Enter += new System.EventHandler(this.SearchBox_Enter);
+            SearchBox.Leave += new System.EventHandler(this.SearchBox_Leave);
             // 
             // childformpanelcontrol
             // 
@@ -296,7 +296,7 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox SearchBox;
+        public static ComponentFactory.Krypton.Toolkit.KryptonTextBox SearchBox;
         private System.Windows.Forms.FlowLayoutPanel SearchBoxPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl menubarpanelcontrol;

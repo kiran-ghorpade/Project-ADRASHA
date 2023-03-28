@@ -48,8 +48,8 @@
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Data.Sqlite, Version=7.0.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Data.Sqlite.Core.7.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    <Reference Include="Microsoft.Data.Sqlite, Version=7.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.Sqlite.Core.7.0.4\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.4.1835, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.4\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
@@ -113,6 +113,12 @@
     </Compile>
     <Compile Include="Forms\Analytics_Form.Designer.cs">
       <DependentUpon>Analytics_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ASHA_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ASHA_Login.Designer.cs">
+      <DependentUpon>ASHA_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Asha_Profile.cs">
       <SubType>Form</SubType>
@@ -280,6 +286,9 @@
     <EmbeddedResource Include="Forms\Analytics_Form.resx">
       <DependentUpon>Analytics_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ASHA_Login.resx">
+      <DependentUpon>ASHA_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Asha_Profile.resx">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +403,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\house.png" />

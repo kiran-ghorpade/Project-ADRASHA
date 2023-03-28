@@ -16,7 +16,7 @@ namespace ADRASHA_Main
     public partial class Health_Profile : Form
     {
         MyFunctions MyFunctions = new MyFunctions();
-        int member_id = 5;
+        readonly int member_id = 5;
         int family_id = 0;
         string name;
 
@@ -52,11 +52,6 @@ namespace ADRASHA_Main
         private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btnBasicHealth_Click(object sender, EventArgs e)
-        {
-           // MyFunctions.nextpanel_code(pnlBasicHealth);
         }
 
         private void btnVaccination_Click(object sender, EventArgs e)
@@ -178,6 +173,12 @@ namespace ADRASHA_Main
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             MyFunctions.LoadChildForm(new NCD(member_id,name),MDI.childformpanel);
+        }
+
+        private void btnAddNewVisit_Click(object sender, EventArgs e)
+        {
+            Maternal_Health_Form mhf = new Maternal_Health_Form(member_id,name);
+            mhf.ShowDialog();
         }
     }
 }

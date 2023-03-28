@@ -18,10 +18,10 @@ namespace ADRASHA_Main
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Splash_Screen());
+            //Application.Run(new Splash_Screen());
             //Application.Run(new Asha_Registration());
-            Application.Run(new MDI());
-            //Application.Run(new Add_New_Pregnancy());
+            //Application.Run(new MDI());
+            Application.Run(new HBNC_First_Examination_Form(5,"kiran ghorpade"));
         }
     }
 }
