@@ -167,7 +167,7 @@ namespace ADRASHA_Main
 
         private void btnUpdateHBNC_Click(object sender, EventArgs e)
         {
-            MyFunctions.LoadChildForm(new HBNC(),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new HBNC(member_id,name),MDI.childformpanel);
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)

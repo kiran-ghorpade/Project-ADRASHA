@@ -34,28 +34,30 @@
             this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.lblashaname = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel6 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.btnNewReport = new System.Windows.Forms.Button();
-            this.btnSavedReports = new System.Windows.Forms.Button();
-            this.btnTemplates = new System.Windows.Forms.Button();
-            this.pnlSavedReports = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlSavedFiles = new System.Windows.Forms.Panel();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.pnlReportTemplates = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlTemplates = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.pnlSavedReports = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlSavedFiles = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.kryptonPanel6 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnTemplates = new System.Windows.Forms.Button();
+            this.btnSavedReports = new System.Windows.Forms.Button();
+            this.btnNewReport = new System.Windows.Forms.Button();
+            this.listboxSavedFiles = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
-            this.kryptonPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).BeginInit();
-            this.pnlSavedReports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlReportTemplates)).BeginInit();
             this.pnlReportTemplates.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).BeginInit();
+            this.pnlSavedReports.SuspendLayout();
+            this.pnlSavedFiles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
+            this.kryptonPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl3
@@ -107,8 +109,8 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
             this.kryptonPanel1.Controls.Add(this.pnlSavedReports);
+            this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel6);
             this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -123,117 +125,6 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
-            // 
-            // kryptonPanel6
-            // 
-            this.kryptonPanel6.Controls.Add(this.btnTemplates);
-            this.kryptonPanel6.Controls.Add(this.btnSavedReports);
-            this.kryptonPanel6.Controls.Add(this.btnNewReport);
-            this.kryptonPanel6.Location = new System.Drawing.Point(12, 161);
-            this.kryptonPanel6.Name = "kryptonPanel6";
-            this.kryptonPanel6.Size = new System.Drawing.Size(427, 676);
-            this.kryptonPanel6.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel6.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel6.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel6.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel6.TabIndex = 0;
-            // 
-            // btnNewReport
-            // 
-            this.btnNewReport.BackColor = System.Drawing.Color.Transparent;
-            this.btnNewReport.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnNewReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnNewReport.Location = new System.Drawing.Point(59, 62);
-            this.btnNewReport.Name = "btnNewReport";
-            this.btnNewReport.Size = new System.Drawing.Size(266, 56);
-            this.btnNewReport.TabIndex = 0;
-            this.btnNewReport.Text = "Generate New Report";
-            this.btnNewReport.UseVisualStyleBackColor = false;
-            // 
-            // btnSavedReports
-            // 
-            this.btnSavedReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnSavedReports.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnSavedReports.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnSavedReports.Location = new System.Drawing.Point(59, 522);
-            this.btnSavedReports.Name = "btnSavedReports";
-            this.btnSavedReports.Size = new System.Drawing.Size(266, 56);
-            this.btnSavedReports.TabIndex = 0;
-            this.btnSavedReports.Text = "Saved Reports";
-            this.btnSavedReports.UseVisualStyleBackColor = false;
-            this.btnSavedReports.Click += new System.EventHandler(this.btnSavedReports_Click);
-            // 
-            // btnTemplates
-            // 
-            this.btnTemplates.BackColor = System.Drawing.Color.Transparent;
-            this.btnTemplates.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnTemplates.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnTemplates.Location = new System.Drawing.Point(59, 292);
-            this.btnTemplates.Name = "btnTemplates";
-            this.btnTemplates.Size = new System.Drawing.Size(266, 56);
-            this.btnTemplates.TabIndex = 0;
-            this.btnTemplates.Text = "Report Templates";
-            this.btnTemplates.UseVisualStyleBackColor = false;
-            this.btnTemplates.Click += new System.EventHandler(this.btnTemplates_Click);
-            // 
-            // pnlSavedReports
-            // 
-            this.pnlSavedReports.Controls.Add(this.pnlSavedFiles);
-            this.pnlSavedReports.Controls.Add(this.label1);
-            this.pnlSavedReports.Controls.Add(this.btnDelete);
-            this.pnlSavedReports.Controls.Add(this.btnOpen);
-            this.pnlSavedReports.Location = new System.Drawing.Point(472, 173);
-            this.pnlSavedReports.Name = "pnlSavedReports";
-            this.pnlSavedReports.Size = new System.Drawing.Size(1048, 650);
-            this.pnlSavedReports.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.pnlSavedReports.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.pnlSavedReports.StateCommon.ColorAngle = 45F;
-            this.pnlSavedReports.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.pnlSavedReports.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Aladin", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(26, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 51);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Saved Reports";
-            // 
-            // pnlSavedFiles
-            // 
-            this.pnlSavedFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlSavedFiles.Location = new System.Drawing.Point(48, 118);
-            this.pnlSavedFiles.Name = "pnlSavedFiles";
-            this.pnlSavedFiles.Size = new System.Drawing.Size(639, 510);
-            this.pnlSavedFiles.TabIndex = 0;
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.BackColor = System.Drawing.Color.Transparent;
-            this.btnOpen.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnOpen.Location = new System.Drawing.Point(786, 136);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(218, 56);
-            this.btnOpen.TabIndex = 0;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnDelete.Location = new System.Drawing.Point(786, 255);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(218, 56);
-            this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // pnlReportTemplates
             // 
@@ -281,6 +172,129 @@
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = false;
             // 
+            // pnlSavedReports
+            // 
+            this.pnlSavedReports.Controls.Add(this.pnlSavedFiles);
+            this.pnlSavedReports.Controls.Add(this.label1);
+            this.pnlSavedReports.Controls.Add(this.btnDelete);
+            this.pnlSavedReports.Controls.Add(this.btnOpen);
+            this.pnlSavedReports.Location = new System.Drawing.Point(472, 173);
+            this.pnlSavedReports.Name = "pnlSavedReports";
+            this.pnlSavedReports.Size = new System.Drawing.Size(1048, 650);
+            this.pnlSavedReports.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.pnlSavedReports.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.pnlSavedReports.StateCommon.ColorAngle = 45F;
+            this.pnlSavedReports.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.pnlSavedReports.TabIndex = 0;
+            // 
+            // pnlSavedFiles
+            // 
+            this.pnlSavedFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlSavedFiles.Controls.Add(this.listboxSavedFiles);
+            this.pnlSavedFiles.Location = new System.Drawing.Point(48, 118);
+            this.pnlSavedFiles.Name = "pnlSavedFiles";
+            this.pnlSavedFiles.Size = new System.Drawing.Size(639, 510);
+            this.pnlSavedFiles.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Aladin", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(26, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 51);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Saved Reports";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnDelete.Location = new System.Drawing.Point(786, 255);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(218, 56);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.BackColor = System.Drawing.Color.Transparent;
+            this.btnOpen.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnOpen.Location = new System.Drawing.Point(786, 136);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(218, 56);
+            this.btnOpen.TabIndex = 0;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // kryptonPanel6
+            // 
+            this.kryptonPanel6.Controls.Add(this.btnTemplates);
+            this.kryptonPanel6.Controls.Add(this.btnSavedReports);
+            this.kryptonPanel6.Controls.Add(this.btnNewReport);
+            this.kryptonPanel6.Location = new System.Drawing.Point(12, 161);
+            this.kryptonPanel6.Name = "kryptonPanel6";
+            this.kryptonPanel6.Size = new System.Drawing.Size(427, 676);
+            this.kryptonPanel6.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.kryptonPanel6.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.kryptonPanel6.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel6.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonPanel6.TabIndex = 0;
+            // 
+            // btnTemplates
+            // 
+            this.btnTemplates.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemplates.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnTemplates.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnTemplates.Location = new System.Drawing.Point(59, 292);
+            this.btnTemplates.Name = "btnTemplates";
+            this.btnTemplates.Size = new System.Drawing.Size(266, 56);
+            this.btnTemplates.TabIndex = 0;
+            this.btnTemplates.Text = "Report Templates";
+            this.btnTemplates.UseVisualStyleBackColor = false;
+            this.btnTemplates.Click += new System.EventHandler(this.btnTemplates_Click);
+            // 
+            // btnSavedReports
+            // 
+            this.btnSavedReports.BackColor = System.Drawing.Color.Transparent;
+            this.btnSavedReports.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnSavedReports.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnSavedReports.Location = new System.Drawing.Point(59, 522);
+            this.btnSavedReports.Name = "btnSavedReports";
+            this.btnSavedReports.Size = new System.Drawing.Size(266, 56);
+            this.btnSavedReports.TabIndex = 0;
+            this.btnSavedReports.Text = "Saved Reports";
+            this.btnSavedReports.UseVisualStyleBackColor = false;
+            this.btnSavedReports.Click += new System.EventHandler(this.btnSavedReports_Click);
+            // 
+            // btnNewReport
+            // 
+            this.btnNewReport.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewReport.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnNewReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnNewReport.Location = new System.Drawing.Point(59, 62);
+            this.btnNewReport.Name = "btnNewReport";
+            this.btnNewReport.Size = new System.Drawing.Size(266, 56);
+            this.btnNewReport.TabIndex = 0;
+            this.btnNewReport.Text = "Generate New Report";
+            this.btnNewReport.UseVisualStyleBackColor = false;
+            this.btnNewReport.Click += new System.EventHandler(this.btnNewReport_Click);
+            // 
+            // listboxSavedFiles
+            // 
+            this.listboxSavedFiles.FormattingEnabled = true;
+            this.listboxSavedFiles.ItemHeight = 16;
+            this.listboxSavedFiles.Location = new System.Drawing.Point(19, 18);
+            this.listboxSavedFiles.Name = "listboxSavedFiles";
+            this.listboxSavedFiles.Size = new System.Drawing.Size(596, 468);
+            this.listboxSavedFiles.TabIndex = 0;
+            // 
             // Reports_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -289,18 +303,20 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "Reports_Form";
             this.Text = "ReportsForm";
+            this.Load += new System.EventHandler(this.Reports_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).EndInit();
-            this.kryptonPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).EndInit();
-            this.pnlSavedReports.ResumeLayout(false);
-            this.pnlSavedReports.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlReportTemplates)).EndInit();
             this.pnlReportTemplates.ResumeLayout(false);
             this.pnlReportTemplates.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).EndInit();
+            this.pnlSavedReports.ResumeLayout(false);
+            this.pnlSavedReports.PerformLayout();
+            this.pnlSavedFiles.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).EndInit();
+            this.kryptonPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -324,5 +340,6 @@
         private System.Windows.Forms.Panel pnlTemplates;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.ListBox listboxSavedFiles;
     }
 }

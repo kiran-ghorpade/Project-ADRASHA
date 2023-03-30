@@ -60,11 +60,8 @@
             this.Pre_term_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pre_term_status.FormattingEnabled = true;
             this.Pre_term_status.Items.AddRange(new object[] {
-            "--Select--",
-            "No House (Nomadic)",
-            "Soil and Stone",
-            "Cement and Concrete",
-            "Building"});
+            "No",
+            "Yes"});
             this.Pre_term_status.Location = new System.Drawing.Point(332, 272);
             this.Pre_term_status.Name = "Pre_term_status";
             this.Pre_term_status.Size = new System.Drawing.Size(231, 37);
@@ -112,10 +109,10 @@
             this.baby_feed.FormattingEnabled = true;
             this.baby_feed.Items.AddRange(new object[] {
             "--Select--",
-            "No House (Nomadic)",
-            "Soil and Stone",
-            "Cement and Concrete",
-            "Building"});
+            "Forcefully",
+            "Weakly",
+            "Could not breastfeed but had to be fed with spoon",
+            "Could neither breastfeed nor take milk given by spoon"});
             this.baby_feed.Location = new System.Drawing.Point(332, 488);
             this.baby_feed.Name = "baby_feed";
             this.baby_feed.Size = new System.Drawing.Size(231, 37);
@@ -126,11 +123,8 @@
             this.Mother_problem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mother_problem.FormattingEnabled = true;
             this.Mother_problem.Items.AddRange(new object[] {
-            "--Select--",
-            "No House (Nomadic)",
-            "Soil and Stone",
-            "Cement and Concrete",
-            "Building"});
+            "No",
+            "Yes"});
             this.Mother_problem.Location = new System.Drawing.Point(332, 398);
             this.Mother_problem.Name = "Mother_problem";
             this.Mother_problem.Size = new System.Drawing.Size(231, 37);
@@ -139,10 +133,12 @@
             // Birth_Time
             // 
             this.Birth_Time.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Birth_Time.CustomFormat = "hh:mm";
             this.Birth_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Birth_Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.Birth_Time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.Birth_Time.Location = new System.Drawing.Point(332, 192);
             this.Birth_Time.Name = "Birth_Time";
+            this.Birth_Time.ShowUpDown = true;
             this.Birth_Time.Size = new System.Drawing.Size(233, 32);
             this.Birth_Time.TabIndex = 3;
             // 
@@ -328,6 +324,7 @@
             this.ClientSize = new System.Drawing.Size(726, 845);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "HBNC_First_Examination_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HBNC_First_Examination_Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

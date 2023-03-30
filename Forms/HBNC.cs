@@ -12,24 +12,27 @@ namespace ADRASHA_Main.Forms
 {
     public partial class HBNC : Form
     {
-        public HBNC()
+        int memberId;
+        string name;
+
+        public HBNC(int memeber_id, string name)
         {
             InitializeComponent();
-        }
-
-        private void pnlScreening_Paint(object sender, PaintEventArgs e)
-        {
+            this.memberId = memeber_id;
+            this.name = name;
 
         }
 
-        private void kryptonPanel2_Paint(object sender, PaintEventArgs e)
+        private void btnFirstExamination_Click(object sender, EventArgs e)
         {
-
+            HBNC_First_Examination_Form first = new HBNC_First_Examination_Form(memberId, name);
+            first.ShowDialog();
         }
 
-        private void btnAddCBAC_Click(object sender, EventArgs e)
+        private void BtnAddVisit_Click(object sender, EventArgs e)
         {
-
+                HBNC_VISIT_FORM hBNC_VISIT_FORM = new HBNC_VISIT_FORM();
+                hBNC_VISIT_FORM.ShowDialog();
         }
     }
 }

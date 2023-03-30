@@ -51,6 +51,24 @@
     <Reference Include="Microsoft.Data.Sqlite, Version=7.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Data.Sqlite.Core.7.0.4\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.4.1835, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.4\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
     </Reference>
@@ -76,6 +94,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -89,6 +108,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManipulation.cs" />
+    <Compile Include="DataSets\Sample_Dataset.cs">
+      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Sample_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Add_New_Family.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +255,12 @@
     <Compile Include="Forms\Reports_Form.Designer.cs">
       <DependentUpon>Reports_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Saved_Report_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Saved_Report_Viewer.Designer.cs">
+      <DependentUpon>Saved_Report_Viewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Vaccination_Anlaytics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +306,19 @@
     <Compile Include="Forms\Splash_Screen.Designer.cs">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Report_Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report_Preview.Designer.cs">
+      <DependentUpon>Report_Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Sample_Report_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Sample_Report_form.Designer.cs">
+      <DependentUpon>Sample_Report_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Validation.cs" />
     <EmbeddedResource Include="Forms\Add_New_Family.resx">
       <DependentUpon>Add_New_Family.cs</DependentUpon>
@@ -346,6 +392,9 @@
     <EmbeddedResource Include="Forms\Reports_Form.resx">
       <DependentUpon>Reports_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Saved_Report_Viewer.resx">
+      <DependentUpon>Saved_Report_Viewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Vaccination_Anlaytics.resx">
       <DependentUpon>Vaccination_Anlaytics.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,7 +418,30 @@
     <EmbeddedResource Include="Forms\Splash_Screen.resx">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Asha_Details_Report.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report_Preview.resx">
+      <DependentUpon>Report_Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Sample_Report_form.resx">
+      <DependentUpon>Sample_Report_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VaccinationList.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="app.manifest" />
+    <None Include="DataSets\Sample_Dataset.xsc">
+      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Sample_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sample_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\Sample_Dataset.xss">
+      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -402,8 +474,19 @@
     <None Include="Resources\familyImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
-    <Folder Include="Reports\" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\house.png" />

@@ -36,7 +36,7 @@ namespace ADRASHA_Main.Forms
                     {"MEMBER_ID",member_id},
                     {"BIRTH_DATE",Birth_date.Value.Date},
                     {"PRETERM_status",Pre_term_status.SelectedItem},
-                    {"BIRTH_TIME",Birth_Time.Value},
+                    {"BIRTH_TIME",Birth_Time.Value.TimeOfDay},
                     {"PROBLEM",Mother_problem.SelectedItem},
                     {"HOW_FEED",baby_feed.SelectedItem},
                     {"BABY_WEIGHT",Weight.Text}

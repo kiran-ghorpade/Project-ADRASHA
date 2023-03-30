@@ -120,7 +120,7 @@
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel1.TabIndex = 2;
+            this.kryptonPanel1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -185,7 +185,7 @@
             this.comboBox6.Location = new System.Drawing.Point(317, 607);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(231, 37);
-            this.comboBox6.TabIndex = 5;
+            this.comboBox6.TabIndex = 7;
             // 
             // comboBox5
             // 
@@ -197,7 +197,7 @@
             this.comboBox5.Location = new System.Drawing.Point(317, 497);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(231, 37);
-            this.comboBox5.TabIndex = 5;
+            this.comboBox5.TabIndex = 6;
             // 
             // comboBox4
             // 
@@ -221,7 +221,7 @@
             this.comboBox17.Location = new System.Drawing.Point(352, 2217);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(231, 37);
-            this.comboBox17.TabIndex = 5;
+            this.comboBox17.TabIndex = 18;
             // 
             // comboBox16
             // 
@@ -233,7 +233,7 @@
             this.comboBox16.Location = new System.Drawing.Point(352, 2084);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(231, 37);
-            this.comboBox16.TabIndex = 5;
+            this.comboBox16.TabIndex = 17;
             // 
             // comboBox15
             // 
@@ -245,7 +245,7 @@
             this.comboBox15.Location = new System.Drawing.Point(364, 1963);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(231, 37);
-            this.comboBox15.TabIndex = 5;
+            this.comboBox15.TabIndex = 16;
             // 
             // comboBox14
             // 
@@ -257,7 +257,7 @@
             this.comboBox14.Location = new System.Drawing.Point(364, 1831);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(231, 37);
-            this.comboBox14.TabIndex = 5;
+            this.comboBox14.TabIndex = 15;
             // 
             // comboBox13
             // 
@@ -269,7 +269,7 @@
             this.comboBox13.Location = new System.Drawing.Point(364, 1698);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(231, 37);
-            this.comboBox13.TabIndex = 5;
+            this.comboBox13.TabIndex = 15;
             // 
             // comboBox12
             // 
@@ -281,7 +281,7 @@
             this.comboBox12.Location = new System.Drawing.Point(375, 1571);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(231, 37);
-            this.comboBox12.TabIndex = 5;
+            this.comboBox12.TabIndex = 14;
             // 
             // comboBox11
             // 
@@ -293,7 +293,7 @@
             this.comboBox11.Location = new System.Drawing.Point(375, 1305);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(231, 37);
-            this.comboBox11.TabIndex = 5;
+            this.comboBox11.TabIndex = 13;
             // 
             // comboBox10
             // 
@@ -305,7 +305,7 @@
             this.comboBox10.Location = new System.Drawing.Point(375, 1224);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(231, 37);
-            this.comboBox10.TabIndex = 5;
+            this.comboBox10.TabIndex = 12;
             // 
             // comboBox9
             // 
@@ -317,7 +317,7 @@
             this.comboBox9.Location = new System.Drawing.Point(375, 1107);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(231, 37);
-            this.comboBox9.TabIndex = 5;
+            this.comboBox9.TabIndex = 11;
             // 
             // comboBox8
             // 
@@ -329,7 +329,7 @@
             this.comboBox8.Location = new System.Drawing.Point(375, 1020);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(231, 37);
-            this.comboBox8.TabIndex = 5;
+            this.comboBox8.TabIndex = 10;
             // 
             // comboBox7
             // 
@@ -341,7 +341,7 @@
             this.comboBox7.Location = new System.Drawing.Point(375, 897);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(231, 37);
-            this.comboBox7.TabIndex = 5;
+            this.comboBox7.TabIndex = 9;
             // 
             // comboBox3
             // 
@@ -353,7 +353,7 @@
             this.comboBox3.Location = new System.Drawing.Point(362, 764);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(231, 37);
-            this.comboBox3.TabIndex = 5;
+            this.comboBox3.TabIndex = 8;
             // 
             // comboBox2
             // 
@@ -365,7 +365,7 @@
             this.comboBox2.Location = new System.Drawing.Point(321, 293);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(231, 37);
-            this.comboBox2.TabIndex = 5;
+            this.comboBox2.TabIndex = 4;
             // 
             // kryptonTextBox2
             // 
@@ -378,7 +378,7 @@
             this.kryptonTextBox2.StateCommon.Border.Rounding = 5;
             this.kryptonTextBox2.StateCommon.Border.Width = 1;
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 4;
+            this.kryptonTextBox2.TabIndex = 1;
             // 
             // label26
             // 
@@ -427,7 +427,7 @@
             this.Previous_Pregnancies.StateCommon.Border.Rounding = 5;
             this.Previous_Pregnancies.StateCommon.Border.Width = 1;
             this.Previous_Pregnancies.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Previous_Pregnancies.TabIndex = 4;
+            this.Previous_Pregnancies.TabIndex = 3;
             // 
             // label10
             // 
@@ -494,9 +494,9 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label7.Location = new System.Drawing.Point(9, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 44);
+            this.label7.Size = new System.Drawing.Size(238, 44);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Day ";
+            this.label7.Text = "No. of Day of Visit";
             // 
             // label5
             // 

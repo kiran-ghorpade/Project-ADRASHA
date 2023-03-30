@@ -1,4 +1,5 @@
 ﻿using ADRASHA_Main.Forms;
+using ADRASHA_Main.Reports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,10 +19,14 @@ namespace ADRASHA_Main
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            //for loading sqltypes namespace
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+
             //Application.Run(new Splash_Screen());
             //Application.Run(new Asha_Registration());
-            //Application.Run(new MDI());
-            Application.Run(new HBNC_First_Examination_Form(5,"kiran ghorpade"));
+            Application.Run(new MDI());
+            //Application.Run(new Report_Preview());
+            //Application.Run(new Sample_Report_form());
         }
     }
 }

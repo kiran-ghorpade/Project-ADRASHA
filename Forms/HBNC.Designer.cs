@@ -36,16 +36,14 @@
             this.btnPersonalProfile = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label6 = new System.Windows.Forms.Label();
             this.pnlScreening = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnFirstExamination = new System.Windows.Forms.Button();
+            this.BtnAddVisit = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
-            this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).BeginInit();
             this.pnlScreening.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -122,10 +120,11 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel1.Controls.Add(this.pnlScreening);
             this.kryptonPanel1.Controls.Add(this.panel2);
             this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
+            this.kryptonPanel1.Controls.Add(this.btnFirstExamination);
+            this.kryptonPanel1.Controls.Add(this.BtnAddVisit);
             this.kryptonPanel1.Controls.Add(this.btnHealth);
             this.kryptonPanel1.Controls.Add(this.lblMemberName);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -141,31 +140,6 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.label6);
-            this.kryptonPanel2.Location = new System.Drawing.Point(970, 217);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(564, 607);
-            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel2.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel2.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel2.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel2.TabIndex = 7;
-            this.kryptonPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel2_Paint);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(3, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(373, 60);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "SCREENING HISTORY";
-            // 
             // pnlScreening
             // 
             this.pnlScreening.Controls.Add(this.label1);
@@ -177,7 +151,6 @@
             this.pnlScreening.StateCommon.ColorAngle = 45F;
             this.pnlScreening.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlScreening.TabIndex = 8;
-            this.pnlScreening.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlScreening_Paint);
             // 
             // label1
             // 
@@ -190,6 +163,34 @@
             this.label1.Size = new System.Drawing.Size(218, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "SCREENING";
+            // 
+            // btnFirstExamination
+            // 
+            this.btnFirstExamination.BackColor = System.Drawing.Color.Transparent;
+            this.btnFirstExamination.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnFirstExamination.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnFirstExamination.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFirstExamination.Location = new System.Drawing.Point(951, 230);
+            this.btnFirstExamination.Name = "btnFirstExamination";
+            this.btnFirstExamination.Size = new System.Drawing.Size(266, 56);
+            this.btnFirstExamination.TabIndex = 0;
+            this.btnFirstExamination.Text = "Add First Examination";
+            this.btnFirstExamination.UseVisualStyleBackColor = false;
+            this.btnFirstExamination.Click += new System.EventHandler(this.btnFirstExamination_Click);
+            // 
+            // BtnAddVisit
+            // 
+            this.BtnAddVisit.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddVisit.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.BtnAddVisit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.BtnAddVisit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAddVisit.Location = new System.Drawing.Point(673, 230);
+            this.BtnAddVisit.Name = "BtnAddVisit";
+            this.BtnAddVisit.Size = new System.Drawing.Size(266, 56);
+            this.BtnAddVisit.TabIndex = 0;
+            this.BtnAddVisit.Text = "Add Visit";
+            this.BtnAddVisit.UseVisualStyleBackColor = false;
+            this.BtnAddVisit.Click += new System.EventHandler(this.BtnAddVisit_Click);
             // 
             // pictureBox2
             // 
@@ -224,9 +225,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
-            this.kryptonPanel2.ResumeLayout(false);
-            this.kryptonPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).EndInit();
             this.pnlScreening.ResumeLayout(false);
             this.pnlScreening.PerformLayout();
@@ -247,9 +245,9 @@
         private System.Windows.Forms.Button btnPersonalProfile;
         private System.Windows.Forms.Panel panel2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private System.Windows.Forms.Label label6;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlScreening;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnAddVisit;
+        private System.Windows.Forms.Button btnFirstExamination;
     }
 }
