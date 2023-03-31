@@ -48,12 +48,51 @@ namespace ADRASHA_Main
         {
             DataManipulation dm = new DataManipulation();
 
-            if (dm.InsertData("asha_profile", this))
-                MessageBox.Show("Submitted Successfully.", "ADRASHA");
+            if (First_Name.Text == "" ||
+                Middle_Name.Text==""||
+                Last_Name.Text == "" ||
+                Mobile_NO.Text == "" ||
+                Marital_Status.Text == ""||
+                Qualifications.Text == ""||
+                Center.Text==""||
+                Sub_Center.Text==""||
+                Village.Text == ""||
+                PinCode.Text ==""||
+                Taluka.Text == ""||
+                District.Text == ""||
+                State.Text ==""||
+                Total_Families.Text ==""||
+                Total_Population.Text=="")
+            {
+                MessageBox.Show("All fields Required.");
+                return;
+            }
+
+            if (dm.InsertData("asha_details", this))
+            {
+                Login_Setup login_Setup = new Login_Setup();
+                this.Hide();
+                login_Setup.Show();
+            }
             else
             {
                 MessageBox.Show("Fill all fields.", "ADRASHA");
             }
+        }
+
+        private void First_Name_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation.Only_Text(sender,e);
+        }
+
+        private void Mobile_NO_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation.Only_Numeric(sender, e);
+        }
+
+        private void Asha_Registration_Load(object sender, EventArgs e)
+        {
+            Validation.SetComboBox(this);
         }
     }
 }

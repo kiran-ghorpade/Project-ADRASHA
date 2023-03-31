@@ -86,7 +86,7 @@ namespace ADRASHA_Main
 
         public static void Only_Text(object sender, KeyPressEventArgs e)
         {
-            if(!(Char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == (char)Keys.Space)))
+            if(!(Char.IsLetter(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == (char)Keys.Space) || (e.KeyChar == (char)Keys.OemPeriod)))
             {
                 e.Handled = true;
             }

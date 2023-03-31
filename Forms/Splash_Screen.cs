@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -19,17 +20,34 @@ namespace ADRASHA_Main
             //this.Enabled = false;
         }
 
+        bool First_Login = true;
+
         private void SplashScreen_Load(object sender, EventArgs e)
         {
-            //MDI mdiform = new MDI();
             Status.Text = "0 %";
             WaitSomeTime(1000);
-            UpdateAge();
-            WaitSomeTime(30000);
-            ASHA_Login loginform = new ASHA_Login(this);
-            loginform.ShowDialog();
-            this.Close();
-            //mdiform.Show();          
+            CheckFirstLogin();
+            if (!First_Login)
+            {
+                UpdateAge();
+                WaitSomeTime(30000);
+                ASHA_Login loginform = new ASHA_Login(this);
+                loginform.ShowDialog();
+                this.Close();
+            }
+        }
+
+        public void CheckFirstLogin()
+        {
+            if (!File.Exists("ADRASHA_DB.sqlite"))
+            {
+                WaitSomeTime(30000);
+                Asha_Registration asha_Registration = new Asha_Registration();
+                this.Hide();
+                asha_Registration.Show();
+            }
+            else
+                First_Login = false;
         }
 
         public void WaitSomeTime(int time)
@@ -42,7 +60,10 @@ namespace ADRASHA_Main
 
         private void UpdateAge()
         {
-            int total_members = DatabaseClass.GetAutoID("select max(member_id) from member_details");
+            int total_members = DatabaseClass.GetAutoID("select max(member_id) from member_details")-1;
+            if(total_members <= 0)
+                  total_members = 1;
+            
             int age = 0;
             string date="";
 

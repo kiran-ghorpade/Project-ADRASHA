@@ -144,6 +144,7 @@
             this.Previous_Pregnancies.StateCommon.Border.Width = 1;
             this.Previous_Pregnancies.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Previous_Pregnancies.TabIndex = 4;
+            this.Previous_Pregnancies.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Previous_Pregnancies_KeyPress);
             // 
             // Expected_Date
             // 
@@ -200,7 +201,6 @@
             this.Father_Id.Size = new System.Drawing.Size(120, 36);
             this.Father_Id.TabIndex = 0;
             this.Father_Id.Text = "No Record";
-            this.Father_Id.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblFatherName
             // 
@@ -213,7 +213,6 @@
             this.lblFatherName.Size = new System.Drawing.Size(120, 36);
             this.lblFatherName.TabIndex = 0;
             this.lblFatherName.Text = "No Record";
-            this.lblFatherName.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -285,6 +284,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "Add_New_Pregnancy";
             this.Text = "Add_New_Pregnency";
+            this.Load += new System.EventHandler(this.Add_New_Pregnancy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

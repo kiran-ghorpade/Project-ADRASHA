@@ -51,20 +51,17 @@
             this.btnFamilyProfile = new System.Windows.Forms.Button();
             this.btnHealthProfile = new System.Windows.Forms.Button();
             this.backpanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pnlMaritalInfo = new System.Windows.Forms.Panel();
-            this.lblNoOfChild = new System.Windows.Forms.Label();
-            this.lblPartnerPersonalId = new System.Windows.Forms.Label();
-            this.lblPartnerName = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblMarriageDate = new System.Windows.Forms.Label();
-            this.lblMaritalStatus = new System.Windows.Forms.Label();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.pnlOccupation = new System.Windows.Forms.Panel();
+            this.lblWorkType = new System.Windows.Forms.Label();
+            this.lblEducation = new System.Windows.Forms.Label();
+            this.lblWorkPlace = new System.Windows.Forms.Label();
+            this.lblOccupationName = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label47 = new System.Windows.Forms.Label();
             this.pnlPersonal = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -84,6 +81,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pnlMaritalInfo = new System.Windows.Forms.Panel();
+            this.lblNoOfChild = new System.Windows.Forms.Label();
+            this.lblPartnerPersonalId = new System.Windows.Forms.Label();
+            this.lblPartnerName = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblMarriageDate = new System.Windows.Forms.Label();
+            this.lblMaritalStatus = new System.Windows.Forms.Label();
+            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.pnlResidential = new System.Windows.Forms.Panel();
             this.lblCountry = new System.Windows.Forms.Label();
             this.lblState = new System.Windows.Forms.Label();
@@ -98,26 +109,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.btnOccupationInfo = new System.Windows.Forms.Button();
-            this.pnlOccupation = new System.Windows.Forms.Panel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lblOccupationName = new System.Windows.Forms.Label();
-            this.lblWorkPlace = new System.Windows.Forms.Label();
-            this.lblEducation = new System.Windows.Forms.Label();
-            this.lblWorkType = new System.Windows.Forms.Label();
+            this.panelControl1 = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backpanel)).BeginInit();
             this.backpanel.SuspendLayout();
-            this.pnlMaritalInfo.SuspendLayout();
-            this.pnlPersonal.SuspendLayout();
-            this.pnlResidential.SuspendLayout();
             this.pnlOccupation.SuspendLayout();
+            this.pnlPersonal.SuspendLayout();
+            this.pnlMaritalInfo.SuspendLayout();
+            this.pnlResidential.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtlastname
@@ -174,6 +174,9 @@
             // 
             // main_panelcontrol
             // 
+            this.main_panelcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.main_panelcontrol.Angle = 0F;
             this.main_panelcontrol.BackColor = System.Drawing.Color.Transparent;
             this.main_panelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -351,6 +354,7 @@
             // 
             // btnFamilyProfile
             // 
+            this.btnFamilyProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFamilyProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnFamilyProfile.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
             this.btnFamilyProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
@@ -365,6 +369,7 @@
             // 
             // btnHealthProfile
             // 
+            this.btnHealthProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHealthProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnHealthProfile.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
             this.btnHealthProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
@@ -411,192 +416,159 @@
             this.backpanel.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.backpanel.TabIndex = 0;
             // 
-            // pnlMaritalInfo
+            // pnlOccupation
             // 
-            this.pnlMaritalInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlMaritalInfo.Controls.Add(this.lblNoOfChild);
-            this.pnlMaritalInfo.Controls.Add(this.lblPartnerPersonalId);
-            this.pnlMaritalInfo.Controls.Add(this.lblPartnerName);
-            this.pnlMaritalInfo.Controls.Add(this.button1);
-            this.pnlMaritalInfo.Controls.Add(this.lblMarriageDate);
-            this.pnlMaritalInfo.Controls.Add(this.lblMaritalStatus);
-            this.pnlMaritalInfo.Controls.Add(this.kryptonButton3);
-            this.pnlMaritalInfo.Controls.Add(this.label22);
-            this.pnlMaritalInfo.Controls.Add(this.label23);
-            this.pnlMaritalInfo.Controls.Add(this.label24);
-            this.pnlMaritalInfo.Controls.Add(this.label1);
-            this.pnlMaritalInfo.Controls.Add(this.label25);
-            this.pnlMaritalInfo.Controls.Add(this.label27);
-            this.pnlMaritalInfo.Location = new System.Drawing.Point(35, 322);
-            this.pnlMaritalInfo.Name = "pnlMaritalInfo";
-            this.pnlMaritalInfo.Size = new System.Drawing.Size(1414, 500);
-            this.pnlMaritalInfo.TabIndex = 0;
+            this.pnlOccupation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlOccupation.Controls.Add(this.lblWorkType);
+            this.pnlOccupation.Controls.Add(this.lblEducation);
+            this.pnlOccupation.Controls.Add(this.lblWorkPlace);
+            this.pnlOccupation.Controls.Add(this.lblOccupationName);
+            this.pnlOccupation.Controls.Add(this.label13);
+            this.pnlOccupation.Controls.Add(this.label16);
+            this.pnlOccupation.Controls.Add(this.label34);
+            this.pnlOccupation.Controls.Add(this.label40);
+            this.pnlOccupation.Controls.Add(this.kryptonButton1);
+            this.pnlOccupation.Controls.Add(this.label47);
+            this.pnlOccupation.Location = new System.Drawing.Point(35, 322);
+            this.pnlOccupation.Name = "pnlOccupation";
+            this.pnlOccupation.Size = new System.Drawing.Size(1414, 500);
+            this.pnlOccupation.TabIndex = 0;
             // 
-            // lblNoOfChild
+            // lblWorkType
             // 
-            this.lblNoOfChild.AutoSize = true;
-            this.lblNoOfChild.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoOfChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfChild.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblNoOfChild.Location = new System.Drawing.Point(316, 375);
-            this.lblNoOfChild.Name = "lblNoOfChild";
-            this.lblNoOfChild.Size = new System.Drawing.Size(88, 29);
-            this.lblNoOfChild.TabIndex = 0;
-            this.lblNoOfChild.Text = "Output";
+            this.lblWorkType.AutoSize = true;
+            this.lblWorkType.BackColor = System.Drawing.Color.Transparent;
+            this.lblWorkType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWorkType.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblWorkType.Location = new System.Drawing.Point(419, 409);
+            this.lblWorkType.Name = "lblWorkType";
+            this.lblWorkType.Size = new System.Drawing.Size(88, 29);
+            this.lblWorkType.TabIndex = 0;
+            this.lblWorkType.Text = "Output";
             // 
-            // lblPartnerPersonalId
+            // lblEducation
             // 
-            this.lblPartnerPersonalId.AutoSize = true;
-            this.lblPartnerPersonalId.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartnerPersonalId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartnerPersonalId.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPartnerPersonalId.Location = new System.Drawing.Point(811, 177);
-            this.lblPartnerPersonalId.Name = "lblPartnerPersonalId";
-            this.lblPartnerPersonalId.Size = new System.Drawing.Size(88, 29);
-            this.lblPartnerPersonalId.TabIndex = 0;
-            this.lblPartnerPersonalId.Text = "Output";
+            this.lblEducation.AutoSize = true;
+            this.lblEducation.BackColor = System.Drawing.Color.Transparent;
+            this.lblEducation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEducation.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lblEducation.Location = new System.Drawing.Point(419, 143);
+            this.lblEducation.Name = "lblEducation";
+            this.lblEducation.Size = new System.Drawing.Size(88, 29);
+            this.lblEducation.TabIndex = 0;
+            this.lblEducation.Text = "Output";
             // 
-            // lblPartnerName
+            // lblWorkPlace
             // 
-            this.lblPartnerName.AutoSize = true;
-            this.lblPartnerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartnerName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPartnerName.Location = new System.Drawing.Point(811, 272);
-            this.lblPartnerName.Name = "lblPartnerName";
-            this.lblPartnerName.Size = new System.Drawing.Size(88, 29);
-            this.lblPartnerName.TabIndex = 0;
-            this.lblPartnerName.Text = "Output";
+            this.lblWorkPlace.AutoSize = true;
+            this.lblWorkPlace.BackColor = System.Drawing.Color.Transparent;
+            this.lblWorkPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWorkPlace.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblWorkPlace.Location = new System.Drawing.Point(419, 320);
+            this.lblWorkPlace.Name = "lblWorkPlace";
+            this.lblWorkPlace.Size = new System.Drawing.Size(88, 29);
+            this.lblWorkPlace.TabIndex = 0;
+            this.lblWorkPlace.Text = "Output";
             // 
-            // button1
+            // lblOccupationName
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.button1.Location = new System.Drawing.Point(571, 356);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "View Partner Profile";
-            this.button1.UseVisualStyleBackColor = false;
+            this.lblOccupationName.AutoSize = true;
+            this.lblOccupationName.BackColor = System.Drawing.Color.Transparent;
+            this.lblOccupationName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOccupationName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblOccupationName.Location = new System.Drawing.Point(419, 233);
+            this.lblOccupationName.Name = "lblOccupationName";
+            this.lblOccupationName.Size = new System.Drawing.Size(88, 29);
+            this.lblOccupationName.TabIndex = 0;
+            this.lblOccupationName.Text = "Output";
             // 
-            // lblMarriageDate
+            // label13
             // 
-            this.lblMarriageDate.AutoSize = true;
-            this.lblMarriageDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarriageDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarriageDate.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMarriageDate.Location = new System.Drawing.Point(316, 277);
-            this.lblMarriageDate.Name = "lblMarriageDate";
-            this.lblMarriageDate.Size = new System.Drawing.Size(88, 29);
-            this.lblMarriageDate.TabIndex = 0;
-            this.lblMarriageDate.Text = "Output";
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label13.Location = new System.Drawing.Point(183, 141);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(115, 31);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Education";
             // 
-            // lblMaritalStatus
+            // label16
             // 
-            this.lblMaritalStatus.AutoSize = true;
-            this.lblMaritalStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaritalStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblMaritalStatus.Location = new System.Drawing.Point(316, 177);
-            this.lblMaritalStatus.Name = "lblMaritalStatus";
-            this.lblMaritalStatus.Size = new System.Drawing.Size(88, 29);
-            this.lblMaritalStatus.TabIndex = 0;
-            this.lblMaritalStatus.Text = "Output";
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label16.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label16.Location = new System.Drawing.Point(183, 233);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(197, 31);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Occupation Name";
             // 
-            // kryptonButton3
+            // label34
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label34.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label34.Location = new System.Drawing.Point(183, 320);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(128, 31);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "Work Place";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label40.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label40.Location = new System.Drawing.Point(190, 409);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(121, 31);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Work Type";
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateCommon.Border.Rounding = 20;
-            this.kryptonButton3.StateCommon.Border.Width = 2;
-            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.TabIndex = 8;
-            this.kryptonButton3.Values.Text = "Next";
+            this.kryptonButton1.StateCommon.Border.Rounding = 20;
+            this.kryptonButton1.StateCommon.Border.Width = 2;
+            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.TabIndex = 8;
+            this.kryptonButton1.Values.Text = "Next";
             // 
-            // label22
+            // label47
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label22.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label22.Location = new System.Drawing.Point(46, 34);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(277, 42);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Marital Status Details :";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label23.Location = new System.Drawing.Point(41, 177);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(156, 31);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Marital Status";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label24.Location = new System.Drawing.Point(41, 277);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(160, 31);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Marriage Date";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(565, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Partner Personal Id:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label25.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label25.Location = new System.Drawing.Point(565, 272);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(168, 31);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Partner Name :";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label27.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label27.Location = new System.Drawing.Point(41, 375);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(146, 31);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "No. of Child :";
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label47.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label47.Location = new System.Drawing.Point(46, 34);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(244, 42);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "Occupation Details :";
             // 
             // pnlPersonal
             // 
+            this.pnlPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.pnlPersonal.Controls.Add(this.label20);
             this.pnlPersonal.Controls.Add(this.panel5);
@@ -836,8 +808,198 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Birth Place ";
             // 
+            // pnlMaritalInfo
+            // 
+            this.pnlMaritalInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMaritalInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlMaritalInfo.Controls.Add(this.lblNoOfChild);
+            this.pnlMaritalInfo.Controls.Add(this.lblPartnerPersonalId);
+            this.pnlMaritalInfo.Controls.Add(this.lblPartnerName);
+            this.pnlMaritalInfo.Controls.Add(this.button1);
+            this.pnlMaritalInfo.Controls.Add(this.lblMarriageDate);
+            this.pnlMaritalInfo.Controls.Add(this.lblMaritalStatus);
+            this.pnlMaritalInfo.Controls.Add(this.kryptonButton3);
+            this.pnlMaritalInfo.Controls.Add(this.label22);
+            this.pnlMaritalInfo.Controls.Add(this.label23);
+            this.pnlMaritalInfo.Controls.Add(this.label24);
+            this.pnlMaritalInfo.Controls.Add(this.label1);
+            this.pnlMaritalInfo.Controls.Add(this.label25);
+            this.pnlMaritalInfo.Controls.Add(this.label27);
+            this.pnlMaritalInfo.Location = new System.Drawing.Point(35, 322);
+            this.pnlMaritalInfo.Name = "pnlMaritalInfo";
+            this.pnlMaritalInfo.Size = new System.Drawing.Size(1414, 500);
+            this.pnlMaritalInfo.TabIndex = 0;
+            // 
+            // lblNoOfChild
+            // 
+            this.lblNoOfChild.AutoSize = true;
+            this.lblNoOfChild.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoOfChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoOfChild.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNoOfChild.Location = new System.Drawing.Point(316, 375);
+            this.lblNoOfChild.Name = "lblNoOfChild";
+            this.lblNoOfChild.Size = new System.Drawing.Size(88, 29);
+            this.lblNoOfChild.TabIndex = 0;
+            this.lblNoOfChild.Text = "Output";
+            // 
+            // lblPartnerPersonalId
+            // 
+            this.lblPartnerPersonalId.AutoSize = true;
+            this.lblPartnerPersonalId.BackColor = System.Drawing.Color.Transparent;
+            this.lblPartnerPersonalId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartnerPersonalId.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPartnerPersonalId.Location = new System.Drawing.Point(811, 177);
+            this.lblPartnerPersonalId.Name = "lblPartnerPersonalId";
+            this.lblPartnerPersonalId.Size = new System.Drawing.Size(88, 29);
+            this.lblPartnerPersonalId.TabIndex = 0;
+            this.lblPartnerPersonalId.Text = "Output";
+            // 
+            // lblPartnerName
+            // 
+            this.lblPartnerName.AutoSize = true;
+            this.lblPartnerName.BackColor = System.Drawing.Color.Transparent;
+            this.lblPartnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartnerName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblPartnerName.Location = new System.Drawing.Point(811, 272);
+            this.lblPartnerName.Name = "lblPartnerName";
+            this.lblPartnerName.Size = new System.Drawing.Size(88, 29);
+            this.lblPartnerName.TabIndex = 0;
+            this.lblPartnerName.Text = "Output";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.button1.Location = new System.Drawing.Point(571, 356);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(266, 56);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "View Partner Profile";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lblMarriageDate
+            // 
+            this.lblMarriageDate.AutoSize = true;
+            this.lblMarriageDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarriageDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarriageDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblMarriageDate.Location = new System.Drawing.Point(316, 277);
+            this.lblMarriageDate.Name = "lblMarriageDate";
+            this.lblMarriageDate.Size = new System.Drawing.Size(88, 29);
+            this.lblMarriageDate.TabIndex = 0;
+            this.lblMarriageDate.Text = "Output";
+            // 
+            // lblMaritalStatus
+            // 
+            this.lblMaritalStatus.AutoSize = true;
+            this.lblMaritalStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaritalStatus.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblMaritalStatus.Location = new System.Drawing.Point(316, 177);
+            this.lblMaritalStatus.Name = "lblMaritalStatus";
+            this.lblMaritalStatus.Size = new System.Drawing.Size(88, 29);
+            this.lblMaritalStatus.TabIndex = 0;
+            this.lblMaritalStatus.Text = "Output";
+            // 
+            // kryptonButton3
+            // 
+            this.kryptonButton3.Location = new System.Drawing.Point(1293, 24);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.Size = new System.Drawing.Size(98, 52);
+            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton3.StateCommon.Border.Rounding = 20;
+            this.kryptonButton3.StateCommon.Border.Width = 2;
+            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.TabIndex = 8;
+            this.kryptonButton3.Values.Text = "Next";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label22.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label22.Location = new System.Drawing.Point(46, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(277, 42);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Marital Status Details :";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label23.Location = new System.Drawing.Point(41, 177);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(156, 31);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Marital Status";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label24.Location = new System.Drawing.Point(41, 277);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(160, 31);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Marriage Date";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label1.Location = new System.Drawing.Point(565, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Partner Personal Id:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label25.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label25.Location = new System.Drawing.Point(565, 272);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(168, 31);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Partner Name :";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label27.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label27.Location = new System.Drawing.Point(41, 375);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(146, 31);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "No. of Child :";
+            // 
             // pnlResidential
             // 
+            this.pnlResidential.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlResidential.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
             this.pnlResidential.Controls.Add(this.lblCountry);
             this.pnlResidential.Controls.Add(this.lblState);
@@ -1013,18 +1175,6 @@
             this.label33.TabIndex = 0;
             this.label33.Text = "Taluka/Subdistrict";
             // 
-            // panelControl1
-            // 
-            this.panelControl1.Angle = 0F;
-            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Location = new System.Drawing.Point(311, 193);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Rounding = 0;
-            this.panelControl1.Size = new System.Drawing.Size(217, 91);
-            this.panelControl1.TabIndex = 0;
-            // 
             // btnOccupationInfo
             // 
             this.btnOccupationInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -1038,150 +1188,17 @@
             this.btnOccupationInfo.UseVisualStyleBackColor = false;
             this.btnOccupationInfo.Click += new System.EventHandler(this.btnOccupationInfo_Click);
             // 
-            // pnlOccupation
+            // panelControl1
             // 
-            this.pnlOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlOccupation.Controls.Add(this.lblWorkType);
-            this.pnlOccupation.Controls.Add(this.lblEducation);
-            this.pnlOccupation.Controls.Add(this.lblWorkPlace);
-            this.pnlOccupation.Controls.Add(this.lblOccupationName);
-            this.pnlOccupation.Controls.Add(this.label13);
-            this.pnlOccupation.Controls.Add(this.label16);
-            this.pnlOccupation.Controls.Add(this.label34);
-            this.pnlOccupation.Controls.Add(this.label40);
-            this.pnlOccupation.Controls.Add(this.kryptonButton1);
-            this.pnlOccupation.Controls.Add(this.label47);
-            this.pnlOccupation.Location = new System.Drawing.Point(35, 322);
-            this.pnlOccupation.Name = "pnlOccupation";
-            this.pnlOccupation.Size = new System.Drawing.Size(1414, 500);
-            this.pnlOccupation.TabIndex = 0;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Location = new System.Drawing.Point(1293, 24);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(98, 52);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 20;
-            this.kryptonButton1.StateCommon.Border.Width = 2;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.TabIndex = 8;
-            this.kryptonButton1.Values.Text = "Next";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label47.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label47.Location = new System.Drawing.Point(46, 34);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(244, 42);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "Occupation Details :";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label40.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label40.Location = new System.Drawing.Point(190, 409);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(121, 31);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "Work Type";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label34.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label34.Location = new System.Drawing.Point(183, 320);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(128, 31);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "Work Place";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label16.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label16.Location = new System.Drawing.Point(183, 233);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(197, 31);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Occupation Name";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label13.Location = new System.Drawing.Point(183, 141);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 31);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Education";
-            // 
-            // lblOccupationName
-            // 
-            this.lblOccupationName.AutoSize = true;
-            this.lblOccupationName.BackColor = System.Drawing.Color.Transparent;
-            this.lblOccupationName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOccupationName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblOccupationName.Location = new System.Drawing.Point(419, 233);
-            this.lblOccupationName.Name = "lblOccupationName";
-            this.lblOccupationName.Size = new System.Drawing.Size(88, 29);
-            this.lblOccupationName.TabIndex = 0;
-            this.lblOccupationName.Text = "Output";
-            // 
-            // lblWorkPlace
-            // 
-            this.lblWorkPlace.AutoSize = true;
-            this.lblWorkPlace.BackColor = System.Drawing.Color.Transparent;
-            this.lblWorkPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWorkPlace.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblWorkPlace.Location = new System.Drawing.Point(419, 320);
-            this.lblWorkPlace.Name = "lblWorkPlace";
-            this.lblWorkPlace.Size = new System.Drawing.Size(88, 29);
-            this.lblWorkPlace.TabIndex = 0;
-            this.lblWorkPlace.Text = "Output";
-            // 
-            // lblEducation
-            // 
-            this.lblEducation.AutoSize = true;
-            this.lblEducation.BackColor = System.Drawing.Color.Transparent;
-            this.lblEducation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEducation.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lblEducation.Location = new System.Drawing.Point(419, 143);
-            this.lblEducation.Name = "lblEducation";
-            this.lblEducation.Size = new System.Drawing.Size(88, 29);
-            this.lblEducation.TabIndex = 0;
-            this.lblEducation.Text = "Output";
-            // 
-            // lblWorkType
-            // 
-            this.lblWorkType.AutoSize = true;
-            this.lblWorkType.BackColor = System.Drawing.Color.Transparent;
-            this.lblWorkType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWorkType.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblWorkType.Location = new System.Drawing.Point(419, 409);
-            this.lblWorkType.Name = "lblWorkType";
-            this.lblWorkType.Size = new System.Drawing.Size(88, 29);
-            this.lblWorkType.TabIndex = 0;
-            this.lblWorkType.Text = "Output";
+            this.panelControl1.Angle = 0F;
+            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Location = new System.Drawing.Point(311, 193);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Rounding = 0;
+            this.panelControl1.Size = new System.Drawing.Size(217, 91);
+            this.panelControl1.TabIndex = 0;
             // 
             // Member_Profile
             // 
@@ -1196,14 +1213,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.backpanel)).EndInit();
             this.backpanel.ResumeLayout(false);
             this.backpanel.PerformLayout();
-            this.pnlMaritalInfo.ResumeLayout(false);
-            this.pnlMaritalInfo.PerformLayout();
-            this.pnlPersonal.ResumeLayout(false);
-            this.pnlPersonal.PerformLayout();
-            this.pnlResidential.ResumeLayout(false);
-            this.pnlResidential.PerformLayout();
             this.pnlOccupation.ResumeLayout(false);
             this.pnlOccupation.PerformLayout();
+            this.pnlPersonal.ResumeLayout(false);
+            this.pnlPersonal.PerformLayout();
+            this.pnlMaritalInfo.ResumeLayout(false);
+            this.pnlMaritalInfo.PerformLayout();
+            this.pnlResidential.ResumeLayout(false);
+            this.pnlResidential.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -244,14 +244,17 @@
             this.Last_Name.Name = "Last_Name";
             this.Last_Name.Size = new System.Drawing.Size(279, 34);
             this.Last_Name.TabIndex = 3;
+            this.Last_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // Mobile_NO
             // 
             this.Mobile_NO.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mobile_NO.Location = new System.Drawing.Point(239, 309);
+            this.Mobile_NO.MaxLength = 10;
             this.Mobile_NO.Name = "Mobile_NO";
             this.Mobile_NO.Size = new System.Drawing.Size(279, 34);
             this.Mobile_NO.TabIndex = 5;
+            this.Mobile_NO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Mobile_NO_KeyPress);
             // 
             // Middle_Name
             // 
@@ -260,6 +263,7 @@
             this.Middle_Name.Name = "Middle_Name";
             this.Middle_Name.Size = new System.Drawing.Size(279, 34);
             this.Middle_Name.TabIndex = 2;
+            this.Middle_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // First_Name
             // 
@@ -268,6 +272,7 @@
             this.First_Name.Name = "First_Name";
             this.First_Name.Size = new System.Drawing.Size(279, 34);
             this.First_Name.TabIndex = 1;
+            this.First_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // label19
             // 
@@ -446,9 +451,11 @@
             // 
             this.PinCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PinCode.Location = new System.Drawing.Point(908, 547);
+            this.PinCode.MaxLength = 6;
             this.PinCode.Name = "PinCode";
             this.PinCode.Size = new System.Drawing.Size(263, 34);
             this.PinCode.TabIndex = 11;
+            this.PinCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Mobile_NO_KeyPress);
             // 
             // Total_Population
             // 
@@ -457,6 +464,7 @@
             this.Total_Population.Name = "Total_Population";
             this.Total_Population.Size = new System.Drawing.Size(218, 34);
             this.Total_Population.TabIndex = 16;
+            this.Total_Population.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Mobile_NO_KeyPress);
             // 
             // Total_Families
             // 
@@ -465,6 +473,7 @@
             this.Total_Families.Name = "Total_Families";
             this.Total_Families.Size = new System.Drawing.Size(218, 34);
             this.Total_Families.TabIndex = 15;
+            this.Total_Families.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Mobile_NO_KeyPress);
             // 
             // State
             // 
@@ -473,6 +482,7 @@
             this.State.Name = "State";
             this.State.Size = new System.Drawing.Size(263, 34);
             this.State.TabIndex = 14;
+            this.State.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // District
             // 
@@ -481,6 +491,7 @@
             this.District.Name = "District";
             this.District.Size = new System.Drawing.Size(263, 34);
             this.District.TabIndex = 13;
+            this.District.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // Taluka
             // 
@@ -489,6 +500,7 @@
             this.Taluka.Name = "Taluka";
             this.Taluka.Size = new System.Drawing.Size(263, 34);
             this.Taluka.TabIndex = 12;
+            this.Taluka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // txtadharnumber
             // 
@@ -505,6 +517,7 @@
             this.Village.Name = "Village";
             this.Village.Size = new System.Drawing.Size(263, 34);
             this.Village.TabIndex = 10;
+            this.Village.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // label21
             // 
@@ -561,6 +574,7 @@
             this.Center.Name = "Center";
             this.Center.Size = new System.Drawing.Size(263, 34);
             this.Center.TabIndex = 8;
+            this.Center.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // Sub_Center
             // 
@@ -569,6 +583,7 @@
             this.Sub_Center.Name = "Sub_Center";
             this.Sub_Center.Size = new System.Drawing.Size(263, 34);
             this.Sub_Center.TabIndex = 9;
+            this.Sub_Center.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.First_Name_KeyPress);
             // 
             // label14
             // 
@@ -727,7 +742,7 @@
             this.label1.Text = "Register Yourself";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // AshaRegistration
+            // Asha_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -738,11 +753,12 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AshaRegistration";
+            this.Name = "Asha_Registration";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisrerForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Asha_Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

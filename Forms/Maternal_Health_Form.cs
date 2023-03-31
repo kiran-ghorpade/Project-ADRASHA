@@ -24,6 +24,15 @@ namespace ADRASHA_Main.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            if (
+                Blood_pressure.Text==""||
+                Weight.Text == ""
+                )
+            {
+                MessageBox.Show("All fields are required.");
+                return;
+            }
+
             Dictionary<string, object> data = new Dictionary<string, object>()
             {
                    {"Mother_Id",member_id},

@@ -22,6 +22,11 @@ namespace ADRASHA_Main.Reports
         {
             InitializeComponent();
         }
+        
+        public List<ReportCell> GetReportCells(DataTable table)
+        {
+            return ReportCell.ConvertTableToCells(table);
+        }
 
         private void Sample_Report_form_Load(object sender, EventArgs e)
         {
@@ -78,7 +83,7 @@ namespace ADRASHA_Main.Reports
 
 
             reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Sample_Dataset", dt));
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", GetReportCells(dt)));
 
             this.reportViewer1.RefreshReport();
 

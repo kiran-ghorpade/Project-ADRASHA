@@ -12,6 +12,24 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/ADRASHA_Main/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +52,21 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image-3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1B7781701EE2DCE41B3C15441D259195E3A2CC52</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ADRASHA_Main_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking">
@@ -153,17 +186,17 @@
     <Compile Include="Forms\Asha_Profile.Designer.cs">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Login_Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Setup.Designer.cs">
+      <DependentUpon>Login_Setup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Demographic_Analytics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Demographic_Analytics.Designer.cs">
-      <DependentUpon>Demographic_Analytics.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Family_Profile.cs">
       <SubType>Form</SubType>
@@ -225,18 +258,6 @@
     <Compile Include="Forms\Member_Profile.Designer.cs">
       <DependentUpon>Member_Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NCD_Anlaytics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NCD_Anlaytics.Designer.cs">
-      <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Basic_Health.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Basic_Health.Designer.cs">
-      <DependentUpon>Basic_Health.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CBAC_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,12 +281,6 @@
     </Compile>
     <Compile Include="Forms\Saved_Report_Viewer.Designer.cs">
       <DependentUpon>Saved_Report_Viewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Vaccination_Anlaytics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Vaccination_Anlaytics.Designer.cs">
-      <DependentUpon>Vaccination_Anlaytics.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Vaccination_Form.cs">
       <SubType>Form</SubType>
@@ -306,6 +321,7 @@
     <Compile Include="Forms\Splash_Screen.Designer.cs">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ReportCell.cs" />
     <Compile Include="Reports\Report_Preview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -338,11 +354,11 @@
     <EmbeddedResource Include="Forms\Asha_Profile.resx">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login_Setup.resx">
+      <DependentUpon>Login_Setup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Demographic_Analytics.resx">
-      <DependentUpon>Demographic_Analytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Family_Profile.resx">
       <DependentUpon>Family_Profile.cs</DependentUpon>
@@ -377,12 +393,6 @@
     <EmbeddedResource Include="Forms\NCD.resx">
       <DependentUpon>NCD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NCD_Anlaytics.resx">
-      <DependentUpon>NCD_Anlaytics.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Basic_Health.resx">
-      <DependentUpon>Basic_Health.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CBAC_FORM.resx">
       <DependentUpon>CBAC_FORM.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,9 +404,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Saved_Report_Viewer.resx">
       <DependentUpon>Saved_Report_Viewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Vaccination_Anlaytics.resx">
-      <DependentUpon>Vaccination_Anlaytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Vaccination_Form.resx">
       <DependentUpon>Vaccination_Form.cs</DependentUpon>
@@ -430,6 +437,7 @@
     <EmbeddedResource Include="Reports\VaccinationList.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Include="ADRASHA_Main_TemporaryKey.pfx" />
     <None Include="app.manifest" />
     <None Include="DataSets\Sample_Dataset.xsc">
       <DependentUpon>Sample_Dataset.xsd</DependentUpon>
@@ -474,6 +482,7 @@
     <None Include="Resources\familyImage.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image-3.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -493,6 +502,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\male avtar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

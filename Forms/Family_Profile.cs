@@ -23,6 +23,7 @@ namespace ADRASHA_Main.Forms
         private void FamilyProfile_Load(object sender, EventArgs e)
         {
             PopulateItems();
+            btnUpdate.Visible = false;
         }
 
         private void SetOutputData()

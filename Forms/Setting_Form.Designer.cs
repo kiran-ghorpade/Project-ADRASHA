@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Form));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlSecurity = new System.Windows.Forms.Panel();
-            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox10 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.confirm_password = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.new_password = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.current_password = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -69,10 +69,10 @@
             // pnlSecurity
             // 
             this.pnlSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlSecurity.Controls.Add(this.kryptonTextBox6);
-            this.pnlSecurity.Controls.Add(this.kryptonTextBox9);
-            this.pnlSecurity.Controls.Add(this.kryptonTextBox10);
-            this.pnlSecurity.Controls.Add(this.kryptonButton2);
+            this.pnlSecurity.Controls.Add(this.confirm_password);
+            this.pnlSecurity.Controls.Add(this.new_password);
+            this.pnlSecurity.Controls.Add(this.current_password);
+            this.pnlSecurity.Controls.Add(this.btnUpdate);
             this.pnlSecurity.Controls.Add(this.label7);
             this.pnlSecurity.Controls.Add(this.label8);
             this.pnlSecurity.Controls.Add(this.label9);
@@ -82,63 +82,67 @@
             this.pnlSecurity.Size = new System.Drawing.Size(1414, 512);
             this.pnlSecurity.TabIndex = 0;
             // 
-            // kryptonTextBox6
+            // confirm_password
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(664, 391);
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.confirm_password.Location = new System.Drawing.Point(664, 391);
+            this.confirm_password.Name = "confirm_password";
+            this.confirm_password.PasswordChar = '*';
+            this.confirm_password.Size = new System.Drawing.Size(327, 38);
+            this.confirm_password.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox6.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox6.StateCommon.Border.Width = 1;
-            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox6.TabIndex = 0;
+            this.confirm_password.StateCommon.Border.Rounding = 5;
+            this.confirm_password.StateCommon.Border.Width = 1;
+            this.confirm_password.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_password.TabIndex = 0;
             // 
-            // kryptonTextBox9
+            // new_password
             // 
-            this.kryptonTextBox9.Location = new System.Drawing.Point(664, 273);
-            this.kryptonTextBox9.Name = "kryptonTextBox9";
-            this.kryptonTextBox9.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox9.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.new_password.Location = new System.Drawing.Point(664, 273);
+            this.new_password.Name = "new_password";
+            this.new_password.PasswordChar = '*';
+            this.new_password.Size = new System.Drawing.Size(327, 38);
+            this.new_password.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox9.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox9.StateCommon.Border.Width = 1;
-            this.kryptonTextBox9.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox9.TabIndex = 0;
+            this.new_password.StateCommon.Border.Rounding = 5;
+            this.new_password.StateCommon.Border.Width = 1;
+            this.new_password.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_password.TabIndex = 0;
             // 
-            // kryptonTextBox10
+            // current_password
             // 
-            this.kryptonTextBox10.Location = new System.Drawing.Point(664, 156);
-            this.kryptonTextBox10.Name = "kryptonTextBox10";
-            this.kryptonTextBox10.Size = new System.Drawing.Size(327, 38);
-            this.kryptonTextBox10.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.current_password.Location = new System.Drawing.Point(664, 156);
+            this.current_password.Name = "current_password";
+            this.current_password.PasswordChar = '*';
+            this.current_password.Size = new System.Drawing.Size(327, 38);
+            this.current_password.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox10.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox10.StateCommon.Border.Width = 1;
-            this.kryptonTextBox10.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox10.TabIndex = 0;
+            this.current_password.StateCommon.Border.Rounding = 5;
+            this.current_password.StateCommon.Border.Width = 1;
+            this.current_password.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.current_password.TabIndex = 0;
             // 
-            // kryptonButton2
+            // btnUpdate
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1091, 448);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(193, 52);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnUpdate.Location = new System.Drawing.Point(1091, 448);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(193, 52);
+            this.btnUpdate.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnUpdate.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnUpdate.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdate.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdate.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Border.Width = 2;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 0;
-            this.kryptonButton2.Values.Text = "Update";
+            this.btnUpdate.StateCommon.Border.Rounding = 20;
+            this.btnUpdate.StateCommon.Border.Width = 2;
+            this.btnUpdate.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.Values.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label7
             // 
@@ -261,10 +265,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private PanelControl panelControl3;
         private System.Windows.Forms.Panel pnlSecurity;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox confirm_password;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox new_password;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox current_password;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnUpdate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

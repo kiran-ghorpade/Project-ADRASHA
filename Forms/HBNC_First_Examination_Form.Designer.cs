@@ -102,6 +102,7 @@
             this.Weight.StateCommon.Border.Width = 1;
             this.Weight.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Weight.TabIndex = 7;
+            this.Weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Weight_KeyPress);
             // 
             // baby_feed
             // 
@@ -323,9 +324,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 845);
             this.Controls.Add(this.kryptonPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HBNC_First_Examination_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HBNC_First_Examination_Form";
+            this.Load += new System.EventHandler(this.HBNC_First_Examination_Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

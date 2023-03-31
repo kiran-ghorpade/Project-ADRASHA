@@ -30,6 +30,12 @@ namespace ADRASHA_Main.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(Weight.Text))
+            {
+                MessageBox.Show("Weight Required.");
+                return;
+            }
+
             Dictionary<string, object> data = new Dictionary<string, object>()
             {
                     {"VISIT_DATE",Visit_date.Value.Date},
@@ -50,6 +56,16 @@ namespace ADRASHA_Main.Forms
             }
             else
                 MessageBox.Show("Error");
+        }
+
+        private void Weight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation.Only_Numeric(sender,e);
+        }
+
+        private void HBNC_First_Examination_Form_Load(object sender, EventArgs e)
+        {
+            Validation.SetComboBox(panel1);
         }
     }
 }

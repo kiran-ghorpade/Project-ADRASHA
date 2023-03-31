@@ -20,21 +20,6 @@ namespace ADRASHA_Main.Forms
         private void Dashboard_Load(object sender, EventArgs e)
         {
             setupDashboard();
-
-            //demography pie chart
-            Demography_Chart.Series["Demography"].Points.AddXY("Children",20);
-            Demography_Chart.Series["Demography"].Points.AddXY("Women",40);
-            Demography_Chart.Series["Demography"].Points.AddXY("Old",20);
-            Demography_Chart.Series["Demography"].Points.AddXY("Infants",5);
-            Demography_Chart.Series["Demography"].Points.AddXY("Men",40);
-            
-            //NCD pie chart
-            //NCD_Chart.Series["NCD"].Points.AddXY("Blood Pressure",20);
-            //NCD_Chart.Series["NCD"].Points.AddXY("Diebeties",40);
-            //NCD_Chart.Series["NCD"].Points.AddXY("Astama",20);
-            //NCD_Chart.Series["NCD"].Points.AddXY("Cancer",5);
-            //NCD_Chart.Series["NCD"].Points.AddXY("arthritis", 40);
-            //NCD_Chart.Series["NCD"].Points.AddXY("Healty", 80);
         }
 
         void setupDashboard()
@@ -56,15 +41,29 @@ namespace ADRASHA_Main.Forms
             lblChildren.Text= total_children.ToString();
 
 
+            //demography pie chart
+            int men = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Male'")-1;
+            int women = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'emale'")-1;
+            Demography_Chart.Series["Demography"].Points.AddXY("Women", women);
+            Demography_Chart.Series["Demography"].Points.AddXY("Men", men);
+            
+
+
             // Pie Charts
             DataTable dt = DatabaseClass.GetDataTable("select DISTINCT ncd_name from ncd_details");
-
-            foreach(DataRow dr in dt.Rows)
+            
+            if (dt != null)
             {
-                DataTable dt1 = DatabaseClass.GetDataTable("select distinct memberid from ncd_details where ncd_name='" + dr["ncd_name"] +"'");
+                foreach (DataRow dr in dt.Rows)
+                {
+                    DataTable dt1 = DatabaseClass.GetDataTable("select distinct memberid from ncd_details where ncd_name='" + dr["ncd_name"] + "'");
 
-                NCD_Chart.Series["NCD"].Points.AddXY(dr["ncd_name"], dt1.Rows.Count);
-                
+                    NCD_Chart.Series["NCD"].Points.AddXY(dr["ncd_name"], dt1.Rows.Count);
+                }
+            }
+            else
+            {
+                NCD_Chart.Series["NCD"].Points.AddXY("NO Data",1);
             }
         }
     }

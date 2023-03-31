@@ -34,55 +34,55 @@
             this.lblMemberName = new System.Windows.Forms.Label();
             this.lblashaname = new System.Windows.Forms.Label();
             this.pnlBack = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelControl3 = new ADRASHA_Main.PanelControl();
+            this.pnlVaccineBack = new System.Windows.Forms.Panel();
             this.pnlDatePIcker = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnPnlClose = new System.Windows.Forms.Button();
             this.btnAddVaccination = new System.Windows.Forms.Button();
             this.Vaccination_Place = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Vaccination_Date = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlVaccineBack = new System.Windows.Forms.Panel();
+            this.HepB_D3 = new System.Windows.Forms.Button();
+            this.IPV_B2 = new System.Windows.Forms.Button();
+            this.Tdap_B2 = new System.Windows.Forms.Button();
+            this.PCV_B1 = new System.Windows.Forms.Button();
+            this.Hib_B1 = new System.Windows.Forms.Button();
+            this.IPV_B1 = new System.Windows.Forms.Button();
+            this.DTaP_B1 = new System.Windows.Forms.Button();
+            this.Hib_D3 = new System.Windows.Forms.Button();
+            this.IPV_D3 = new System.Windows.Forms.Button();
+            this.DTaP_D3 = new System.Windows.Forms.Button();
+            this.HPV_D2 = new System.Windows.Forms.Button();
+            this.VAR_D2 = new System.Windows.Forms.Button();
+            this.MMR_D2 = new System.Windows.Forms.Button();
+            this.PCV_D2 = new System.Windows.Forms.Button();
+            this.Hib_D2 = new System.Windows.Forms.Button();
+            this.IPV_D2 = new System.Windows.Forms.Button();
+            this.DTaP_D2 = new System.Windows.Forms.Button();
+            this.Hib_D1 = new System.Windows.Forms.Button();
+            this.HPV_D1 = new System.Windows.Forms.Button();
+            this.VAR_D1 = new System.Windows.Forms.Button();
+            this.MMR_D1 = new System.Windows.Forms.Button();
+            this.PCV_D1 = new System.Windows.Forms.Button();
+            this.IPV_D1 = new System.Windows.Forms.Button();
+            this.DTaP_D1 = new System.Windows.Forms.Button();
+            this.HepB_D2 = new System.Windows.Forms.Button();
+            this.HepB_D1 = new System.Windows.Forms.Button();
             this.BCG_D1 = new System.Windows.Forms.Button();
             this.VaccinationPicture = new System.Windows.Forms.PictureBox();
-            this.HepB_D1 = new System.Windows.Forms.Button();
-            this.HepB_D2 = new System.Windows.Forms.Button();
-            this.DTaP_D1 = new System.Windows.Forms.Button();
-            this.DTaP_D2 = new System.Windows.Forms.Button();
-            this.HepB_D3 = new System.Windows.Forms.Button();
-            this.DTaP_D3 = new System.Windows.Forms.Button();
-            this.DTaP_B1 = new System.Windows.Forms.Button();
-            this.IPV_B1 = new System.Windows.Forms.Button();
-            this.Hib_B1 = new System.Windows.Forms.Button();
-            this.Tdap_B2 = new System.Windows.Forms.Button();
-            this.IPV_B2 = new System.Windows.Forms.Button();
-            this.IPV_D1 = new System.Windows.Forms.Button();
-            this.Hib_D1 = new System.Windows.Forms.Button();
-            this.IPV_D2 = new System.Windows.Forms.Button();
-            this.Hib_D2 = new System.Windows.Forms.Button();
-            this.PCV_D2 = new System.Windows.Forms.Button();
-            this.MMR_D2 = new System.Windows.Forms.Button();
-            this.VAR_D2 = new System.Windows.Forms.Button();
-            this.PCV_D1 = new System.Windows.Forms.Button();
-            this.IPV_D3 = new System.Windows.Forms.Button();
-            this.Hib_D3 = new System.Windows.Forms.Button();
-            this.PCV_B1 = new System.Windows.Forms.Button();
-            this.MMR_D1 = new System.Windows.Forms.Button();
-            this.VAR_D1 = new System.Windows.Forms.Button();
-            this.HPV_D1 = new System.Windows.Forms.Button();
-            this.HPV_D2 = new System.Windows.Forms.Button();
-            this.btnPnlClose = new System.Windows.Forms.Button();
-            this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pnlBack)).BeginInit();
             this.pnlBack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlDatePIcker)).BeginInit();
-            this.pnlDatePIcker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlVaccineBack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlDatePIcker)).BeginInit();
+            this.pnlDatePIcker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VaccinationPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,6 +158,84 @@
             this.pnlBack.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlBack.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(949, 104);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(580, 1);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::ADRASHA_Main.Properties.Resources.male_avtar;
+            this.pictureBox2.Location = new System.Drawing.Point(839, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Angle = 0F;
+            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Location = new System.Drawing.Point(12, 12);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Rounding = 0;
+            this.panelControl3.Size = new System.Drawing.Size(150, 125);
+            this.panelControl3.TabIndex = 0;
+            // 
+            // pnlVaccineBack
+            // 
+            this.pnlVaccineBack.BackColor = System.Drawing.Color.Transparent;
+            this.pnlVaccineBack.Controls.Add(this.pnlDatePIcker);
+            this.pnlVaccineBack.Controls.Add(this.HepB_D3);
+            this.pnlVaccineBack.Controls.Add(this.IPV_B2);
+            this.pnlVaccineBack.Controls.Add(this.Tdap_B2);
+            this.pnlVaccineBack.Controls.Add(this.PCV_B1);
+            this.pnlVaccineBack.Controls.Add(this.Hib_B1);
+            this.pnlVaccineBack.Controls.Add(this.IPV_B1);
+            this.pnlVaccineBack.Controls.Add(this.DTaP_B1);
+            this.pnlVaccineBack.Controls.Add(this.Hib_D3);
+            this.pnlVaccineBack.Controls.Add(this.IPV_D3);
+            this.pnlVaccineBack.Controls.Add(this.DTaP_D3);
+            this.pnlVaccineBack.Controls.Add(this.HPV_D2);
+            this.pnlVaccineBack.Controls.Add(this.VAR_D2);
+            this.pnlVaccineBack.Controls.Add(this.MMR_D2);
+            this.pnlVaccineBack.Controls.Add(this.PCV_D2);
+            this.pnlVaccineBack.Controls.Add(this.Hib_D2);
+            this.pnlVaccineBack.Controls.Add(this.IPV_D2);
+            this.pnlVaccineBack.Controls.Add(this.DTaP_D2);
+            this.pnlVaccineBack.Controls.Add(this.Hib_D1);
+            this.pnlVaccineBack.Controls.Add(this.HPV_D1);
+            this.pnlVaccineBack.Controls.Add(this.VAR_D1);
+            this.pnlVaccineBack.Controls.Add(this.MMR_D1);
+            this.pnlVaccineBack.Controls.Add(this.PCV_D1);
+            this.pnlVaccineBack.Controls.Add(this.IPV_D1);
+            this.pnlVaccineBack.Controls.Add(this.DTaP_D1);
+            this.pnlVaccineBack.Controls.Add(this.HepB_D2);
+            this.pnlVaccineBack.Controls.Add(this.HepB_D1);
+            this.pnlVaccineBack.Controls.Add(this.BCG_D1);
+            this.pnlVaccineBack.Controls.Add(this.VaccinationPicture);
+            this.pnlVaccineBack.Location = new System.Drawing.Point(27, 230);
+            this.pnlVaccineBack.Name = "pnlVaccineBack";
+            this.pnlVaccineBack.Size = new System.Drawing.Size(1485, 591);
+            this.pnlVaccineBack.TabIndex = 0;
+            // 
             // pnlDatePIcker
             // 
             this.pnlDatePIcker.Controls.Add(this.btnPnlClose);
@@ -175,6 +253,20 @@
             this.pnlDatePIcker.StateCommon.ColorAngle = 45F;
             this.pnlDatePIcker.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlDatePIcker.TabIndex = 0;
+            // 
+            // btnPnlClose
+            // 
+            this.btnPnlClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnPnlClose.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnPnlClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnPnlClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPnlClose.Location = new System.Drawing.Point(154, 264);
+            this.btnPnlClose.Name = "btnPnlClose";
+            this.btnPnlClose.Size = new System.Drawing.Size(141, 45);
+            this.btnPnlClose.TabIndex = 4;
+            this.btnPnlClose.Text = "Cancel";
+            this.btnPnlClose.UseVisualStyleBackColor = false;
+            this.btnPnlClose.Click += new System.EventHandler(this.btnPnlClose_Click);
             // 
             // btnAddVaccination
             // 
@@ -249,71 +341,369 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Vaccination Info -";
             // 
-            // panel2
+            // HepB_D3
             // 
-            this.panel2.Location = new System.Drawing.Point(949, 104);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(580, 1);
-            this.panel2.TabIndex = 0;
+            this.HepB_D3.BackColor = System.Drawing.Color.Red;
+            this.HepB_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.HepB_D3.ForeColor = System.Drawing.Color.Transparent;
+            this.HepB_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HepB_D3.Location = new System.Drawing.Point(541, 93);
+            this.HepB_D3.Name = "HepB_D3";
+            this.HepB_D3.Size = new System.Drawing.Size(92, 46);
+            this.HepB_D3.TabIndex = 0;
+            this.HepB_D3.Text = "Dose 3";
+            this.HepB_D3.UseVisualStyleBackColor = false;
+            this.HepB_D3.Click += new System.EventHandler(this.HepB_D3_Click);
             // 
-            // pictureBox2
+            // IPV_B2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::ADRASHA_Main.Properties.Resources.male_avtar;
-            this.pictureBox2.Location = new System.Drawing.Point(839, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.IPV_B2.BackColor = System.Drawing.Color.Red;
+            this.IPV_B2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.IPV_B2.ForeColor = System.Drawing.Color.Transparent;
+            this.IPV_B2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IPV_B2.Location = new System.Drawing.Point(1098, 230);
+            this.IPV_B2.Name = "IPV_B2";
+            this.IPV_B2.Size = new System.Drawing.Size(92, 43);
+            this.IPV_B2.TabIndex = 0;
+            this.IPV_B2.Text = "Booster 2";
+            this.IPV_B2.UseVisualStyleBackColor = false;
+            this.IPV_B2.Click += new System.EventHandler(this.Hib_B2_Click);
             // 
-            // pictureBox1
+            // Tdap_B2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.Tdap_B2.BackColor = System.Drawing.Color.Red;
+            this.Tdap_B2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.Tdap_B2.ForeColor = System.Drawing.Color.Transparent;
+            this.Tdap_B2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Tdap_B2.Location = new System.Drawing.Point(1098, 186);
+            this.Tdap_B2.Name = "Tdap_B2";
+            this.Tdap_B2.Size = new System.Drawing.Size(92, 43);
+            this.Tdap_B2.TabIndex = 0;
+            this.Tdap_B2.Text = "Booster 2";
+            this.Tdap_B2.UseVisualStyleBackColor = false;
+            this.Tdap_B2.Click += new System.EventHandler(this.Tdap_B2_Click);
             // 
-            // pnlVaccineBack
+            // PCV_B1
             // 
-            this.pnlVaccineBack.BackColor = System.Drawing.Color.Transparent;
-            this.pnlVaccineBack.Controls.Add(this.pnlDatePIcker);
-            this.pnlVaccineBack.Controls.Add(this.HepB_D3);
-            this.pnlVaccineBack.Controls.Add(this.IPV_B2);
-            this.pnlVaccineBack.Controls.Add(this.Tdap_B2);
-            this.pnlVaccineBack.Controls.Add(this.PCV_B1);
-            this.pnlVaccineBack.Controls.Add(this.Hib_B1);
-            this.pnlVaccineBack.Controls.Add(this.IPV_B1);
-            this.pnlVaccineBack.Controls.Add(this.DTaP_B1);
-            this.pnlVaccineBack.Controls.Add(this.Hib_D3);
-            this.pnlVaccineBack.Controls.Add(this.IPV_D3);
-            this.pnlVaccineBack.Controls.Add(this.DTaP_D3);
-            this.pnlVaccineBack.Controls.Add(this.HPV_D2);
-            this.pnlVaccineBack.Controls.Add(this.VAR_D2);
-            this.pnlVaccineBack.Controls.Add(this.MMR_D2);
-            this.pnlVaccineBack.Controls.Add(this.PCV_D2);
-            this.pnlVaccineBack.Controls.Add(this.Hib_D2);
-            this.pnlVaccineBack.Controls.Add(this.IPV_D2);
-            this.pnlVaccineBack.Controls.Add(this.DTaP_D2);
-            this.pnlVaccineBack.Controls.Add(this.Hib_D1);
-            this.pnlVaccineBack.Controls.Add(this.HPV_D1);
-            this.pnlVaccineBack.Controls.Add(this.VAR_D1);
-            this.pnlVaccineBack.Controls.Add(this.MMR_D1);
-            this.pnlVaccineBack.Controls.Add(this.PCV_D1);
-            this.pnlVaccineBack.Controls.Add(this.IPV_D1);
-            this.pnlVaccineBack.Controls.Add(this.DTaP_D1);
-            this.pnlVaccineBack.Controls.Add(this.HepB_D2);
-            this.pnlVaccineBack.Controls.Add(this.HepB_D1);
-            this.pnlVaccineBack.Controls.Add(this.BCG_D1);
-            this.pnlVaccineBack.Controls.Add(this.VaccinationPicture);
-            this.pnlVaccineBack.Location = new System.Drawing.Point(27, 230);
-            this.pnlVaccineBack.Name = "pnlVaccineBack";
-            this.pnlVaccineBack.Size = new System.Drawing.Size(1485, 591);
-            this.pnlVaccineBack.TabIndex = 0;
+            this.PCV_B1.BackColor = System.Drawing.Color.Red;
+            this.PCV_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.PCV_B1.ForeColor = System.Drawing.Color.Transparent;
+            this.PCV_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PCV_B1.Location = new System.Drawing.Point(639, 319);
+            this.PCV_B1.Name = "PCV_B1";
+            this.PCV_B1.Size = new System.Drawing.Size(92, 43);
+            this.PCV_B1.TabIndex = 0;
+            this.PCV_B1.Text = "Booster 1";
+            this.PCV_B1.UseVisualStyleBackColor = false;
+            this.PCV_B1.Click += new System.EventHandler(this.PCV_B1_Click);
+            // 
+            // Hib_B1
+            // 
+            this.Hib_B1.BackColor = System.Drawing.Color.Red;
+            this.Hib_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.Hib_B1.ForeColor = System.Drawing.Color.Transparent;
+            this.Hib_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hib_B1.Location = new System.Drawing.Point(821, 275);
+            this.Hib_B1.Name = "Hib_B1";
+            this.Hib_B1.Size = new System.Drawing.Size(92, 43);
+            this.Hib_B1.TabIndex = 0;
+            this.Hib_B1.Text = "Booster 1";
+            this.Hib_B1.UseVisualStyleBackColor = false;
+            this.Hib_B1.Click += new System.EventHandler(this.Hib_B1_Click);
+            // 
+            // IPV_B1
+            // 
+            this.IPV_B1.BackColor = System.Drawing.Color.Red;
+            this.IPV_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.IPV_B1.ForeColor = System.Drawing.Color.Transparent;
+            this.IPV_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IPV_B1.Location = new System.Drawing.Point(821, 230);
+            this.IPV_B1.Name = "IPV_B1";
+            this.IPV_B1.Size = new System.Drawing.Size(92, 43);
+            this.IPV_B1.TabIndex = 0;
+            this.IPV_B1.Text = "Booster 1";
+            this.IPV_B1.UseVisualStyleBackColor = false;
+            this.IPV_B1.Click += new System.EventHandler(this.IPV_B1_Click);
+            // 
+            // DTaP_B1
+            // 
+            this.DTaP_B1.BackColor = System.Drawing.Color.Red;
+            this.DTaP_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.DTaP_B1.ForeColor = System.Drawing.Color.Transparent;
+            this.DTaP_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DTaP_B1.Location = new System.Drawing.Point(822, 139);
+            this.DTaP_B1.Name = "DTaP_B1";
+            this.DTaP_B1.Size = new System.Drawing.Size(92, 46);
+            this.DTaP_B1.TabIndex = 0;
+            this.DTaP_B1.Text = "Booster ";
+            this.DTaP_B1.UseVisualStyleBackColor = false;
+            this.DTaP_B1.Click += new System.EventHandler(this.DTaP_B1_Click);
+            // 
+            // Hib_D3
+            // 
+            this.Hib_D3.BackColor = System.Drawing.Color.Red;
+            this.Hib_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.Hib_D3.ForeColor = System.Drawing.Color.Transparent;
+            this.Hib_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hib_D3.Location = new System.Drawing.Point(544, 272);
+            this.Hib_D3.Name = "Hib_D3";
+            this.Hib_D3.Size = new System.Drawing.Size(92, 46);
+            this.Hib_D3.TabIndex = 0;
+            this.Hib_D3.Text = "Dose 3";
+            this.Hib_D3.UseVisualStyleBackColor = false;
+            this.Hib_D3.Click += new System.EventHandler(this.Hib_D3_Click);
+            // 
+            // IPV_D3
+            // 
+            this.IPV_D3.BackColor = System.Drawing.Color.Red;
+            this.IPV_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.IPV_D3.ForeColor = System.Drawing.Color.Transparent;
+            this.IPV_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IPV_D3.Location = new System.Drawing.Point(544, 228);
+            this.IPV_D3.Name = "IPV_D3";
+            this.IPV_D3.Size = new System.Drawing.Size(92, 46);
+            this.IPV_D3.TabIndex = 0;
+            this.IPV_D3.Text = "Dose 3";
+            this.IPV_D3.UseVisualStyleBackColor = false;
+            this.IPV_D3.Click += new System.EventHandler(this.IPV_D3_Click);
+            // 
+            // DTaP_D3
+            // 
+            this.DTaP_D3.BackColor = System.Drawing.Color.Red;
+            this.DTaP_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.DTaP_D3.ForeColor = System.Drawing.Color.Transparent;
+            this.DTaP_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DTaP_D3.Location = new System.Drawing.Point(544, 139);
+            this.DTaP_D3.Name = "DTaP_D3";
+            this.DTaP_D3.Size = new System.Drawing.Size(92, 46);
+            this.DTaP_D3.TabIndex = 0;
+            this.DTaP_D3.Text = "Dose 3";
+            this.DTaP_D3.UseVisualStyleBackColor = false;
+            this.DTaP_D3.Click += new System.EventHandler(this.DTaP_D3_Click);
+            // 
+            // HPV_D2
+            // 
+            this.HPV_D2.BackColor = System.Drawing.Color.Red;
+            this.HPV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.HPV_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.HPV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HPV_D2.Location = new System.Drawing.Point(1285, 494);
+            this.HPV_D2.Name = "HPV_D2";
+            this.HPV_D2.Size = new System.Drawing.Size(92, 46);
+            this.HPV_D2.TabIndex = 0;
+            this.HPV_D2.Text = "Dose 2";
+            this.HPV_D2.UseVisualStyleBackColor = false;
+            this.HPV_D2.Click += new System.EventHandler(this.HPV_D2_Click);
+            // 
+            // VAR_D2
+            // 
+            this.VAR_D2.BackColor = System.Drawing.Color.Red;
+            this.VAR_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.VAR_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.VAR_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VAR_D2.Location = new System.Drawing.Point(729, 449);
+            this.VAR_D2.Name = "VAR_D2";
+            this.VAR_D2.Size = new System.Drawing.Size(92, 46);
+            this.VAR_D2.TabIndex = 0;
+            this.VAR_D2.Text = "Dose 2";
+            this.VAR_D2.UseVisualStyleBackColor = false;
+            this.VAR_D2.Click += new System.EventHandler(this.VAR_D2_Click);
+            // 
+            // MMR_D2
+            // 
+            this.MMR_D2.BackColor = System.Drawing.Color.Red;
+            this.MMR_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.MMR_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.MMR_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MMR_D2.Location = new System.Drawing.Point(729, 406);
+            this.MMR_D2.Name = "MMR_D2";
+            this.MMR_D2.Size = new System.Drawing.Size(92, 46);
+            this.MMR_D2.TabIndex = 0;
+            this.MMR_D2.Text = "Dose 2";
+            this.MMR_D2.UseVisualStyleBackColor = false;
+            this.MMR_D2.Click += new System.EventHandler(this.MMR_D2_Click);
+            // 
+            // PCV_D2
+            // 
+            this.PCV_D2.BackColor = System.Drawing.Color.Red;
+            this.PCV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.PCV_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.PCV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PCV_D2.Location = new System.Drawing.Point(541, 316);
+            this.PCV_D2.Name = "PCV_D2";
+            this.PCV_D2.Size = new System.Drawing.Size(92, 46);
+            this.PCV_D2.TabIndex = 0;
+            this.PCV_D2.Text = "Dose 2";
+            this.PCV_D2.UseVisualStyleBackColor = false;
+            this.PCV_D2.Click += new System.EventHandler(this.PCV_D2_Click);
+            // 
+            // Hib_D2
+            // 
+            this.Hib_D2.BackColor = System.Drawing.Color.Red;
+            this.Hib_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.Hib_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.Hib_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hib_D2.Location = new System.Drawing.Point(453, 272);
+            this.Hib_D2.Name = "Hib_D2";
+            this.Hib_D2.Size = new System.Drawing.Size(92, 46);
+            this.Hib_D2.TabIndex = 0;
+            this.Hib_D2.Text = "Dose 2";
+            this.Hib_D2.UseVisualStyleBackColor = false;
+            this.Hib_D2.Click += new System.EventHandler(this.Hib_D2_Click);
+            // 
+            // IPV_D2
+            // 
+            this.IPV_D2.BackColor = System.Drawing.Color.Red;
+            this.IPV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.IPV_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.IPV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IPV_D2.Location = new System.Drawing.Point(453, 227);
+            this.IPV_D2.Name = "IPV_D2";
+            this.IPV_D2.Size = new System.Drawing.Size(92, 46);
+            this.IPV_D2.TabIndex = 0;
+            this.IPV_D2.Text = "Dose 2";
+            this.IPV_D2.UseVisualStyleBackColor = false;
+            this.IPV_D2.Click += new System.EventHandler(this.IPV_D2_Click);
+            // 
+            // DTaP_D2
+            // 
+            this.DTaP_D2.BackColor = System.Drawing.Color.Red;
+            this.DTaP_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.DTaP_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.DTaP_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DTaP_D2.Location = new System.Drawing.Point(453, 139);
+            this.DTaP_D2.Name = "DTaP_D2";
+            this.DTaP_D2.Size = new System.Drawing.Size(92, 46);
+            this.DTaP_D2.TabIndex = 0;
+            this.DTaP_D2.Text = "Dose 2";
+            this.DTaP_D2.UseVisualStyleBackColor = false;
+            this.DTaP_D2.Click += new System.EventHandler(this.DTaP_D2_Click);
+            // 
+            // Hib_D1
+            // 
+            this.Hib_D1.BackColor = System.Drawing.Color.Red;
+            this.Hib_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.Hib_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.Hib_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Hib_D1.Location = new System.Drawing.Point(357, 273);
+            this.Hib_D1.Name = "Hib_D1";
+            this.Hib_D1.Size = new System.Drawing.Size(92, 46);
+            this.Hib_D1.TabIndex = 0;
+            this.Hib_D1.Text = "Dose 1";
+            this.Hib_D1.UseVisualStyleBackColor = false;
+            this.Hib_D1.Click += new System.EventHandler(this.Hib_D1_Click);
+            // 
+            // HPV_D1
+            // 
+            this.HPV_D1.BackColor = System.Drawing.Color.Red;
+            this.HPV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.HPV_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.HPV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HPV_D1.Location = new System.Drawing.Point(1190, 494);
+            this.HPV_D1.Name = "HPV_D1";
+            this.HPV_D1.Size = new System.Drawing.Size(92, 46);
+            this.HPV_D1.TabIndex = 0;
+            this.HPV_D1.Text = "Dose 1";
+            this.HPV_D1.UseVisualStyleBackColor = false;
+            this.HPV_D1.Click += new System.EventHandler(this.HPV_D1_Click);
+            // 
+            // VAR_D1
+            // 
+            this.VAR_D1.BackColor = System.Drawing.Color.Red;
+            this.VAR_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.VAR_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.VAR_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VAR_D1.Location = new System.Drawing.Point(637, 449);
+            this.VAR_D1.Name = "VAR_D1";
+            this.VAR_D1.Size = new System.Drawing.Size(92, 46);
+            this.VAR_D1.TabIndex = 0;
+            this.VAR_D1.Text = "Dose 1";
+            this.VAR_D1.UseVisualStyleBackColor = false;
+            this.VAR_D1.Click += new System.EventHandler(this.VAR_D1_Click);
+            // 
+            // MMR_D1
+            // 
+            this.MMR_D1.BackColor = System.Drawing.Color.Red;
+            this.MMR_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.MMR_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.MMR_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MMR_D1.Location = new System.Drawing.Point(637, 406);
+            this.MMR_D1.Name = "MMR_D1";
+            this.MMR_D1.Size = new System.Drawing.Size(92, 46);
+            this.MMR_D1.TabIndex = 0;
+            this.MMR_D1.Text = "Dose 1";
+            this.MMR_D1.UseVisualStyleBackColor = false;
+            this.MMR_D1.Click += new System.EventHandler(this.MMR_D1_Click);
+            // 
+            // PCV_D1
+            // 
+            this.PCV_D1.BackColor = System.Drawing.Color.Red;
+            this.PCV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.PCV_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.PCV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PCV_D1.Location = new System.Drawing.Point(451, 316);
+            this.PCV_D1.Name = "PCV_D1";
+            this.PCV_D1.Size = new System.Drawing.Size(92, 46);
+            this.PCV_D1.TabIndex = 0;
+            this.PCV_D1.Text = "Dose 1";
+            this.PCV_D1.UseVisualStyleBackColor = false;
+            this.PCV_D1.Click += new System.EventHandler(this.PCV_D1_Click);
+            // 
+            // IPV_D1
+            // 
+            this.IPV_D1.BackColor = System.Drawing.Color.Red;
+            this.IPV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.IPV_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.IPV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IPV_D1.Location = new System.Drawing.Point(357, 227);
+            this.IPV_D1.Name = "IPV_D1";
+            this.IPV_D1.Size = new System.Drawing.Size(92, 46);
+            this.IPV_D1.TabIndex = 0;
+            this.IPV_D1.Text = "Dose 1";
+            this.IPV_D1.UseVisualStyleBackColor = false;
+            this.IPV_D1.Click += new System.EventHandler(this.IPV_D1_Click);
+            // 
+            // DTaP_D1
+            // 
+            this.DTaP_D1.BackColor = System.Drawing.Color.Red;
+            this.DTaP_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.DTaP_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.DTaP_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DTaP_D1.Location = new System.Drawing.Point(357, 139);
+            this.DTaP_D1.Name = "DTaP_D1";
+            this.DTaP_D1.Size = new System.Drawing.Size(92, 46);
+            this.DTaP_D1.TabIndex = 0;
+            this.DTaP_D1.Text = "Dose 1";
+            this.DTaP_D1.UseVisualStyleBackColor = false;
+            this.DTaP_D1.Click += new System.EventHandler(this.DTaP_D1_Click);
+            // 
+            // HepB_D2
+            // 
+            this.HepB_D2.BackColor = System.Drawing.Color.Red;
+            this.HepB_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.HepB_D2.ForeColor = System.Drawing.Color.Transparent;
+            this.HepB_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HepB_D2.Location = new System.Drawing.Point(357, 93);
+            this.HepB_D2.Name = "HepB_D2";
+            this.HepB_D2.Size = new System.Drawing.Size(92, 46);
+            this.HepB_D2.TabIndex = 0;
+            this.HepB_D2.Text = "Dose 2";
+            this.HepB_D2.UseVisualStyleBackColor = false;
+            this.HepB_D2.Click += new System.EventHandler(this.HepB_D2_Click);
+            // 
+            // HepB_D1
+            // 
+            this.HepB_D1.BackColor = System.Drawing.Color.Red;
+            this.HepB_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.HepB_D1.ForeColor = System.Drawing.Color.Transparent;
+            this.HepB_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HepB_D1.Location = new System.Drawing.Point(266, 93);
+            this.HepB_D1.Name = "HepB_D1";
+            this.HepB_D1.Size = new System.Drawing.Size(92, 46);
+            this.HepB_D1.TabIndex = 0;
+            this.HepB_D1.Text = "Dose 1";
+            this.HepB_D1.UseVisualStyleBackColor = false;
+            this.HepB_D1.Click += new System.EventHandler(this.HepB_D1_Click);
             // 
             // BCG_D1
             // 
@@ -340,396 +730,6 @@
             this.VaccinationPicture.TabIndex = 6;
             this.VaccinationPicture.TabStop = false;
             // 
-            // HepB_D1
-            // 
-            this.HepB_D1.BackColor = System.Drawing.Color.Red;
-            this.HepB_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.HepB_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.HepB_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HepB_D1.Location = new System.Drawing.Point(266, 93);
-            this.HepB_D1.Name = "HepB_D1";
-            this.HepB_D1.Size = new System.Drawing.Size(92, 46);
-            this.HepB_D1.TabIndex = 0;
-            this.HepB_D1.Text = "Dose 1";
-            this.HepB_D1.UseVisualStyleBackColor = false;
-            this.HepB_D1.Click += new System.EventHandler(this.HepB_D1_Click);
-            // 
-            // HepB_D2
-            // 
-            this.HepB_D2.BackColor = System.Drawing.Color.Red;
-            this.HepB_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.HepB_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.HepB_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HepB_D2.Location = new System.Drawing.Point(357, 93);
-            this.HepB_D2.Name = "HepB_D2";
-            this.HepB_D2.Size = new System.Drawing.Size(92, 46);
-            this.HepB_D2.TabIndex = 0;
-            this.HepB_D2.Text = "Dose 2";
-            this.HepB_D2.UseVisualStyleBackColor = false;
-            this.HepB_D2.Click += new System.EventHandler(this.HepB_D2_Click);
-            // 
-            // DTaP_D1
-            // 
-            this.DTaP_D1.BackColor = System.Drawing.Color.Red;
-            this.DTaP_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.DTaP_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.DTaP_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DTaP_D1.Location = new System.Drawing.Point(357, 139);
-            this.DTaP_D1.Name = "DTaP_D1";
-            this.DTaP_D1.Size = new System.Drawing.Size(92, 46);
-            this.DTaP_D1.TabIndex = 0;
-            this.DTaP_D1.Text = "Dose 1";
-            this.DTaP_D1.UseVisualStyleBackColor = false;
-            this.DTaP_D1.Click += new System.EventHandler(this.DTaP_D1_Click);
-            // 
-            // DTaP_D2
-            // 
-            this.DTaP_D2.BackColor = System.Drawing.Color.Red;
-            this.DTaP_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.DTaP_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.DTaP_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DTaP_D2.Location = new System.Drawing.Point(453, 139);
-            this.DTaP_D2.Name = "DTaP_D2";
-            this.DTaP_D2.Size = new System.Drawing.Size(92, 46);
-            this.DTaP_D2.TabIndex = 0;
-            this.DTaP_D2.Text = "Dose 2";
-            this.DTaP_D2.UseVisualStyleBackColor = false;
-            this.DTaP_D2.Click += new System.EventHandler(this.DTaP_D2_Click);
-            // 
-            // HepB_D3
-            // 
-            this.HepB_D3.BackColor = System.Drawing.Color.Red;
-            this.HepB_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.HepB_D3.ForeColor = System.Drawing.Color.Transparent;
-            this.HepB_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HepB_D3.Location = new System.Drawing.Point(541, 93);
-            this.HepB_D3.Name = "HepB_D3";
-            this.HepB_D3.Size = new System.Drawing.Size(92, 46);
-            this.HepB_D3.TabIndex = 0;
-            this.HepB_D3.Text = "Dose 3";
-            this.HepB_D3.UseVisualStyleBackColor = false;
-            this.HepB_D3.Click += new System.EventHandler(this.HepB_D3_Click);
-            // 
-            // DTaP_D3
-            // 
-            this.DTaP_D3.BackColor = System.Drawing.Color.Red;
-            this.DTaP_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.DTaP_D3.ForeColor = System.Drawing.Color.Transparent;
-            this.DTaP_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DTaP_D3.Location = new System.Drawing.Point(544, 139);
-            this.DTaP_D3.Name = "DTaP_D3";
-            this.DTaP_D3.Size = new System.Drawing.Size(92, 46);
-            this.DTaP_D3.TabIndex = 0;
-            this.DTaP_D3.Text = "Dose 3";
-            this.DTaP_D3.UseVisualStyleBackColor = false;
-            this.DTaP_D3.Click += new System.EventHandler(this.DTaP_D3_Click);
-            // 
-            // DTaP_B1
-            // 
-            this.DTaP_B1.BackColor = System.Drawing.Color.Red;
-            this.DTaP_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.DTaP_B1.ForeColor = System.Drawing.Color.Transparent;
-            this.DTaP_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DTaP_B1.Location = new System.Drawing.Point(822, 139);
-            this.DTaP_B1.Name = "DTaP_B1";
-            this.DTaP_B1.Size = new System.Drawing.Size(92, 46);
-            this.DTaP_B1.TabIndex = 0;
-            this.DTaP_B1.Text = "Booster ";
-            this.DTaP_B1.UseVisualStyleBackColor = false;
-            this.DTaP_B1.Click += new System.EventHandler(this.DTaP_B1_Click);
-            // 
-            // IPV_B1
-            // 
-            this.IPV_B1.BackColor = System.Drawing.Color.Red;
-            this.IPV_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.IPV_B1.ForeColor = System.Drawing.Color.Transparent;
-            this.IPV_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IPV_B1.Location = new System.Drawing.Point(821, 230);
-            this.IPV_B1.Name = "IPV_B1";
-            this.IPV_B1.Size = new System.Drawing.Size(92, 43);
-            this.IPV_B1.TabIndex = 0;
-            this.IPV_B1.Text = "Booster 1";
-            this.IPV_B1.UseVisualStyleBackColor = false;
-            this.IPV_B1.Click += new System.EventHandler(this.IPV_B1_Click);
-            // 
-            // Hib_B1
-            // 
-            this.Hib_B1.BackColor = System.Drawing.Color.Red;
-            this.Hib_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.Hib_B1.ForeColor = System.Drawing.Color.Transparent;
-            this.Hib_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hib_B1.Location = new System.Drawing.Point(821, 275);
-            this.Hib_B1.Name = "Hib_B1";
-            this.Hib_B1.Size = new System.Drawing.Size(92, 43);
-            this.Hib_B1.TabIndex = 0;
-            this.Hib_B1.Text = "Booster 1";
-            this.Hib_B1.UseVisualStyleBackColor = false;
-            this.Hib_B1.Click += new System.EventHandler(this.Hib_B1_Click);
-            // 
-            // Tdap_B2
-            // 
-            this.Tdap_B2.BackColor = System.Drawing.Color.Red;
-            this.Tdap_B2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.Tdap_B2.ForeColor = System.Drawing.Color.Transparent;
-            this.Tdap_B2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Tdap_B2.Location = new System.Drawing.Point(1098, 186);
-            this.Tdap_B2.Name = "Tdap_B2";
-            this.Tdap_B2.Size = new System.Drawing.Size(92, 43);
-            this.Tdap_B2.TabIndex = 0;
-            this.Tdap_B2.Text = "Booster 2";
-            this.Tdap_B2.UseVisualStyleBackColor = false;
-            this.Tdap_B2.Click += new System.EventHandler(this.Tdap_B2_Click);
-            // 
-            // IPV_B2
-            // 
-            this.IPV_B2.BackColor = System.Drawing.Color.Red;
-            this.IPV_B2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.IPV_B2.ForeColor = System.Drawing.Color.Transparent;
-            this.IPV_B2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IPV_B2.Location = new System.Drawing.Point(1098, 230);
-            this.IPV_B2.Name = "IPV_B2";
-            this.IPV_B2.Size = new System.Drawing.Size(92, 43);
-            this.IPV_B2.TabIndex = 0;
-            this.IPV_B2.Text = "Booster 2";
-            this.IPV_B2.UseVisualStyleBackColor = false;
-            this.IPV_B2.Click += new System.EventHandler(this.Hib_B2_Click);
-            // 
-            // IPV_D1
-            // 
-            this.IPV_D1.BackColor = System.Drawing.Color.Red;
-            this.IPV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.IPV_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.IPV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IPV_D1.Location = new System.Drawing.Point(357, 227);
-            this.IPV_D1.Name = "IPV_D1";
-            this.IPV_D1.Size = new System.Drawing.Size(92, 46);
-            this.IPV_D1.TabIndex = 0;
-            this.IPV_D1.Text = "Dose 1";
-            this.IPV_D1.UseVisualStyleBackColor = false;
-            this.IPV_D1.Click += new System.EventHandler(this.IPV_D1_Click);
-            // 
-            // Hib_D1
-            // 
-            this.Hib_D1.BackColor = System.Drawing.Color.Red;
-            this.Hib_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.Hib_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.Hib_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hib_D1.Location = new System.Drawing.Point(357, 273);
-            this.Hib_D1.Name = "Hib_D1";
-            this.Hib_D1.Size = new System.Drawing.Size(92, 46);
-            this.Hib_D1.TabIndex = 0;
-            this.Hib_D1.Text = "Dose 1";
-            this.Hib_D1.UseVisualStyleBackColor = false;
-            this.Hib_D1.Click += new System.EventHandler(this.Hib_D1_Click);
-            // 
-            // IPV_D2
-            // 
-            this.IPV_D2.BackColor = System.Drawing.Color.Red;
-            this.IPV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.IPV_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.IPV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IPV_D2.Location = new System.Drawing.Point(453, 227);
-            this.IPV_D2.Name = "IPV_D2";
-            this.IPV_D2.Size = new System.Drawing.Size(92, 46);
-            this.IPV_D2.TabIndex = 0;
-            this.IPV_D2.Text = "Dose 2";
-            this.IPV_D2.UseVisualStyleBackColor = false;
-            this.IPV_D2.Click += new System.EventHandler(this.IPV_D2_Click);
-            // 
-            // Hib_D2
-            // 
-            this.Hib_D2.BackColor = System.Drawing.Color.Red;
-            this.Hib_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.Hib_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.Hib_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hib_D2.Location = new System.Drawing.Point(453, 272);
-            this.Hib_D2.Name = "Hib_D2";
-            this.Hib_D2.Size = new System.Drawing.Size(92, 46);
-            this.Hib_D2.TabIndex = 0;
-            this.Hib_D2.Text = "Dose 2";
-            this.Hib_D2.UseVisualStyleBackColor = false;
-            this.Hib_D2.Click += new System.EventHandler(this.Hib_D2_Click);
-            // 
-            // PCV_D2
-            // 
-            this.PCV_D2.BackColor = System.Drawing.Color.Red;
-            this.PCV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.PCV_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.PCV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PCV_D2.Location = new System.Drawing.Point(541, 316);
-            this.PCV_D2.Name = "PCV_D2";
-            this.PCV_D2.Size = new System.Drawing.Size(92, 46);
-            this.PCV_D2.TabIndex = 0;
-            this.PCV_D2.Text = "Dose 2";
-            this.PCV_D2.UseVisualStyleBackColor = false;
-            this.PCV_D2.Click += new System.EventHandler(this.PCV_D2_Click);
-            // 
-            // MMR_D2
-            // 
-            this.MMR_D2.BackColor = System.Drawing.Color.Red;
-            this.MMR_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.MMR_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.MMR_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MMR_D2.Location = new System.Drawing.Point(729, 406);
-            this.MMR_D2.Name = "MMR_D2";
-            this.MMR_D2.Size = new System.Drawing.Size(92, 46);
-            this.MMR_D2.TabIndex = 0;
-            this.MMR_D2.Text = "Dose 2";
-            this.MMR_D2.UseVisualStyleBackColor = false;
-            this.MMR_D2.Click += new System.EventHandler(this.MMR_D2_Click);
-            // 
-            // VAR_D2
-            // 
-            this.VAR_D2.BackColor = System.Drawing.Color.Red;
-            this.VAR_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.VAR_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.VAR_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VAR_D2.Location = new System.Drawing.Point(729, 449);
-            this.VAR_D2.Name = "VAR_D2";
-            this.VAR_D2.Size = new System.Drawing.Size(92, 46);
-            this.VAR_D2.TabIndex = 0;
-            this.VAR_D2.Text = "Dose 2";
-            this.VAR_D2.UseVisualStyleBackColor = false;
-            this.VAR_D2.Click += new System.EventHandler(this.VAR_D2_Click);
-            // 
-            // PCV_D1
-            // 
-            this.PCV_D1.BackColor = System.Drawing.Color.Red;
-            this.PCV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.PCV_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.PCV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PCV_D1.Location = new System.Drawing.Point(451, 316);
-            this.PCV_D1.Name = "PCV_D1";
-            this.PCV_D1.Size = new System.Drawing.Size(92, 46);
-            this.PCV_D1.TabIndex = 0;
-            this.PCV_D1.Text = "Dose 1";
-            this.PCV_D1.UseVisualStyleBackColor = false;
-            this.PCV_D1.Click += new System.EventHandler(this.PCV_D1_Click);
-            // 
-            // IPV_D3
-            // 
-            this.IPV_D3.BackColor = System.Drawing.Color.Red;
-            this.IPV_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.IPV_D3.ForeColor = System.Drawing.Color.Transparent;
-            this.IPV_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IPV_D3.Location = new System.Drawing.Point(544, 228);
-            this.IPV_D3.Name = "IPV_D3";
-            this.IPV_D3.Size = new System.Drawing.Size(92, 46);
-            this.IPV_D3.TabIndex = 0;
-            this.IPV_D3.Text = "Dose 3";
-            this.IPV_D3.UseVisualStyleBackColor = false;
-            this.IPV_D3.Click += new System.EventHandler(this.IPV_D3_Click);
-            // 
-            // Hib_D3
-            // 
-            this.Hib_D3.BackColor = System.Drawing.Color.Red;
-            this.Hib_D3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.Hib_D3.ForeColor = System.Drawing.Color.Transparent;
-            this.Hib_D3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Hib_D3.Location = new System.Drawing.Point(544, 272);
-            this.Hib_D3.Name = "Hib_D3";
-            this.Hib_D3.Size = new System.Drawing.Size(92, 46);
-            this.Hib_D3.TabIndex = 0;
-            this.Hib_D3.Text = "Dose 3";
-            this.Hib_D3.UseVisualStyleBackColor = false;
-            this.Hib_D3.Click += new System.EventHandler(this.Hib_D3_Click);
-            // 
-            // PCV_B1
-            // 
-            this.PCV_B1.BackColor = System.Drawing.Color.Red;
-            this.PCV_B1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.PCV_B1.ForeColor = System.Drawing.Color.Transparent;
-            this.PCV_B1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PCV_B1.Location = new System.Drawing.Point(639, 319);
-            this.PCV_B1.Name = "PCV_B1";
-            this.PCV_B1.Size = new System.Drawing.Size(92, 43);
-            this.PCV_B1.TabIndex = 0;
-            this.PCV_B1.Text = "Booster 1";
-            this.PCV_B1.UseVisualStyleBackColor = false;
-            this.PCV_B1.Click += new System.EventHandler(this.PCV_B1_Click);
-            // 
-            // MMR_D1
-            // 
-            this.MMR_D1.BackColor = System.Drawing.Color.Red;
-            this.MMR_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.MMR_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.MMR_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MMR_D1.Location = new System.Drawing.Point(637, 406);
-            this.MMR_D1.Name = "MMR_D1";
-            this.MMR_D1.Size = new System.Drawing.Size(92, 46);
-            this.MMR_D1.TabIndex = 0;
-            this.MMR_D1.Text = "Dose 1";
-            this.MMR_D1.UseVisualStyleBackColor = false;
-            this.MMR_D1.Click += new System.EventHandler(this.MMR_D1_Click);
-            // 
-            // VAR_D1
-            // 
-            this.VAR_D1.BackColor = System.Drawing.Color.Red;
-            this.VAR_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.VAR_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.VAR_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VAR_D1.Location = new System.Drawing.Point(637, 449);
-            this.VAR_D1.Name = "VAR_D1";
-            this.VAR_D1.Size = new System.Drawing.Size(92, 46);
-            this.VAR_D1.TabIndex = 0;
-            this.VAR_D1.Text = "Dose 1";
-            this.VAR_D1.UseVisualStyleBackColor = false;
-            this.VAR_D1.Click += new System.EventHandler(this.VAR_D1_Click);
-            // 
-            // HPV_D1
-            // 
-            this.HPV_D1.BackColor = System.Drawing.Color.Red;
-            this.HPV_D1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.HPV_D1.ForeColor = System.Drawing.Color.Transparent;
-            this.HPV_D1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HPV_D1.Location = new System.Drawing.Point(1190, 494);
-            this.HPV_D1.Name = "HPV_D1";
-            this.HPV_D1.Size = new System.Drawing.Size(92, 46);
-            this.HPV_D1.TabIndex = 0;
-            this.HPV_D1.Text = "Dose 1";
-            this.HPV_D1.UseVisualStyleBackColor = false;
-            this.HPV_D1.Click += new System.EventHandler(this.HPV_D1_Click);
-            // 
-            // HPV_D2
-            // 
-            this.HPV_D2.BackColor = System.Drawing.Color.Red;
-            this.HPV_D2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.HPV_D2.ForeColor = System.Drawing.Color.Transparent;
-            this.HPV_D2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HPV_D2.Location = new System.Drawing.Point(1285, 494);
-            this.HPV_D2.Name = "HPV_D2";
-            this.HPV_D2.Size = new System.Drawing.Size(92, 46);
-            this.HPV_D2.TabIndex = 0;
-            this.HPV_D2.Text = "Dose 2";
-            this.HPV_D2.UseVisualStyleBackColor = false;
-            this.HPV_D2.Click += new System.EventHandler(this.HPV_D2_Click);
-            // 
-            // btnPnlClose
-            // 
-            this.btnPnlClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnPnlClose.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnPnlClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnPnlClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPnlClose.Location = new System.Drawing.Point(154, 264);
-            this.btnPnlClose.Name = "btnPnlClose";
-            this.btnPnlClose.Size = new System.Drawing.Size(141, 45);
-            this.btnPnlClose.TabIndex = 4;
-            this.btnPnlClose.Text = "Cancel";
-            this.btnPnlClose.UseVisualStyleBackColor = false;
-            this.btnPnlClose.Click += new System.EventHandler(this.btnPnlClose_Click);
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Angle = 0F;
-            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Location = new System.Drawing.Point(12, 12);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Rounding = 0;
-            this.panelControl3.Size = new System.Drawing.Size(150, 125);
-            this.panelControl3.TabIndex = 0;
-            // 
             // main_panelcontrol
             // 
             this.main_panelcontrol.Angle = 0F;
@@ -754,13 +754,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlBack)).EndInit();
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlDatePIcker)).EndInit();
-            this.pnlDatePIcker.ResumeLayout(false);
-            this.pnlDatePIcker.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlVaccineBack.ResumeLayout(false);
             this.pnlVaccineBack.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlDatePIcker)).EndInit();
+            this.pnlDatePIcker.ResumeLayout(false);
+            this.pnlDatePIcker.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VaccinationPicture)).EndInit();
             this.ResumeLayout(false);
 

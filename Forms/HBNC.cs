@@ -20,6 +20,7 @@ namespace ADRASHA_Main.Forms
             InitializeComponent();
             this.memberId = memeber_id;
             this.name = name;
+            lblMemberName.Text = name;
 
         }
 
@@ -31,8 +32,18 @@ namespace ADRASHA_Main.Forms
 
         private void BtnAddVisit_Click(object sender, EventArgs e)
         {
-                HBNC_VISIT_FORM hBNC_VISIT_FORM = new HBNC_VISIT_FORM();
+                HBNC_VISIT_FORM hBNC_VISIT_FORM = new HBNC_VISIT_FORM(memberId,name);
                 hBNC_VISIT_FORM.ShowDialog();
+        }
+
+        private void btnHealth_Click(object sender, EventArgs e)
+        {
+            MyFunctions.LoadChildForm(new Health_Profile(memberId),MDI.childformpanel);
+        }
+
+        private void btnPersonalProfile_Click(object sender, EventArgs e)
+        {
+            MyFunctions.LoadChildForm(new Member_Profile(memberId),MDI.childformpanel);
         }
     }
 }

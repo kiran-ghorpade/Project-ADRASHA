@@ -37,7 +37,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,7 +56,6 @@
             this.lblPincode = new System.Windows.Forms.Label();
             this.lblVillage = new System.Windows.Forms.Label();
             this.lblSubCenter = new System.Windows.Forms.Label();
-            this.lblAdharNo = new System.Windows.Forms.Label();
             this.lblQualification = new System.Windows.Forms.Label();
             this.lblMaritalStatus = new System.Windows.Forms.Label();
             this.lblMobileNo = new System.Windows.Forms.Label();
@@ -188,18 +186,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Demographic Details (village)";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label20.Location = new System.Drawing.Point(51, 614);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(116, 31);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Adhar No.";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -319,7 +305,6 @@
             this.kryptonPanel1.Controls.Add(this.lblPincode);
             this.kryptonPanel1.Controls.Add(this.lblVillage);
             this.kryptonPanel1.Controls.Add(this.lblSubCenter);
-            this.kryptonPanel1.Controls.Add(this.lblAdharNo);
             this.kryptonPanel1.Controls.Add(this.lblQualification);
             this.kryptonPanel1.Controls.Add(this.lblMaritalStatus);
             this.kryptonPanel1.Controls.Add(this.lblMobileNo);
@@ -332,7 +317,6 @@
             this.kryptonPanel1.Controls.Add(this.label14);
             this.kryptonPanel1.Controls.Add(this.label13);
             this.kryptonPanel1.Controls.Add(this.label6);
-            this.kryptonPanel1.Controls.Add(this.label20);
             this.kryptonPanel1.Controls.Add(this.label19);
             this.kryptonPanel1.Controls.Add(this.label18);
             this.kryptonPanel1.Controls.Add(this.label12);
@@ -469,18 +453,6 @@
             this.lblSubCenter.TabIndex = 0;
             this.lblSubCenter.Text = "Output Lable";
             // 
-            // lblAdharNo
-            // 
-            this.lblAdharNo.AutoSize = true;
-            this.lblAdharNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblAdharNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdharNo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblAdharNo.Location = new System.Drawing.Point(255, 614);
-            this.lblAdharNo.Name = "lblAdharNo";
-            this.lblAdharNo.Size = new System.Drawing.Size(157, 29);
-            this.lblAdharNo.TabIndex = 0;
-            this.lblAdharNo.Text = "Output Lable";
-            // 
             // lblQualification
             // 
             this.lblQualification.AutoSize = true;
@@ -610,6 +582,7 @@
             this.ForeColor = System.Drawing.Color.MintCream;
             this.Name = "Asha_Profile";
             this.Text = "AshaProfile";
+            this.Load += new System.EventHandler(this.Asha_Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -627,7 +600,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label12;
@@ -653,7 +625,6 @@
         private System.Windows.Forms.Label lblPincode;
         private System.Windows.Forms.Label lblVillage;
         private System.Windows.Forms.Label lblSubCenter;
-        private System.Windows.Forms.Label lblAdharNo;
         private System.Windows.Forms.Label lblQualification;
         private System.Windows.Forms.Label lblMaritalStatus;
         private System.Windows.Forms.Label lblMobileNo;

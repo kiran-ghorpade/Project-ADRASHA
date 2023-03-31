@@ -115,6 +115,12 @@ namespace ADRASHA_Main.Forms
 
         private void btnAddVaccination_Click(object sender, EventArgs e)
         {
+            if(String.IsNullOrEmpty(Vaccination_Place.Text))
+            {
+                MessageBox.Show("Place Required.");
+                return;
+            }
+
             if (MessageBox.Show("are you sure !","", MessageBoxButtons.YesNo) == DialogResult.Yes)
             { DateTime dateTime = Vaccination_Date.Value.Date;
                 string date = dateTime.ToString("yyyy-MM-dd");

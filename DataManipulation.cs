@@ -9,6 +9,8 @@ using ComponentFactory.Krypton.Toolkit;
 using Microsoft.Data.Sqlite;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.AxHost;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADRASHA_Main
 {
@@ -111,12 +113,8 @@ namespace ADRASHA_Main
         {
 
         };
-                Dictionary<string, object> temp_tbMap = new Dictionary<string, object>
-            {
-                //values for table familyinfo
-                {"txtid", "@id"}
-                
-            };
+             
+
                 
 
         private readonly DatabaseClass db;
@@ -130,7 +128,7 @@ namespace ADRASHA_Main
   
         private void SelectDictionary(string table)
         {
-            if (table == "asha_profile")
+            if (table == "asha_details")
                 selectedDictionary = Asha_DetailsMap;
             if (table == "member_details")
                 selectedDictionary = MemberInfoMap;
@@ -208,7 +206,7 @@ namespace ADRASHA_Main
                 }
                  
                 // Check if the control is a TextBox, DateTimePicker or ComboBox
-                if (control is TextBox || control is KryptonTextBox|| control is DateTimePicker || control is ComboBox || control is RadioButton || control is CheckBox || control is Label)
+                if (control is System.Windows.Forms.TextBox || control is KryptonTextBox|| control is DateTimePicker || control is System.Windows.Forms.ComboBox || control is RadioButton || control is CheckBox || control is Label)
                 {
                     // Get the parameter name from the dictionary
                     object parameterName;
@@ -220,7 +218,7 @@ namespace ADRASHA_Main
 
                     // Add the parameter to the command
                     
-                    if (control is TextBox || control is KryptonTextBox)
+                    if (control is System.Windows.Forms.TextBox || control is KryptonTextBox)
                     {
                         if(control.Name.Contains("Id"))
                             selectedDictionary[control.Name] = Convert.ToInt32(control.Text);
@@ -236,13 +234,13 @@ namespace ADRASHA_Main
                         DateTime dt = ((DateTimePicker)control).Value.Date;
                         selectedDictionary[control.Name] =dt.ToString("dd-MM-yyyy");
                     }
-                    else if (control is ComboBox)
+                    else if (control is System.Windows.Forms.ComboBox)
                     {
-                        if (((ComboBox)control).SelectedIndex == 0)
+                        if (((System.Windows.Forms.ComboBox)control).SelectedIndex == 0)
                         {
                             selectedDictionary[control.Name] = "None";
                         }
-                        selectedDictionary[control.Name] = ((ComboBox)control).SelectedItem;
+                        selectedDictionary[control.Name] = ((System.Windows.Forms.ComboBox)control).SelectedItem;
                     }
                     else if (control is RadioButton)
                     {
