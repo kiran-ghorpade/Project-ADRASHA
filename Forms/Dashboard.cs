@@ -43,13 +43,16 @@ namespace ADRASHA_Main.Forms
 
             //demography pie chart
             int men = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Male'")-1;
-            int women = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'emale'")-1;
-            Demography_Chart.Series["Demography"].Points.AddXY("Women", women);
-            Demography_Chart.Series["Demography"].Points.AddXY("Men", men);
+            int women = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Female'")-1;
+            if (men > 0 || women > 0)
+            {
+                Demography_Chart.Series["Demography"].Points.AddXY("Women", women);
+                Demography_Chart.Series["Demography"].Points.AddXY("Men", men);
+            }
             
 
 
-            // Pie Charts
+            // Pie Chartss
             DataTable dt = DatabaseClass.GetDataTable("select DISTINCT ncd_name from ncd_details");
             
             if (dt != null)

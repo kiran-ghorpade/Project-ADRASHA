@@ -6,27 +6,27 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.35497cm</Width>
+              <Width>2.47655cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.90186cm</Width>
+              <Width>2.15271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.51389cm</Width>
+              <Width>5.17237cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.79086cm</Width>
+              <Width>1.99909cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.13469cm</Width>
+              <Width>1.94104cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.24053cm</Width>
+              <Width>2.63955cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.87517cm</Height>
+              <Height>1.02333cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -37,7 +37,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Vaccination ID</Value>
+                              <Value>Family_ID</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -71,7 +71,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Child ID</Value>
+                              <Value>Personal ID</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -139,7 +139,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Vaccine Name</Value>
+                              <Value>Gender</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -173,7 +173,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Given Date</Value>
+                              <Value>Age</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -207,7 +207,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Given At</Value>
+                              <Value>Birth Date</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -239,21 +239,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="vaccination_id">
+                    <Textbox Name="Family_Id">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!vaccination_id.Value</Value>
+                              <Value>=Fields!Family_Id.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>vaccination_id</rd:DefaultName>
+                      <rd:DefaultName>Family_Id</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -269,21 +269,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Child_ID">
+                    <Textbox Name="Personal_Id">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Child_ID.Value</Value>
+                              <Value>=Fields!Personal_Id.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Child_ID</rd:DefaultName>
+                      <rd:DefaultName>Personal_Id</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -329,21 +329,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Vaccine_Name">
+                    <Textbox Name="Gender">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Vaccine_Name.Value</Value>
+                              <Value>=Fields!Gender.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Vaccine_Name</rd:DefaultName>
+                      <rd:DefaultName>Gender</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -359,21 +359,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Given_On">
+                    <Textbox Name="Age">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Given_On.Value</Value>
+                              <Value>=Fields!Age.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Given_On</rd:DefaultName>
+                      <rd:DefaultName>Age</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -389,21 +389,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Given_At">
+                    <Textbox Name="Birth_Date">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Given_At.Value</Value>
+                              <Value>=Fields!Birth_Date.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Given_At</rd:DefaultName>
+                      <rd:DefaultName>Birth_Date</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -443,10 +443,10 @@
         </TablixRowHierarchy>
         <FixedColumnHeaders>true</FixedColumnHeaders>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.8605cm</Top>
-        <Left>0.64223cm</Left>
-        <Height>1.47517cm</Height>
-        <Width>15.9368cm</Width>
+        <Top>0.44775cm</Top>
+        <Left>1.18618cm</Left>
+        <Height>1.62333cm</Height>
+        <Width>16.38131cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -454,13 +454,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.25833in</Height>
+    <Height>1.725in</Height>
     <Style />
   </Body>
-  <Width>6.84017in</Width>
+  <Width>7.29167in</Width>
   <Page>
     <PageHeader>
-      <Height>5.1212cm</Height>
+      <Height>4.99703cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -471,7 +471,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>ASHA Name :c</Value>
+                  <Value>ASHA Name :</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -481,8 +481,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>2.2352cm</Top>
-          <Left>0.9017cm</Left>
+          <Top>2.4068cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -512,10 +512,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
-          <Top>3.41348cm</Top>
-          <Left>0.9017cm</Left>
+          <Top>3.58508cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
+          <Width>2.47655cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -544,8 +544,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>3.41348cm</Top>
-          <Left>8.4017cm</Left>
+          <Top>3.58508cm</Top>
+          <Left>9.76568cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>2</ZIndex>
@@ -566,7 +566,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Vaccination Report</Value>
+                  <Value>Children List</Value>
                   <Style>
                     <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -577,11 +577,25 @@
                 <TextAlign>Center</TextAlign>
               </Style>
             </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>below 5 years</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                    <FontWeight>Normal</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ReportName</rd:DefaultName>
-          <Top>0.41487cm</Top>
-          <Left>0.4572cm</Left>
-          <Height>1.00217cm</Height>
+          <Top>0.4589cm</Top>
+          <Left>1.18618cm</Left>
+          <Height>1.41845cm</Height>
           <Width>16.38131cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -594,9 +608,9 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Line Name="Line1">
-          <Top>1.59342cm</Top>
-          <Left>0.4572cm</Left>
+        <Line Name="Line3">
+          <Top>4.85592cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0cm</Height>
           <Width>16.38131cm</Width>
           <ZIndex>4</ZIndex>
@@ -606,9 +620,9 @@
             </Border>
           </Style>
         </Line>
-        <Line Name="Line2">
-          <Top>4.88837cm</Top>
-          <Left>0.4572cm</Left>
+        <Line Name="Line1">
+          <Top>1.9479cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0cm</Height>
           <Width>16.38131cm</Width>
           <ZIndex>5</ZIndex>
@@ -633,10 +647,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ASHA_name</rd:DefaultName>
-          <Top>2.2352cm</Top>
-          <Left>3.84387cm</Left>
+          <Top>2.4068cm</Top>
+          <Left>4.11903cm</Left>
           <Height>0.6cm</Height>
-          <Width>9.88717cm</Width>
+          <Width>9.14633cm</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -663,10 +677,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Village</rd:DefaultName>
-          <Top>3.41348cm</Top>
-          <Left>3.84387cm</Left>
+          <Top>3.58508cm</Top>
+          <Left>4.11903cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.38144cm</Width>
+          <Width>2.5cm</Width>
           <ZIndex>7</ZIndex>
           <Style>
             <Border>
@@ -693,10 +707,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Sub_center</rd:DefaultName>
-          <Top>3.41348cm</Top>
-          <Left>11.23103cm</Left>
+          <Top>3.58508cm</Top>
+          <Left>12.42794cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.67067cm</Width>
+          <Width>2.5cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -716,7 +730,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.286cm</Height>
+      <Height>2.83633cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -730,6 +744,7 @@
                   <Value>Date Of Creation :</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
+                    <TextDecoration>None</TextDecoration>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -737,8 +752,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>1.24037cm</Top>
-          <Left>0.9017cm</Left>
+          <Top>1.77426cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0.6cm</Height>
           <Width>3.15617cm</Width>
           <Style>
@@ -759,17 +774,19 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Globals!PageNumber</Value>
-                  <Style />
+                  <Style>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>1.36737cm</Top>
-          <Left>15.26436cm</Left>
+          <Top>1.77426cm</Top>
+          <Left>16.18933cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.31467cm</Width>
+          <Width>1.1187cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -789,15 +806,17 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Globals!ExecutionTime</Value>
-                  <Style />
+                  <Style>
+                    <TextDecoration>None</TextDecoration>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>1.24037cm</Top>
-          <Left>4.24603cm</Left>
+          <Top>1.77426cm</Top>
+          <Left>4.53051cm</Left>
           <Height>0.6cm</Height>
           <Width>2.9445cm</Width>
           <ZIndex>2</ZIndex>
@@ -821,6 +840,7 @@
                   <Value>Created By : ADRASHA</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
+                    <TextDecoration>None</TextDecoration>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -828,8 +848,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox10</rd:DefaultName>
-          <Top>0.30903cm</Top>
-          <Left>0.9017cm</Left>
+          <Top>0.84292cm</Top>
+          <Left>1.18618cm</Left>
           <Height>0.6cm</Height>
           <Width>4.25683cm</Width>
           <ZIndex>3</ZIndex>
@@ -843,18 +863,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Line Name="Line3">
-          <Top>0.03528cm</Top>
-          <Left>0.4572cm</Left>
-          <Height>0cm</Height>
-          <Width>16.38131cm</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
         <Textbox Name="Textbox32">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -865,6 +873,7 @@
                   <Value>Page No. :</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
+                    <TextDecoration>None</TextDecoration>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -872,11 +881,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox32</rd:DefaultName>
-          <Top>1.36737cm</Top>
-          <Left>13.19544cm</Left>
+          <Top>1.77426cm</Top>
+          <Left>13.85781cm</Left>
           <Height>0.6cm</Height>
           <Width>2.06892cm</Width>
-          <ZIndex>5</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -887,6 +896,18 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Line Name="Line2">
+          <Top>0.29273cm</Top>
+          <Left>0.92672cm</Left>
+          <Height>0cm</Height>
+          <Width>16.38131cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
       </ReportItems>
       <Style>
         <Border>
@@ -910,7 +931,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>d3ac2faa-10f8-4020-b8fd-524bf9b66efa</rd:DataSourceID>
+      <rd:DataSourceID>f6bf13a6-4658-48bf-aec2-2b09b1a33600</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -920,35 +941,35 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="vaccination_id">
-          <DataField>vaccination_id</DataField>
+        <Field Name="Personal_Id">
+          <DataField>Personal_Id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Family_Id">
+          <DataField>Family_Id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Child_Name">
           <DataField>Child_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Vaccine_Name">
-          <DataField>Vaccine_Name</DataField>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Given_On">
-          <DataField>Given_On</DataField>
+        <Field Name="Age">
+          <DataField>Age</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Given_At">
-          <DataField>Given_At</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Child_ID">
-          <DataField>Child_ID</DataField>
+        <Field Name="Birth_Date">
+          <DataField>Birth_Date</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Sample_Dataset</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\Main Project\ADRASHA_Main\DataSets\Sample_Dataset.xsd</rd:SchemaPath>
-        <rd:TableName>Vaccination_TB</rd:TableName>
+        <rd:SchemaPath>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\Main Project\ADRASHA_Main\DataSet\Main_Dataset.xsd</rd:SchemaPath>
+        <rd:TableName>Child_List</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -975,7 +996,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Sample_Dataset</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\Main Project\ADRASHA_Main\DataSets\Sample_Dataset.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\Main Project\ADRASHA_Main\DataSet\Main_Dataset.xsd</rd:SchemaPath>
         <rd:TableName>Header_Details</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -984,5 +1005,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>fb5405a5-7a35-4fd8-a764-f69fc17d624d</rd:ReportID>
+  <rd:ReportID>3e965617-d7b3-4213-a88c-59e3c59b26bf</rd:ReportID>
 </Report>

@@ -36,10 +36,17 @@
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlReportTemplates = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlTemplates = new System.Windows.Forms.Panel();
+            this.btnNCDList = new System.Windows.Forms.Button();
+            this.btnFamilyHeadList = new System.Windows.Forms.Button();
+            this.btnDemographic = new System.Windows.Forms.Button();
+            this.btnChildList = new System.Windows.Forms.Button();
+            this.btnPregnentList = new System.Windows.Forms.Button();
+            this.btnVaccination = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.pnlSavedReports = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlSavedFiles = new System.Windows.Forms.Panel();
+            this.listboxSavedFiles = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
@@ -47,12 +54,12 @@
             this.btnTemplates = new System.Windows.Forms.Button();
             this.btnSavedReports = new System.Windows.Forms.Button();
             this.btnNewReport = new System.Windows.Forms.Button();
-            this.listboxSavedFiles = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlReportTemplates)).BeginInit();
             this.pnlReportTemplates.SuspendLayout();
+            this.pnlTemplates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).BeginInit();
             this.pnlSavedReports.SuspendLayout();
             this.pnlSavedFiles.SuspendLayout();
@@ -109,8 +116,8 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlSavedReports);
             this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
+            this.kryptonPanel1.Controls.Add(this.pnlSavedReports);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel6);
             this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -143,10 +150,94 @@
             // pnlTemplates
             // 
             this.pnlTemplates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlTemplates.Controls.Add(this.btnNCDList);
+            this.pnlTemplates.Controls.Add(this.btnFamilyHeadList);
+            this.pnlTemplates.Controls.Add(this.btnDemographic);
+            this.pnlTemplates.Controls.Add(this.btnChildList);
+            this.pnlTemplates.Controls.Add(this.btnPregnentList);
+            this.pnlTemplates.Controls.Add(this.btnVaccination);
             this.pnlTemplates.Location = new System.Drawing.Point(48, 118);
             this.pnlTemplates.Name = "pnlTemplates";
             this.pnlTemplates.Size = new System.Drawing.Size(639, 510);
             this.pnlTemplates.TabIndex = 0;
+            // 
+            // btnNCDList
+            // 
+            this.btnNCDList.BackColor = System.Drawing.Color.Transparent;
+            this.btnNCDList.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnNCDList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnNCDList.Location = new System.Drawing.Point(73, 430);
+            this.btnNCDList.Name = "btnNCDList";
+            this.btnNCDList.Size = new System.Drawing.Size(502, 56);
+            this.btnNCDList.TabIndex = 0;
+            this.btnNCDList.Text = "NCD List";
+            this.btnNCDList.UseVisualStyleBackColor = false;
+            this.btnNCDList.Click += new System.EventHandler(this.btnNCDList_Click);
+            // 
+            // btnFamilyHeadList
+            // 
+            this.btnFamilyHeadList.BackColor = System.Drawing.Color.Transparent;
+            this.btnFamilyHeadList.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnFamilyHeadList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnFamilyHeadList.Location = new System.Drawing.Point(73, 353);
+            this.btnFamilyHeadList.Name = "btnFamilyHeadList";
+            this.btnFamilyHeadList.Size = new System.Drawing.Size(502, 56);
+            this.btnFamilyHeadList.TabIndex = 0;
+            this.btnFamilyHeadList.Text = "Family Head List";
+            this.btnFamilyHeadList.UseVisualStyleBackColor = false;
+            this.btnFamilyHeadList.Click += new System.EventHandler(this.btnFamilyHeadList_Click);
+            // 
+            // btnDemographic
+            // 
+            this.btnDemographic.BackColor = System.Drawing.Color.Transparent;
+            this.btnDemographic.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnDemographic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnDemographic.Location = new System.Drawing.Point(73, 273);
+            this.btnDemographic.Name = "btnDemographic";
+            this.btnDemographic.Size = new System.Drawing.Size(502, 56);
+            this.btnDemographic.TabIndex = 0;
+            this.btnDemographic.Text = "Demographic List";
+            this.btnDemographic.UseVisualStyleBackColor = false;
+            this.btnDemographic.Click += new System.EventHandler(this.btnDemographic_Click);
+            // 
+            // btnChildList
+            // 
+            this.btnChildList.BackColor = System.Drawing.Color.Transparent;
+            this.btnChildList.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnChildList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnChildList.Location = new System.Drawing.Point(73, 199);
+            this.btnChildList.Name = "btnChildList";
+            this.btnChildList.Size = new System.Drawing.Size(502, 56);
+            this.btnChildList.TabIndex = 0;
+            this.btnChildList.Text = "Children List";
+            this.btnChildList.UseVisualStyleBackColor = false;
+            this.btnChildList.Click += new System.EventHandler(this.btnChildList_Click);
+            // 
+            // btnPregnentList
+            // 
+            this.btnPregnentList.BackColor = System.Drawing.Color.Transparent;
+            this.btnPregnentList.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnPregnentList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnPregnentList.Location = new System.Drawing.Point(73, 120);
+            this.btnPregnentList.Name = "btnPregnentList";
+            this.btnPregnentList.Size = new System.Drawing.Size(502, 56);
+            this.btnPregnentList.TabIndex = 0;
+            this.btnPregnentList.Text = "Pregnent Women List";
+            this.btnPregnentList.UseVisualStyleBackColor = false;
+            this.btnPregnentList.Click += new System.EventHandler(this.btnPregnentList_Click);
+            // 
+            // btnVaccination
+            // 
+            this.btnVaccination.BackColor = System.Drawing.Color.Transparent;
+            this.btnVaccination.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnVaccination.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnVaccination.Location = new System.Drawing.Point(73, 44);
+            this.btnVaccination.Name = "btnVaccination";
+            this.btnVaccination.Size = new System.Drawing.Size(502, 56);
+            this.btnVaccination.TabIndex = 0;
+            this.btnVaccination.Text = "Vaccination List";
+            this.btnVaccination.UseVisualStyleBackColor = false;
+            this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
             // 
             // label2
             // 
@@ -171,6 +262,7 @@
             this.btnGenerate.TabIndex = 0;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // pnlSavedReports
             // 
@@ -195,6 +287,15 @@
             this.pnlSavedFiles.Name = "pnlSavedFiles";
             this.pnlSavedFiles.Size = new System.Drawing.Size(639, 510);
             this.pnlSavedFiles.TabIndex = 0;
+            // 
+            // listboxSavedFiles
+            // 
+            this.listboxSavedFiles.FormattingEnabled = true;
+            this.listboxSavedFiles.ItemHeight = 16;
+            this.listboxSavedFiles.Location = new System.Drawing.Point(19, 18);
+            this.listboxSavedFiles.Name = "listboxSavedFiles";
+            this.listboxSavedFiles.Size = new System.Drawing.Size(596, 468);
+            this.listboxSavedFiles.TabIndex = 0;
             // 
             // label1
             // 
@@ -286,15 +387,6 @@
             this.btnNewReport.UseVisualStyleBackColor = false;
             this.btnNewReport.Click += new System.EventHandler(this.btnNewReport_Click);
             // 
-            // listboxSavedFiles
-            // 
-            this.listboxSavedFiles.FormattingEnabled = true;
-            this.listboxSavedFiles.ItemHeight = 16;
-            this.listboxSavedFiles.Location = new System.Drawing.Point(19, 18);
-            this.listboxSavedFiles.Name = "listboxSavedFiles";
-            this.listboxSavedFiles.Size = new System.Drawing.Size(596, 468);
-            this.listboxSavedFiles.TabIndex = 0;
-            // 
             // Reports_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,6 +403,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlReportTemplates)).EndInit();
             this.pnlReportTemplates.ResumeLayout(false);
             this.pnlReportTemplates.PerformLayout();
+            this.pnlTemplates.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnlSavedReports)).EndInit();
             this.pnlSavedReports.ResumeLayout(false);
             this.pnlSavedReports.PerformLayout();
@@ -341,5 +434,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.ListBox listboxSavedFiles;
+        private System.Windows.Forms.Button btnNCDList;
+        private System.Windows.Forms.Button btnFamilyHeadList;
+        private System.Windows.Forms.Button btnDemographic;
+        private System.Windows.Forms.Button btnChildList;
+        private System.Windows.Forms.Button btnPregnentList;
+        private System.Windows.Forms.Button btnVaccination;
     }
 }

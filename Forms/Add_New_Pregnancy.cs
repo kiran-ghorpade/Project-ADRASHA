@@ -27,8 +27,28 @@ namespace ADRASHA_Main.Forms
 
         }
 
+        public static DateTime CalculateDueDate(DateTime lastPeriodDate)
+        {
+            // Add 280 days (40 weeks) to the last period date
+            DateTime dueDate = lastPeriodDate.AddDays(280);
+
+            // Adjust the due date based on the day of the week of the last period
+            int dayOfWeek = (int)lastPeriodDate.DayOfWeek;
+            if (dayOfWeek == 6)
+            {
+                dueDate = dueDate.AddDays(2);
+            }
+            else if (dayOfWeek == 0)
+            {
+                dueDate = dueDate.AddDays(1);
+            }
+
+            return dueDate;
+        }
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+
             if (btnVerify.BackColor == Color.Green)
             {
                 Dictionary<string, object> data = new Dictionary<string, object>()
@@ -72,6 +92,11 @@ namespace ADRASHA_Main.Forms
             Father_Id.Text = dt.Rows[0][0].ToString();
             dt = DatabaseClass.GetDataTable("select first_name ||' '|| middle_name ||' '|| last_name as fullName from member_details where member_id=" + dt.Rows[0][0]);
             lblFatherName.Text = dt.Rows[0]["fullName"].ToString();
+        }
+
+        private void Last_Period_ValueChanged(object sender, EventArgs e)
+        {
+            Expected_Date.Value = CalculateDueDate(Last_Period.Value);
         }
     }
 }

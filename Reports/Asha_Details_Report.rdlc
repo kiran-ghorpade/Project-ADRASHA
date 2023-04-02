@@ -16,7 +16,10 @@
                         <TextRuns>
                           <TextRun>
                             <Value />
-                            <Style />
+                            <Style>
+                              <FontSize>12pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
                           </TextRun>
                         </TextRuns>
                         <Style />
@@ -42,7 +45,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.24083cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -97,7 +100,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>0.6cm</Size>
+                <Size>0.727cm</Size>
                 <CellContents>
                   <Textbox Name="ColumnName1">
                     <CanGrow>true</CanGrow>
@@ -107,7 +110,10 @@
                         <TextRuns>
                           <TextRun>
                             <Value>=Fields!ColumnName.Value</Value>
-                            <Style />
+                            <Style>
+                              <FontSize>12pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
                           </TextRun>
                         </TextRuns>
                         <Style />
@@ -180,8 +186,8 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>1.62137cm</Top>
         <Left>0.35137cm</Left>
-        <Height>1.2cm</Height>
-        <Width>5cm</Width>
+        <Height>1.327cm</Height>
+        <Width>5.74083cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

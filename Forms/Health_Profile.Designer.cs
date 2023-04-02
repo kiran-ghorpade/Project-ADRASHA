@@ -117,6 +117,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
+            this.btn_new_pregnancy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
@@ -168,9 +169,9 @@
             this.kryptonPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonPanel1.Controls.Add(this.pnlMaternal);
             this.kryptonPanel1.Controls.Add(this.pnlVaccination);
             this.kryptonPanel1.Controls.Add(this.pnlHBNC);
-            this.kryptonPanel1.Controls.Add(this.pnlMaternal);
             this.kryptonPanel1.Controls.Add(this.pnlNCD);
             this.kryptonPanel1.Controls.Add(this.panel2);
             this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
@@ -784,7 +785,6 @@
             // pnlMaternal
             // 
             this.pnlMaternal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlMaternal.Controls.Add(this.btnAddNewVisit);
             this.pnlMaternal.Controls.Add(this.kryptonPanel4);
             this.pnlMaternal.Controls.Add(this.label8);
             this.pnlMaternal.Controls.Add(this.label11);
@@ -803,7 +803,7 @@
             // 
             // btnAddNewVisit
             // 
-            this.btnAddNewVisit.Location = new System.Drawing.Point(83, 82);
+            this.btnAddNewVisit.Location = new System.Drawing.Point(121, 154);
             this.btnAddNewVisit.Name = "btnAddNewVisit";
             this.btnAddNewVisit.Size = new System.Drawing.Size(204, 52);
             this.btnAddNewVisit.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -823,6 +823,7 @@
             // 
             // kryptonPanel4
             // 
+            this.kryptonPanel4.Controls.Add(this.btnAddNewVisit);
             this.kryptonPanel4.Controls.Add(this.label26);
             this.kryptonPanel4.Location = new System.Drawing.Point(962, 21);
             this.kryptonPanel4.Name = "kryptonPanel4";
@@ -944,6 +945,7 @@
             // kryptonPanel3
             // 
             this.kryptonPanel3.Controls.Add(this.label25);
+            this.kryptonPanel3.Controls.Add(this.btn_new_pregnancy);
             this.kryptonPanel3.Location = new System.Drawing.Point(468, 21);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Size = new System.Drawing.Size(442, 419);
@@ -1330,6 +1332,20 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 473);
             this.main_panelcontrol.TabIndex = 0;
             // 
+            // btn_new_pregnancy
+            // 
+            this.btn_new_pregnancy.BackColor = System.Drawing.Color.Transparent;
+            this.btn_new_pregnancy.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_new_pregnancy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btn_new_pregnancy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_new_pregnancy.Location = new System.Drawing.Point(89, 162);
+            this.btn_new_pregnancy.Name = "btn_new_pregnancy";
+            this.btn_new_pregnancy.Size = new System.Drawing.Size(242, 56);
+            this.btn_new_pregnancy.TabIndex = 0;
+            this.btn_new_pregnancy.Text = "Add New Pregnancy";
+            this.btn_new_pregnancy.UseVisualStyleBackColor = false;
+            this.btn_new_pregnancy.Click += new System.EventHandler(this.btn_new_pregnancy_Click);
+            // 
             // Health_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1486,5 +1502,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private System.Windows.Forms.Label label26;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAddNewVisit;
+        private System.Windows.Forms.Button btn_new_pregnancy;
     }
 }

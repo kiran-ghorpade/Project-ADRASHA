@@ -49,6 +49,7 @@ namespace ADRASHA_Main
                 }
             }
         }
+
         private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -179,6 +180,12 @@ namespace ADRASHA_Main
         {
             Maternal_Health_Form mhf = new Maternal_Health_Form(member_id,name);
             mhf.ShowDialog();
+        }
+
+        private void btn_new_pregnancy_Click(object sender, EventArgs e)
+        {
+            Add_New_Pregnancy add = new Add_New_Pregnancy(member_id,name);
+            add.ShowDialog();
         }
     }
 }

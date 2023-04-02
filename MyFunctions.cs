@@ -74,6 +74,7 @@ namespace ADRASHA_Main
             else
             {
                 DateTimeConverter timeConverter = new DateTimeConverter();
+
                 DateTime birthdate = (DateTime)timeConverter.ConvertFromString(birth_date);
                 // Save today's date.
                 var today = DateTime.Today;

@@ -163,6 +163,7 @@
             this.Last_Period.Name = "Last_Period";
             this.Last_Period.Size = new System.Drawing.Size(233, 32);
             this.Last_Period.TabIndex = 2;
+            this.Last_Period.ValueChanged += new System.EventHandler(this.Last_Period_ValueChanged);
             // 
             // btnSubmit
             // 

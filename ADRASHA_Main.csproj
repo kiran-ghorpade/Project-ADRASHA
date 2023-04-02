@@ -141,13 +141,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManipulation.cs" />
-    <Compile Include="DataSets\Sample_Dataset.cs">
-      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    <Compile Include="DataSet\Main_Dataset.cs">
+      <DependentUpon>Main_Dataset.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\Sample_Dataset.Designer.cs">
+    <Compile Include="DataSet\Main_Dataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+      <DependentUpon>Main_Dataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forms\Add_New_Family.cs">
       <SubType>Form</SubType>
@@ -322,10 +322,10 @@
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\ReportCell.cs" />
-    <Compile Include="Reports\Report_Preview.cs">
+    <Compile Include="Forms\Report_Preview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Report_Preview.Designer.cs">
+    <Compile Include="Forms\Report_Preview.Designer.cs">
       <DependentUpon>Report_Preview.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Sample_Report_form.cs">
@@ -425,10 +425,23 @@
     <EmbeddedResource Include="Forms\Splash_Screen.resx">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Asha_Details_Report.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <EmbeddedResource Include="Reports\Asha_Details_Report.rdlc" />
+    <EmbeddedResource Include="Reports\Child_List.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Report_Preview.resx">
+    <EmbeddedResource Include="Reports\Family_Head_List.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Member_List.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NCD_report.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Pregnancy_List.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report_Preview.resx">
       <DependentUpon>Report_Preview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Sample_Report_form.resx">
@@ -439,16 +452,16 @@
     </EmbeddedResource>
     <None Include="ADRASHA_Main_TemporaryKey.pfx" />
     <None Include="app.manifest" />
-    <None Include="DataSets\Sample_Dataset.xsc">
-      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    <None Include="DataSet\Main_Dataset.xsc">
+      <DependentUpon>Main_Dataset.xsd</DependentUpon>
     </None>
-    <None Include="DataSets\Sample_Dataset.xsd">
+    <None Include="DataSet\Main_Dataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Sample_Dataset.Designer.cs</LastGenOutput>
+      <LastGenOutput>Main_Dataset.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSets\Sample_Dataset.xss">
-      <DependentUpon>Sample_Dataset.xsd</DependentUpon>
+    <None Include="DataSet\Main_Dataset.xss">
+      <DependentUpon>Main_Dataset.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
