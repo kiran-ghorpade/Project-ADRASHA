@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ADRASHA_Main.Forms
 {
-    public partial class ASHA_Login : Form
+    public partial class Login_Form : Form
     {   Form parent = null;
-        public ASHA_Login(Form frm)
+        public Login_Form(Form frm)
         {
             InitializeComponent();
             this.parent = frm;
@@ -62,6 +62,7 @@ namespace ADRASHA_Main.Forms
         private void ASHA_Login_Load(object sender, EventArgs e)
         {
             lblWarning.Visible = false;
+            Password.Enabled = true;
             Password.Focus();
         }
     }

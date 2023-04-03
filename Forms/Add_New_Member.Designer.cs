@@ -30,17 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_New_Member));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pnlidentity = new System.Windows.Forms.Panel();
-            this.Adhar_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.ABHA_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Family_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Member_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.btnnextidentity = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.pnlcontact = new System.Windows.Forms.Panel();
+            this.Email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Mobile_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.nextbtnContact = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.pnlpersonal = new System.Windows.Forms.Panel();
             this.Gender = new System.Windows.Forms.Panel();
             this.rdbtnother = new System.Windows.Forms.RadioButton();
@@ -59,17 +55,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlmaritalinfo = new System.Windows.Forms.Panel();
-            this.Marriage_Date = new System.Windows.Forms.DateTimePicker();
-            this.Marital_Status = new System.Windows.Forms.ComboBox();
-            this.Child_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Partner_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.BtnSaveMarital = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.pnlidentity = new System.Windows.Forms.Panel();
+            this.Adhar_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.ABHA_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Family_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Member_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnnextidentity = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.pnloccupation = new System.Windows.Forms.Panel();
             this.Work_Type = new System.Windows.Forms.ComboBox();
             this.Education = new System.Windows.Forms.ComboBox();
@@ -81,20 +77,31 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.pnlcontact = new System.Windows.Forms.Panel();
-            this.Email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.Mobile_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.nextbtnContact = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.pnlmaritalinfo = new System.Windows.Forms.Panel();
+            this.Marriage_Date = new System.Windows.Forms.DateTimePicker();
+            this.Marital_Status = new System.Windows.Forms.ComboBox();
+            this.Child_Number = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Partner_Id = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.BtnSaveMarital = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.btnidentity = new System.Windows.Forms.Button();
             this.btnpersonal = new System.Windows.Forms.Button();
             this.btnmarital = new System.Windows.Forms.Button();
             this.btnoccupation = new System.Windows.Forms.Button();
             this.btncontact = new System.Windows.Forms.Button();
+            this.panelControl5 = new ADRASHA_Main.PanelControl();
+            this.panelControl4 = new ADRASHA_Main.PanelControl();
+            this.panelControl6 = new ADRASHA_Main.PanelControl();
+            this.panelControl2 = new ADRASHA_Main.PanelControl();
+            this.panelControl1 = new ADRASHA_Main.PanelControl();
             this.lblashaname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelControl3 = new ADRASHA_Main.PanelControl();
+            this.main_panelcontrol = new ADRASHA_Main.PanelControl();
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -115,31 +122,24 @@
             this.kryptonTextBox18 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox17 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox16 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.panelControl5 = new ADRASHA_Main.PanelControl();
-            this.panelControl4 = new ADRASHA_Main.PanelControl();
-            this.panelControl6 = new ADRASHA_Main.PanelControl();
-            this.panelControl2 = new ADRASHA_Main.PanelControl();
-            this.panelControl1 = new ADRASHA_Main.PanelControl();
-            this.panelControl3 = new ADRASHA_Main.PanelControl();
-            this.main_panelcontrol = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            this.pnlidentity.SuspendLayout();
+            this.pnlcontact.SuspendLayout();
             this.pnlpersonal.SuspendLayout();
             this.Gender.SuspendLayout();
-            this.pnlmaritalinfo.SuspendLayout();
+            this.pnlidentity.SuspendLayout();
             this.pnloccupation.SuspendLayout();
-            this.pnlcontact.SuspendLayout();
+            this.pnlmaritalinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.pnlpersonal);
+            this.kryptonPanel1.Controls.Add(this.pnlmaritalinfo);
             this.kryptonPanel1.Controls.Add(this.pnlcontact);
             this.kryptonPanel1.Controls.Add(this.pnlidentity);
             this.kryptonPanel1.Controls.Add(this.pnloccupation);
-            this.kryptonPanel1.Controls.Add(this.pnlmaritalinfo);
             this.kryptonPanel1.Controls.Add(this.btnidentity);
             this.kryptonPanel1.Controls.Add(this.btnpersonal);
             this.kryptonPanel1.Controls.Add(this.btnmarital);
@@ -164,160 +164,103 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // pnlidentity
+            // pnlcontact
             // 
-            this.pnlidentity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlidentity.Controls.Add(this.Adhar_Number);
-            this.pnlidentity.Controls.Add(this.ABHA_Number);
-            this.pnlidentity.Controls.Add(this.Family_Id);
-            this.pnlidentity.Controls.Add(this.Member_Id);
-            this.pnlidentity.Controls.Add(this.btnnextidentity);
-            this.pnlidentity.Controls.Add(this.label1);
-            this.pnlidentity.Controls.Add(this.label3);
-            this.pnlidentity.Controls.Add(this.label10);
-            this.pnlidentity.Controls.Add(this.label14);
-            this.pnlidentity.Controls.Add(this.label13);
-            this.pnlidentity.Location = new System.Drawing.Point(79, 329);
-            this.pnlidentity.Name = "pnlidentity";
-            this.pnlidentity.Size = new System.Drawing.Size(1414, 500);
-            this.pnlidentity.TabIndex = 0;
+            this.pnlcontact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlcontact.Controls.Add(this.Email);
+            this.pnlcontact.Controls.Add(this.Mobile_Number);
+            this.pnlcontact.Controls.Add(this.nextbtnContact);
+            this.pnlcontact.Controls.Add(this.label20);
+            this.pnlcontact.Controls.Add(this.label6);
+            this.pnlcontact.Controls.Add(this.label11);
+            this.pnlcontact.Location = new System.Drawing.Point(79, 329);
+            this.pnlcontact.Name = "pnlcontact";
+            this.pnlcontact.Size = new System.Drawing.Size(1414, 500);
+            this.pnlcontact.TabIndex = 0;
             // 
-            // Adhar_Number
+            // Email
             // 
-            this.Adhar_Number.Location = new System.Drawing.Point(1000, 272);
-            this.Adhar_Number.MaxLength = 12;
-            this.Adhar_Number.Name = "Adhar_Number";
-            this.Adhar_Number.Size = new System.Drawing.Size(327, 38);
-            this.Adhar_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Email.Location = new System.Drawing.Point(949, 280);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(399, 38);
+            this.Email.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Adhar_Number.StateCommon.Border.Rounding = 5;
-            this.Adhar_Number.StateCommon.Border.Width = 1;
-            this.Adhar_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Adhar_Number.TabIndex = 11;
-            this.Adhar_Number.TextChanged += new System.EventHandler(this.Adhar_Number_TextChanged);
+            this.Email.StateCommon.Border.Rounding = 5;
+            this.Email.StateCommon.Border.Width = 1;
+            this.Email.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.TabIndex = 2;
             // 
-            // ABHA_Number
+            // Mobile_Number
             // 
-            this.ABHA_Number.Location = new System.Drawing.Point(1000, 155);
-            this.ABHA_Number.MaxLength = 14;
-            this.ABHA_Number.Name = "ABHA_Number";
-            this.ABHA_Number.Size = new System.Drawing.Size(327, 38);
-            this.ABHA_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Mobile_Number.Location = new System.Drawing.Point(283, 280);
+            this.Mobile_Number.MaxLength = 10;
+            this.Mobile_Number.Name = "Mobile_Number";
+            this.Mobile_Number.Size = new System.Drawing.Size(327, 38);
+            this.Mobile_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ABHA_Number.StateCommon.Border.Rounding = 5;
-            this.ABHA_Number.StateCommon.Border.Width = 1;
-            this.ABHA_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ABHA_Number.TabIndex = 10;
+            this.Mobile_Number.StateCommon.Border.Rounding = 5;
+            this.Mobile_Number.StateCommon.Border.Width = 1;
+            this.Mobile_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mobile_Number.TabIndex = 1;
+            this.Mobile_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
             // 
-            // Family_Id
+            // nextbtnContact
             // 
-            this.Family_Id.Enabled = false;
-            this.Family_Id.Location = new System.Drawing.Point(312, 279);
-            this.Family_Id.Name = "Family_Id";
-            this.Family_Id.Size = new System.Drawing.Size(327, 38);
-            this.Family_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.nextbtnContact.Location = new System.Drawing.Point(1293, 24);
+            this.nextbtnContact.Name = "nextbtnContact";
+            this.nextbtnContact.Size = new System.Drawing.Size(98, 52);
+            this.nextbtnContact.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.nextbtnContact.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.nextbtnContact.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.nextbtnContact.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.nextbtnContact.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Family_Id.StateCommon.Border.Rounding = 5;
-            this.Family_Id.StateCommon.Border.Width = 1;
-            this.Family_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Family_Id.TabIndex = 2;
+            this.nextbtnContact.StateCommon.Border.Rounding = 20;
+            this.nextbtnContact.StateCommon.Border.Width = 2;
+            this.nextbtnContact.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.nextbtnContact.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextbtnContact.TabIndex = 3;
+            this.nextbtnContact.Values.Text = "Next";
+            this.nextbtnContact.Click += new System.EventHandler(this.nextbtnContact_Click);
             // 
-            // Member_Id
+            // label20
             // 
-            this.Member_Id.Enabled = false;
-            this.Member_Id.Location = new System.Drawing.Point(312, 162);
-            this.Member_Id.Name = "Member_Id";
-            this.Member_Id.Size = new System.Drawing.Size(327, 38);
-            this.Member_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Member_Id.StateCommon.Border.Rounding = 5;
-            this.Member_Id.StateCommon.Border.Width = 1;
-            this.Member_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Member_Id.TabIndex = 1;
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label20.Location = new System.Drawing.Point(768, 286);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 31);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Email ";
             // 
-            // btnnextidentity
+            // label6
             // 
-            this.btnnextidentity.Location = new System.Drawing.Point(1293, 24);
-            this.btnnextidentity.Name = "btnnextidentity";
-            this.btnnextidentity.Size = new System.Drawing.Size(98, 52);
-            this.btnnextidentity.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnnextidentity.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnnextidentity.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextidentity.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextidentity.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnnextidentity.StateCommon.Border.Rounding = 20;
-            this.btnnextidentity.StateCommon.Border.Width = 2;
-            this.btnnextidentity.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnnextidentity.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnextidentity.TabIndex = 12;
-            this.btnnextidentity.Values.Text = "Next";
-            this.btnnextidentity.Click += new System.EventHandler(this.btnnextidentity_Click);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label6.Location = new System.Drawing.Point(46, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 42);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Contact Details :";
             // 
-            // label1
+            // label11
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label1.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(46, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Identity Details :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(41, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Personal ID :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label10.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label10.Location = new System.Drawing.Point(41, 279);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 31);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Family ID :";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label14.Location = new System.Drawing.Point(732, 162);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 31);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "ABHA ID :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label13.Location = new System.Drawing.Point(729, 272);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(189, 31);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "ADHAR Number :";
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label11.Location = new System.Drawing.Point(64, 286);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(132, 31);
+            this.label11.TabIndex = 0;
+            this.label11.Text = " Mobile No ";
             // 
             // pnlpersonal
             // 
@@ -559,155 +502,160 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Birth Date";
             // 
-            // pnlmaritalinfo
+            // pnlidentity
             // 
-            this.pnlmaritalinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlmaritalinfo.Controls.Add(this.Marriage_Date);
-            this.pnlmaritalinfo.Controls.Add(this.Marital_Status);
-            this.pnlmaritalinfo.Controls.Add(this.Child_Number);
-            this.pnlmaritalinfo.Controls.Add(this.Partner_Id);
-            this.pnlmaritalinfo.Controls.Add(this.BtnSaveMarital);
-            this.pnlmaritalinfo.Controls.Add(this.label22);
-            this.pnlmaritalinfo.Controls.Add(this.label23);
-            this.pnlmaritalinfo.Controls.Add(this.label24);
-            this.pnlmaritalinfo.Controls.Add(this.label25);
-            this.pnlmaritalinfo.Controls.Add(this.label27);
-            this.pnlmaritalinfo.Location = new System.Drawing.Point(79, 329);
-            this.pnlmaritalinfo.Name = "pnlmaritalinfo";
-            this.pnlmaritalinfo.Size = new System.Drawing.Size(1414, 500);
-            this.pnlmaritalinfo.TabIndex = 0;
+            this.pnlidentity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlidentity.Controls.Add(this.Adhar_Number);
+            this.pnlidentity.Controls.Add(this.ABHA_Number);
+            this.pnlidentity.Controls.Add(this.Family_Id);
+            this.pnlidentity.Controls.Add(this.Member_Id);
+            this.pnlidentity.Controls.Add(this.btnnextidentity);
+            this.pnlidentity.Controls.Add(this.label1);
+            this.pnlidentity.Controls.Add(this.label3);
+            this.pnlidentity.Controls.Add(this.label10);
+            this.pnlidentity.Controls.Add(this.label14);
+            this.pnlidentity.Controls.Add(this.label13);
+            this.pnlidentity.Location = new System.Drawing.Point(79, 329);
+            this.pnlidentity.Name = "pnlidentity";
+            this.pnlidentity.Size = new System.Drawing.Size(1414, 500);
+            this.pnlidentity.TabIndex = 0;
             // 
-            // Marriage_Date
+            // Adhar_Number
             // 
-            this.Marriage_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.Marriage_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Marriage_Date.Location = new System.Drawing.Point(310, 329);
-            this.Marriage_Date.Name = "Marriage_Date";
-            this.Marriage_Date.Size = new System.Drawing.Size(233, 32);
-            this.Marriage_Date.TabIndex = 2;
-            // 
-            // Marital_Status
-            // 
-            this.Marital_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Marital_Status.FormattingEnabled = true;
-            this.Marital_Status.Items.AddRange(new object[] {
-            "--Select--",
-            "Married",
-            "Not Married",
-            "Widow",
-            "Other"});
-            this.Marital_Status.Location = new System.Drawing.Point(310, 175);
-            this.Marital_Status.Name = "Marital_Status";
-            this.Marital_Status.Size = new System.Drawing.Size(327, 37);
-            this.Marital_Status.TabIndex = 1;
-            // 
-            // Child_Number
-            // 
-            this.Child_Number.Location = new System.Drawing.Point(905, 320);
-            this.Child_Number.Name = "Child_Number";
-            this.Child_Number.Size = new System.Drawing.Size(327, 38);
-            this.Child_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Adhar_Number.Location = new System.Drawing.Point(1000, 272);
+            this.Adhar_Number.MaxLength = 12;
+            this.Adhar_Number.Name = "Adhar_Number";
+            this.Adhar_Number.Size = new System.Drawing.Size(327, 38);
+            this.Adhar_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Child_Number.StateCommon.Border.Rounding = 5;
-            this.Child_Number.StateCommon.Border.Width = 1;
-            this.Child_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Child_Number.TabIndex = 4;
-            this.Child_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
+            this.Adhar_Number.StateCommon.Border.Rounding = 5;
+            this.Adhar_Number.StateCommon.Border.Width = 1;
+            this.Adhar_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adhar_Number.TabIndex = 11;
+            this.Adhar_Number.TextChanged += new System.EventHandler(this.Adhar_Number_TextChanged);
             // 
-            // Partner_Id
+            // ABHA_Number
             // 
-            this.Partner_Id.Location = new System.Drawing.Point(905, 171);
-            this.Partner_Id.Name = "Partner_Id";
-            this.Partner_Id.Size = new System.Drawing.Size(327, 38);
-            this.Partner_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ABHA_Number.Location = new System.Drawing.Point(1000, 155);
+            this.ABHA_Number.MaxLength = 14;
+            this.ABHA_Number.Name = "ABHA_Number";
+            this.ABHA_Number.Size = new System.Drawing.Size(327, 38);
+            this.ABHA_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Partner_Id.StateCommon.Border.Rounding = 5;
-            this.Partner_Id.StateCommon.Border.Width = 1;
-            this.Partner_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Partner_Id.TabIndex = 3;
-            this.Partner_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
+            this.ABHA_Number.StateCommon.Border.Rounding = 5;
+            this.ABHA_Number.StateCommon.Border.Width = 1;
+            this.ABHA_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABHA_Number.TabIndex = 10;
             // 
-            // BtnSaveMarital
+            // Family_Id
             // 
-            this.BtnSaveMarital.Location = new System.Drawing.Point(1293, 24);
-            this.BtnSaveMarital.Name = "BtnSaveMarital";
-            this.BtnSaveMarital.Size = new System.Drawing.Size(98, 52);
-            this.BtnSaveMarital.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.BtnSaveMarital.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.BtnSaveMarital.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.BtnSaveMarital.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.BtnSaveMarital.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Family_Id.Enabled = false;
+            this.Family_Id.Location = new System.Drawing.Point(312, 279);
+            this.Family_Id.Name = "Family_Id";
+            this.Family_Id.Size = new System.Drawing.Size(327, 38);
+            this.Family_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.BtnSaveMarital.StateCommon.Border.Rounding = 20;
-            this.BtnSaveMarital.StateCommon.Border.Width = 2;
-            this.BtnSaveMarital.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.BtnSaveMarital.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSaveMarital.TabIndex = 8;
-            this.BtnSaveMarital.Values.Text = "Next";
-            this.BtnSaveMarital.Click += new System.EventHandler(this.BtnSaveMarital_Click);
+            this.Family_Id.StateCommon.Border.Rounding = 5;
+            this.Family_Id.StateCommon.Border.Width = 1;
+            this.Family_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Family_Id.TabIndex = 2;
             // 
-            // label22
+            // Member_Id
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label22.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label22.Location = new System.Drawing.Point(46, 34);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(277, 42);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Marital Status Details :";
+            this.Member_Id.Enabled = false;
+            this.Member_Id.Location = new System.Drawing.Point(312, 162);
+            this.Member_Id.Name = "Member_Id";
+            this.Member_Id.Size = new System.Drawing.Size(327, 38);
+            this.Member_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Member_Id.StateCommon.Border.Rounding = 5;
+            this.Member_Id.StateCommon.Border.Width = 1;
+            this.Member_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Member_Id.TabIndex = 1;
             // 
-            // label23
+            // btnnextidentity
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label23.Location = new System.Drawing.Point(41, 177);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(156, 31);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Marital Status";
+            this.btnnextidentity.Location = new System.Drawing.Point(1293, 24);
+            this.btnnextidentity.Name = "btnnextidentity";
+            this.btnnextidentity.Size = new System.Drawing.Size(98, 52);
+            this.btnnextidentity.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnnextidentity.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnnextidentity.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextidentity.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextidentity.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnnextidentity.StateCommon.Border.Rounding = 20;
+            this.btnnextidentity.StateCommon.Border.Width = 2;
+            this.btnnextidentity.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnnextidentity.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnextidentity.TabIndex = 12;
+            this.btnnextidentity.Values.Text = "Next";
+            this.btnnextidentity.Click += new System.EventHandler(this.btnnextidentity_Click);
             // 
-            // label24
+            // label1
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label24.Location = new System.Drawing.Point(41, 329);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(160, 31);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Marriage Date";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label1.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label1.Location = new System.Drawing.Point(46, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Identity Details :";
             // 
-            // label25
+            // label3
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label25.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label25.Location = new System.Drawing.Point(732, 177);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(114, 31);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Partner Id";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label3.Location = new System.Drawing.Point(41, 161);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Personal ID :";
             // 
-            // label27
+            // label10
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label27.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label27.Location = new System.Drawing.Point(732, 329);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(133, 31);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "No. of Child";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label10.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label10.Location = new System.Drawing.Point(41, 279);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 31);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Family ID :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label14.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label14.Location = new System.Drawing.Point(732, 162);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(112, 31);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "ABHA ID :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label13.Location = new System.Drawing.Point(729, 272);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(189, 31);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "ADHAR Number :";
             // 
             // pnloccupation
             // 
@@ -872,103 +820,156 @@
             this.label21.Text = "Work Type";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
-            // pnlcontact
+            // pnlmaritalinfo
             // 
-            this.pnlcontact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlcontact.Controls.Add(this.Email);
-            this.pnlcontact.Controls.Add(this.Mobile_Number);
-            this.pnlcontact.Controls.Add(this.nextbtnContact);
-            this.pnlcontact.Controls.Add(this.label20);
-            this.pnlcontact.Controls.Add(this.label6);
-            this.pnlcontact.Controls.Add(this.label11);
-            this.pnlcontact.Location = new System.Drawing.Point(79, 329);
-            this.pnlcontact.Name = "pnlcontact";
-            this.pnlcontact.Size = new System.Drawing.Size(1414, 500);
-            this.pnlcontact.TabIndex = 0;
+            this.pnlmaritalinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlmaritalinfo.Controls.Add(this.Marriage_Date);
+            this.pnlmaritalinfo.Controls.Add(this.Marital_Status);
+            this.pnlmaritalinfo.Controls.Add(this.Child_Number);
+            this.pnlmaritalinfo.Controls.Add(this.Partner_Id);
+            this.pnlmaritalinfo.Controls.Add(this.BtnSaveMarital);
+            this.pnlmaritalinfo.Controls.Add(this.label22);
+            this.pnlmaritalinfo.Controls.Add(this.label23);
+            this.pnlmaritalinfo.Controls.Add(this.label24);
+            this.pnlmaritalinfo.Controls.Add(this.label25);
+            this.pnlmaritalinfo.Controls.Add(this.label27);
+            this.pnlmaritalinfo.Location = new System.Drawing.Point(79, 329);
+            this.pnlmaritalinfo.Name = "pnlmaritalinfo";
+            this.pnlmaritalinfo.Size = new System.Drawing.Size(1414, 500);
+            this.pnlmaritalinfo.TabIndex = 0;
             // 
-            // Email
+            // Marriage_Date
             // 
-            this.Email.Location = new System.Drawing.Point(949, 280);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(399, 38);
-            this.Email.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Marriage_Date.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.Marriage_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Marriage_Date.Location = new System.Drawing.Point(310, 329);
+            this.Marriage_Date.Name = "Marriage_Date";
+            this.Marriage_Date.Size = new System.Drawing.Size(233, 32);
+            this.Marriage_Date.TabIndex = 2;
+            // 
+            // Marital_Status
+            // 
+            this.Marital_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Marital_Status.FormattingEnabled = true;
+            this.Marital_Status.Items.AddRange(new object[] {
+            "--Select--",
+            "Married",
+            "Not Married",
+            "Widow",
+            "Other"});
+            this.Marital_Status.Location = new System.Drawing.Point(310, 175);
+            this.Marital_Status.Name = "Marital_Status";
+            this.Marital_Status.Size = new System.Drawing.Size(327, 37);
+            this.Marital_Status.TabIndex = 1;
+            this.Marital_Status.SelectedIndexChanged += new System.EventHandler(this.Marital_Status_SelectedIndexChanged);
+            // 
+            // Child_Number
+            // 
+            this.Child_Number.Location = new System.Drawing.Point(905, 320);
+            this.Child_Number.Name = "Child_Number";
+            this.Child_Number.Size = new System.Drawing.Size(327, 38);
+            this.Child_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Email.StateCommon.Border.Rounding = 5;
-            this.Email.StateCommon.Border.Width = 1;
-            this.Email.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.TabIndex = 2;
+            this.Child_Number.StateCommon.Border.Rounding = 5;
+            this.Child_Number.StateCommon.Border.Width = 1;
+            this.Child_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Child_Number.TabIndex = 4;
+            this.Child_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
             // 
-            // Mobile_Number
+            // Partner_Id
             // 
-            this.Mobile_Number.Location = new System.Drawing.Point(283, 280);
-            this.Mobile_Number.MaxLength = 10;
-            this.Mobile_Number.Name = "Mobile_Number";
-            this.Mobile_Number.Size = new System.Drawing.Size(327, 38);
-            this.Mobile_Number.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.Partner_Id.Location = new System.Drawing.Point(905, 171);
+            this.Partner_Id.Name = "Partner_Id";
+            this.Partner_Id.Size = new System.Drawing.Size(327, 38);
+            this.Partner_Id.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Mobile_Number.StateCommon.Border.Rounding = 5;
-            this.Mobile_Number.StateCommon.Border.Width = 1;
-            this.Mobile_Number.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mobile_Number.TabIndex = 1;
-            this.Mobile_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
+            this.Partner_Id.StateCommon.Border.Rounding = 5;
+            this.Partner_Id.StateCommon.Border.Width = 1;
+            this.Partner_Id.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Partner_Id.TabIndex = 3;
+            this.Partner_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Child_Number_KeyPress);
             // 
-            // nextbtnContact
+            // BtnSaveMarital
             // 
-            this.nextbtnContact.Location = new System.Drawing.Point(1293, 24);
-            this.nextbtnContact.Name = "nextbtnContact";
-            this.nextbtnContact.Size = new System.Drawing.Size(98, 52);
-            this.nextbtnContact.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.nextbtnContact.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.nextbtnContact.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.nextbtnContact.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.nextbtnContact.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.BtnSaveMarital.Location = new System.Drawing.Point(1293, 24);
+            this.BtnSaveMarital.Name = "BtnSaveMarital";
+            this.BtnSaveMarital.Size = new System.Drawing.Size(98, 52);
+            this.BtnSaveMarital.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.BtnSaveMarital.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.BtnSaveMarital.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.BtnSaveMarital.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.BtnSaveMarital.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.nextbtnContact.StateCommon.Border.Rounding = 20;
-            this.nextbtnContact.StateCommon.Border.Width = 2;
-            this.nextbtnContact.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.nextbtnContact.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextbtnContact.TabIndex = 3;
-            this.nextbtnContact.Values.Text = "Next";
-            this.nextbtnContact.Click += new System.EventHandler(this.nextbtnContact_Click);
+            this.BtnSaveMarital.StateCommon.Border.Rounding = 20;
+            this.BtnSaveMarital.StateCommon.Border.Width = 2;
+            this.BtnSaveMarital.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.BtnSaveMarital.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSaveMarital.TabIndex = 8;
+            this.BtnSaveMarital.Values.Text = "Next";
+            this.BtnSaveMarital.Click += new System.EventHandler(this.BtnSaveMarital_Click);
             // 
-            // label20
+            // label22
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label20.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label20.Location = new System.Drawing.Point(768, 286);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 31);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Email ";
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label22.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label22.Location = new System.Drawing.Point(46, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(277, 42);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Marital Status Details :";
             // 
-            // label6
+            // label23
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label6.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label6.Location = new System.Drawing.Point(46, 34);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 42);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Contact Details :";
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label23.Location = new System.Drawing.Point(41, 177);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(156, 31);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Marital Status";
             // 
-            // label11
+            // label24
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label11.Location = new System.Drawing.Point(64, 286);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 31);
-            this.label11.TabIndex = 0;
-            this.label11.Text = " Mobile No ";
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label24.Location = new System.Drawing.Point(41, 329);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(160, 31);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Marriage Date";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label25.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label25.Location = new System.Drawing.Point(732, 177);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(114, 31);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Partner Id";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label27.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label27.Location = new System.Drawing.Point(732, 329);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(133, 31);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "No. of Child";
             // 
             // btnidentity
             // 
@@ -1035,6 +1036,66 @@
             this.btncontact.UseVisualStyleBackColor = false;
             this.btncontact.Click += new System.EventHandler(this.btncontact_Click);
             // 
+            // panelControl5
+            // 
+            this.panelControl5.Angle = 0F;
+            this.panelControl5.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl5.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl5.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl5.Location = new System.Drawing.Point(380, 206);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Rounding = 0;
+            this.panelControl5.Size = new System.Drawing.Size(217, 91);
+            this.panelControl5.TabIndex = 0;
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Angle = 0F;
+            this.panelControl4.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl4.Location = new System.Drawing.Point(107, 206);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Rounding = 0;
+            this.panelControl4.Size = new System.Drawing.Size(217, 91);
+            this.panelControl4.TabIndex = 0;
+            // 
+            // panelControl6
+            // 
+            this.panelControl6.Angle = 0F;
+            this.panelControl6.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl6.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl6.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl6.Location = new System.Drawing.Point(1210, 206);
+            this.panelControl6.Name = "panelControl6";
+            this.panelControl6.Rounding = 0;
+            this.panelControl6.Size = new System.Drawing.Size(217, 91);
+            this.panelControl6.TabIndex = 0;
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Angle = 0F;
+            this.panelControl2.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl2.Location = new System.Drawing.Point(932, 206);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Rounding = 0;
+            this.panelControl2.Size = new System.Drawing.Size(217, 91);
+            this.panelControl2.TabIndex = 0;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Angle = 0F;
+            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl1.Location = new System.Drawing.Point(658, 206);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Rounding = 0;
+            this.panelControl1.Size = new System.Drawing.Size(217, 91);
+            this.panelControl1.TabIndex = 0;
+            // 
             // lblashaname
             // 
             this.lblashaname.AutoSize = true;
@@ -1057,6 +1118,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Angle = 0F;
+            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
+            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.panelControl3.Location = new System.Drawing.Point(12, 12);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Rounding = 0;
+            this.panelControl3.Size = new System.Drawing.Size(150, 125);
+            this.panelControl3.TabIndex = 0;
+            // 
+            // main_panelcontrol
+            // 
+            this.main_panelcontrol.Angle = 0F;
+            this.main_panelcontrol.BackColor = System.Drawing.Color.Transparent;
+            this.main_panelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.main_panelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.main_panelcontrol.Location = new System.Drawing.Point(69, 319);
+            this.main_panelcontrol.Name = "main_panelcontrol";
+            this.main_panelcontrol.Rounding = 0;
+            this.main_panelcontrol.Size = new System.Drawing.Size(1436, 517);
+            this.main_panelcontrol.TabIndex = 0;
             // 
             // kryptonTextBox4
             // 
@@ -1318,90 +1403,6 @@
             this.kryptonTextBox16.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox16.TabIndex = 9;
             // 
-            // panelControl5
-            // 
-            this.panelControl5.Angle = 0F;
-            this.panelControl5.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl5.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl5.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl5.Location = new System.Drawing.Point(380, 206);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Rounding = 0;
-            this.panelControl5.Size = new System.Drawing.Size(217, 91);
-            this.panelControl5.TabIndex = 0;
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Angle = 0F;
-            this.panelControl4.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl4.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl4.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl4.Location = new System.Drawing.Point(107, 206);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Rounding = 0;
-            this.panelControl4.Size = new System.Drawing.Size(217, 91);
-            this.panelControl4.TabIndex = 0;
-            // 
-            // panelControl6
-            // 
-            this.panelControl6.Angle = 0F;
-            this.panelControl6.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl6.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl6.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl6.Location = new System.Drawing.Point(1210, 206);
-            this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Rounding = 0;
-            this.panelControl6.Size = new System.Drawing.Size(217, 91);
-            this.panelControl6.TabIndex = 0;
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Angle = 0F;
-            this.panelControl2.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl2.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl2.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl2.Location = new System.Drawing.Point(932, 206);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Rounding = 0;
-            this.panelControl2.Size = new System.Drawing.Size(217, 91);
-            this.panelControl2.TabIndex = 0;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Angle = 0F;
-            this.panelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl1.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl1.Location = new System.Drawing.Point(658, 206);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Rounding = 0;
-            this.panelControl1.Size = new System.Drawing.Size(217, 91);
-            this.panelControl1.TabIndex = 0;
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Angle = 0F;
-            this.panelControl3.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl3.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.panelControl3.Location = new System.Drawing.Point(12, 12);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Rounding = 0;
-            this.panelControl3.Size = new System.Drawing.Size(150, 125);
-            this.panelControl3.TabIndex = 0;
-            // 
-            // main_panelcontrol
-            // 
-            this.main_panelcontrol.Angle = 0F;
-            this.main_panelcontrol.BackColor = System.Drawing.Color.Transparent;
-            this.main_panelcontrol.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.main_panelcontrol.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.main_panelcontrol.Location = new System.Drawing.Point(69, 319);
-            this.main_panelcontrol.Name = "main_panelcontrol";
-            this.main_panelcontrol.Rounding = 0;
-            this.main_panelcontrol.Size = new System.Drawing.Size(1436, 517);
-            this.main_panelcontrol.TabIndex = 0;
-            // 
             // Add_New_Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1415,18 +1416,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            this.pnlidentity.ResumeLayout(false);
-            this.pnlidentity.PerformLayout();
+            this.pnlcontact.ResumeLayout(false);
+            this.pnlcontact.PerformLayout();
             this.pnlpersonal.ResumeLayout(false);
             this.pnlpersonal.PerformLayout();
             this.Gender.ResumeLayout(false);
             this.Gender.PerformLayout();
-            this.pnlmaritalinfo.ResumeLayout(false);
-            this.pnlmaritalinfo.PerformLayout();
+            this.pnlidentity.ResumeLayout(false);
+            this.pnlidentity.PerformLayout();
             this.pnloccupation.ResumeLayout(false);
             this.pnloccupation.PerformLayout();
-            this.pnlcontact.ResumeLayout(false);
-            this.pnlcontact.PerformLayout();
+            this.pnlmaritalinfo.ResumeLayout(false);
+            this.pnlmaritalinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

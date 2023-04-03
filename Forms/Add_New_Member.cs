@@ -33,7 +33,8 @@ namespace ADRASHA_Main
             member_id = DatabaseClass.GetAutoID("select max(member_id) from member_details");
             Family_Id.Text = family_id.ToString();
             Member_Id.Text = member_id.ToString();
-            //Partner_Id.Text= member_id.ToString();
+            if (status == "head")
+                lblashaname.Text = "Add Head Info";
         }
 
         private void btnnext_Click(object sender, EventArgs e)
@@ -85,7 +86,10 @@ namespace ADRASHA_Main
 
         private void nextbtnContact_Click(object sender, EventArgs e)
         {
-            myfunctions.nextpanel_code(pnloccupation);
+            if (Validation.isValidEmailId(Email.Text))
+                myfunctions.nextpanel_code(pnloccupation);
+            else
+                MessageBox.Show("Email Invalid.");
         }
 
         private void btnnextidentity_Click(object sender, EventArgs e)
@@ -144,6 +148,16 @@ namespace ADRASHA_Main
         private void First_Name_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validation.Only_Text(sender,e);
+        }
+
+        private void Marital_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(Marital_Status.SelectedItem.ToString() == "Not Married" || Marital_Status.SelectedItem.ToString()== "Widow")
+            {
+                Partner_Id.Enabled = false;
+                Marriage_Date.Enabled = false;
+                Child_Number.Enabled = false;
+            }
         }
     }
 }

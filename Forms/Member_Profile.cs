@@ -66,6 +66,15 @@ namespace ADRASHA_Main.Forms
                     {
                         partner_id = int.Parse(reader["partner_id"].ToString());
                         lblPartnerPersonalId.Text = partner_id.ToString();
+                        DataTable dt = DatabaseClass.GetDataTable("select first_name, middle_name, last_name from member_details where member_Id="+partner_id);
+                        lblPartnerName.Text = dt.Rows[0]["first_Name"].ToString() + dt.Rows[0]["middle_Name"].ToString() + dt.Rows[0]["last_Name"].ToString();
+                    }
+                    else
+                    {
+                        lblPartnerName.Text = "None";
+                        lblPartnerPersonalId.Text = "None";
+                        lblNoOfChild.Text = "None";
+                        lblMarriageDate.Text = "None";
                     }
 
                 }

@@ -85,7 +85,6 @@
             this.lblNoOfChild = new System.Windows.Forms.Label();
             this.lblPartnerPersonalId = new System.Windows.Forms.Label();
             this.lblPartnerName = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblMarriageDate = new System.Windows.Forms.Label();
             this.lblMaritalStatus = new System.Windows.Forms.Label();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -383,9 +382,9 @@
             // 
             // backpanel
             // 
-            this.backpanel.Controls.Add(this.pnlOccupation);
             this.backpanel.Controls.Add(this.pnlPersonal);
             this.backpanel.Controls.Add(this.pnlMaritalInfo);
+            this.backpanel.Controls.Add(this.pnlOccupation);
             this.backpanel.Controls.Add(this.pnlResidential);
             this.backpanel.Controls.Add(this.btnHealthProfile);
             this.backpanel.Controls.Add(this.btnFamilyProfile);
@@ -817,7 +816,6 @@
             this.pnlMaritalInfo.Controls.Add(this.lblNoOfChild);
             this.pnlMaritalInfo.Controls.Add(this.lblPartnerPersonalId);
             this.pnlMaritalInfo.Controls.Add(this.lblPartnerName);
-            this.pnlMaritalInfo.Controls.Add(this.button1);
             this.pnlMaritalInfo.Controls.Add(this.lblMarriageDate);
             this.pnlMaritalInfo.Controls.Add(this.lblMaritalStatus);
             this.pnlMaritalInfo.Controls.Add(this.kryptonButton3);
@@ -867,18 +865,6 @@
             this.lblPartnerName.Size = new System.Drawing.Size(88, 29);
             this.lblPartnerName.TabIndex = 0;
             this.lblPartnerName.Text = "Output";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.button1.Location = new System.Drawing.Point(571, 356);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "View Partner Profile";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // lblMarriageDate
             // 
@@ -1295,7 +1281,6 @@
         private System.Windows.Forms.Label lblVillage;
         private System.Windows.Forms.Label lblPartnerPersonalId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnOccupationInfo;
         private PanelControl panelControl1;
         private System.Windows.Forms.Panel pnlOccupation;

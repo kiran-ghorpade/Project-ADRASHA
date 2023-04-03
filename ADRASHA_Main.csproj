@@ -174,11 +174,11 @@
     <Compile Include="Forms\Analytics_Form.Designer.cs">
       <DependentUpon>Analytics_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ASHA_Login.cs">
+    <Compile Include="Forms\Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ASHA_Login.Designer.cs">
-      <DependentUpon>ASHA_Login.cs</DependentUpon>
+    <Compile Include="Forms\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Asha_Profile.cs">
       <SubType>Form</SubType>
@@ -276,6 +276,12 @@
     <Compile Include="Forms\Reports_Form.Designer.cs">
       <DependentUpon>Reports_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Report_Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report_Generator.Designer.cs">
+      <DependentUpon>Report_Generator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Saved_Report_Viewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,7 +327,7 @@
     <Compile Include="Forms\Splash_Screen.Designer.cs">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportCell.cs" />
+    <Compile Include="ReportCell.cs" />
     <Compile Include="Forms\Report_Preview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,8 +354,8 @@
     <EmbeddedResource Include="Forms\Analytics_Form.resx">
       <DependentUpon>Analytics_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ASHA_Login.resx">
-      <DependentUpon>ASHA_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Asha_Profile.resx">
       <DependentUpon>Asha_Profile.cs</DependentUpon>
@@ -402,6 +408,9 @@
     <EmbeddedResource Include="Forms\Reports_Form.resx">
       <DependentUpon>Reports_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report_Generator.resx">
+      <DependentUpon>Report_Generator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Saved_Report_Viewer.resx">
       <DependentUpon>Saved_Report_Viewer.cs</DependentUpon>
     </EmbeddedResource>
@@ -425,7 +434,9 @@
     <EmbeddedResource Include="Forms\Splash_Screen.resx">
       <DependentUpon>Splash_Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Asha_Details_Report.rdlc" />
+    <EmbeddedResource Include="Reports\Report_Generator.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Child_List.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

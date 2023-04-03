@@ -1,6 +1,6 @@
 ﻿namespace ADRASHA_Main.Forms
 {
-    partial class ASHA_Login
+    partial class Login_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ASHA_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancle = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             this.btnLogin.Location = new System.Drawing.Point(359, 49);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 46);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -71,7 +71,7 @@
             this.btnCancle.Location = new System.Drawing.Point(42, 49);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(180, 46);
-            this.btnCancle.TabIndex = 3;
+            this.btnCancle.TabIndex = 4;
             this.btnCancle.Text = "Cancel";
             this.btnCancle.UseVisualStyleBackColor = false;
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
@@ -94,7 +94,7 @@
             // 
             this.Password.Location = new System.Drawing.Point(230, 91);
             this.Password.Name = "Password";
-            this.Password.PasswordChar = '*';
+            this.Password.PasswordChar = '●';
             this.Password.Size = new System.Drawing.Size(335, 59);
             this.Password.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -102,7 +102,8 @@
             this.Password.StateCommon.Border.Rounding = 5;
             this.Password.StateCommon.Border.Width = 1;
             this.Password.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.TabIndex = 1;
+            this.Password.TabIndex = 0;
+            this.Password.UseSystemPasswordChar = true;
             // 
             // lblWarning
             // 
@@ -114,7 +115,7 @@
             this.lblWarning.TabIndex = 0;
             this.lblWarning.Text = "label1";
             // 
-            // ASHA_Login
+            // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +126,7 @@
             this.Controls.Add(this.logo_picturebox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ASHA_Login";
+            this.Name = "Login_Form";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ASHA_Login";

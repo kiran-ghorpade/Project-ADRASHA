@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblashaname = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlVaccination = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.NCD_Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -73,8 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
-            this.kryptonPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlVaccination)).BeginInit();
+            this.pnlVaccination.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NCD_Chart)).BeginInit();
@@ -126,7 +127,7 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel5);
+            this.kryptonPanel1.Controls.Add(this.pnlVaccination);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel4);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel11);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel10);
@@ -148,17 +149,18 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // kryptonPanel5
+            // pnlVaccination
             // 
-            this.kryptonPanel5.Controls.Add(this.label13);
-            this.kryptonPanel5.Location = new System.Drawing.Point(890, 451);
-            this.kryptonPanel5.Name = "kryptonPanel5";
-            this.kryptonPanel5.Size = new System.Drawing.Size(651, 363);
-            this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel5.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel5.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel5.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel5.TabIndex = 0;
+            this.pnlVaccination.AutoScroll = true;
+            this.pnlVaccination.Controls.Add(this.label13);
+            this.pnlVaccination.Location = new System.Drawing.Point(890, 451);
+            this.pnlVaccination.Name = "pnlVaccination";
+            this.pnlVaccination.Size = new System.Drawing.Size(651, 363);
+            this.pnlVaccination.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.pnlVaccination.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.pnlVaccination.StateCommon.ColorAngle = 45F;
+            this.pnlVaccination.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.pnlVaccination.TabIndex = 0;
             // 
             // label13
             // 
@@ -197,12 +199,16 @@
             chartArea3.BackColor = System.Drawing.Color.Transparent;
             chartArea3.Name = "ChartArea1";
             this.NCD_Chart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.NCD_Chart.Legends.Add(legend3);
             this.NCD_Chart.Location = new System.Drawing.Point(3, 39);
             this.NCD_Chart.Name = "NCD_Chart";
             series3.BorderColor = System.Drawing.Color.Transparent;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series3.Color = System.Drawing.Color.Transparent;
+            series3.IsValueShownAsLabel = true;
+            series3.Legend = "Legend1";
             series3.Name = "NCD";
             series3.YValuesPerPoint = 4;
             this.NCD_Chart.Series.Add(series3);
@@ -542,15 +548,22 @@
             chartArea4.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
             chartArea4.AxisX.IsLabelAutoFit = false;
             chartArea4.AxisX.LabelStyle.Enabled = false;
+            chartArea4.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea4.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea4.AxisY.IsLabelAutoFit = false;
             chartArea4.BackColor = System.Drawing.Color.Transparent;
             chartArea4.Name = "ChartArea1";
             this.Demography_Chart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.Demography_Chart.Legends.Add(legend4);
             this.Demography_Chart.Location = new System.Drawing.Point(3, 39);
             this.Demography_Chart.Name = "Demography_Chart";
             series4.BorderColor = System.Drawing.Color.Transparent;
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series4.Color = System.Drawing.Color.Transparent;
+            series4.IsValueShownAsLabel = true;
+            series4.Legend = "Legend1";
             series4.Name = "Demography";
             series4.YValuesPerPoint = 4;
             this.Demography_Chart.Series.Add(series4);
@@ -595,9 +608,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
-            this.kryptonPanel5.ResumeLayout(false);
-            this.kryptonPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlVaccination)).EndInit();
+            this.pnlVaccination.ResumeLayout(false);
+            this.pnlVaccination.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
@@ -666,7 +679,7 @@
         private System.Windows.Forms.Label lblTotalPopulation;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotalFamilies;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlVaccination;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

@@ -44,11 +44,12 @@ namespace ADRASHA_Main.Forms
             //demography pie chart
             int men = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Male'")-1;
             int women = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Female'")-1;
-            if (men > 0 || women > 0)
-            {
-                Demography_Chart.Series["Demography"].Points.AddXY("Women", women);
+            if (men > 0 )
                 Demography_Chart.Series["Demography"].Points.AddXY("Men", men);
-            }
+
+            if (women > 0)
+                Demography_Chart.Series["Demography"].Points.AddXY("Women", women);
+            
             
 
 
@@ -61,6 +62,7 @@ namespace ADRASHA_Main.Forms
                 {
                     DataTable dt1 = DatabaseClass.GetDataTable("select distinct memberid from ncd_details where ncd_name='" + dr["ncd_name"] + "'");
 
+                    if(dt1.Rows.Count >0)
                     NCD_Chart.Series["NCD"].Points.AddXY(dr["ncd_name"], dt1.Rows.Count);
                 }
             }
@@ -68,6 +70,16 @@ namespace ADRASHA_Main.Forms
             {
                 NCD_Chart.Series["NCD"].Points.AddXY("NO Data",1);
             }
+
+            //Upcoming Vaccination Notification
+            for (int i = 0; i < 10; i++)
+            {
+                //Label notification_txt = new Label();
+                //notification_txt = notification;
+                //notification.Text = i + ". baby_name  vaccine_name next_date";
+                //pnlVaccination.Controls.Add(notification_txt);
+            }
+
         }
     }
 }

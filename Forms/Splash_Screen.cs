@@ -31,7 +31,7 @@ namespace ADRASHA_Main
             {
                 UpdateAge();
                 WaitSomeTime(30000);
-                ASHA_Login loginform = new ASHA_Login(this);
+                Login_Form loginform = new Login_Form(this);
                 loginform.ShowDialog();
                 this.Close();
             }
