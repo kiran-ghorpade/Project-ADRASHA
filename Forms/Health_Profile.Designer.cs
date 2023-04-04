@@ -30,6 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Health_Profile));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlMaternal = new System.Windows.Forms.Panel();
+            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnAddNewVisit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label26 = new System.Windows.Forms.Label();
+            this.lblLastVisitDate = new System.Windows.Forms.Label();
+            this.lblExpectedDeliveryDate = new System.Windows.Forms.Label();
+            this.lblLMPDate = new System.Windows.Forms.Label();
+            this.lblTotalVisits = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btn_new_pregnancy = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pnlHBNC = new System.Windows.Forms.Panel();
+            this.lblLastVisit = new System.Windows.Forms.Label();
+            this.lblPreterm = new System.Windows.Forms.Label();
+            this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblVisits = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnlHBNC_visits = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnUpdateHBNC = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlVaccination = new System.Windows.Forms.Panel();
             this.HepB_D3 = new System.Windows.Forms.PictureBox();
             this.HPV_D2 = new System.Windows.Forms.PictureBox();
@@ -61,34 +90,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnUpdateVaccination = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlHBNC = new System.Windows.Forms.Panel();
-            this.lblLastVisit = new System.Windows.Forms.Label();
-            this.lblPreterm = new System.Windows.Forms.Label();
-            this.lblBirthDate = new System.Windows.Forms.Label();
-            this.lblVisits = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pnlHBNC_visits = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnUpdateHBNC = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnlMaternal = new System.Windows.Forms.Panel();
-            this.btnAddNewVisit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.pnlNCD = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -117,9 +118,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl3 = new ADRASHA_Main.PanelControl();
             this.main_panelcontrol = new ADRASHA_Main.PanelControl();
-            this.btn_new_pregnancy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            this.pnlMaternal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
+            this.kryptonPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
+            this.kryptonPanel3.SuspendLayout();
+            this.pnlHBNC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlHBNC_visits)).BeginInit();
+            this.pnlHBNC_visits.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HepB_D3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HPV_D2)).BeginInit();
@@ -149,14 +157,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.HepB_D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BCG_D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlHBNC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlHBNC_visits)).BeginInit();
-            this.pnlHBNC_visits.SuspendLayout();
-            this.pnlMaternal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            this.kryptonPanel3.SuspendLayout();
             this.pnlNCD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
@@ -169,9 +169,9 @@
             this.kryptonPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonPanel1.Controls.Add(this.pnlHBNC);
             this.kryptonPanel1.Controls.Add(this.pnlMaternal);
             this.kryptonPanel1.Controls.Add(this.pnlVaccination);
-            this.kryptonPanel1.Controls.Add(this.pnlHBNC);
             this.kryptonPanel1.Controls.Add(this.pnlNCD);
             this.kryptonPanel1.Controls.Add(this.panel2);
             this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
@@ -199,6 +199,388 @@
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
             this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
+            // 
+            // pnlMaternal
+            // 
+            this.pnlMaternal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlMaternal.Controls.Add(this.kryptonPanel4);
+            this.pnlMaternal.Controls.Add(this.lblLastVisitDate);
+            this.pnlMaternal.Controls.Add(this.lblExpectedDeliveryDate);
+            this.pnlMaternal.Controls.Add(this.lblLMPDate);
+            this.pnlMaternal.Controls.Add(this.lblTotalVisits);
+            this.pnlMaternal.Controls.Add(this.label18);
+            this.pnlMaternal.Controls.Add(this.label22);
+            this.pnlMaternal.Controls.Add(this.label23);
+            this.pnlMaternal.Controls.Add(this.label24);
+            this.pnlMaternal.Controls.Add(this.kryptonPanel3);
+            this.pnlMaternal.Controls.Add(this.label10);
+            this.pnlMaternal.Location = new System.Drawing.Point(75, 373);
+            this.pnlMaternal.Name = "pnlMaternal";
+            this.pnlMaternal.Size = new System.Drawing.Size(1414, 454);
+            this.pnlMaternal.TabIndex = 0;
+            // 
+            // kryptonPanel4
+            // 
+            this.kryptonPanel4.Controls.Add(this.btnAddNewVisit);
+            this.kryptonPanel4.Controls.Add(this.label26);
+            this.kryptonPanel4.Location = new System.Drawing.Point(962, 21);
+            this.kryptonPanel4.Name = "kryptonPanel4";
+            this.kryptonPanel4.Size = new System.Drawing.Size(429, 419);
+            this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.kryptonPanel4.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.kryptonPanel4.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel4.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonPanel4.TabIndex = 0;
+            // 
+            // btnAddNewVisit
+            // 
+            this.btnAddNewVisit.Location = new System.Drawing.Point(121, 154);
+            this.btnAddNewVisit.Name = "btnAddNewVisit";
+            this.btnAddNewVisit.Size = new System.Drawing.Size(204, 52);
+            this.btnAddNewVisit.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnAddNewVisit.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnAddNewVisit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnAddNewVisit.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnAddNewVisit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAddNewVisit.StateCommon.Border.Rounding = 20;
+            this.btnAddNewVisit.StateCommon.Border.Width = 2;
+            this.btnAddNewVisit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnAddNewVisit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewVisit.TabIndex = 0;
+            this.btnAddNewVisit.Values.Text = "Add New Visit";
+            this.btnAddNewVisit.Click += new System.EventHandler(this.btnAddNewVisit_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Cyan;
+            this.label26.Location = new System.Drawing.Point(17, 13);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(104, 42);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Visits -";
+            // 
+            // lblLastVisitDate
+            // 
+            this.lblLastVisitDate.AutoSize = true;
+            this.lblLastVisitDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblLastVisitDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastVisitDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblLastVisitDate.Location = new System.Drawing.Point(311, 353);
+            this.lblLastVisitDate.Name = "lblLastVisitDate";
+            this.lblLastVisitDate.Size = new System.Drawing.Size(127, 31);
+            this.lblLastVisitDate.TabIndex = 0;
+            this.lblLastVisitDate.Text = "No Record ";
+            // 
+            // lblExpectedDeliveryDate
+            // 
+            this.lblExpectedDeliveryDate.AutoSize = true;
+            this.lblExpectedDeliveryDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblExpectedDeliveryDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpectedDeliveryDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblExpectedDeliveryDate.Location = new System.Drawing.Point(311, 278);
+            this.lblExpectedDeliveryDate.Name = "lblExpectedDeliveryDate";
+            this.lblExpectedDeliveryDate.Size = new System.Drawing.Size(127, 31);
+            this.lblExpectedDeliveryDate.TabIndex = 0;
+            this.lblExpectedDeliveryDate.Text = "No Record ";
+            // 
+            // lblLMPDate
+            // 
+            this.lblLMPDate.AutoSize = true;
+            this.lblLMPDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblLMPDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLMPDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblLMPDate.Location = new System.Drawing.Point(311, 204);
+            this.lblLMPDate.Name = "lblLMPDate";
+            this.lblLMPDate.Size = new System.Drawing.Size(127, 31);
+            this.lblLMPDate.TabIndex = 0;
+            this.lblLMPDate.Text = "No Record ";
+            // 
+            // lblTotalVisits
+            // 
+            this.lblTotalVisits.AutoSize = true;
+            this.lblTotalVisits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblTotalVisits.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalVisits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblTotalVisits.Location = new System.Drawing.Point(311, 120);
+            this.lblTotalVisits.Name = "lblTotalVisits";
+            this.lblTotalVisits.Size = new System.Drawing.Size(127, 31);
+            this.lblTotalVisits.TabIndex = 0;
+            this.lblTotalVisits.Text = "No Record ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label18.Location = new System.Drawing.Point(35, 353);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(199, 31);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Last Date of Visit -";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label22.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label22.Location = new System.Drawing.Point(35, 278);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(261, 31);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Expected Delivery Date -";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label23.Location = new System.Drawing.Point(35, 204);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(138, 31);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "L.M.P Date -";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label24.Location = new System.Drawing.Point(35, 130);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(137, 31);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Total Visits -";
+            // 
+            // kryptonPanel3
+            // 
+            this.kryptonPanel3.Controls.Add(this.label25);
+            this.kryptonPanel3.Controls.Add(this.btn_new_pregnancy);
+            this.kryptonPanel3.Location = new System.Drawing.Point(468, 21);
+            this.kryptonPanel3.Name = "kryptonPanel3";
+            this.kryptonPanel3.Size = new System.Drawing.Size(442, 419);
+            this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.kryptonPanel3.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.kryptonPanel3.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel3.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonPanel3.TabIndex = 0;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Cyan;
+            this.label25.Location = new System.Drawing.Point(17, 13);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(182, 42);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Pregnancies -";
+            // 
+            // btn_new_pregnancy
+            // 
+            this.btn_new_pregnancy.BackColor = System.Drawing.Color.Transparent;
+            this.btn_new_pregnancy.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btn_new_pregnancy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btn_new_pregnancy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_new_pregnancy.Location = new System.Drawing.Point(89, 162);
+            this.btn_new_pregnancy.Name = "btn_new_pregnancy";
+            this.btn_new_pregnancy.Size = new System.Drawing.Size(242, 56);
+            this.btn_new_pregnancy.TabIndex = 0;
+            this.btn_new_pregnancy.Text = "Add New Pregnancy";
+            this.btn_new_pregnancy.UseVisualStyleBackColor = false;
+            this.btn_new_pregnancy.Click += new System.EventHandler(this.btn_new_pregnancy_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label10.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label10.Location = new System.Drawing.Point(23, 21);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(299, 42);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Maternal Health Details :";
+            // 
+            // pnlHBNC
+            // 
+            this.pnlHBNC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.pnlHBNC.Controls.Add(this.lblLastVisit);
+            this.pnlHBNC.Controls.Add(this.lblPreterm);
+            this.pnlHBNC.Controls.Add(this.lblBirthDate);
+            this.pnlHBNC.Controls.Add(this.lblVisits);
+            this.pnlHBNC.Controls.Add(this.label4);
+            this.pnlHBNC.Controls.Add(this.label15);
+            this.pnlHBNC.Controls.Add(this.label5);
+            this.pnlHBNC.Controls.Add(this.label3);
+            this.pnlHBNC.Controls.Add(this.pnlHBNC_visits);
+            this.pnlHBNC.Controls.Add(this.label2);
+            this.pnlHBNC.Location = new System.Drawing.Point(75, 373);
+            this.pnlHBNC.Name = "pnlHBNC";
+            this.pnlHBNC.Size = new System.Drawing.Size(1414, 454);
+            this.pnlHBNC.TabIndex = 0;
+            // 
+            // lblLastVisit
+            // 
+            this.lblLastVisit.AutoSize = true;
+            this.lblLastVisit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblLastVisit.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastVisit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblLastVisit.Location = new System.Drawing.Point(290, 353);
+            this.lblLastVisit.Name = "lblLastVisit";
+            this.lblLastVisit.Size = new System.Drawing.Size(127, 31);
+            this.lblLastVisit.TabIndex = 0;
+            this.lblLastVisit.Text = "No Record ";
+            // 
+            // lblPreterm
+            // 
+            this.lblPreterm.AutoSize = true;
+            this.lblPreterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblPreterm.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreterm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblPreterm.Location = new System.Drawing.Point(290, 278);
+            this.lblPreterm.Name = "lblPreterm";
+            this.lblPreterm.Size = new System.Drawing.Size(127, 31);
+            this.lblPreterm.TabIndex = 0;
+            this.lblPreterm.Text = "No Record ";
+            // 
+            // lblBirthDate
+            // 
+            this.lblBirthDate.AutoSize = true;
+            this.lblBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblBirthDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblBirthDate.Location = new System.Drawing.Point(210, 204);
+            this.lblBirthDate.Name = "lblBirthDate";
+            this.lblBirthDate.Size = new System.Drawing.Size(127, 31);
+            this.lblBirthDate.TabIndex = 0;
+            this.lblBirthDate.Text = "No Record ";
+            // 
+            // lblVisits
+            // 
+            this.lblVisits.AutoSize = true;
+            this.lblVisits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.lblVisits.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.lblVisits.Location = new System.Drawing.Point(210, 130);
+            this.lblVisits.Name = "lblVisits";
+            this.lblVisits.Size = new System.Drawing.Size(127, 31);
+            this.lblVisits.TabIndex = 0;
+            this.lblVisits.Text = "No Record ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label4.Location = new System.Drawing.Point(54, 353);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Last Date of Visit -";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label15.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label15.Location = new System.Drawing.Point(54, 278);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(215, 31);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Is Baby Pre-term ? -";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label5.Location = new System.Drawing.Point(54, 204);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 31);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Birth Date -";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label3.Location = new System.Drawing.Point(54, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total Visits -";
+            // 
+            // pnlHBNC_visits
+            // 
+            this.pnlHBNC_visits.Controls.Add(this.label14);
+            this.pnlHBNC_visits.Controls.Add(this.btnUpdateHBNC);
+            this.pnlHBNC_visits.Location = new System.Drawing.Point(487, 21);
+            this.pnlHBNC_visits.Name = "pnlHBNC_visits";
+            this.pnlHBNC_visits.Size = new System.Drawing.Size(919, 419);
+            this.pnlHBNC_visits.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.pnlHBNC_visits.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.pnlHBNC_visits.StateCommon.ColorAngle = 45F;
+            this.pnlHBNC_visits.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.pnlHBNC_visits.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Cyan;
+            this.label14.Location = new System.Drawing.Point(17, 13);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 42);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Visits -";
+            // 
+            // btnUpdateHBNC
+            // 
+            this.btnUpdateHBNC.Location = new System.Drawing.Point(421, 162);
+            this.btnUpdateHBNC.Name = "btnUpdateHBNC";
+            this.btnUpdateHBNC.Size = new System.Drawing.Size(134, 52);
+            this.btnUpdateHBNC.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnUpdateHBNC.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnUpdateHBNC.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateHBNC.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateHBNC.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnUpdateHBNC.StateCommon.Border.Rounding = 20;
+            this.btnUpdateHBNC.StateCommon.Border.Width = 2;
+            this.btnUpdateHBNC.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
+            this.btnUpdateHBNC.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateHBNC.TabIndex = 0;
+            this.btnUpdateHBNC.Values.Text = "Update";
+            this.btnUpdateHBNC.Click += new System.EventHandler(this.btnUpdateHBNC_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.label2.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.label2.Location = new System.Drawing.Point(46, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 42);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "HBNC Details";
             // 
             // pnlVaccination
             // 
@@ -611,374 +993,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Vaccination Details :";
             // 
-            // pnlHBNC
-            // 
-            this.pnlHBNC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlHBNC.Controls.Add(this.lblLastVisit);
-            this.pnlHBNC.Controls.Add(this.lblPreterm);
-            this.pnlHBNC.Controls.Add(this.lblBirthDate);
-            this.pnlHBNC.Controls.Add(this.lblVisits);
-            this.pnlHBNC.Controls.Add(this.label4);
-            this.pnlHBNC.Controls.Add(this.label15);
-            this.pnlHBNC.Controls.Add(this.label5);
-            this.pnlHBNC.Controls.Add(this.label3);
-            this.pnlHBNC.Controls.Add(this.pnlHBNC_visits);
-            this.pnlHBNC.Controls.Add(this.btnUpdateHBNC);
-            this.pnlHBNC.Controls.Add(this.label2);
-            this.pnlHBNC.Location = new System.Drawing.Point(75, 373);
-            this.pnlHBNC.Name = "pnlHBNC";
-            this.pnlHBNC.Size = new System.Drawing.Size(1414, 454);
-            this.pnlHBNC.TabIndex = 0;
-            // 
-            // lblLastVisit
-            // 
-            this.lblLastVisit.AutoSize = true;
-            this.lblLastVisit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblLastVisit.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastVisit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.lblLastVisit.Location = new System.Drawing.Point(290, 353);
-            this.lblLastVisit.Name = "lblLastVisit";
-            this.lblLastVisit.Size = new System.Drawing.Size(127, 31);
-            this.lblLastVisit.TabIndex = 0;
-            this.lblLastVisit.Text = "No Record ";
-            // 
-            // lblPreterm
-            // 
-            this.lblPreterm.AutoSize = true;
-            this.lblPreterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblPreterm.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreterm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.lblPreterm.Location = new System.Drawing.Point(290, 278);
-            this.lblPreterm.Name = "lblPreterm";
-            this.lblPreterm.Size = new System.Drawing.Size(127, 31);
-            this.lblPreterm.TabIndex = 0;
-            this.lblPreterm.Text = "No Record ";
-            // 
-            // lblBirthDate
-            // 
-            this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblBirthDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.lblBirthDate.Location = new System.Drawing.Point(210, 204);
-            this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(127, 31);
-            this.lblBirthDate.TabIndex = 0;
-            this.lblBirthDate.Text = "No Record ";
-            // 
-            // lblVisits
-            // 
-            this.lblVisits.AutoSize = true;
-            this.lblVisits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.lblVisits.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.lblVisits.Location = new System.Drawing.Point(210, 130);
-            this.lblVisits.Name = "lblVisits";
-            this.lblVisits.Size = new System.Drawing.Size(127, 31);
-            this.lblVisits.TabIndex = 0;
-            this.lblVisits.Text = "No Record ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label4.Location = new System.Drawing.Point(54, 353);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 31);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Last Date of Visit -";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label15.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label15.Location = new System.Drawing.Point(54, 278);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(215, 31);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Is Baby Pre-term ? -";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label5.Location = new System.Drawing.Point(54, 204);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 31);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Birth Date -";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(54, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total Visits -";
-            // 
-            // pnlHBNC_visits
-            // 
-            this.pnlHBNC_visits.Controls.Add(this.label14);
-            this.pnlHBNC_visits.Location = new System.Drawing.Point(487, 21);
-            this.pnlHBNC_visits.Name = "pnlHBNC_visits";
-            this.pnlHBNC_visits.Size = new System.Drawing.Size(919, 419);
-            this.pnlHBNC_visits.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.pnlHBNC_visits.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.pnlHBNC_visits.StateCommon.ColorAngle = 45F;
-            this.pnlHBNC_visits.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.pnlHBNC_visits.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Cyan;
-            this.label14.Location = new System.Drawing.Point(17, 13);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 42);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Visits -";
-            // 
-            // btnUpdateHBNC
-            // 
-            this.btnUpdateHBNC.Location = new System.Drawing.Point(283, 24);
-            this.btnUpdateHBNC.Name = "btnUpdateHBNC";
-            this.btnUpdateHBNC.Size = new System.Drawing.Size(134, 52);
-            this.btnUpdateHBNC.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnUpdateHBNC.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnUpdateHBNC.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnUpdateHBNC.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnUpdateHBNC.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnUpdateHBNC.StateCommon.Border.Rounding = 20;
-            this.btnUpdateHBNC.StateCommon.Border.Width = 2;
-            this.btnUpdateHBNC.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnUpdateHBNC.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateHBNC.TabIndex = 0;
-            this.btnUpdateHBNC.Values.Text = "Update";
-            this.btnUpdateHBNC.Click += new System.EventHandler(this.btnUpdateHBNC_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label2.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(46, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 42);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "HBNC Details";
-            // 
-            // pnlMaternal
-            // 
-            this.pnlMaternal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.pnlMaternal.Controls.Add(this.kryptonPanel4);
-            this.pnlMaternal.Controls.Add(this.label8);
-            this.pnlMaternal.Controls.Add(this.label11);
-            this.pnlMaternal.Controls.Add(this.label12);
-            this.pnlMaternal.Controls.Add(this.label13);
-            this.pnlMaternal.Controls.Add(this.label18);
-            this.pnlMaternal.Controls.Add(this.label22);
-            this.pnlMaternal.Controls.Add(this.label23);
-            this.pnlMaternal.Controls.Add(this.label24);
-            this.pnlMaternal.Controls.Add(this.kryptonPanel3);
-            this.pnlMaternal.Controls.Add(this.label10);
-            this.pnlMaternal.Location = new System.Drawing.Point(75, 373);
-            this.pnlMaternal.Name = "pnlMaternal";
-            this.pnlMaternal.Size = new System.Drawing.Size(1414, 454);
-            this.pnlMaternal.TabIndex = 0;
-            // 
-            // btnAddNewVisit
-            // 
-            this.btnAddNewVisit.Location = new System.Drawing.Point(121, 154);
-            this.btnAddNewVisit.Name = "btnAddNewVisit";
-            this.btnAddNewVisit.Size = new System.Drawing.Size(204, 52);
-            this.btnAddNewVisit.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnAddNewVisit.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnAddNewVisit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnAddNewVisit.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnAddNewVisit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddNewVisit.StateCommon.Border.Rounding = 20;
-            this.btnAddNewVisit.StateCommon.Border.Width = 2;
-            this.btnAddNewVisit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(61)))), ((int)(((byte)(95)))));
-            this.btnAddNewVisit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewVisit.TabIndex = 0;
-            this.btnAddNewVisit.Values.Text = "Add New Visit";
-            this.btnAddNewVisit.Click += new System.EventHandler(this.btnAddNewVisit_Click);
-            // 
-            // kryptonPanel4
-            // 
-            this.kryptonPanel4.Controls.Add(this.btnAddNewVisit);
-            this.kryptonPanel4.Controls.Add(this.label26);
-            this.kryptonPanel4.Location = new System.Drawing.Point(962, 21);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(429, 419);
-            this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel4.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel4.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel4.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel4.TabIndex = 0;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Cyan;
-            this.label26.Location = new System.Drawing.Point(17, 13);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(104, 42);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Visits -";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.label8.Location = new System.Drawing.Point(271, 384);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 31);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "No Record ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label11.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.label11.Location = new System.Drawing.Point(311, 309);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 31);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "No Record ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label12.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.label12.Location = new System.Drawing.Point(311, 235);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 31);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "No Record ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label13.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.label13.Location = new System.Drawing.Point(191, 161);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 31);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "No Record ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label18.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label18.Location = new System.Drawing.Point(35, 384);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(199, 31);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Last Date of Visit -";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label22.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label22.Location = new System.Drawing.Point(35, 309);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(261, 31);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Expected Delivery Date -";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label23.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label23.Location = new System.Drawing.Point(35, 235);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(270, 31);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Current Pregnancy Date -";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label24.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label24.Location = new System.Drawing.Point(35, 161);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(137, 31);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Total Visits -";
-            // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Controls.Add(this.label25);
-            this.kryptonPanel3.Controls.Add(this.btn_new_pregnancy);
-            this.kryptonPanel3.Location = new System.Drawing.Point(468, 21);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(442, 419);
-            this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel3.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel3.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel3.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel3.TabIndex = 0;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Cyan;
-            this.label25.Location = new System.Drawing.Point(17, 13);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(182, 42);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Pregnancies -";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.label10.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.label10.Location = new System.Drawing.Point(23, 21);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(299, 42);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Maternal Health Details :";
-            // 
             // pnlNCD
             // 
             this.pnlNCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
@@ -1332,20 +1346,6 @@
             this.main_panelcontrol.Size = new System.Drawing.Size(1436, 473);
             this.main_panelcontrol.TabIndex = 0;
             // 
-            // btn_new_pregnancy
-            // 
-            this.btn_new_pregnancy.BackColor = System.Drawing.Color.Transparent;
-            this.btn_new_pregnancy.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btn_new_pregnancy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btn_new_pregnancy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_new_pregnancy.Location = new System.Drawing.Point(89, 162);
-            this.btn_new_pregnancy.Name = "btn_new_pregnancy";
-            this.btn_new_pregnancy.Size = new System.Drawing.Size(242, 56);
-            this.btn_new_pregnancy.TabIndex = 0;
-            this.btn_new_pregnancy.Text = "Add New Pregnancy";
-            this.btn_new_pregnancy.UseVisualStyleBackColor = false;
-            this.btn_new_pregnancy.Click += new System.EventHandler(this.btn_new_pregnancy_Click);
-            // 
             // Health_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1358,6 +1358,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            this.pnlMaternal.ResumeLayout(false);
+            this.pnlMaternal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
+            this.kryptonPanel4.ResumeLayout(false);
+            this.kryptonPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
+            this.kryptonPanel3.ResumeLayout(false);
+            this.kryptonPanel3.PerformLayout();
+            this.pnlHBNC.ResumeLayout(false);
+            this.pnlHBNC.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlHBNC_visits)).EndInit();
+            this.pnlHBNC_visits.ResumeLayout(false);
+            this.pnlHBNC_visits.PerformLayout();
             this.pnlVaccination.ResumeLayout(false);
             this.pnlVaccination.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HepB_D3)).EndInit();
@@ -1388,19 +1401,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.HepB_D1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BCG_D1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlHBNC.ResumeLayout(false);
-            this.pnlHBNC.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlHBNC_visits)).EndInit();
-            this.pnlHBNC_visits.ResumeLayout(false);
-            this.pnlHBNC_visits.PerformLayout();
-            this.pnlMaternal.ResumeLayout(false);
-            this.pnlMaternal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            this.kryptonPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            this.kryptonPanel3.ResumeLayout(false);
-            this.kryptonPanel3.PerformLayout();
             this.pnlNCD.ResumeLayout(false);
             this.pnlNCD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
@@ -1489,10 +1489,10 @@
         private System.Windows.Forms.PictureBox DTaP_B1;
         private System.Windows.Forms.PictureBox DTaP_D3;
         private System.Windows.Forms.PictureBox DTaP_D2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblLastVisitDate;
+        private System.Windows.Forms.Label lblExpectedDeliveryDate;
+        private System.Windows.Forms.Label lblLMPDate;
+        private System.Windows.Forms.Label lblTotalVisits;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;

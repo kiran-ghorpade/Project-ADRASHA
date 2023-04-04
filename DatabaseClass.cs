@@ -193,7 +193,7 @@ namespace ADRASHA_Main
             // Put your database creation script here
             string createTableQuery = @"
                 --
-                -- File generated with SQLiteStudio v3.4.3 on Mon Apr 3 10:52:22 2023
+                -- File generated with SQLiteStudio v3.4.3 on Mon Apr 3 18:00:48 2023
                 --
                 -- Text encoding used: System
                 --
@@ -254,8 +254,8 @@ namespace ADRASHA_Main
                 
                 -- Table: family_details
                 CREATE TABLE IF NOT EXISTS family_details (
-                    Family_Id        INTEGER   PRIMARY KEY,
-                    Family_Head      INTEGER   REFERENCES member_details (Member_Id),
+                    Family_Id        INTEGER PRIMARY KEY,
+                    Family_Head      INTEGER REFERENCES member_details (Member_Id),
                     Total_Members    INTEGER,
                     House_Type       TEXT,
                     Vehicle          TEXT,
@@ -357,7 +357,7 @@ namespace ADRASHA_Main
                     Education       TEXT,
                     Marital_Status  TEXT,
                     Marriage_Date   DATE,
-                    Partner_Id      INTEGER REFERENCES member_details (Member_Id),
+                    Partner_Id      INTEGER,
                     Child_Number    INTEGER,
                     Age             INTEGER,
                     Alive_Status    TEXT    DEFAULT Alive
@@ -405,14 +405,14 @@ namespace ADRASHA_Main
                 
                 -- Table: vaccination
                 CREATE TABLE IF NOT EXISTS vaccination (
-                    Vaccination_Id INTEGER   PRIMARY KEY AUTOINCREMENT,
-                    Member_Id      INTEGER   NOT NULL
-                                             REFERENCES member_details (Member_Id),
-                    Vaccine_Name   TEXT      NOT NULL,
-                    Given_On       DATE,
-                    Given_At       TEXT,
-                    created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    updated_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    Vaccination_Id    INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Member_Id         INTEGER NOT NULL
+                                              REFERENCES member_details (Member_Id),
+                    Vaccine_Name      TEXT    NOT NULL,
+                    Given_On          DATE,
+                    Given_At          TEXT,
+                    next_Vaccine_DATE DATE,
+                    next_Vaccine_name TEXT
                 );
                 
                 
@@ -506,7 +506,7 @@ namespace ADRASHA_Main
                 
                 COMMIT TRANSACTION;
                 PRAGMA foreign_keys = on;
-                
+                  
             ";         
             ExecuteNonQuery(createTableQuery);
         }

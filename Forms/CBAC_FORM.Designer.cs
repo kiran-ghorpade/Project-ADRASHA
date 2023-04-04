@@ -57,6 +57,7 @@
             this.Waist = new System.Windows.Forms.Label();
             this.Alcohol = new System.Windows.Forms.Label();
             this.Gutka = new System.Windows.Forms.Label();
+            this.Age = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -96,7 +97,6 @@
             this.lblashaname = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Age = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.pnlCBAC.SuspendLayout();
@@ -134,7 +134,7 @@
             this.btnFamily.Name = "btnFamily";
             this.btnFamily.Size = new System.Drawing.Size(266, 56);
             this.btnFamily.TabIndex = 0;
-            this.btnFamily.Text = "Health Profile";
+            this.btnFamily.Text = "Back";
             this.btnFamily.UseVisualStyleBackColor = false;
             this.btnFamily.Click += new System.EventHandler(this.btnFamily_Click);
             // 
@@ -471,6 +471,18 @@
             this.Gutka.Size = new System.Drawing.Size(34, 42);
             this.Gutka.TabIndex = 0;
             this.Gutka.Text = "0";
+            // 
+            // Age
+            // 
+            this.Age.AutoSize = true;
+            this.Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(191)))));
+            this.Age.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.ForeColor = System.Drawing.Color.Black;
+            this.Age.Location = new System.Drawing.Point(977, 319);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(34, 42);
+            this.Age.TabIndex = 0;
+            this.Age.Text = "0";
             // 
             // panel1
             // 
@@ -1048,25 +1060,13 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // Age
-            // 
-            this.Age.AutoSize = true;
-            this.Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(191)))));
-            this.Age.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Age.ForeColor = System.Drawing.Color.Black;
-            this.Age.Location = new System.Drawing.Point(977, 319);
-            this.Age.Name = "Age";
-            this.Age.Size = new System.Drawing.Size(34, 42);
-            this.Age.TabIndex = 0;
-            this.Age.Text = "0";
-            // 
-            // NCD_Profile_Form
+            // CBAC_FORM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1562, 796);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "NCD_Profile_Form";
+            this.Name = "CBAC_FORM";
             this.Text = "NCD_Profile_Form";
             this.Load += new System.EventHandler(this.NCD_Profile_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

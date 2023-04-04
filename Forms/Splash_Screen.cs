@@ -67,7 +67,7 @@ namespace ADRASHA_Main
             int age = 0;
             string date="";
 
-            for(int i  = 1; i < total_members; i++)
+            for(int i  = 1; i <= total_members; i++)
             {
                 DataTable dt = DatabaseClass.GetDataTable("select birth_date from member_details where member_id="+i);
                     

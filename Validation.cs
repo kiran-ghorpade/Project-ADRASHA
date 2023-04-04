@@ -76,6 +76,14 @@ namespace ADRASHA_Main
             return isValid;
         }
 
+        public static void Only_Real(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == (char)Keys.Delete)))
+            {
+                e.Handled = true;
+            }
+        }
+
         public static void Only_Numeric(object sender, KeyPressEventArgs e)
         {
             if(!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)))

@@ -46,8 +46,8 @@ namespace ADRASHA_Main.Forms
             };
 
             DatabaseClass db = new DatabaseClass();
-            db.InsertRow("Pregnancy_VIsits",data);
-
+            if (db.InsertRow("Pregnancy_VIsits", data))
+                MessageBox.Show("Details Added.");
             this.Dispose();
         }
 

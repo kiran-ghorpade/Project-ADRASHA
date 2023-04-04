@@ -18,7 +18,7 @@ namespace ADRASHA_Main
         bool isdigit = true;
 
         public MDI()
-        {
+        {                                   
             InitializeComponent();
         }
 
@@ -31,11 +31,6 @@ namespace ADRASHA_Main
         {
             SearchBoxPanel.Visible = false;
             MyFunctions.LoadChildForm(new Dashboard(),childformpanel);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
@@ -203,5 +198,10 @@ namespace ADRASHA_Main
             SearchBoxPanel.Visible = true;
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Scan_QR scan_QR = new Scan_QR();
+            scan_QR.ShowDialog();
+        }
     }
 }

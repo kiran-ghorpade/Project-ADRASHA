@@ -31,7 +31,6 @@ namespace ADRASHA_Main
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NCD));
-            this.btnFamily = new System.Windows.Forms.Button();
             this.lblMemberName = new System.Windows.Forms.Label();
             this.lblashaname = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -53,7 +52,7 @@ namespace ADRASHA_Main
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnPersonalProfile = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnAddCBAC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,19 +63,6 @@ namespace ADRASHA_Main
             ((System.ComponentModel.ISupportInitialize)(this.pnlScreening)).BeginInit();
             this.pnlScreening.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnFamily
-            // 
-            this.btnFamily.BackColor = System.Drawing.Color.Transparent;
-            this.btnFamily.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnFamily.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFamily.Location = new System.Drawing.Point(951, 127);
-            this.btnFamily.Name = "btnFamily";
-            this.btnFamily.Size = new System.Drawing.Size(266, 56);
-            this.btnFamily.TabIndex = 0;
-            this.btnFamily.Text = "Family Profile";
-            this.btnFamily.UseVisualStyleBackColor = false;
             // 
             // lblMemberName
             // 
@@ -141,9 +127,8 @@ namespace ADRASHA_Main
             this.sss.Controls.Add(this.kryptonPanel1);
             this.sss.Controls.Add(this.pnlScreening);
             this.sss.Controls.Add(this.panel2);
-            this.sss.Controls.Add(this.btnPersonalProfile);
+            this.sss.Controls.Add(this.btnBack);
             this.sss.Controls.Add(this.btnAddCBAC);
-            this.sss.Controls.Add(this.btnFamily);
             this.sss.Controls.Add(this.lblMemberName);
             this.sss.Controls.Add(this.lblashaname);
             this.sss.Controls.Add(this.pictureBox2);
@@ -348,17 +333,18 @@ namespace ADRASHA_Main
             this.panel2.Size = new System.Drawing.Size(580, 1);
             this.panel2.TabIndex = 0;
             // 
-            // btnPersonalProfile
+            // btnBack
             // 
-            this.btnPersonalProfile.BackColor = System.Drawing.Color.Transparent;
-            this.btnPersonalProfile.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.btnPersonalProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
-            this.btnPersonalProfile.Location = new System.Drawing.Point(1263, 127);
-            this.btnPersonalProfile.Name = "btnPersonalProfile";
-            this.btnPersonalProfile.Size = new System.Drawing.Size(266, 56);
-            this.btnPersonalProfile.TabIndex = 0;
-            this.btnPersonalProfile.Text = "Personal Profile";
-            this.btnPersonalProfile.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnBack.Location = new System.Drawing.Point(1263, 127);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(266, 56);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnAddCBAC
             // 
@@ -399,7 +385,6 @@ namespace ADRASHA_Main
         }
 
         #endregion
-        private System.Windows.Forms.Button btnFamily;
         private System.Windows.Forms.Label lblMemberName;
         private System.Windows.Forms.Label lblashaname;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -407,7 +392,7 @@ namespace ADRASHA_Main
         private PanelControl panelControl3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel sss;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnPersonalProfile;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnAddCBAC;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlScreening;
         private System.Windows.Forms.Label label3;

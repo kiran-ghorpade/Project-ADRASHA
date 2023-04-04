@@ -68,7 +68,10 @@ namespace ADRASHA_Main
             };
 
             DatabaseClass db = new DatabaseClass();
-            db.InsertRow("NCD_details", data);
+            if (db.InsertRow("NCD_details", data))
+                MessageBox.Show("Details Added Successfully.");
+            else
+                MessageBox.Show("Error Occured During Insertion Of Data \n Please Contact Developers");
 
             clear();
             disable();
@@ -78,6 +81,11 @@ namespace ADRASHA_Main
         private void btnAddCBAC_Click(object sender, EventArgs e)
         {
             MyFunctions.LoadChildForm(new CBAC_FORM(member_id,name),MDI.childformpanel);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MyFunctions.LoadChildForm(new Health_Profile(member_id), MDI.childformpanel);
         }
     }
 }

@@ -20,14 +20,15 @@ namespace ADRASHA_Main
             Application.SetCompatibleTextRenderingDefault(false);
 
             //for loading sqltypes namespace
-            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+            //SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+          
 
-            //Application.Run(new Splash_Screen());
+            Application.Run(new Splash_Screen());
             //Application.Run(new Asha_Registration());
-             //Application.Run(new MDI());
-            //application.run(new report_preview("child_list"));
+            //Application.Run(new MDI());
+            //Application.Run(new Scan_QR());
             //Application.Run(new  Report_Generator());
-            Application.Run(new Dashboard());
+            //Application.Run(new Analytics_Form());
         }
     }
 }

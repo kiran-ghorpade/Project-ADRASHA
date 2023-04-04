@@ -39,15 +39,15 @@
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.kryptonPanel8 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel9 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.panelControl1 = new ADRASHA_Main.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pnlReportTemplates)).BeginInit();
             this.pnlReportTemplates.SuspendLayout();
@@ -58,12 +58,12 @@
             this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).BeginInit();
             this.kryptonPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).BeginInit();
             this.kryptonPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
+            this.kryptonPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -204,29 +204,6 @@
             this.kryptonPanel4.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel4.TabIndex = 0;
             // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Controls.Add(this.listBox2);
-            this.kryptonPanel3.Location = new System.Drawing.Point(469, 88);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(291, 291);
-            this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel3.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel3.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel3.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel3.TabIndex = 0;
-            // 
-            // listBox2
-            // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.listBox2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(13, 15);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(266, 260);
-            this.listBox2.TabIndex = 0;
-            // 
             // kryptonPanel8
             // 
             this.kryptonPanel8.Controls.Add(this.kryptonPanel9);
@@ -254,6 +231,34 @@
             this.kryptonPanel9.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel9.TabIndex = 0;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(36, 159);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(215, 22);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(36, 59);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(215, 22);
+            this.textBox1.TabIndex = 1;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(36, 30);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 0;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(36, 131);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 0;
+            // 
             // listBox3
             // 
             this.listBox3.BackColor = System.Drawing.SystemColors.Highlight;
@@ -265,33 +270,28 @@
             this.listBox3.Size = new System.Drawing.Size(346, 260);
             this.listBox3.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // kryptonPanel3
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 131);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 0;
+            this.kryptonPanel3.Controls.Add(this.listBox2);
+            this.kryptonPanel3.Location = new System.Drawing.Point(469, 88);
+            this.kryptonPanel3.Name = "kryptonPanel3";
+            this.kryptonPanel3.Size = new System.Drawing.Size(291, 291);
+            this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.kryptonPanel3.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.kryptonPanel3.StateCommon.ColorAngle = 45F;
+            this.kryptonPanel3.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.kryptonPanel3.TabIndex = 0;
             // 
-            // dateTimePicker2
+            // listBox2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(36, 30);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(36, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(36, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 1;
+            this.listBox2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.listBox2.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(13, 15);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(266, 260);
+            this.listBox2.TabIndex = 0;
             // 
             // panelControl1
             // 
@@ -327,13 +327,13 @@
             this.kryptonPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            this.kryptonPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).EndInit();
             this.kryptonPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).EndInit();
             this.kryptonPanel9.ResumeLayout(false);
             this.kryptonPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
+            this.kryptonPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

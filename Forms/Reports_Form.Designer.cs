@@ -116,8 +116,8 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
             this.kryptonPanel1.Controls.Add(this.pnlSavedReports);
+            this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel6);
             this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -320,6 +320,7 @@
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnOpen
             // 

@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,8 +18,8 @@ namespace ADRASHA_Main
     {
         MyFunctions MyFunctions = new MyFunctions();
         readonly int member_id = 5;
-        int family_id = 0;
-        string name;
+        int family_id = 0, Age;
+        string name, Gender;
 
         public Health_Profile()
         {
@@ -45,6 +46,8 @@ namespace ADRASHA_Main
                 {
                     name = reader["first_name"].ToString() + " " + reader["last_name"].ToString();
                     lblMemberName.Text = name;
+                    Gender = reader["gender"].ToString();
+                    Age = Convert.ToInt32(reader["age"]);
                     family_id = Convert.ToInt32(reader["family_id"]);
                 }
             }
@@ -103,13 +106,27 @@ namespace ADRASHA_Main
         private void Member_Health_Profile_Load(object sender, EventArgs e)
         {
             setData();
+            if(Gender == "Male")
+            {
+                btnMaternalHealth.Enabled = false;
+                btnAddNewVisit.Enabled = false;
+                btn_new_pregnancy.Enabled = false;
+            }
+            if(Age > 18)
+            {
+                btnUpdateVaccination.Enabled = false;
+                btnHBNC.Enabled = false;
+            }
         }
 
         private void setData()
         {
-            DataTable dt;
+            try
+            {
+                //Vaccination Data
+                DataTable dt;
 
-            string[] vaccines = {"BCG_D1","HepB_D1","HepB_D2","HepB_D3",
+                string[] vaccines = {"BCG_D1","HepB_D1","HepB_D2","HepB_D3",
                                  "DTaP_D1","DTaP_D2","DTaP_D3","DTap_B1",
                                  "Tdap_B2",
                                  "IPV_D1","IPV_D2","IPV_D3","IPV_B1","IPV_B2",
@@ -119,14 +136,29 @@ namespace ADRASHA_Main
                                  "VAR_D1","VAR_D2",
                                  "HPV_D1","HPV_D2"
                                 };
-            foreach (string vaccine in vaccines)
-            {
-                dt = DatabaseClass.GetDataTable("select * from vaccination where member_id=" + member_id + " and vaccine_name='" + vaccine + "'");
-
-                if (dt.Rows.Count == 1)
+                foreach (string vaccine in vaccines)
                 {
-                    setBtnColor(vaccine);
+                    dt = DatabaseClass.GetDataTable("select * from vaccination where member_id=" + member_id + " and vaccine_name='" + vaccine + "'");
+
+                    if (dt.Rows.Count == 1)
+                    {
+                        setBtnColor(vaccine);
+                    }
                 }
+
+                //Maternal Health
+                lblTotalVisits.Text = (DatabaseClass.GetAutoID("select max(Pregnancy_Visit_id) from Pregnancy_Visits where Mother_id=" + member_id) - 1).ToString();
+                dt = DatabaseClass.GetDataTable("select * from pregnancy where mother_id=" + member_id);
+                if (dt.Rows.Count > 0)
+                {
+                    lblLMPDate.Text = dt.Rows[0]["Last_period"].ToString();
+                    lblExpectedDeliveryDate.Text = dt.Rows[0]["Expected_date"].ToString();
+                }
+                dt = DatabaseClass.GetDataTable("select visit_date from Pregnancy_Visits where mother_id = " + member_id + " order by visit_date desc");
+                lblLastVisitDate.Text = dt.Rows[0][0].ToString();
+            }
+            catch(Exception) {
+                return;
             }
         }
 

@@ -30,7 +30,7 @@ namespace ADRASHA_Main.Forms
 
         void setListBox()
         {
-            DataTable dt = DatabaseClass.GetDataTable("PRAGMA table_info(family_details);");
+            DataTable dt = DatabaseClass.GetDataTable("PRAGMA table_info(asha_details);");
             //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(member_details);"));
             //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(vaccination_details);"));
             //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(ncd_details);"));

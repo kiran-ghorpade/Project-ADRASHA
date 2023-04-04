@@ -76,7 +76,10 @@ namespace ADRASHA_Main.Forms
             
             DatabaseClass db = new DatabaseClass();
             if (db.InsertRow("hbnc_visits", hbnc_visits_map))
+            {
                 MessageBox.Show("Visit Added.");
+                this.Dispose();
+            }
         }
     }
 }

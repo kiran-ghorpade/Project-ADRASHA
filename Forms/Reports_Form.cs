@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Services.Description;
 using System.Windows.Forms;
 
 namespace ADRASHA_Main.Forms
@@ -38,8 +39,8 @@ namespace ADRASHA_Main.Forms
 
         private void btnNewReport_Click(object sender, EventArgs e)
         {
-            Sample_Report_form sample_Report_Form = new Sample_Report_form();
-            sample_Report_Form.ShowDialog();
+            Report_Generator report_Generator = new Report_Generator();
+            report_Generator.ShowDialog();
         }
 
         private void Reports_Form_Load(object sender, EventArgs e)
@@ -124,5 +125,18 @@ namespace ADRASHA_Main.Forms
             currentReport = "NCD_list";
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string filepath = listboxSavedFiles.SelectedItem.ToString();
+            string directory = Directory.GetCurrentDirectory();
+            directory += "\\ADRASHA\\Reports\\" + filepath;
+
+            if (MessageBox.Show("Are you want delete '" + filepath + "'.", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                File.Delete(directory);
+                MessageBox.Show("File(Report) Deleted. \n File Name : " + filepath);
+                listboxSavedFiles.Refresh();
+            }
+        }
     }
 }

@@ -53,6 +53,7 @@ namespace ADRASHA_Main.Forms
             if (db.InsertRow("homedelivery_visit", data))
             {
                 MessageBox.Show("Data Inserted.");
+                this.Dispose();
             }
             else
                 MessageBox.Show("Error");
@@ -60,7 +61,7 @@ namespace ADRASHA_Main.Forms
 
         private void Weight_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validation.Only_Numeric(sender,e);
+            Validation.Only_Real(sender,e);
         }
 
         private void HBNC_First_Examination_Form_Load(object sender, EventArgs e)

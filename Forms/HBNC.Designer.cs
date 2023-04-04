@@ -118,6 +118,9 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonPanel1.Controls.Add(this.panel2);
             this.kryptonPanel1.Controls.Add(this.btnPersonalProfile);
             this.kryptonPanel1.Controls.Add(this.btnFirstExamination);

@@ -15,10 +15,13 @@ namespace ADRASHA_Main.Forms
     public partial class CBAC_FORM : Form
     {
         MyFunctions MyFunctions = new MyFunctions();
+        string name;
+
         public CBAC_FORM(int member_id,string name)
         {
             InitializeComponent();
             this.member_id = member_id;
+            this.name = name;
             DataRow dr= DatabaseClass.GetRowById("Member_details","member_id",member_id);
             lblMemberName.Text = name;
             int age = MyFunctions.CalculateAge(dr["birth_date"].ToString());
@@ -53,7 +56,9 @@ namespace ADRASHA_Main.Forms
                     DataTable dt = DatabaseClass.GetDataTable("select max(cbac_id) from cbac_details");
                     DatabaseClass.ExecuteNonQuery("update cbac_details set member_Id="+member_id+" where cbac_id=" + dt.Rows[0][0]);
                     MessageBox.Show("CBAC Form Added.");
+                    MyFunctions.LoadChildForm(new NCD(member_id,name), MDI.childformpanel);
                 }
+
             }
         }
 
@@ -153,7 +158,7 @@ namespace ADRASHA_Main.Forms
 
         private void btnFamily_Click(object sender, EventArgs e)
         {
-            MyFunctions.LoadChildForm(new Health_Profile(member_id),MDI.childformpanel);
+            MyFunctions.LoadChildForm(new NCD(member_id,name),MDI.childformpanel);
         }
 
         private void btnPersonalProfile_Click(object sender, EventArgs e)
