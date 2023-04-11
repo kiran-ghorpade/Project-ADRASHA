@@ -25,47 +25,48 @@ namespace ADRASHA_Main.Forms
 
         private void Analytics_Form_Load(object sender, EventArgs e)
         {
-            //age wise population chart
+            
             int max_age = DatabaseClass.GetAutoID("select max(age) from member_details")-1;
+            int registered_population = DatabaseClass.GetAutoID("select count(member_id) from member_details")-1;
             DataTable dt1;
 
-            Age_wise_population.Series["Men"].Points.AddXY(0,0);
-            Age_wise_population.Series["Women"].Points.AddXY(0,0);
 
-            for (int i=0; i<max_age+10; i++)
-            {
-                 dt1 = DatabaseClass.GetDataTable("select count(member_id) from member_details where age="+i+" and gender='Male'");
-                 int age = Convert.ToInt32(dt1.Rows[0][0]);
-                if(age > 0) 
-                 Age_wise_population.Series["Men"].Points.AddXY(i, age);
-                
-                 dt1 = DatabaseClass.GetDataTable("select count(member_id) from member_details where age="+i+" and gender='Female'");
-                 age = Convert.ToInt32(dt1.Rows[0][0]);
-                if(age > 0)
-                 Age_wise_population.Series["Women"].Points.AddXY(i, age);
-             }
-            Age_wise_population.Series["Men"].Points.AddXY(max_age+10, 0);
-            Age_wise_population.Series["Women"].Points.AddXY(max_age+10, 0);
+            //Registration Status
+            dt1 = DatabaseClass.GetDataTable("select total_Population from asha_details where asha_id=1");
+            int total_population = Convert.ToInt32(dt1.Rows[0][0]);
+            if (registered_population > 0)
+                Registered.Series["Registration"].Points.AddXY("Registered",registered_population);
+            if (total_population > 0)
+                Registered.Series["Registration"].Points.AddXY("Not Registered",total_population-registered_population);
 
 
+            //poverty chart
+            int apl = DatabaseClass.GetAutoID("select count(Family_Id) from family_details where poverty_status='APL'")-1;
+            int bpl = DatabaseClass.GetAutoID("select count(family_id) from family_details where poverty_status='BPL'")-1;
 
-            //HBNC Chart pie chart
-            HBNC_Chart.Series["NCD"].Points.AddXY("Blood Pressure", 20);
-            HBNC_Chart.Series["NCD"].Points.AddXY("Diebeties", 40);
-            HBNC_Chart.Series["NCD"].Points.AddXY("Astama", 20);
-            HBNC_Chart.Series["NCD"].Points.AddXY("Cancer", 5);
-            HBNC_Chart.Series["NCD"].Points.AddXY("arthritis", 40);
-            HBNC_Chart.Series["NCD"].Points.AddXY("Healty", 80);    
+            if (apl > 0)
+                Poverty_Status_Chart.Series["Poverty"].Points.AddXY("Above Povert Line",apl);
+            if (bpl > 0)
+                Poverty_Status_Chart.Series["Poverty"].Points.AddXY("Below Povert Line",bpl);
 
+            //Age Wise Population
+            int below_5,below_18,below_30,below_60,above_60;
+            below_5 = DatabaseClass.GetAutoID("select count(member_id) from member_details where age between 0 and 5")-1;
+            below_18 = DatabaseClass.GetAutoID("select count(member_id) from member_details where age between 6 and 18")-1;
+            below_30 = DatabaseClass.GetAutoID("select count(member_id) from member_details where age between 19 and 30")-1;
+            below_60 = DatabaseClass.GetAutoID("select count(member_id) from member_details where age between 31 and 60")-1;
+            above_60 = DatabaseClass.GetAutoID("select count(member_id) from member_details where age>=60")-1;
 
-            //Maternal Chart
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("Blood Pressure", 20);
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("Diebeties", 40);
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("Astama", 20);
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("Cancer", 5);
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("arthritis", 40);
-            MaternalHealth_Chart.Series["NCD"].Points.AddXY("Healty", 80);
-
+            if (below_5 > 0)
+                Age_Wise_Population.Series["Age_Wise"].Points.AddXY("Below 5 years",below_5);
+            if (below_18 > 0)
+                Age_Wise_Population.Series["Age_Wise"].Points.AddXY("5 to 18 years",below_18);
+            if (below_30 > 0) 
+                Age_Wise_Population.Series["Age_Wise"].Points.AddXY("18 to 30 years",below_30);
+            if (below_60 > 0) 
+                Age_Wise_Population.Series["Age_Wise"].Points.AddXY("30 to 60 years",below_60);
+            if (above_60 > 0) 
+                Age_Wise_Population.Series["Age_Wise"].Points.AddXY("Above 60 years",above_60);
            
             //demography pie chart
             int men = DatabaseClass.GetAutoID("select count(member_id) from member_details where gender = 'Male'") - 1;

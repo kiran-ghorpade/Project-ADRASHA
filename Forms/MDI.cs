@@ -202,6 +202,7 @@ namespace ADRASHA_Main
         {
             Scan_QR scan_QR = new Scan_QR();
             scan_QR.ShowDialog();
+           
         }
     }
 }

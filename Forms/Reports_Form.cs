@@ -57,8 +57,15 @@ namespace ADRASHA_Main.Forms
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            Saved_Report_Viewer pdfviewer = new Saved_Report_Viewer(listboxSavedFiles.SelectedItem.ToString());
-            pdfviewer.ShowDialog();
+            if (listboxSavedFiles.SelectedItems != null)
+            {
+                Saved_Report_Viewer pdfviewer = new Saved_Report_Viewer(listboxSavedFiles.SelectedItem.ToString());
+                pdfviewer.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Select File.");
+            }
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)

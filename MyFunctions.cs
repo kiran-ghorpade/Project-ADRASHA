@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace ADRASHA_Main
 {
@@ -86,6 +87,21 @@ namespace ADRASHA_Main
                 if (birthdate.Date > today.AddYears(-age)) age--;
             }
             return age;
+        }
+
+        public static string Protect(string clearText)
+        {
+            byte[] data = Encoding.Unicode.GetBytes(clearText);
+            byte[] encryptedData = ProtectedData.Protect(data, null, DataProtectionScope.CurrentUser);
+            return Convert.ToBase64String(encryptedData);
+        }
+
+        public static string Unprotect(string encryptedText)
+        {
+            byte[] encryptedData = Convert.FromBase64String(encryptedText);
+            byte[] data = ProtectedData.Unprotect(encryptedData, null, DataProtectionScope.CurrentUser);
+            return Encoding.Unicode.GetString(data);
+
         }
     }
 }

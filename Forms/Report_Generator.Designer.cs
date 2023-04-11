@@ -34,18 +34,18 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.lblashaname = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pnlSaveAs = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnPnlClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.FileName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Btn_SaveReport = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel8 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel9 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.panelControl1 = new ADRASHA_Main.PanelControl();
@@ -54,14 +54,10 @@
             this.pnlTemplates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSaveAs)).BeginInit();
+            this.pnlSaveAs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            this.kryptonPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).BeginInit();
-            this.kryptonPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).BeginInit();
-            this.kryptonPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -123,11 +119,12 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.pnlSaveAs);
+            this.kryptonPanel1.Controls.Add(this.Btn_SaveReport);
             this.kryptonPanel1.Controls.Add(this.btnRemove);
             this.kryptonPanel1.Controls.Add(this.pnlReportTemplates);
             this.kryptonPanel1.Controls.Add(this.btnAdd);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel4);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel3);
             this.kryptonPanel1.Controls.Add(this.panelControl1);
             this.kryptonPanel1.Controls.Add(this.lblashaname);
@@ -140,6 +137,112 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // pnlSaveAs
+            // 
+            this.pnlSaveAs.Controls.Add(this.btnPnlClose);
+            this.pnlSaveAs.Controls.Add(this.btnSave);
+            this.pnlSaveAs.Controls.Add(this.FileName);
+            this.pnlSaveAs.Controls.Add(this.label1);
+            this.pnlSaveAs.Controls.Add(this.label3);
+            this.pnlSaveAs.Controls.Add(this.label21);
+            this.pnlSaveAs.Location = new System.Drawing.Point(420, 352);
+            this.pnlSaveAs.Name = "pnlSaveAs";
+            this.pnlSaveAs.Size = new System.Drawing.Size(503, 313);
+            this.pnlSaveAs.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
+            this.pnlSaveAs.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.pnlSaveAs.StateCommon.ColorAngle = 45F;
+            this.pnlSaveAs.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.pnlSaveAs.TabIndex = 0;
+            // 
+            // btnPnlClose
+            // 
+            this.btnPnlClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnPnlClose.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnPnlClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnPnlClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPnlClose.Location = new System.Drawing.Point(154, 175);
+            this.btnPnlClose.Name = "btnPnlClose";
+            this.btnPnlClose.Size = new System.Drawing.Size(141, 45);
+            this.btnPnlClose.TabIndex = 4;
+            this.btnPnlClose.Text = "Cancel";
+            this.btnPnlClose.UseVisualStyleBackColor = false;
+            this.btnPnlClose.Click += new System.EventHandler(this.btnPnlClose_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(100)))));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(320, 175);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(141, 45);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // FileName
+            // 
+            this.FileName.Location = new System.Drawing.Point(145, 94);
+            this.FileName.Name = "FileName";
+            this.FileName.Size = new System.Drawing.Size(327, 38);
+            this.FileName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.FileName.StateCommon.Border.Rounding = 5;
+            this.FileName.StateCommon.Border.Width = 1;
+            this.FileName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileName.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MintCream;
+            this.label1.Location = new System.Drawing.Point(20, 251);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(365, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Note:   Reports will be Save in \"Saved Reports\" tab.\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MintCream;
+            this.label3.Location = new System.Drawing.Point(18, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "FileName:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Aladin", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Cyan;
+            this.label21.Location = new System.Drawing.Point(17, 13);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(127, 42);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Save as -";
+            // 
+            // Btn_SaveReport
+            // 
+            this.Btn_SaveReport.BackColor = System.Drawing.Color.PaleGreen;
+            this.Btn_SaveReport.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_SaveReport.Location = new System.Drawing.Point(919, 198);
+            this.Btn_SaveReport.Name = "Btn_SaveReport";
+            this.Btn_SaveReport.Size = new System.Drawing.Size(190, 60);
+            this.Btn_SaveReport.TabIndex = 0;
+            this.Btn_SaveReport.Text = "Save Report";
+            this.Btn_SaveReport.UseVisualStyleBackColor = false;
+            this.Btn_SaveReport.Click += new System.EventHandler(this.Btn_SaveReport_Click);
             // 
             // btnRemove
             // 
@@ -190,85 +293,6 @@
             this.listBox1.Size = new System.Drawing.Size(266, 260);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // kryptonPanel4
-            // 
-            this.kryptonPanel4.Controls.Add(this.kryptonPanel8);
-            this.kryptonPanel4.Controls.Add(this.listBox3);
-            this.kryptonPanel4.Location = new System.Drawing.Point(787, 88);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(391, 291);
-            this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel4.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel4.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel4.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel4.TabIndex = 0;
-            // 
-            // kryptonPanel8
-            // 
-            this.kryptonPanel8.Controls.Add(this.kryptonPanel9);
-            this.kryptonPanel8.Location = new System.Drawing.Point(17, 281);
-            this.kryptonPanel8.Name = "kryptonPanel8";
-            this.kryptonPanel8.Size = new System.Drawing.Size(391, 291);
-            this.kryptonPanel8.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));
-            this.kryptonPanel8.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
-            this.kryptonPanel8.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel8.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel8.TabIndex = 0;
-            // 
-            // kryptonPanel9
-            // 
-            this.kryptonPanel9.Controls.Add(this.textBox2);
-            this.kryptonPanel9.Controls.Add(this.textBox1);
-            this.kryptonPanel9.Controls.Add(this.dateTimePicker2);
-            this.kryptonPanel9.Controls.Add(this.dateTimePicker1);
-            this.kryptonPanel9.Location = new System.Drawing.Point(21, 15);
-            this.kryptonPanel9.Name = "kryptonPanel9";
-            this.kryptonPanel9.Size = new System.Drawing.Size(349, 260);
-            this.kryptonPanel9.StateCommon.Color1 = System.Drawing.SystemColors.Highlight;
-            this.kryptonPanel9.StateCommon.Color2 = System.Drawing.SystemColors.Highlight;
-            this.kryptonPanel9.StateCommon.ColorAngle = 45F;
-            this.kryptonPanel9.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.kryptonPanel9.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(36, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(36, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
-            this.textBox1.TabIndex = 1;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(36, 30);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 0;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 131);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
-            // listBox3
-            // 
-            this.listBox3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.listBox3.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(17, 15);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(346, 260);
-            this.listBox3.TabIndex = 0;
             // 
             // kryptonPanel3
             // 
@@ -323,15 +347,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlSaveAs)).EndInit();
+            this.pnlSaveAs.ResumeLayout(false);
+            this.pnlSaveAs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel8)).EndInit();
-            this.kryptonPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).EndInit();
-            this.kryptonPanel9.ResumeLayout(false);
-            this.kryptonPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -349,16 +369,16 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private System.Windows.Forms.Button btnRemove;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button btnAdd;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel8;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel9;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Btn_SaveReport;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlSaveAs;
+        private System.Windows.Forms.Button btnPnlClose;
+        private System.Windows.Forms.Button btnSave;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox FileName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label21;
     }
 }

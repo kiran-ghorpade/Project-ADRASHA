@@ -245,7 +245,7 @@
             this.pnlDatePIcker.Controls.Add(this.label1);
             this.pnlDatePIcker.Controls.Add(this.label19);
             this.pnlDatePIcker.Controls.Add(this.label21);
-            this.pnlDatePIcker.Location = new System.Drawing.Point(502, 171);
+            this.pnlDatePIcker.Location = new System.Drawing.Point(506, 80);
             this.pnlDatePIcker.Name = "pnlDatePIcker";
             this.pnlDatePIcker.Size = new System.Drawing.Size(503, 333);
             this.pnlDatePIcker.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(90)))), ((int)(((byte)(183)))));

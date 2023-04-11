@@ -24,11 +24,6 @@ namespace ADRASHA_Main
           
 
             Application.Run(new Splash_Screen());
-            //Application.Run(new Asha_Registration());
-            //Application.Run(new MDI());
-            //Application.Run(new Scan_QR());
-            //Application.Run(new  Report_Generator());
-            //Application.Run(new Analytics_Form());
         }
     }
 }

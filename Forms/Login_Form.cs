@@ -37,9 +37,10 @@ namespace ADRASHA_Main.Forms
             {
                 lblWarning.Visible = false;
 
-                DataTable dt = DatabaseClass.GetDataTable($"select * from asha_details where password = '{Password.Text}'");
+                DataTable dt = DatabaseClass.GetDataTable($"select password from asha_details");
+                string decrypt_password = MyFunctions.Unprotect(dt.Rows[0]["password"].ToString());
 
-                if (dt.Rows.Count == 1)
+                if (Password.Text.Equals(decrypt_password))
                 {
                     this.Hide();
                     parent.Hide();

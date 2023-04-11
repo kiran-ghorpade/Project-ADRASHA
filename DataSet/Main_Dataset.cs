@@ -61,3 +61,15 @@ namespace ADRASHA_Main.DataSet
         }
     }
 }
+
+namespace ADRASHA_Main.DataSet
+{
+
+
+    partial class Sample_Dataset
+    {
+        partial class Upcoming_VaccinationsDataTable
+        {
+        }
+    }
+}

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,16 +26,13 @@ namespace ADRASHA_Main.Forms
         {
             setListBox();
             showReport("all");
+            pnlSaveAs.Hide();
             this.reportViewer1.RefreshReport();
         }
 
         void setListBox()
         {
-            DataTable dt = DatabaseClass.GetDataTable("PRAGMA table_info(asha_details);");
-            //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(member_details);"));
-            //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(vaccination_details);"));
-            //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(ncd_details);"));
-            //dt.Merge(DatabaseClass.GetDataTable("PRAGMA table_info(pregnancy_details);"));
+            DataTable dt = DatabaseClass.GetDataTable("PRAGMA table_info(family_details);");
 
             DataTableReader dataTableReader = dt.CreateDataReader();
             while (dataTableReader.Read())
@@ -54,23 +52,7 @@ namespace ADRASHA_Main.Forms
             DataTable dt = null;
             DataTable dt2 = DatabaseClass.GetDataTable("select * from header_view");
 
-            if (status == "all")
-            {
-                dt = DatabaseClass.GetDataTable("select " + columns + " from asha_details");
-            }
-            else if (status == "int")
-            {
-                dt = DatabaseClass.GetDataTable("select " + columns + " from asha_details where " + listBox1.SelectedItem + " between value1 and value2");
-            }
-            else if (status == "text")
-            {
-                dt = DatabaseClass.GetDataTable("select " + columns + " from asha_details where " + listBox1.SelectedItem + "= value");
-            }
-            else if (status == "date")
-            {
-                dt = DatabaseClass.GetDataTable("select " + columns + " from asha_details where " + listBox1.SelectedItem + " between value1 and value2");
-            }
-
+            dt = DatabaseClass.GetDataTable("select "+ columns +" from family_details");
 
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", GetReportCells(dt)));
@@ -143,6 +125,48 @@ namespace ADRASHA_Main.Forms
                 showReport("all");
             }
             listBox1.ClearSelected();
+        }
+
+        private void Btn_SaveReport_Click(object sender, EventArgs e)
+        {
+            pnlSaveAs.Visible = true;
+            FileName.Focus();
+        }
+
+        private void btnPnlClose_Click(object sender, EventArgs e)
+        {
+            FileName.Clear();
+            pnlSaveAs.Visible = false;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(FileName.Text))
+            {
+                MessageBox.Show("Enter File Name");
+                return;
+            }
+
+            pnlSaveAs.Visible = true;
+            string sPath = "ADRASHA\\Reports";
+            String directoryPath = sPath;
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            string savePath = directoryPath;
+            byte[] Bytes = reportViewer1.LocalReport.Render(format: "PDF", deviceInfo: "");
+
+            using (FileStream stream = new FileStream(savePath + "\\" + FileName.Text + ".pdf", FileMode.Create))
+            {
+                stream.Write(Bytes, 0, Bytes.Length);
+            }
+
+            MessageBox.Show("File Saved.");
+            FileName.Clear();
+            pnlSaveAs.Visible = false;
+            this.Close();
         }
     }
 }

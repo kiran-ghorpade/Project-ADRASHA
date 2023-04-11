@@ -72,14 +72,16 @@ namespace ADRASHA_Main.Forms
             }
 
             //Upcoming Vaccination Notification
-            for (int i = 0; i < 10; i++)
-            {
-                //Label notification_txt = new Label();
-                //notification_txt = notification;
-                //notification.Text = i + ". baby_name  vaccine_name next_date";
-                //pnlVaccination.Controls.Add(notification_txt);
-            }
-
+            string next = DateTime.Now.Date.AddDays(10).ToString("yyyy-MM-dd");
+            string sql =@" select
+                         vaccination.Member_Id as child_id,
+                         vaccination.next_Vaccine_DATE as next_date,
+                         vaccination.next_Vaccine_name as next_vaccine,
+                         member_details.First_Name||' '||member_details.Middle_Name||' '||member_details.Last_Name as child_name
+                         from vaccination 
+                         join member_details
+                        where (next_vaccine_date between '"+DateTime.Now.Date.ToString("yyyy-MM-dd") +"' and '"+next+"') and member_details.Member_Id=vaccination.Member_Id order by next_vaccine_date desc";
+            DatabaseClass.BindGridView(GridUpcomingVaccination,sql);
         }
     }
 }

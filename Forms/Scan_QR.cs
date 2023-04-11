@@ -13,6 +13,7 @@ namespace ADRASHA_Main.Forms
         private VideoCaptureDevice FinalFrame;
         int member_id = 0;
 
+
         public Scan_QR()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace ADRASHA_Main.Forms
             }
 
             comboBox1.SelectedIndex = 0;
-            FinalFrame = new VideoCaptureDevice();
+            //FinalFrame = new VideoCaptureDevice();
 
 
             FinalFrame = new VideoCaptureDevice(CaptureDevice[comboBox1.SelectedIndex].MonikerString);
@@ -71,6 +72,8 @@ namespace ADRASHA_Main.Forms
                 catch (Exception)
                 {
                     MessageBox.Show("QR Code Invalid.");
+                    timer1.Stop();
+                    timer1.Start();
                 }
             }
         }
@@ -79,12 +82,8 @@ namespace ADRASHA_Main.Forms
         {
             if (FinalFrame.IsRunning == true)
             {
-                CaptureDevice.Clear();
-                FinalFrame.NewFrame -= new NewFrameEventHandler(FinalFrame_NewFrame);
-                FinalFrame.SignalToStop();
-                FinalFrame.Stop();
+                exitcamera();
             }
-            FinalFrame.Stop();
             this.Dispose();
             Health_Profile profile = new Health_Profile(Convert.ToInt32(member_id));
             MyFunctions.LoadChildForm(profile, MDI.childformpanel);
@@ -92,12 +91,7 @@ namespace ADRASHA_Main.Forms
 
         private void Scan_QR_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (FinalFrame.IsRunning == true)
-            {
-                FinalFrame.NewFrame -= new NewFrameEventHandler(FinalFrame_NewFrame);
-                FinalFrame.SignalToStop();
-                FinalFrame.Stop();
-            }
+            Dispose();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,9 +108,20 @@ namespace ADRASHA_Main.Forms
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-            FinalFrame.NewFrame -= new NewFrameEventHandler(FinalFrame_NewFrame);
-            FinalFrame.SignalToStop();
-            this.Dispose();
+            this.Dispose(true);
+        }
+
+        private void exitcamera()
+        {
+            if (FinalFrame != null && FinalFrame.IsRunning)
+            {
+                FinalFrame.NewFrame -= new NewFrameEventHandler(FinalFrame_NewFrame);
+                FinalFrame.SignalToStop();
+                FinalFrame.Stop();
+                FinalFrame.WaitForStop();
+                CaptureDevice = null;
+                FinalFrame = null;
+            }
         }
     }
 }

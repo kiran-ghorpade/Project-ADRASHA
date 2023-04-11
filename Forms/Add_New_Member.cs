@@ -46,6 +46,7 @@ namespace ADRASHA_Main
                )
             {
                 valid = false;
+                MessageBox.Show("All Fields Required.");
             }
 
             if (valid)
@@ -108,8 +109,19 @@ namespace ADRASHA_Main
             if (dm.InsertData("member_details", this))
             {
                 MessageBox.Show("Member Registered.");
+                int age = MyFunctions.CalculateAge(Birth_Date.Value.Date.ToString());
+                DatabaseClass.UpdateRow("member_details","member_id",member_id,"age",age);
             }
-
+            else
+            {
+                using (SqliteConnection conn = DatabaseClass.GetConnection())
+                {
+                    string sql = "delete from family_details where family_id"+family_id;
+                    SqliteCommand sqliteCommand = new SqliteCommand(sql, conn);
+                    sqliteCommand.ExecuteNonQuery();
+                }
+                MessageBox.Show("Some Error Occured During Registering new Member or head.");
+            }
             if (status == "head")
             {
                 using (SqliteConnection conn = DatabaseClass.GetConnection())
@@ -125,14 +137,9 @@ namespace ADRASHA_Main
             
         }
 
-        private void Adhar_Number_TextChanged(object sender, EventArgs e)
+        private void Adhar_Number_TextChanged(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
+            Validation.Only_Numeric(sender, e);
         }
 
         private void Add_New_Member_Load(object sender, EventArgs e)

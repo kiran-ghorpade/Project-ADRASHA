@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-using Microsoft.Data.Sqlite;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Windows.Forms.AxHost;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADRASHA_Main
 {
@@ -59,7 +50,7 @@ namespace ADRASHA_Main
                 {"Education", "@education"},
                 {"Marital_Status", "@maritalstatus"},
                 {"Marriage_Date", "@marriagedate"},
-                {"Partner_Id", "@partnerid"},
+                {"Partner_Id", "@Not_Mentioned"},
                 {"Child_Number", "@childnumber"}
             };
 
@@ -139,52 +130,6 @@ namespace ADRASHA_Main
 
         }
 
-        //public bool InsertData( string tablename,Form parentform)
-        //{
-        //    //method to select data dictionary to insert
-        //    SelectDictionary(tablename);
-
-        //    foreach (Control control in parentform.Controls[])
-        //    {
-        //        // Check if the control is a TextBox, DateTimePicker or ComboBox
-        //        if (control is TextBox || control is DateTimePicker || control is ComboBox) 
-        //        {
-        //            // Get the parameter name from the dictionary
-        //            object parameterName;
-        //            if (!selectedDictionary.TryGetValue(control.Name, out parameterName))
-        //            {
-        //                // If the control name is not in the dictionary, skip this control
-        //                continue;
-        //            }
-
-        //            // Add the parameter to the command
-        //            // Add the parameter to the command
-        //            if (control is TextBox)
-        //            {
-        //                selectedDictionary[control.Name] = Convert.ToInt32(control.Text);
-        //            }
-        //            else if (control is DateTimePicker)
-        //            {
-        //                selectedDictionary[control.Name] = ((DateTimePicker)control).Value;
-        //            }
-        //            else if (control is ComboBox)
-        //            {
-        //                selectedDictionary[control.Name] = ((ComboBox)control).SelectedItem;
-        //            }
-        //            else if (control is RadioButton)
-        //            {
-        //                if(((RadioButton)control).Checked == true)
-        //                selectedDictionary[control.Name]= ((RadioButton)control).Text;
-        //            }
-        //            else if (control is CheckBox)
-        //            {
-        //                if(((CheckBox)control).Checked == true)
-        //                    selectedDictionary[control.Name]=((CheckBox)control).Text;
-        //            }
-        //        }
-        //    }
-        //}
-
         private void IterateControls(Control parentControl)
         {
             foreach (Control control in parentControl.Controls)
@@ -220,10 +165,13 @@ namespace ADRASHA_Main
                     
                     if (control is System.Windows.Forms.TextBox || control is KryptonTextBox)
                     {
-                        if(control.Name.Contains("Id"))
+                        if (control.Name.Contains("Id"))
+                        {
+                            if(control.Text!="")
                             selectedDictionary[control.Name] = Convert.ToInt32(control.Text);
+                        }
                         else
-                        selectedDictionary[control.Name] = control.Text;
+                            selectedDictionary[control.Name] = control.Text;
                     }
                     else if(control is Label)
                     {

@@ -28,17 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblashaname = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pnlVaccination = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.GridUpcomingVaccination = new System.Windows.Forms.DataGridView();
+            this.childIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nextVaccineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nextDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.upcomingVaccinationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sample_Dataset = new ADRASHA_Main.DataSet.Sample_Dataset();
             this.label13 = new System.Windows.Forms.Label();
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.NCD_Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -76,6 +83,9 @@
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlVaccination)).BeginInit();
             this.pnlVaccination.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridUpcomingVaccination)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingVaccinationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sample_Dataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NCD_Chart)).BeginInit();
@@ -152,6 +162,7 @@
             // pnlVaccination
             // 
             this.pnlVaccination.AutoScroll = true;
+            this.pnlVaccination.Controls.Add(this.GridUpcomingVaccination);
             this.pnlVaccination.Controls.Add(this.label13);
             this.pnlVaccination.Location = new System.Drawing.Point(890, 451);
             this.pnlVaccination.Name = "pnlVaccination";
@@ -161,6 +172,76 @@
             this.pnlVaccination.StateCommon.ColorAngle = 45F;
             this.pnlVaccination.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.pnlVaccination.TabIndex = 0;
+            // 
+            // GridUpcomingVaccination
+            // 
+            this.GridUpcomingVaccination.AllowUserToAddRows = false;
+            this.GridUpcomingVaccination.AllowUserToDeleteRows = false;
+            this.GridUpcomingVaccination.AllowUserToResizeRows = false;
+            this.GridUpcomingVaccination.AutoGenerateColumns = false;
+            this.GridUpcomingVaccination.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridUpcomingVaccination.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.GridUpcomingVaccination.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridUpcomingVaccination.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.GridUpcomingVaccination.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.GridUpcomingVaccination.ColumnHeadersHeight = 29;
+            this.GridUpcomingVaccination.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.childIdDataGridViewTextBoxColumn,
+            this.nextVaccineDataGridViewTextBoxColumn,
+            this.nextDateDataGridViewTextBoxColumn});
+            this.GridUpcomingVaccination.DataSource = this.upcomingVaccinationsBindingSource;
+            this.GridUpcomingVaccination.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(64)))), ((int)(((byte)(139)))));
+            this.GridUpcomingVaccination.Location = new System.Drawing.Point(26, 78);
+            this.GridUpcomingVaccination.MultiSelect = false;
+            this.GridUpcomingVaccination.Name = "GridUpcomingVaccination";
+            this.GridUpcomingVaccination.ReadOnly = true;
+            this.GridUpcomingVaccination.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.GridUpcomingVaccination.RowHeadersVisible = false;
+            this.GridUpcomingVaccination.RowHeadersWidth = 51;
+            this.GridUpcomingVaccination.RowTemplate.Height = 24;
+            this.GridUpcomingVaccination.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GridUpcomingVaccination.Size = new System.Drawing.Size(598, 269);
+            this.GridUpcomingVaccination.TabIndex = 1;
+            this.GridUpcomingVaccination.VirtualMode = true;
+            // 
+            // childIdDataGridViewTextBoxColumn
+            // 
+            this.childIdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.childIdDataGridViewTextBoxColumn.DataPropertyName = "Child_Id";
+            this.childIdDataGridViewTextBoxColumn.HeaderText = "Child Id";
+            this.childIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.childIdDataGridViewTextBoxColumn.Name = "childIdDataGridViewTextBoxColumn";
+            this.childIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.childIdDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // nextVaccineDataGridViewTextBoxColumn
+            // 
+            this.nextVaccineDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nextVaccineDataGridViewTextBoxColumn.DataPropertyName = "Next_Vaccine";
+            this.nextVaccineDataGridViewTextBoxColumn.HeaderText = "Next Vaccine";
+            this.nextVaccineDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nextVaccineDataGridViewTextBoxColumn.Name = "nextVaccineDataGridViewTextBoxColumn";
+            this.nextVaccineDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nextVaccineDataGridViewTextBoxColumn.Width = 115;
+            // 
+            // nextDateDataGridViewTextBoxColumn
+            // 
+            this.nextDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nextDateDataGridViewTextBoxColumn.DataPropertyName = "Next_Date";
+            this.nextDateDataGridViewTextBoxColumn.HeaderText = "Next Date";
+            this.nextDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nextDateDataGridViewTextBoxColumn.Name = "nextDateDataGridViewTextBoxColumn";
+            this.nextDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // upcomingVaccinationsBindingSource
+            // 
+            this.upcomingVaccinationsBindingSource.DataMember = "Upcoming_Vaccinations";
+            this.upcomingVaccinationsBindingSource.DataSource = this.sample_Dataset;
+            // 
+            // sample_Dataset
+            // 
+            this.sample_Dataset.DataSetName = "Sample_Dataset";
+            this.sample_Dataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label13
             // 
@@ -194,24 +275,24 @@
             this.NCD_Chart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.NCD_Chart.BackSecondaryColor = System.Drawing.Color.Transparent;
             this.NCD_Chart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea3.Area3DStyle.Enable3D = true;
-            chartArea3.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea3.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.NCD_Chart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.NCD_Chart.Legends.Add(legend3);
+            chartArea1.Area3DStyle.Enable3D = true;
+            chartArea1.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.NCD_Chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.NCD_Chart.Legends.Add(legend1);
             this.NCD_Chart.Location = new System.Drawing.Point(3, 39);
             this.NCD_Chart.Name = "NCD_Chart";
-            series3.BorderColor = System.Drawing.Color.Transparent;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Color = System.Drawing.Color.Transparent;
-            series3.IsValueShownAsLabel = true;
-            series3.Legend = "Legend1";
-            series3.Name = "NCD";
-            series3.YValuesPerPoint = 4;
-            this.NCD_Chart.Series.Add(series3);
+            series1.BorderColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Color = System.Drawing.Color.Transparent;
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "NCD";
+            series1.YValuesPerPoint = 4;
+            this.NCD_Chart.Series.Add(series1);
             this.NCD_Chart.Size = new System.Drawing.Size(309, 342);
             this.NCD_Chart.TabIndex = 0;
             this.NCD_Chart.Text = "chart1";
@@ -542,31 +623,31 @@
             this.Demography_Chart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Demography_Chart.BackSecondaryColor = System.Drawing.Color.Transparent;
             this.Demography_Chart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea4.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea4.Area3DStyle.Enable3D = true;
-            chartArea4.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea4.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea4.AxisX.IsLabelAutoFit = false;
-            chartArea4.AxisX.LabelStyle.Enabled = false;
-            chartArea4.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
-            chartArea4.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea4.AxisY.IsLabelAutoFit = false;
-            chartArea4.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.Demography_Chart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.Demography_Chart.Legends.Add(legend4);
+            chartArea2.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea2.Area3DStyle.Enable3D = true;
+            chartArea2.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LabelStyle.Enabled = false;
+            chartArea2.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked;
+            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea2.AxisY.IsLabelAutoFit = false;
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.Demography_Chart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.Demography_Chart.Legends.Add(legend2);
             this.Demography_Chart.Location = new System.Drawing.Point(3, 39);
             this.Demography_Chart.Name = "Demography_Chart";
-            series4.BorderColor = System.Drawing.Color.Transparent;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series4.Color = System.Drawing.Color.Transparent;
-            series4.IsValueShownAsLabel = true;
-            series4.Legend = "Legend1";
-            series4.Name = "Demography";
-            series4.YValuesPerPoint = 4;
-            this.Demography_Chart.Series.Add(series4);
+            series2.BorderColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Color = System.Drawing.Color.Transparent;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Demography";
+            series2.YValuesPerPoint = 4;
+            this.Demography_Chart.Series.Add(series2);
             this.Demography_Chart.Size = new System.Drawing.Size(300, 342);
             this.Demography_Chart.TabIndex = 0;
             this.Demography_Chart.Text = "chart1";
@@ -611,6 +692,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlVaccination)).EndInit();
             this.pnlVaccination.ResumeLayout(false);
             this.pnlVaccination.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridUpcomingVaccination)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upcomingVaccinationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sample_Dataset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             this.kryptonPanel4.PerformLayout();
@@ -685,5 +769,12 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataVisualization.Charting.Chart NCD_Chart;
         private System.Windows.Forms.DataVisualization.Charting.Chart Demography_Chart;
+        private System.Windows.Forms.DataGridView GridUpcomingVaccination;
+        private DataSet.Sample_Dataset sample_Dataset;
+        private System.Windows.Forms.BindingSource upcomingVaccinationsBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn childIdDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nextVaccineDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nextDateDataGridViewTextBoxColumn;
     }
 }

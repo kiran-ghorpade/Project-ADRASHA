@@ -13,8 +13,8 @@ namespace ADRASHA_Main.Forms
 {
     public partial class Vaccination_Form : Form
     {
-        int memberId;
-        string vaccineName = null, name;
+        int memberId, duration=-10000;
+        string vaccineName = null, name,next_vaccine="none";
         MyFunctions MyFunctions = new MyFunctions();
         DatabaseClass db = new DatabaseClass();
 
@@ -122,21 +122,34 @@ namespace ADRASHA_Main.Forms
             }
 
             if (MessageBox.Show("are you sure !","", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            { DateTime dateTime = Vaccination_Date.Value.Date;
+            {
+                DateTime dateTime = Vaccination_Date.Value.Date;
                 string date = dateTime.ToString("yyyy-MM-dd");
                 string place = Vaccination_Place.Text;
+                string next_date = dateTime.AddMonths(duration).ToString("yyyy-MM-dd");
+                if (vaccineName.Equals("none"))
+                {
+                    next_date = "";
+                    next_vaccine = "";
+                }
 
                 Dictionary<string, object> vaccine = new Dictionary<string, object>
-            {
-                {"Member_id",memberId},
-                {"Vaccine_name",vaccineName},
-                {"Given_on",date},
-                {"Given_at",place}
-            };
+                {
+                    {"Member_id",memberId},
+                    {"Vaccine_name",vaccineName},
+                    {"Given_on",date},
+                    {"Given_at",place},
+                    {"next_vaccine_date", next_date},
+                    {"next_vaccine_name", next_vaccine }
+                };
 
                 if (db.InsertRow("vaccination", vaccine))
                 {
                     MessageBox.Show("Vaccination Added.");
+                }
+                else
+                {
+                    MessageBox.Show("Some Internal Error Occurred.");
                 }
                 setData();
                 pnlDatePIcker.Visible = false;
@@ -153,6 +166,8 @@ namespace ADRASHA_Main.Forms
             if (HepB_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "HepB_D1";
+            duration = 2;
+            next_vaccine = "HebB_D2";
         }
 
         private void HepB_D2_Click(object sender, EventArgs e)
@@ -160,6 +175,8 @@ namespace ADRASHA_Main.Forms
             if (HepB_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "HepB_D2";
+            duration = 4;
+            next_vaccine = "HebB_D3";
         }
 
         private void HepB_D3_Click(object sender, EventArgs e)
@@ -174,6 +191,8 @@ namespace ADRASHA_Main.Forms
             if (DTaP_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "DTaP_D1";
+            duration = 2;
+            next_vaccine = "DTaP_D2";
         }
 
         private void DTaP_D2_Click(object sender, EventArgs e)
@@ -181,6 +200,8 @@ namespace ADRASHA_Main.Forms
             if (DTaP_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "DTaP_D2";
+            duration = 2;
+            next_vaccine = "DTaP_D3";
         }
 
         private void DTaP_D3_Click(object sender, EventArgs e)
@@ -188,6 +209,8 @@ namespace ADRASHA_Main.Forms
             if (DTaP_D3.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "DTaP_D3";
+            duration = 12;
+            next_vaccine = "DTaP_B1";
         }
 
         private void DTaP_B1_Click(object sender, EventArgs e)
@@ -209,6 +232,8 @@ namespace ADRASHA_Main.Forms
             if (IPV_B1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "IPV_D1";
+            duration = 2;
+            next_vaccine = "IPV_D2";
         }
 
         private void IPV_D2_Click(object sender, EventArgs e)
@@ -216,6 +241,8 @@ namespace ADRASHA_Main.Forms
             if (IPV_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "IPV_D2";
+            duration = 2;
+            next_vaccine = "IPV_D3";
         }
 
         private void IPV_D3_Click(object sender, EventArgs e)
@@ -223,6 +250,8 @@ namespace ADRASHA_Main.Forms
             if (IPV_D3.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "IPV_D3";
+            duration = 12;
+            next_vaccine = "IPV_B1";
         }
 
         private void IPV_B1_Click(object sender, EventArgs e)
@@ -230,6 +259,8 @@ namespace ADRASHA_Main.Forms
             if (IPV_B1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "IPV_B1";
+            duration = 102;
+            next_vaccine = "IPV_B1";
         }
 
         private void Hib_B2_Click(object sender, EventArgs e)
@@ -244,6 +275,8 @@ namespace ADRASHA_Main.Forms
             if (Hib_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "Hib_D1";
+            duration = 2;
+            next_vaccine = "Hib_D2";
         }
 
         private void Hib_D2_Click(object sender, EventArgs e)
@@ -251,6 +284,8 @@ namespace ADRASHA_Main.Forms
             if (Hib_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "Hib_D2";
+            duration = 2;
+            next_vaccine = "Hib_D3";
         }
 
         private void Hib_D3_Click(object sender, EventArgs e)
@@ -258,6 +293,8 @@ namespace ADRASHA_Main.Forms
             if (Hib_D3.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "Hib_D3";
+            duration = 12;
+            next_vaccine = "Hib_B1";
         }
 
         private void Hib_B1_Click(object sender, EventArgs e)
@@ -272,6 +309,8 @@ namespace ADRASHA_Main.Forms
             if (PCV_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "PCV_D1";
+            duration = 2;
+            next_vaccine = "PCV_D2";
         }
 
         private void PCV_D2_Click(object sender, EventArgs e)
@@ -279,6 +318,8 @@ namespace ADRASHA_Main.Forms
             if (PCV_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "PCV_D2";
+            duration = 6;
+            next_vaccine = "PCV_B1";
         }
 
         private void PCV_B1_Click(object sender, EventArgs e)
@@ -293,6 +334,8 @@ namespace ADRASHA_Main.Forms
             if (MMR_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "MMR_D1";
+            duration = 3;
+            next_vaccine = "MMR_D2";
         }
 
         private void MMR_D2_Click(object sender, EventArgs e)
@@ -307,6 +350,8 @@ namespace ADRASHA_Main.Forms
             if (VAR_D2.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "VAR_D1";
+            duration = 3;
+            next_vaccine = "VAR_D2";
         }
 
         private void VAR_D2_Click(object sender, EventArgs e)
@@ -321,6 +366,8 @@ namespace ADRASHA_Main.Forms
             if (HPV_D1.BackColor == Color.Red)
                 pnlDatePIcker.Visible = true;
             vaccineName = "HPV_D1";
+            duration = 12;
+            next_vaccine = "HPV_D2";
         }
 
         private void HPV_D2_Click(object sender, EventArgs e)

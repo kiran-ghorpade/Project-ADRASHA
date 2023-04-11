@@ -34,7 +34,8 @@ namespace ADRASHA_Main
 
             if(password.Text == Confirm_password.Text)
             {
-                if (DatabaseClass.UpdateRow("asha_details", "asha_id", 1, "password", Confirm_password.Text))
+                string encrypted_pass = MyFunctions.Protect(Confirm_password.Text);
+                if (DatabaseClass.UpdateRow("asha_details", "asha_id", 1, "password", encrypted_pass))
                 {
                     MessageBox.Show("Registered Successfully.", "ADRASHA"); 
                     Application.Restart();
