@@ -1,13 +1,6 @@
 ﻿using ADRASHA_Main.Forms;
 using Microsoft.Data.Sqlite;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ADRASHA_Main
@@ -23,17 +16,6 @@ namespace ADRASHA_Main
             PopulateItems();
             //updatePanel();
         }
-
-        //private void updatePanel()
-        //{
-        //    int id,total;
-        //    DataTable dt = DatabaseClass.GetDataTable("select family_id,total_members from family_details");
-        //    if (dt.Rows.Count>=1)
-        //    {
-        //        id= (int.Parse(dt.Rows[0][0].ToString()) + 1);
-        //        total = (int.Parse(dt.Rows[0][1]));
-        //    }
-        //}
 
         private void main_panelcontrol_Load(object sender, EventArgs e)
         {

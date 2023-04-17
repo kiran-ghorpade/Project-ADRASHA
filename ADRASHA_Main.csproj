@@ -14,7 +14,9 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Gaurav Jadhav\Desktop\ADRASHA\Project Adrasha\</PublishUrl>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\PROJECT ADRASHA\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -26,13 +28,11 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/ADRASHA_Main/</UpdateUrl>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,13 +63,18 @@
     <ManifestCertificateThumbprint>1B7781701EE2DCE41B3C15441D259195E3A2CC52</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ADRASHA_Main_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>
+    </TargetZone>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
@@ -362,12 +367,6 @@
     <Compile Include="Forms\Report_Preview.Designer.cs">
       <DependentUpon>Report_Preview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Sample_Report_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Sample_Report_form.Designer.cs">
-      <DependentUpon>Sample_Report_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Validation.cs" />
     <EmbeddedResource Include="Forms\Add_New_Family.resx">
       <DependentUpon>Add_New_Family.cs</DependentUpon>
@@ -485,9 +484,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Report_Preview.resx">
       <DependentUpon>Report_Preview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Sample_Report_form.resx">
-      <DependentUpon>Sample_Report_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\VaccinationList.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

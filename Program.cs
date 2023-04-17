@@ -1,9 +1,4 @@
-﻿using ADRASHA_Main.Forms;
-using ADRASHA_Main.Reports;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace ADRASHA_Main

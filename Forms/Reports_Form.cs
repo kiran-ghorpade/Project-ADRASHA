@@ -1,15 +1,7 @@
 ﻿using ADRASHA_Main.Reports;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Services.Description;
 using System.Windows.Forms;
 
 namespace ADRASHA_Main.Forms
@@ -46,6 +38,10 @@ namespace ADRASHA_Main.Forms
         private void Reports_Form_Load(object sender, EventArgs e)
         {
             string directoryPath = "ADRASHA\\Reports";
+            if(!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
             string[] fileNames = Directory.GetFiles(directoryPath, "*.pdf");
 
             foreach (string fileName in fileNames)

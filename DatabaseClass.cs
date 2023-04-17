@@ -76,16 +76,6 @@ namespace ADRASHA_Main
             return i;
         }
 
-        //public SqliteDataReader GetDataReader(string sql)
-        //{
-            
-        //    using (SqliteConnection conn = GetConnection())
-        //    {
-        //        SqliteCommand cmd = new SqliteCommand(sql, conn);
-        //        return cmd.ExecuteReader();
-        //    }
-        //}
-
         public static DataRow GetRowById(string tableName,string id_column, int id)
         {
             //to get row by the id
@@ -541,6 +531,5 @@ namespace ADRASHA_Main
             ";         
             ExecuteNonQuery(createTableQuery);
         }
-
     }
 }

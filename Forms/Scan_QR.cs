@@ -91,6 +91,7 @@ namespace ADRASHA_Main.Forms
 
         private void Scan_QR_FormClosing(object sender, FormClosingEventArgs e)
         {
+            exitcamera();
             Dispose();
         }
 
@@ -115,9 +116,11 @@ namespace ADRASHA_Main.Forms
         {
             if (FinalFrame != null && FinalFrame.IsRunning)
             {
+                timer1.Stop();
                 FinalFrame.NewFrame -= new NewFrameEventHandler(FinalFrame_NewFrame);
                 FinalFrame.SignalToStop();
                 FinalFrame.Stop();
+                FinalFrame.WaitForStop();
                 FinalFrame.WaitForStop();
                 CaptureDevice = null;
                 FinalFrame = null;
